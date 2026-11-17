@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "scope": "All3 large checkpoint hashes; first/last actual rig+mesh transformer weight updates; frozen surface head; CPU/MPS whole rig encoder and8-cube full mesh field replay on one validation asset. Not CUDA rendering parity.",
+  "checks": [
+    {
+      "seed": 0,
+      "passed": true,
+      "surface_head_bitwise_frozen": true,
+      "rig_max_cpu_mps_error": 5.245208740234375e-06,
+      "mesh_fields_max_cpu_mps_error": 4.291534423828125e-05,
+      "checkpoint_sha256": "0f5a8f22ea309c4f13194f251099f9be52533594c95dca89560a3310e90c25ea",
+      "rig_encoder_block0_max_update": 0.003305979073047638,
+      "rig_encoder_block11_max_update": 0.003882087767124176,
+      "mesh_block0_max_update": 0.0012425854802131653,
+      "mesh_block11_max_update": 0.001225799322128296
+    },
+    {
+      "seed": 1,
+      "passed": true,
+      "surface_head_bitwise_frozen": true,
+      "rig_max_cpu_mps_error": 4.26173210144043e-06,
+      "mesh_fields_max_cpu_mps_error": 5.4836273193359375e-05,
+      "checkpoint_sha256": "c58afd45be0141665e0206b44caa5c83fa2a697e791f56006702168fa23de919",
+      "rig_encoder_block0_max_update": 0.0033187270164489746,
+      "rig_encoder_block11_max_update": 0.0033522769808769226,
+      "mesh_block0_max_update": 0.0011842530220746994,
+      "mesh_block11_max_update": 0.0011869221925735474
+    },
+    {
+      "seed": 2,
+      "passed": true,
+      "surface_head_bitwise_frozen": true,
+      "rig_max_cpu_mps_error": 4.291534423828125e-06,
+      "mesh_fields_max_cpu_mps_error": 3.910064697265625e-05,
+      "checkpoint_sha256": "24b6f6c9cdef20e32c4436b60aca68fa4d5f447a7363e3197788f4a5ef9abcd4",
+      "rig_encoder_block0_max_update": 0.0033386647701263428,
+      "rig_encoder_block11_max_update": 0.0034297648817300797,
+      "mesh_block0_max_update": 0.00116826593875885,
+      "mesh_block11_max_update": 0.0012387223541736603
+    }
+  ]
+}

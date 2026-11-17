@@ -1,0 +1,13 @@
+{
+  "scope": "Synthetic timing only, 4x256 points,32 bones,37 joints; finite gradient cat check; 10 warmup+50 timed steps",
+  "checks": [
+    {
+      "device": "cpu",
+      "seconds_per_step": 0.02694280499825254
+    },
+    {
+      "device": "mps",
+      "seconds_per_step": 0.08267157749971375
+    }
+  ]
+}

@@ -1,0 +1,425 @@
+{
+  "scope": "Real Anymate subset: 96 train/16 validation/32 test; 83/14/32 eligible single-root skeletons; 2000 steps, three seeds per condition, width64/layers2, 256 train queries and 512 eval queries",
+  "claim": "Held-out reconstruction proxy; GT rig geometry remains a conditioning input. Rig-context mode also uses GT skin weights to form context. Not image-conditioned generation or original-paper numerical reproduction.",
+  "selection": "Each seed checkpoint selected by validation loss; all three seeds reported, no best test seed",
+  "uncertainty": "Mean and sample standard deviation across three training seeds, not confidence intervals over original benchmark",
+  "metric_version": 2,
+  "groups": [
+    {
+      "suite": "round1",
+      "mode": "rig",
+      "name": "Rig reconstruction",
+      "runs": [
+        {
+          "seed": 0,
+          "best_step": 1999,
+          "source": "results/round1/rig/seed0/evaluation_metrics_v2.json",
+          "skin_l1_element": 0.03580759104174395,
+          "skin_l1_vector": 0.8583272207397054,
+          "skin_l2_vector": 0.4993375130245947,
+          "skin_precision": 0.6078510433048397,
+          "skin_recall": 0.8260284423828125,
+          "j2j": 0.14669677982089746,
+          "j2b": 0.13880033481337167,
+          "b2b": 0.124410542411597,
+          "joint_count": 96.0,
+          "capped": 32,
+          "test_assets": 32,
+          "coordinate_accuracy": 0.04223546675348189,
+          "parent_accuracy": 0.4790543206036091,
+          "teacher_eos_recall": 0.0,
+          "teacher_j2j": 0.1351227198108323,
+          "quantized_gt_j2j": 0.003729295654675414,
+          "metric_b2b_dense_max_difference": 0.0032931706794709636
+        },
+        {
+          "seed": 1,
+          "best_step": 1999,
+          "source": "results/round1/rig/seed1/evaluation_metrics_v2.json",
+          "skin_l1_element": 0.03427730146069908,
+          "skin_l1_vector": 0.8327713438959035,
+          "skin_l2_vector": 0.48033093485855305,
+          "skin_precision": 0.6051492405435276,
+          "skin_recall": 0.8483378092447915,
+          "j2j": 0.12480542711405965,
+          "j2b": 0.11305281651354017,
+          "b2b": 0.10274926618826544,
+          "joint_count": 96.0,
+          "capped": 32,
+          "test_assets": 32,
+          "coordinate_accuracy": 0.035607753379736096,
+          "parent_accuracy": 0.4531631460413337,
+          "teacher_eos_recall": 0.0,
+          "teacher_j2j": 0.1303405002851033,
+          "quantized_gt_j2j": 0.003729295654675414,
+          "metric_b2b_dense_max_difference": 0.0029878209917027915
+        },
+        {
+          "seed": 2,
+          "best_step": 1999,
+          "source": "results/round1/rig/seed2/evaluation_metrics_v2.json",
+          "skin_l1_element": 0.034439541418775546,
+          "skin_l1_vector": 0.8187481267506261,
+          "skin_l2_vector": 0.47179888701373807,
+          "skin_precision": 0.60547407152174,
+          "skin_recall": 0.8435872395833333,
+          "j2j": 0.12872555996975088,
+          "j2b": 0.1189867604663137,
+          "b2b": 0.1079048813148245,
+          "joint_count": 96.0,
+          "capped": 32,
+          "test_assets": 32,
+          "coordinate_accuracy": 0.03427901159739122,
+          "parent_accuracy": 0.4545524432323873,
+          "teacher_eos_recall": 0.0,
+          "teacher_j2j": 0.13488472782559927,
+          "quantized_gt_j2j": 0.003729295654675414,
+          "metric_b2b_dense_max_difference": 0.002470295273022463
+        }
+      ],
+      "metrics": {
+        "skin_l1_element": {
+          "mean": 0.03484147797373952,
+          "std": 0.0008406017464446846
+        },
+        "skin_l1_vector": {
+          "mean": 0.8366155637954117,
+          "std": 0.020067627917268217
+        },
+        "skin_l2_vector": {
+          "mean": 0.4838224449656286,
+          "std": 0.014097409789117853
+        },
+        "skin_precision": {
+          "mean": 0.6061581184567024,
+          "std": 0.0014750846406840874
+        },
+        "skin_recall": {
+          "mean": 0.8393178304036457,
+          "std": 0.011751504308099969
+        },
+        "j2j": {
+          "mean": 0.13340925563490266,
+          "std": 0.01167307091756985
+        },
+        "j2b": {
+          "mean": 0.12361330393107517,
+          "std": 0.013482854036647245
+        },
+        "b2b": {
+          "mean": 0.11168822997156232,
+          "std": 0.011315388512980775
+        },
+        "joint_count": {
+          "mean": 96.0,
+          "std": 0.0
+        },
+        "coordinate_accuracy": {
+          "mean": 0.0373740772435364,
+          "std": 0.0042621848454276684
+        },
+        "parent_accuracy": {
+          "mean": 0.4622566366257767,
+          "std": 0.014563796789835156
+        },
+        "teacher_eos_recall": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "teacher_j2j": {
+          "mean": 0.13344931597384493,
+          "std": 0.0026949417964370706
+        },
+        "quantized_gt_j2j": {
+          "mean": 0.003729295654675414,
+          "std": 0.0
+        },
+        "metric_b2b_dense_max_difference": {
+          "mean": 0.0029170956480654062,
+          "std": 0.00041597180109824265
+        }
+      },
+      "capped_runs": 96,
+      "evaluations": 96
+    },
+    {
+      "suite": "round1",
+      "mode": "geometry",
+      "name": "Geometry rig",
+      "runs": [
+        {
+          "seed": 0,
+          "best_step": 1999,
+          "source": "results/round1/geometry/seed0/evaluation_metrics_v2.json",
+          "skin_l1_element": 0.0357096329472851,
+          "skin_l1_vector": 0.8575124684740347,
+          "skin_l2_vector": 0.49852976653336606,
+          "skin_precision": 0.6095850770594423,
+          "skin_recall": 0.8276051839192708,
+          "j2j": 0.14796101861063501,
+          "j2b": 0.1397685430509023,
+          "b2b": 0.12511063917657952,
+          "joint_count": 96.0,
+          "capped": 32,
+          "test_assets": 32,
+          "coordinate_accuracy": 0.04235447537212167,
+          "parent_accuracy": 0.47600290831178427,
+          "teacher_eos_recall": 0.0,
+          "teacher_j2j": 0.13459310712420947,
+          "quantized_gt_j2j": 0.003729295654675414,
+          "metric_b2b_dense_max_difference": 0.003497544195802893
+        },
+        {
+          "seed": 1,
+          "best_step": 1999,
+          "source": "results/round1/geometry/seed1/evaluation_metrics_v2.json",
+          "skin_l1_element": 0.034569606012545565,
+          "skin_l1_vector": 0.8371964294110732,
+          "skin_l2_vector": 0.4834071486761212,
+          "skin_precision": 0.6013601229635166,
+          "skin_recall": 0.8471638997395834,
+          "j2j": 0.1285066487544831,
+          "j2b": 0.11650411554150769,
+          "b2b": 0.10468530656126579,
+          "joint_count": 96.0,
+          "capped": 32,
+          "test_assets": 32,
+          "coordinate_accuracy": 0.03543139377143234,
+          "parent_accuracy": 0.45404087472707033,
+          "teacher_eos_recall": 0.0,
+          "teacher_j2j": 0.13159293460642427,
+          "quantized_gt_j2j": 0.003729295654675414,
+          "metric_b2b_dense_max_difference": 0.002772371586236763
+        },
+        {
+          "seed": 2,
+          "best_step": 1999,
+          "source": "results/round1/geometry/seed2/evaluation_metrics_v2.json",
+          "skin_l1_element": 0.03442615599572858,
+          "skin_l1_vector": 0.8177224012460466,
+          "skin_l2_vector": 0.47189497055600554,
+          "skin_precision": 0.6072368542644422,
+          "skin_recall": 0.8428324381510417,
+          "j2j": 0.1307788339101413,
+          "j2b": 0.12168752249041659,
+          "b2b": 0.10777172879017369,
+          "joint_count": 96.0,
+          "capped": 32,
+          "test_assets": 32,
+          "coordinate_accuracy": 0.034249656775500625,
+          "parent_accuracy": 0.45337941125035286,
+          "teacher_eos_recall": 0.0,
+          "teacher_j2j": 0.13442867535071887,
+          "quantized_gt_j2j": 0.003729295654675414,
+          "metric_b2b_dense_max_difference": 0.0021286742916761525
+        }
+      ],
+      "metrics": {
+        "skin_l1_element": {
+          "mean": 0.03490179831851975,
+          "std": 0.0007032723991495326
+        },
+        "skin_l1_vector": {
+          "mean": 0.8374770997103848,
+          "std": 0.01989651839806757
+        },
+        "skin_l2_vector": {
+          "mean": 0.4846106285884976,
+          "std": 0.013358119707261388
+        },
+        "skin_precision": {
+          "mean": 0.606060684762467,
+          "std": 0.004236743855020465
+        },
+        "skin_recall": {
+          "mean": 0.8392005072699652,
+          "std": 0.010272732478684689
+        },
+        "j2j": {
+          "mean": 0.1357488337584198,
+          "std": 0.010636907468522248
+        },
+        "j2b": {
+          "mean": 0.12598672702760885,
+          "std": 0.01221354848413966
+        },
+        "b2b": {
+          "mean": 0.11252255817600633,
+          "std": 0.011010283284344596
+        },
+        "joint_count": {
+          "mean": 96.0,
+          "std": 0.0
+        },
+        "coordinate_accuracy": {
+          "mean": 0.03734517530635154,
+          "std": 0.004378234911877371
+        },
+        "parent_accuracy": {
+          "mean": 0.46114106476306915,
+          "std": 0.01287498266921636
+        },
+        "teacher_eos_recall": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "teacher_j2j": {
+          "mean": 0.13353823902711756,
+          "std": 0.0016866880028357026
+        },
+        "quantized_gt_j2j": {
+          "mean": 0.003729295654675414,
+          "std": 0.0
+        },
+        "metric_b2b_dense_max_difference": {
+          "mean": 0.0027995300245719362,
+          "std": 0.0006848389512765698
+        }
+      },
+      "capped_runs": 96,
+      "evaluations": 96
+    },
+    {
+      "suite": "round1_balanced",
+      "mode": "rig",
+      "name": "Balanced EOS",
+      "runs": [
+        {
+          "seed": 0,
+          "best_step": 800,
+          "source": "results/round1_balanced/rig/seed0/evaluation_metrics_v2.json",
+          "skin_l1_element": 0.03686765127222237,
+          "skin_l1_vector": 0.8930040321241522,
+          "skin_l2_vector": 0.5064247776379094,
+          "skin_precision": 0.5658004342391549,
+          "skin_recall": 0.8495188395182292,
+          "j2j": 0.16489700276631192,
+          "j2b": 0.15795117325839314,
+          "b2b": 0.14069651173280873,
+          "joint_count": 48.59375,
+          "capped": 1,
+          "test_assets": 32,
+          "coordinate_accuracy": 0.04085506676346995,
+          "parent_accuracy": 0.34804874286055565,
+          "teacher_eos_recall": 0.4375,
+          "teacher_j2j": 0.14351798173142144,
+          "quantized_gt_j2j": 0.003729295654675414,
+          "metric_b2b_dense_max_difference": 0.0026981595042209205
+        },
+        {
+          "seed": 1,
+          "best_step": 1000,
+          "source": "results/round1_balanced/rig/seed1/evaluation_metrics_v2.json",
+          "skin_l1_element": 0.034968240221736176,
+          "skin_l1_vector": 0.8532266385181494,
+          "skin_l2_vector": 0.48900737699222474,
+          "skin_precision": 0.5882207956228341,
+          "skin_recall": 0.8504445393880209,
+          "j2j": 0.14179816200174047,
+          "j2b": 0.13063433532681723,
+          "b2b": 0.11578516891760224,
+          "joint_count": 41.90625,
+          "capped": 1,
+          "test_assets": 32,
+          "coordinate_accuracy": 0.037346721554058604,
+          "parent_accuracy": 0.37744842283427715,
+          "teacher_eos_recall": 0.375,
+          "teacher_j2j": 0.13407335884676405,
+          "quantized_gt_j2j": 0.003729295654675414,
+          "metric_b2b_dense_max_difference": 0.004090078768305069
+        },
+        {
+          "seed": 2,
+          "best_step": 800,
+          "source": "results/round1_balanced/rig/seed2/evaluation_metrics_v2.json",
+          "skin_l1_element": 0.03578218148763302,
+          "skin_l1_vector": 0.8676378127096378,
+          "skin_l2_vector": 0.49075311219591017,
+          "skin_precision": 0.5687816523754023,
+          "skin_recall": 0.8548645019531249,
+          "j2j": 0.1437420476469329,
+          "j2b": 0.13412017177951308,
+          "b2b": 0.118937100570825,
+          "joint_count": 47.84375,
+          "capped": 0,
+          "test_assets": 32,
+          "coordinate_accuracy": 0.02664562829886563,
+          "parent_accuracy": 0.34449169924482703,
+          "teacher_eos_recall": 0.40625,
+          "teacher_j2j": 0.13866762337341054,
+          "quantized_gt_j2j": 0.003729295654675414,
+          "metric_b2b_dense_max_difference": 0.0034497371403480193
+        }
+      ],
+      "metrics": {
+        "skin_l1_element": {
+          "mean": 0.03587269099386386,
+          "std": 0.0009529347106260114
+        },
+        "skin_l1_vector": {
+          "mean": 0.8712894944506465,
+          "std": 0.02013855370117058
+        },
+        "skin_l2_vector": {
+          "mean": 0.4953950889420147,
+          "std": 0.009591789321946445
+        },
+        "skin_precision": {
+          "mean": 0.5742676274124638,
+          "std": 0.012175388812031404
+        },
+        "skin_recall": {
+          "mean": 0.8516092936197918,
+          "std": 0.0028568367178200497
+        },
+        "j2j": {
+          "mean": 0.15014573747166174,
+          "std": 0.012811890715084125
+        },
+        "j2b": {
+          "mean": 0.1409018934549078,
+          "std": 0.014867623223194931
+        },
+        "b2b": {
+          "mean": 0.125139593740412,
+          "std": 0.013564547222567544
+        },
+        "joint_count": {
+          "mean": 46.114583333333336,
+          "std": 3.6637654241686017
+        },
+        "coordinate_accuracy": {
+          "mean": 0.03494913887213139,
+          "std": 0.00740191444204485
+        },
+        "parent_accuracy": {
+          "mean": 0.3566629549798866,
+          "std": 0.018088391174050717
+        },
+        "teacher_eos_recall": {
+          "mean": 0.40625,
+          "std": 0.03125
+        },
+        "teacher_j2j": {
+          "mean": 0.13875298798386534,
+          "std": 0.004722890078742791
+        },
+        "quantized_gt_j2j": {
+          "mean": 0.003729295654675414,
+          "std": 0.0
+        },
+        "metric_b2b_dense_max_difference": {
+          "mean": 0.003412658470958003,
+          "std": 0.0006967000288681924
+        }
+      },
+      "capped_runs": 2,
+      "evaluations": 96
+    }
+  ],
+  "baselines": {
+    "nearest_bone_temperature": 0.02,
+    "skin_l1_element": 0.03500875595528269,
+    "surface_retrieval_j2j": 0.10014697771138886
+  }
+}

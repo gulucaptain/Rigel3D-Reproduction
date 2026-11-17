@@ -1,0 +1,196 @@
+{
+  "scope": "Single TRAIN asset memorization, GT rig reconstruction context; no held-out claim",
+  "asset_name": "fbx_9/fe4e4600907ef00ffe6bd8c7bd6fa42e2bcae5c636e1b28343cc1de9c39f6cde",
+  "seed": 0,
+  "steps": 2000,
+  "elapsed_s": 28.33828862500377,
+  "trace": [
+    {
+      "step": 0,
+      "loss": 8.499649047851562,
+      "coordinate_accuracy": 0.027027027681469917,
+      "parent_accuracy": 0.0810810774564743,
+      "eos_at_true_end": false,
+      "generated_count": 6,
+      "gt_count": 37,
+      "free_metrics": {
+        "j2j": 0.28846436148504706,
+        "j2b": 0.22151311518508832,
+        "b2b": 0.18387482769272137,
+        "step": 0.005
+      },
+      "eos": true,
+      "capped": false
+    },
+    {
+      "step": 200,
+      "loss": 3.562818765640259,
+      "coordinate_accuracy": 0.6576576828956604,
+      "parent_accuracy": 0.9729729890823364,
+      "eos_at_true_end": true,
+      "generated_count": 53,
+      "gt_count": 37,
+      "free_metrics": {
+        "j2j": 0.08974545030833916,
+        "j2b": 0.06901690588075496,
+        "b2b": 0.07916560316927326,
+        "step": 0.005
+      },
+      "eos": true,
+      "capped": false
+    },
+    {
+      "step": 400,
+      "loss": 1.4425334930419922,
+      "coordinate_accuracy": 0.9909909963607788,
+      "parent_accuracy": 1.0,
+      "eos_at_true_end": true,
+      "generated_count": 35,
+      "gt_count": 37,
+      "free_metrics": {
+        "j2j": 0.004951667039173397,
+        "j2b": 0.004199051797895081,
+        "b2b": 0.0031680645524245193,
+        "step": 0.005
+      },
+      "eos": true,
+      "capped": false
+    },
+    {
+      "step": 600,
+      "loss": 0.6948813199996948,
+      "coordinate_accuracy": 1.0,
+      "parent_accuracy": 1.0,
+      "eos_at_true_end": true,
+      "generated_count": 37,
+      "gt_count": 37,
+      "free_metrics": {
+        "j2j": 0.003586920636501699,
+        "j2b": 0.003279378695282215,
+        "b2b": 0.00286076394444703,
+        "step": 0.005
+      },
+      "eos": true,
+      "capped": false
+    },
+    {
+      "step": 800,
+      "loss": 0.39358898997306824,
+      "coordinate_accuracy": 1.0,
+      "parent_accuracy": 1.0,
+      "eos_at_true_end": true,
+      "generated_count": 37,
+      "gt_count": 37,
+      "free_metrics": {
+        "j2j": 0.003586920636501699,
+        "j2b": 0.003279378695282215,
+        "b2b": 0.00286076394444703,
+        "step": 0.005
+      },
+      "eos": true,
+      "capped": false
+    },
+    {
+      "step": 1000,
+      "loss": 0.2500479221343994,
+      "coordinate_accuracy": 1.0,
+      "parent_accuracy": 1.0,
+      "eos_at_true_end": true,
+      "generated_count": 37,
+      "gt_count": 37,
+      "free_metrics": {
+        "j2j": 0.003586920636501699,
+        "j2b": 0.003279378695282215,
+        "b2b": 0.00286076394444703,
+        "step": 0.005
+      },
+      "eos": true,
+      "capped": false
+    },
+    {
+      "step": 1200,
+      "loss": 0.17194588482379913,
+      "coordinate_accuracy": 1.0,
+      "parent_accuracy": 1.0,
+      "eos_at_true_end": true,
+      "generated_count": 37,
+      "gt_count": 37,
+      "free_metrics": {
+        "j2j": 0.003586920636501699,
+        "j2b": 0.003279378695282215,
+        "b2b": 0.00286076394444703,
+        "step": 0.005
+      },
+      "eos": true,
+      "capped": false
+    },
+    {
+      "step": 1400,
+      "loss": 0.12495934963226318,
+      "coordinate_accuracy": 1.0,
+      "parent_accuracy": 1.0,
+      "eos_at_true_end": true,
+      "generated_count": 37,
+      "gt_count": 37,
+      "free_metrics": {
+        "j2j": 0.003586920636501699,
+        "j2b": 0.003279378695282215,
+        "b2b": 0.00286076394444703,
+        "step": 0.005
+      },
+      "eos": true,
+      "capped": false
+    },
+    {
+      "step": 1600,
+      "loss": 0.0945083424448967,
+      "coordinate_accuracy": 1.0,
+      "parent_accuracy": 1.0,
+      "eos_at_true_end": true,
+      "generated_count": 37,
+      "gt_count": 37,
+      "free_metrics": {
+        "j2j": 0.003586920636501699,
+        "j2b": 0.003279378695282215,
+        "b2b": 0.00286076394444703,
+        "step": 0.005
+      },
+      "eos": true,
+      "capped": false
+    },
+    {
+      "step": 1800,
+      "loss": 0.07363642752170563,
+      "coordinate_accuracy": 1.0,
+      "parent_accuracy": 1.0,
+      "eos_at_true_end": true,
+      "generated_count": 37,
+      "gt_count": 37,
+      "free_metrics": {
+        "j2j": 0.003586920636501699,
+        "j2b": 0.003279378695282215,
+        "b2b": 0.00286076394444703,
+        "step": 0.005
+      },
+      "eos": true,
+      "capped": false
+    },
+    {
+      "step": 1999,
+      "loss": 0.058763645589351654,
+      "coordinate_accuracy": 1.0,
+      "parent_accuracy": 1.0,
+      "eos_at_true_end": true,
+      "generated_count": 37,
+      "gt_count": 37,
+      "free_metrics": {
+        "j2j": 0.003586920636501699,
+        "j2b": 0.003279378695282215,
+        "b2b": 0.00286076394444703,
+        "step": 0.005
+      },
+      "eos": true,
+      "capped": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "steps": 2000,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "mode": "rig",
+  "device": "mps",
+  "name": "round1",
+  "points": 256,
+  "batch": 4,
+  "width": 64,
+  "layers": 2,
+  "seed": 0,
+  "parameters": 596962,
+  "lr": 0.0001,
+  "warmup_steps": 200,
+  "scheduler": "linear warmup then cosine",
+  "source_manifest_sha256": "f7aac77af2315df0cab124afe34145e8229e65c93956aac20fd02d54e0ad7ea7",
+  "task_scope": "Local geometry-feature decoder training. GT bones at skinning evaluation; rig mode context also encodes GT skin weights. Not image-conditioned generation or full Sparse VAE.",
+  "checkpoint_selection": "Minimum validation teacher-forced skeleton+skin CE; test not used for selection"
+}

@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "source": "results/round1/geometry/seed0/evaluation.json",
+      "cpu_validation": 7.3408374562859535,
+      "recorded_validation": 7.340836882591248,
+      "absolute_difference": 5.736947059631348e-07,
+      "skin_prediction_max_difference": 2.384185791015625e-06,
+      "passed": true
+    },
+    {
+      "source": "results/round1/geometry/seed1/evaluation.json",
+      "cpu_validation": 7.415694199502468,
+      "recorded_validation": 7.41569396853447,
+      "absolute_difference": 2.3096799850463867e-07,
+      "skin_prediction_max_difference": 1.430511474609375e-06,
+      "passed": true
+    },
+    {
+      "source": "results/round1/geometry/seed2/evaluation.json",
+      "cpu_validation": 7.1934299021959305,
+      "recorded_validation": 7.1934297531843185,
+      "absolute_difference": 1.4901161193847656e-07,
+      "skin_prediction_max_difference": 3.0994415283203125e-06,
+      "passed": true
+    },
+    {
+      "source": "results/round1/rig/seed0/evaluation.json",
+      "cpu_validation": 7.357584521174431,
+      "recorded_validation": 7.357584364712238,
+      "absolute_difference": 1.564621925354004e-07,
+      "skin_prediction_max_difference": 1.4901161193847656e-06,
+      "passed": true
+    },
+    {
+      "source": "results/round1/rig/seed1/evaluation.json",
+      "cpu_validation": 7.443816527724266,
+      "recorded_validation": 7.443816289305687,
+      "absolute_difference": 2.384185791015625e-07,
+      "skin_prediction_max_difference": 2.3543834686279297e-06,
+      "passed": true
+    },
+    {
+      "source": "results/round1/rig/seed2/evaluation.json",
+      "cpu_validation": 7.194915518164635,
+      "recorded_validation": 7.194915235042572,
+      "absolute_difference": 2.8312206268310547e-07,
+      "skin_prediction_max_difference": 1.9073486328125e-06,
+      "passed": true
+    }
+  ]
+}

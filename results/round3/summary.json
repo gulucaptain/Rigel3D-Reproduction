@@ -1,0 +1,566 @@
+{
+  "scope": "Fixed aligned original cohort:25 train /6 validation /10 test,24/6/10 eligible skeletons. All 3 seeds retained; original benchmark tables remain unmatched.",
+  "official_pretrained": {
+    "revision": "25e0d31ffbebe4b5a97464dd851910efc3002d96",
+    "source_commit": "193e0502b5cb3eb5997ec457d5340e95d09b158e",
+    "gt_mesh_reconstruction": {
+      "cases": 10,
+      "nonempty": 10,
+      "chamfer_nonempty": 0.009866607072198282,
+      "chamfer_all_empty_penalty": 0.009866607072198282
+    },
+    "gt_support_shell_oracle": {
+      "cases": 10,
+      "nonempty": 10,
+      "chamfer_nonempty": 0.013113408537732288,
+      "chamfer_all_empty_penalty": 0.013113408537732288
+    },
+    "gt_occupancy_iou": {
+      "surface": 0.9837962985038757,
+      "rig": 1.0
+    }
+  },
+  "frozen_decoder_control": {
+    "runs": [
+      {
+        "seed": 0,
+        "j2j": 0.1636291654813981,
+        "skin_l1": 0.03700818843729871,
+        "cap_hits": 1
+      },
+      {
+        "seed": 1,
+        "j2j": 0.13629602734378718,
+        "skin_l1": 0.03471372958215458,
+        "cap_hits": 0
+      },
+      {
+        "seed": 2,
+        "j2j": 0.15529276958718774,
+        "skin_l1": 0.03570694988184479,
+        "cap_hits": 0
+      }
+    ],
+    "j2j": {
+      "mean": 0.15173932080412433,
+      "std": 0.014008760073711782
+    },
+    "skin_l1": {
+      "mean": 0.03580962263376603,
+      "std": 0.0011506700786835622
+    },
+    "cap_hits": 1
+  },
+  "reconstruction": [
+    {
+      "run": "joint_frozen_surface",
+      "label": "Joint adapters",
+      "runs": [
+        {
+          "cases": 10,
+          "nonempty": 10,
+          "chamfer_nonempty": 0.011102529341499658,
+          "chamfer_all_empty_penalty": 0.011102529341499658,
+          "seed": 0,
+          "j2j": 0.1501374836653214,
+          "j2b": 0.1387749902027221,
+          "b2b": 0.12598366801632443,
+          "cap_hits": 0,
+          "skin_l1": 0.03685723209512971,
+          "ar_rig_iou": 0.004541327045226725
+        },
+        {
+          "cases": 10,
+          "nonempty": 10,
+          "chamfer_nonempty": 0.01107998224094568,
+          "chamfer_all_empty_penalty": 0.01107998224094568,
+          "seed": 1,
+          "j2j": 0.13842775253589973,
+          "j2b": 0.1287367118673421,
+          "b2b": 0.12444768393699075,
+          "cap_hits": 10,
+          "skin_l1": 0.033352197085716295,
+          "ar_rig_iou": 0.008012014389736517
+        },
+        {
+          "cases": 10,
+          "nonempty": 10,
+          "chamfer_nonempty": 0.011084148934081613,
+          "chamfer_all_empty_penalty": 0.011084148934081613,
+          "seed": 2,
+          "j2j": 0.13859116931123597,
+          "j2b": 0.129383592164028,
+          "b2b": 0.11610472094463531,
+          "cap_hits": 5,
+          "skin_l1": 0.03436466777557977,
+          "ar_rig_iou": 0.010541302643571277
+        }
+      ],
+      "metrics": {
+        "chamfer_all_empty_penalty": {
+          "mean": 0.011088886838842316,
+          "std": 1.1997030548803584e-05
+        },
+        "j2j": {
+          "mean": 0.14238546850415235,
+          "std": 0.006713939272503233
+        },
+        "j2b": {
+          "mean": 0.13229843141136408,
+          "std": 0.005618182434114962
+        },
+        "b2b": {
+          "mean": 0.1221786909659835,
+          "std": 0.00531598021423792
+        },
+        "skin_l1": {
+          "mean": 0.034858032318808595,
+          "std": 0.0018038497813537494
+        },
+        "ar_rig_iou": {
+          "mean": 0.007698214692844839,
+          "std": 0.0030122714822056625
+        }
+      },
+      "nonempty": 30,
+      "cap_hits": 15,
+      "evaluations": 30
+    },
+    {
+      "run": "full_joint",
+      "label": "Full-weight short stage",
+      "runs": [
+        {
+          "cases": 10,
+          "nonempty": 10,
+          "chamfer_nonempty": 0.011489433988430003,
+          "chamfer_all_empty_penalty": 0.011489433988430003,
+          "seed": 0,
+          "j2j": 0.15279503550801854,
+          "j2b": 0.14191664381190452,
+          "b2b": 0.13181251896828658,
+          "cap_hits": 0,
+          "skin_l1": 0.0343814969092317,
+          "ar_rig_iou": 0.0054650780362934265
+        },
+        {
+          "cases": 10,
+          "nonempty": 10,
+          "chamfer_nonempty": 0.012557136802873653,
+          "chamfer_all_empty_penalty": 0.012557136802873653,
+          "seed": 1,
+          "j2j": 0.1326353062586956,
+          "j2b": 0.12306141067275793,
+          "b2b": 0.11523266300490498,
+          "cap_hits": 10,
+          "skin_l1": 0.03218184872569325,
+          "ar_rig_iou": 0.009663390056164439
+        },
+        {
+          "cases": 10,
+          "nonempty": 10,
+          "chamfer_nonempty": 0.011319891049447283,
+          "chamfer_all_empty_penalty": 0.011319891049447283,
+          "seed": 2,
+          "j2j": 0.13729131147916473,
+          "j2b": 0.12811756967751164,
+          "b2b": 0.11583061585646633,
+          "cap_hits": 5,
+          "skin_l1": 0.032464321318963735,
+          "ar_rig_iou": 0.006664941893499544
+        }
+      ],
+      "metrics": {
+        "chamfer_all_empty_penalty": {
+          "mean": 0.011788820613583648,
+          "std": 0.0006707596641745554
+        },
+        "j2j": {
+          "mean": 0.14090721774862627,
+          "std": 0.010555081925956342
+        },
+        "j2b": {
+          "mean": 0.1310318747207247,
+          "std": 0.009759602174093255
+        },
+        "b2b": {
+          "mean": 0.12095859927655263,
+          "std": 0.009404523720483143
+        },
+        "skin_l1": {
+          "mean": 0.03300922231796289,
+          "std": 0.001196787724230457
+        },
+        "ar_rig_iou": {
+          "mean": 0.007264469995319136,
+          "std": 0.002162413330679846
+        }
+      },
+      "nonempty": 30,
+      "cap_hits": 15,
+      "evaluations": 30
+    }
+  ],
+  "generation": [
+    {
+      "run": "generation",
+      "label": "Adapters / standard MSE",
+      "runs": [
+        {
+          "cases": 10,
+          "nonempty": 1,
+          "chamfer_nonempty": 0.13796442888846475,
+          "chamfer_all_empty_penalty": 1.572642169700836,
+          "seed": 0,
+          "decoded": 1,
+          "cap_hits": 0,
+          "j2j_all_empty_penalty": 1.5703350460789314,
+          "surface_iou": 0.008126031504091236,
+          "rig_iou": 0.0
+        },
+        {
+          "cases": 10,
+          "nonempty": 4,
+          "chamfer_nonempty": 0.17576724489400122,
+          "chamfer_all_empty_penalty": 1.1095373824989267,
+          "seed": 1,
+          "decoded": 4,
+          "cap_hits": 3,
+          "j2j_all_empty_penalty": 1.0843608387448032,
+          "surface_iou": 0.006191700832950965,
+          "rig_iou": 0.0002777777777777778
+        },
+        {
+          "cases": 10,
+          "nonempty": 0,
+          "chamfer_nonempty": null,
+          "chamfer_all_empty_penalty": 1.7320508075688772,
+          "seed": 2,
+          "decoded": 0,
+          "cap_hits": 0,
+          "j2j_all_empty_penalty": 1.7320508075688772,
+          "surface_iou": 0.0002343186733958183,
+          "rig_iou": 0.0
+        }
+      ],
+      "metrics": {
+        "chamfer_all_empty_penalty": {
+          "mean": 1.47141011992288,
+          "std": 0.3233677272468066
+        },
+        "j2j_all_empty_penalty": {
+          "mean": 1.4622488974642038,
+          "std": 0.33710166948653075
+        },
+        "surface_iou": {
+          "mean": 0.004850683670146007,
+          "std": 0.004113213843668205
+        },
+        "rig_iou": {
+          "mean": 9.259259259259259e-05,
+          "std": 0.00016037507477489605
+        }
+      },
+      "failures": {
+        "empty_predicted_rig_occupancy": 10,
+        "empty_predicted_surface_occupancy": 15,
+        "none": 5
+      },
+      "evaluations": 30,
+      "nonempty": 5,
+      "decoded": 5,
+      "cap_hits": 3
+    },
+    {
+      "run": "generation_balanced_rig",
+      "label": "Adapters / balanced rig",
+      "runs": [
+        {
+          "cases": 10,
+          "nonempty": 10,
+          "chamfer_nonempty": 0.09729235822581009,
+          "chamfer_all_empty_penalty": 0.09729235822581009,
+          "seed": 0,
+          "decoded": 10,
+          "cap_hits": 0,
+          "j2j_all_empty_penalty": 0.15647791404454514,
+          "surface_iou": 0.014004348043740747,
+          "rig_iou": 0.003143927101908652
+        },
+        {
+          "cases": 10,
+          "nonempty": 10,
+          "chamfer_nonempty": 0.16243349159319714,
+          "chamfer_all_empty_penalty": 0.16243349159319714,
+          "seed": 1,
+          "decoded": 10,
+          "cap_hits": 8,
+          "j2j_all_empty_penalty": 0.13542112496683162,
+          "surface_iou": 0.004649889959471302,
+          "rig_iou": 0.003544478988298954
+        },
+        {
+          "cases": 10,
+          "nonempty": 3,
+          "chamfer_nonempty": 0.13662447774154265,
+          "chamfer_all_empty_penalty": 1.2534229086206767,
+          "seed": 2,
+          "decoded": 3,
+          "cap_hits": 1,
+          "j2j_all_empty_penalty": 1.2610755618754454,
+          "surface_iou": 0.0015850316513657287,
+          "rig_iou": 0.002948446127826257
+        }
+      ],
+      "metrics": {
+        "chamfer_all_empty_penalty": {
+          "mean": 0.5043829194798947,
+          "std": 0.6495048273978525
+        },
+        "j2j_all_empty_penalty": {
+          "mean": 0.5176582002956074,
+          "std": 0.6439044006801876
+        },
+        "surface_iou": {
+          "mean": 0.006746423218192593,
+          "std": 0.006469655608467277
+        },
+        "rig_iou": {
+          "mean": 0.0032122840726779545,
+          "std": 0.0003038392655342342
+        }
+      },
+      "failures": {
+        "none": 23,
+        "empty_predicted_surface_occupancy": 7
+      },
+      "evaluations": 30,
+      "nonempty": 23,
+      "decoded": 23,
+      "cap_hits": 9
+    },
+    {
+      "run": "generation_full_joint",
+      "label": "Full weights / standard MSE",
+      "runs": [
+        {
+          "cases": 10,
+          "nonempty": 1,
+          "chamfer_nonempty": 0.1343802661313668,
+          "chamfer_all_empty_penalty": 1.572283753425126,
+          "seed": 0,
+          "decoded": 1,
+          "cap_hits": 0,
+          "j2j_all_empty_penalty": 1.5697995880218558,
+          "surface_iou": 0.008126031504091236,
+          "rig_iou": 0.0
+        },
+        {
+          "cases": 10,
+          "nonempty": 4,
+          "chamfer_nonempty": 0.183265161997067,
+          "chamfer_all_empty_penalty": 1.1125365493401531,
+          "seed": 1,
+          "decoded": 4,
+          "cap_hits": 4,
+          "j2j_all_empty_penalty": 1.084592326973592,
+          "surface_iou": 0.006191700832950965,
+          "rig_iou": 0.0002777777777777778
+        },
+        {
+          "cases": 10,
+          "nonempty": 0,
+          "chamfer_nonempty": null,
+          "chamfer_all_empty_penalty": 1.7320508075688772,
+          "seed": 2,
+          "decoded": 0,
+          "cap_hits": 0,
+          "j2j_all_empty_penalty": 1.7320508075688772,
+          "surface_iou": 0.0002343186733958183,
+          "rig_iou": 0.0
+        }
+      ],
+      "metrics": {
+        "chamfer_all_empty_penalty": {
+          "mean": 1.4722903701113854,
+          "std": 0.3216340880054041
+        },
+        "j2j_all_empty_penalty": {
+          "mean": 1.4621475741881085,
+          "std": 0.33688623908603754
+        },
+        "surface_iou": {
+          "mean": 0.004850683670146007,
+          "std": 0.004113213843668205
+        },
+        "rig_iou": {
+          "mean": 9.259259259259259e-05,
+          "std": 0.00016037507477489605
+        }
+      },
+      "failures": {
+        "empty_predicted_rig_occupancy": 10,
+        "empty_predicted_surface_occupancy": 15,
+        "none": 5
+      },
+      "evaluations": 30,
+      "nonempty": 5,
+      "decoded": 5,
+      "cap_hits": 4
+    },
+    {
+      "run": "generation_full_joint_balanced",
+      "label": "Full weights / balanced rig",
+      "runs": [
+        {
+          "cases": 10,
+          "nonempty": 10,
+          "chamfer_nonempty": 0.09666685851450757,
+          "chamfer_all_empty_penalty": 0.09666685851450757,
+          "seed": 0,
+          "decoded": 10,
+          "cap_hits": 0,
+          "j2j_all_empty_penalty": 0.14691160599392722,
+          "surface_iou": 0.014004348043740747,
+          "rig_iou": 0.003143927101908652
+        },
+        {
+          "cases": 10,
+          "nonempty": 10,
+          "chamfer_nonempty": 0.16470295765219287,
+          "chamfer_all_empty_penalty": 0.16470295765219287,
+          "seed": 1,
+          "decoded": 10,
+          "cap_hits": 6,
+          "j2j_all_empty_penalty": 0.13497517092120562,
+          "surface_iou": 0.004649889959471302,
+          "rig_iou": 0.003544478988298954
+        },
+        {
+          "cases": 10,
+          "nonempty": 3,
+          "chamfer_nonempty": 0.13649945288666546,
+          "chamfer_all_empty_penalty": 1.2533854011642136,
+          "seed": 2,
+          "decoded": 3,
+          "cap_hits": 0,
+          "j2j_all_empty_penalty": 1.2632663165823304,
+          "surface_iou": 0.0015850316513657287,
+          "rig_iou": 0.002948446127826257
+        }
+      ],
+      "metrics": {
+        "chamfer_all_empty_penalty": {
+          "mean": 0.5049184057769713,
+          "std": 0.6490834769769392
+        },
+        "j2j_all_empty_penalty": {
+          "mean": 0.5150510311658211,
+          "std": 0.6480009294891039
+        },
+        "surface_iou": {
+          "mean": 0.006746423218192593,
+          "std": 0.006469655608467277
+        },
+        "rig_iou": {
+          "mean": 0.0032122840726779545,
+          "std": 0.0003038392655342342
+        }
+      },
+      "failures": {
+        "none": 23,
+        "empty_predicted_surface_occupancy": 7
+      },
+      "evaluations": 30,
+      "nonempty": 23,
+      "decoded": 23,
+      "cap_hits": 6
+    }
+  ],
+  "eos": [
+    {
+      "seed": 0,
+      "threshold": 0.5,
+      "main_caps": 0,
+      "calibrated_caps": 0,
+      "main_j2j": 0.1501374836653214,
+      "calibrated_j2j": 0.1501374836653214
+    },
+    {
+      "seed": 1,
+      "threshold": 0.3,
+      "main_caps": 10,
+      "calibrated_caps": 10,
+      "main_j2j": 0.13842775253589973,
+      "calibrated_j2j": 0.13842775253589973
+    },
+    {
+      "seed": 2,
+      "threshold": 0.4,
+      "main_caps": 5,
+      "calibrated_caps": 3,
+      "main_j2j": 0.13859116931123597,
+      "calibrated_j2j": 0.14099925513366302
+    }
+  ],
+  "coordinate_diagnostics": [
+    {
+      "seed": 0,
+      "teacher_matched_l2": 0.3317345435213622,
+      "gt_rig_supported_teacher_l2": 0.3531306299999196,
+      "gt_joint_to_rig_voxel_distance": 0.007240257588800115,
+      "free_joint_to_rig_voxel_distance": 0.08172143927411875,
+      "free_fraction_within_one_voxel": 0.02652777777777778
+    },
+    {
+      "seed": 1,
+      "teacher_matched_l2": 0.3400360139305768,
+      "gt_rig_supported_teacher_l2": 0.34937976248175073,
+      "gt_joint_to_rig_voxel_distance": 0.007240257588800115,
+      "free_joint_to_rig_voxel_distance": 0.052655286283571766,
+      "free_fraction_within_one_voxel": 0.13541666666666669
+    },
+    {
+      "seed": 2,
+      "teacher_matched_l2": 0.3490629800447539,
+      "gt_rig_supported_teacher_l2": 0.3455237517302901,
+      "gt_joint_to_rig_voxel_distance": 0.007240257588800115,
+      "free_joint_to_rig_voxel_distance": 0.08815772612766845,
+      "free_fraction_within_one_voxel": 0.029682640671564724
+    }
+  ],
+  "occupancy_noise_validation": [
+    {
+      "mode": "surface",
+      "sigma": 0,
+      "iou_mean": 0.9984183520135957
+    },
+    {
+      "mode": "surface",
+      "sigma": 0.1,
+      "iou_mean": 0.9956257919926735
+    },
+    {
+      "mode": "surface",
+      "sigma": 0.5,
+      "iou_mean": 0.7923417793904535
+    },
+    {
+      "mode": "rig",
+      "sigma": 0,
+      "iou_mean": 1.0
+    },
+    {
+      "mode": "rig",
+      "sigma": 0.1,
+      "iou_mean": 1.0
+    },
+    {
+      "mode": "rig",
+      "sigma": 0.5,
+      "iou_mean": 1.0
+    }
+  ],
+  "uncertainty": "Mean and sample SD across 3 training seeds, not benchmark confidence intervals.",
+  "claim": "Actual pretrained encoder/mesh/occupancy VAEs and short full-weight joint stage executed on Mac. GT-conditioned reconstruction/oracle quality is not single-image generation. Small fresh flow architecture, patch SDF loss, short training and missing original data/metrics/labels prevent a complete paper reproduction."
+}

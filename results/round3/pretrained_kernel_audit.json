@@ -1,0 +1,44 @@
+{
+  "source": "microsoft/TRELLIS @193e0502b5cb3eb5997ec457d5340e95d09b158e",
+  "checks": [
+    {
+      "component": "surface_encoder",
+      "device": "cpu",
+      "strict_keys": 100,
+      "parameters": 85817104,
+      "finite": true,
+      "max_cpu_difference": 0,
+      "elapsed_s": 0.3628297080285847
+    },
+    {
+      "component": "surface_encoder",
+      "device": "mps",
+      "strict_keys": 100,
+      "parameters": 85817104,
+      "finite": true,
+      "max_cpu_difference": 0.017881304025650024,
+      "elapsed_s": 0.887531540938653
+    },
+    {
+      "component": "mesh_decoder",
+      "device": "mps",
+      "strict_keys": 120,
+      "parameters": 90926693,
+      "output_cubes": 320,
+      "output_channels": 101,
+      "finite": true,
+      "elapsed_s": 0.1759676670189947
+    },
+    {
+      "component": "occupancy_enc",
+      "strict_keys": 74,
+      "parameters": 59298192
+    },
+    {
+      "component": "occupancy_dec",
+      "strict_keys": 74,
+      "parameters": 73671201
+    }
+  ],
+  "limits": "Native sparse kernels verified against dense/window reference tests; no CUDA backend available for complete original-vs-native parity. Mesh geometry extraction and actual data evaluated separately."
+}

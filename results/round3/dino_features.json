@@ -1,0 +1,383 @@
+{
+  "model": "dinov2_vitl14_reg",
+  "channels": 1024,
+  "feature": "x_prenorm before final norm; register/CLS removed",
+  "input_size": 518,
+  "native_render_size": 224,
+  "views": 4,
+  "aggregation": "bilinear point projection, all-view mean then voxel pool; no visibility gating. Voxel centers are not directly projected, unlike original toolkit.",
+  "weights_sha256": "36e4deffbaef061a2576705b0c36f93621e2ae20bf6274694821b0b492551b51",
+  "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+  "scope": "Real DINO-L features; GT rig/skin pooled skeleton inputs only in reconstruction/training. Native224 neutral views and point-to-voxel pooling differ from original renders.",
+  "assets": [
+    {
+      "filename": "train_29825ccc5b5b180f.npz",
+      "split": "train",
+      "observed_fraction": 0.7972412109375,
+      "surface_voxels": 5096,
+      "rig_voxels": 335,
+      "sha256": "3c05c95f9820436ddc073ae83dfb711ae9940d6ee25c46dd7c60b816bf08b90d",
+      "trellis_feature_sha256": "6f2358d239cd672c27672db06875d88ee559d697a644fbb177675f36ab759370"
+    },
+    {
+      "filename": "train_5927672b6bea8133.npz",
+      "split": "train",
+      "observed_fraction": 0.860595703125,
+      "surface_voxels": 3628,
+      "rig_voxels": 160,
+      "sha256": "b7bd6d2268d530461e9a69ee5753f9b227cdfbc41520b87b172a5a8fae530501",
+      "trellis_feature_sha256": "bb7f97963937c58ea917b8b2f653720c6d5ca0a749c1ae3d88de8264ecaaf509"
+    },
+    {
+      "filename": "train_a0e44666673348fb.npz",
+      "split": "train",
+      "observed_fraction": 0.8416748046875,
+      "surface_voxels": 3322,
+      "rig_voxels": 348,
+      "sha256": "5380b4f61627bbe7d7288369c2350bb302db3705c3c056ea608a521b60ce0679",
+      "trellis_feature_sha256": "b686ea686268c5758fa2317e749341ea8c93dab7ec456472a6aed0808ce5034d"
+    },
+    {
+      "filename": "train_516c4309efb0d1f9.npz",
+      "split": "train",
+      "observed_fraction": 0.693359375,
+      "surface_voxels": 490,
+      "rig_voxels": 179,
+      "sha256": "54e06fad75f693bfe5abddb743c1912b2158f03285d26688603f3858beb9b74f",
+      "trellis_feature_sha256": "effdbc35f00b45f15a21f14318088e40e83bee2689e212ed5120e403a2c143e5"
+    },
+    {
+      "filename": "train_66b05e36d684fcbf.npz",
+      "split": "train",
+      "observed_fraction": 0.69677734375,
+      "surface_voxels": 4784,
+      "rig_voxels": 176,
+      "sha256": "71500fd95aa26e2baad8614fb84e04dfc7883081c82719154318df582b444cae",
+      "trellis_feature_sha256": "bb4b5f6cfa1113ec872145868f3c5d88067cc98fbdd2803ae3b05f67e50c1319"
+    },
+    {
+      "filename": "train_b81f7afa37adc85a.npz",
+      "split": "train",
+      "observed_fraction": 0.7027587890625,
+      "surface_voxels": 5564,
+      "rig_voxels": 477,
+      "sha256": "cb160cfcab0fe7a03914bbbfe42e23151e2c596a26d13e0bad78f80239ea11a6",
+      "trellis_feature_sha256": "dce7a9634b9e1edc5e2e84f2c8bebee6ae4d813f10b95f4739270371f3d5c130"
+    },
+    {
+      "filename": "train_2629dd3811b59712.npz",
+      "split": "train",
+      "observed_fraction": 0.86865234375,
+      "surface_voxels": 4606,
+      "rig_voxels": 174,
+      "sha256": "9ef976179399604221d7b92ba544a47ad40e34713bcb18646d59b848936025e0",
+      "trellis_feature_sha256": "1dc2c9d6a15d50c6a05ebef3e3c77371dc99e9b6bc40e51c70039db437457738"
+    },
+    {
+      "filename": "train_70cdcde0592a4ff4.npz",
+      "split": "train",
+      "observed_fraction": 0.9228515625,
+      "surface_voxels": 4308,
+      "rig_voxels": 212,
+      "sha256": "e47c32c989613e8162c3ab34104570757c93b418228bb3b0726f1f77bd1d2ef9",
+      "trellis_feature_sha256": "d1f22fd240a0c57bacca680571454a601d40fc5bdff8a1574107ae9711cafee8"
+    },
+    {
+      "filename": "train_0d4d4861b64d0c22.npz",
+      "split": "train",
+      "observed_fraction": 0.88134765625,
+      "surface_voxels": 3407,
+      "rig_voxels": 185,
+      "sha256": "9caef30f67c293c3fb1001eb59a7e68c21fd921c45f6583b7f2a831b27f51c12",
+      "trellis_feature_sha256": "c6fc6642cb7e0f657eedc8e43e1f94788a5ac7cfdeed621722610b874231004e"
+    },
+    {
+      "filename": "train_94de77c1a25a4a68.npz",
+      "split": "train",
+      "observed_fraction": 0.94970703125,
+      "surface_voxels": 4617,
+      "rig_voxels": 96,
+      "sha256": "da73a5d82d2e329d1a521adb00646179ad21882de552f26152985a72cdb65d18",
+      "trellis_feature_sha256": "f0abb9a5ef38a98936046db06bfae1d4040a52119b4ed56fd9ba5502debdb734"
+    },
+    {
+      "filename": "train_49fa17c86c6a41fe.npz",
+      "split": "train",
+      "observed_fraction": 0.64599609375,
+      "surface_voxels": 5983,
+      "rig_voxels": 375,
+      "sha256": "1eb1ede8087547f2ed8c5571e37bd033b86efc68e3507622d868ddfd23c4961a",
+      "trellis_feature_sha256": "e67a8d56c8b4e71d2941e39a7e6e8fc2e1c9978291bb9c33d3ed6f157a6ee7c2"
+    },
+    {
+      "filename": "train_f97d8a86af0d53a5.npz",
+      "split": "train",
+      "observed_fraction": 0.92529296875,
+      "surface_voxels": 2581,
+      "rig_voxels": 472,
+      "sha256": "37868655eca1f4fc2b26070ecaace00a0682f2398b625754fbbb58445c26cb4d",
+      "trellis_feature_sha256": "65495b736c0d48097b11c8cddd8bcb73b433bd87cf7a4d213cffc93b7f6354ed"
+    },
+    {
+      "filename": "train_bd701aae163d7b51.npz",
+      "split": "train",
+      "observed_fraction": 0.970458984375,
+      "surface_voxels": 2661,
+      "rig_voxels": 189,
+      "sha256": "44db651b4ce3ddf7c85c73973566d6db130dbf44340966240d2532732736c9e0",
+      "trellis_feature_sha256": "05f23858a7ef579730bb6b95d29789ae43fe51141ddea3a468e944a41b6341c3"
+    },
+    {
+      "filename": "train_a283de9a47ad815b.npz",
+      "split": "train",
+      "observed_fraction": 0.782958984375,
+      "surface_voxels": 3497,
+      "rig_voxels": 228,
+      "sha256": "20b735c14be60a10e0ba62ad32178e69fe597e7d04c2fd4fcfbf9abb56ff27e9",
+      "trellis_feature_sha256": "8897111c5bd34c22b05027081e0f4ec89b6c21e3a68ec2c57ec9a816846a91ec"
+    },
+    {
+      "filename": "train_3037ff9fc51c46b1.npz",
+      "split": "train",
+      "observed_fraction": 0.7835693359375,
+      "surface_voxels": 4351,
+      "rig_voxels": 271,
+      "sha256": "7cb33f23431646c35bf07e7d7d047a1bd506f9961eea3de4142d508d72ddeee9",
+      "trellis_feature_sha256": "ec4bb9cc8b96efc153567f7722308710fd36c1da16bef8261bb7e628f8505264"
+    },
+    {
+      "filename": "train_c276118efd8e7ac4.npz",
+      "split": "train",
+      "observed_fraction": 0.9500732421875,
+      "surface_voxels": 4702,
+      "rig_voxels": 301,
+      "sha256": "273c231b31a19e72296c4c5bbc8ca85659c2563bcdb2c317dd36b2854acba751",
+      "trellis_feature_sha256": "ebdbfd2bd76bdd27e34ffce27c8a42bd83d489d2c36e28c4a27a2719b1200a28"
+    },
+    {
+      "filename": "train_29c192ab10fd6d48.npz",
+      "split": "train",
+      "observed_fraction": 0.906494140625,
+      "surface_voxels": 3829,
+      "rig_voxels": 189,
+      "sha256": "693e31afa82f19b2d3a27ed8dd14d683fd6dfcc49c6f8b22a479cf9b6e8b5409",
+      "trellis_feature_sha256": "6fce2b62623138b5a0ee5cfd867e946d2125ca39b682b70bf2ee2e3ccf560efa"
+    },
+    {
+      "filename": "train_96fd14992f5b3ce4.npz",
+      "split": "train",
+      "observed_fraction": 0.9105224609375,
+      "surface_voxels": 3820,
+      "rig_voxels": 148,
+      "sha256": "3e89a65a190080c67960a87ace3d4b571098b83529a6b9130d55ee860259dff5",
+      "trellis_feature_sha256": "6d8d89b9283633fc4e53992739dda7efd974e5d6aca3101cde2ec369bb4bd7b7"
+    },
+    {
+      "filename": "train_8b9d55eebfbee837.npz",
+      "split": "train",
+      "observed_fraction": 0.9259033203125,
+      "surface_voxels": 3976,
+      "rig_voxels": 316,
+      "sha256": "7568c7a9bee91e23e522d913f164396823cf9f8acebd1ce235920dfcf729a93a",
+      "trellis_feature_sha256": "9ba1f539443d711fcc504b74b82b7d42021593e7d874dd2bf55242060ec8cbe0"
+    },
+    {
+      "filename": "train_a48bd4b2022dddfa.npz",
+      "split": "train",
+      "observed_fraction": 0.943603515625,
+      "surface_voxels": 2682,
+      "rig_voxels": 255,
+      "sha256": "655f8983e44fd7ed958098c7cdd81939edbe1240af948b4a62db47ad1b7f5f17",
+      "trellis_feature_sha256": "d5833979d86c6d1cacf4e47a5d3a9318ab60095235d8211a99bab07875ea4647"
+    },
+    {
+      "filename": "train_253a67e98510a9da.npz",
+      "split": "train",
+      "observed_fraction": 0.6029052734375,
+      "surface_voxels": 5400,
+      "rig_voxels": 166,
+      "sha256": "1906525f33c4231ac468525d42b18ec278e0fd8708834cc2d192d6855feb3b8f",
+      "trellis_feature_sha256": "8daa1442f2cb20c50fd95b2db9024810ba12c3c902f4e8522d89f6e5c0cd71f9"
+    },
+    {
+      "filename": "train_54e93150885fd776.npz",
+      "split": "train",
+      "observed_fraction": 0.9664306640625,
+      "surface_voxels": 3895,
+      "rig_voxels": 272,
+      "sha256": "92347ee682f03630b63df2ec7f4d451230b9ab1718cc307c1b3d8006dc9da3fe",
+      "trellis_feature_sha256": "21d813cc67aac9e03e2fff530da0f48993315a1441f41159491880db199581f8"
+    },
+    {
+      "filename": "train_386507ed560e7446.npz",
+      "split": "train",
+      "observed_fraction": 0.8199462890625,
+      "surface_voxels": 5192,
+      "rig_voxels": 464,
+      "sha256": "de6f263eaa4f8878c8592b1967dc99b73f8e46f8b9e7fb2b0c39271e73077f65",
+      "trellis_feature_sha256": "15137a9ccbb1804cb9205ceb78300508c392e6568b762f563940b5855a9b8d61"
+    },
+    {
+      "filename": "train_7a7990ebb47de936.npz",
+      "split": "train",
+      "observed_fraction": 0.964111328125,
+      "surface_voxels": 2597,
+      "rig_voxels": 278,
+      "sha256": "e446f191d16accc576608469a9005dba07979fe837ab4fae544baeac95675fc5",
+      "trellis_feature_sha256": "d73ecbe8a4c5b135aaccd32a9600d069db961e25f67cfa455804839147305750"
+    },
+    {
+      "filename": "train_28cc099fac3f30f0.npz",
+      "split": "train",
+      "observed_fraction": 0.957275390625,
+      "surface_voxels": 2490,
+      "rig_voxels": 193,
+      "sha256": "51be6dc36d3cc857e03a35d9b6179f5dad54cdb28cc1aa71ef417408613fc856",
+      "trellis_feature_sha256": "48cde5312703e23e27797619bb689cd243aea0e56bef82c4e4bc18fc7507c342"
+    },
+    {
+      "filename": "val_39120b5916f89e9a.npz",
+      "split": "val",
+      "observed_fraction": 0.959716796875,
+      "surface_voxels": 3035,
+      "rig_voxels": 205,
+      "sha256": "c3c5f737516049282af975ab7ba0023d6951ea3ca2d14a922a60a0e2557fbc02",
+      "trellis_feature_sha256": "e3742a1b73bf58db44b3d36c6405cf5ffc6804b78fee7de513469bc53659a3a6"
+    },
+    {
+      "filename": "val_f6989f7c75393938.npz",
+      "split": "val",
+      "observed_fraction": 0.89453125,
+      "surface_voxels": 3222,
+      "rig_voxels": 262,
+      "sha256": "4409073b69612dba05bda51630575d8b3d474b08496ef422d88ab207f40bfd45",
+      "trellis_feature_sha256": "a2536f80df919206cc2a137601161e7f532e785449bcce95b9e0b71649626d53"
+    },
+    {
+      "filename": "val_1dde85bef53ecba5.npz",
+      "split": "val",
+      "observed_fraction": 0.9146728515625,
+      "surface_voxels": 3644,
+      "rig_voxels": 298,
+      "sha256": "3a5b01362b29a4c3a7c42333a47e44aa4261c768960a8348f313561dcd97db47",
+      "trellis_feature_sha256": "9ee5695c12fc10629365347e0cbfb2f9045c4dc0245e38606974f58ef8b51a80"
+    },
+    {
+      "filename": "val_139492934acf6a47.npz",
+      "split": "val",
+      "observed_fraction": 0.7354736328125,
+      "surface_voxels": 3644,
+      "rig_voxels": 259,
+      "sha256": "c3d68182f89a1c37b8cbf19c5d35749448ad2e81edbbba14c9adac12c3f00c7e",
+      "trellis_feature_sha256": "01ec0bd6b6cea040598e6730473b3c5d1d9d6215de7c8d809c986695de4f9cac"
+    },
+    {
+      "filename": "val_58d186455088e6d2.npz",
+      "split": "val",
+      "observed_fraction": 0.97216796875,
+      "surface_voxels": 2842,
+      "rig_voxels": 221,
+      "sha256": "528d1c7e8534d39fdc0c7c3ddce92402ba0d8e515cb5e39fe7f5f01b9145e2fd",
+      "trellis_feature_sha256": "9f73dfc32e59fb96303caeeed97d6b19231c67b06658fef1eb1194415659300b"
+    },
+    {
+      "filename": "val_9b186771f8df447b.npz",
+      "split": "val",
+      "observed_fraction": 0.832763671875,
+      "surface_voxels": 5209,
+      "rig_voxels": 175,
+      "sha256": "b501266c915e5db74dd3fc5aadbeb0e77d0b982e001feac05505b1a8ef1dc550",
+      "trellis_feature_sha256": "cf04ee97f6f90a80aa7a38a97a9eb41dc61fe1ff02dc46f7d403c03493700a4a"
+    },
+    {
+      "filename": "test_0b7dc2f979ae74eb.npz",
+      "split": "test",
+      "observed_fraction": 0.89501953125,
+      "surface_voxels": 4682,
+      "rig_voxels": 148,
+      "sha256": "72987bd4efcf54c6803c127c4266129f7a3e8f14d0924893b017c99c3ef1446f",
+      "trellis_feature_sha256": "458fc23146b513df193465f634df5bcd401850cdb3e578e09635c34eb9072571"
+    },
+    {
+      "filename": "test_5f71afc15c041461.npz",
+      "split": "test",
+      "observed_fraction": 0.7991943359375,
+      "surface_voxels": 5334,
+      "rig_voxels": 697,
+      "sha256": "a01341c17ced92ac70e685f967137ebdcb1f821d67fb7a688ac3aeaa62e21faa",
+      "trellis_feature_sha256": "907810ef076588c828c5411582cbac4c94eb6d0f681f4be54910c96de6e34388"
+    },
+    {
+      "filename": "test_fcefe59e0ca0640b.npz",
+      "split": "test",
+      "observed_fraction": 0.869384765625,
+      "surface_voxels": 3713,
+      "rig_voxels": 285,
+      "sha256": "7d38b657f1f8a5d9503cf48ed239c1b9f4db9a1d2b445857bd04c4b00e632aea",
+      "trellis_feature_sha256": "da919f7fdd13f53a82c213ca75b32be1164a04f59faf87b8adc91d53e952354d"
+    },
+    {
+      "filename": "test_5f9868db50527fa2.npz",
+      "split": "test",
+      "observed_fraction": 0.7989501953125,
+      "surface_voxels": 5312,
+      "rig_voxels": 183,
+      "sha256": "fe445eaf0248b20ee031da9e9cda9eaa9691455a8f81ee98eaaa294ce545301d",
+      "trellis_feature_sha256": "eea8755bf57ca852cef23ac2aef58d04ba965379058c25108b5c94833eed9d81"
+    },
+    {
+      "filename": "test_27b6e8cc90ef48b2.npz",
+      "split": "test",
+      "observed_fraction": 0.79443359375,
+      "surface_voxels": 4046,
+      "rig_voxels": 271,
+      "sha256": "45b6f2929994ba3b2655a6977d970867293bb9664f3496098a66f9ee214574ef",
+      "trellis_feature_sha256": "558632abe7b7cfcdddc1c5474e651b541f4a26d63b340e1ce791ea09614eb3bd"
+    },
+    {
+      "filename": "test_30f674276d267739.npz",
+      "split": "test",
+      "observed_fraction": 0.9371337890625,
+      "surface_voxels": 3700,
+      "rig_voxels": 279,
+      "sha256": "8f2d93601b2634f8e9492733fd111f1920ff5035b918bea8bf92ff8678808d30",
+      "trellis_feature_sha256": "228342fecc8ffca6cdc31ce132d4c0c89bbba7022a365d7f5f9e9cd3fb9c6e56"
+    },
+    {
+      "filename": "test_f764f51c6dd435c3.npz",
+      "split": "test",
+      "observed_fraction": 0.89013671875,
+      "surface_voxels": 3494,
+      "rig_voxels": 282,
+      "sha256": "5476e07a7a055c9f5e1ba3c5c8f52175e7d9ef421fc1e705245e4daf9cb5e464",
+      "trellis_feature_sha256": "0dc442ff7fad2c5d8a7b81c039fa81b94516c0f2be9c019a94a9dd2d521496d6"
+    },
+    {
+      "filename": "test_803c47b10c699939.npz",
+      "split": "test",
+      "observed_fraction": 0.62109375,
+      "surface_voxels": 3713,
+      "rig_voxels": 233,
+      "sha256": "42e8d17ff9987e48ef8bd75f714f0dfcb17c91bfb92ac2c438b0877ce9de96e7",
+      "trellis_feature_sha256": "f3e530be052a4c780d974ff4f5be22a3d2e39e3cdf191cc996c28022b540a67f"
+    },
+    {
+      "filename": "test_4e5dc0c2216e3436.npz",
+      "split": "test",
+      "observed_fraction": 0.96875,
+      "surface_voxels": 3691,
+      "rig_voxels": 216,
+      "sha256": "5c2572f5c705cee30ef223c2cc07fa82541dc33a23a1099985db9918af1ef121",
+      "trellis_feature_sha256": "b42fad94919709e731f779aae51d259edb449496c905f60b56cb85ae111201a7"
+    },
+    {
+      "filename": "test_763a49596dc0edf7.npz",
+      "split": "test",
+      "observed_fraction": 0.8349609375,
+      "surface_voxels": 5111,
+      "rig_voxels": 319,
+      "sha256": "e8d612e2756abb523271332c332943858651c6dd3a1b9b27af0547144d19b127",
+      "trellis_feature_sha256": "13ea6a0fd99192e609602b2f9d21af189c2883d8416105badc13dccdd0911403"
+    }
+  ]
+}

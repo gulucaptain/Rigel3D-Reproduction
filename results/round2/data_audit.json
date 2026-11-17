@@ -1,0 +1,97 @@
+{
+  "coverage": {
+    "train": {
+      "assets": 25,
+      "skeleton_eligible": 24
+    },
+    "val": {
+      "assets": 6,
+      "skeleton_eligible": 6
+    },
+    "test": {
+      "assets": 10,
+      "skeleton_eligible": 10
+    }
+  },
+  "visibility": {
+    "min": 0.6029052734375,
+    "mean": 0.8533876000381098
+  },
+  "zero_latent_feature_baseline_mse": {
+    "0": {
+      "surface": 1.0992437958717347,
+      "rig": 1.0693472027778625
+    },
+    "1": {
+      "surface": 1.0992437958717347,
+      "rig": 1.0693472027778625
+    },
+    "2": {
+      "surface": 1.0992437958717347,
+      "rig": 1.0693472027778625
+    }
+  },
+  "gt_sdf_extraction_oracle": [
+    {
+      "filename": "test_0b7dc2f979ae74eb.npz",
+      "vertices": 530,
+      "faces": 1030,
+      "vertex_chamfer_diagnostic": 0.022707372064847332
+    },
+    {
+      "filename": "test_5f71afc15c041461.npz",
+      "vertices": 748,
+      "faces": 1450,
+      "vertex_chamfer_diagnostic": 0.027086826020054508
+    },
+    {
+      "filename": "test_fcefe59e0ca0640b.npz",
+      "vertices": 594,
+      "faces": 1042,
+      "vertex_chamfer_diagnostic": 0.08668379796218231
+    },
+    {
+      "filename": "test_5f9868db50527fa2.npz",
+      "vertices": 1096,
+      "faces": 1978,
+      "vertex_chamfer_diagnostic": 0.07122921839077488
+    },
+    {
+      "filename": "test_27b6e8cc90ef48b2.npz",
+      "vertices": 545,
+      "faces": 914,
+      "vertex_chamfer_diagnostic": 0.07206074130268222
+    },
+    {
+      "filename": "test_30f674276d267739.npz",
+      "vertices": 1391,
+      "faces": 2472,
+      "vertex_chamfer_diagnostic": 0.11551302956484932
+    },
+    {
+      "filename": "test_f764f51c6dd435c3.npz",
+      "vertices": 379,
+      "faces": 676,
+      "vertex_chamfer_diagnostic": 0.05245492552534257
+    },
+    {
+      "filename": "test_803c47b10c699939.npz",
+      "vertices": 1263,
+      "faces": 2138,
+      "vertex_chamfer_diagnostic": 0.126372416606362
+    },
+    {
+      "filename": "test_4e5dc0c2216e3436.npz",
+      "vertices": 336,
+      "faces": 642,
+      "vertex_chamfer_diagnostic": 0.019056833246489956
+    },
+    {
+      "filename": "test_763a49596dc0edf7.npz",
+      "vertices": 1349,
+      "faces": 2356,
+      "vertex_chamfer_diagnostic": 0.07309945382266195
+    }
+  ],
+  "scope": "Integration controls only. GT oriented-normal SDF extraction oracle is not learned reconstruction or image generation."
+}

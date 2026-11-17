@@ -1,0 +1,49 @@
+{
+  "seed": 2,
+  "source": "flows_balanced_rig",
+  "steps": 1000,
+  "best_step": 800,
+  "best_validation": 2.884775400161743,
+  "source_sha256": "6a1e706d51240cc2b58a8903441b92c040dc78bc8b3f0b8fd408f05b0e805a06",
+  "occupancy_bitwise_unchanged": true,
+  "stats_bitwise_unchanged": true,
+  "trace": [
+    {
+      "step": 0,
+      "loss": 2.5169711112976074,
+      "validation": 2.9611778259277344,
+      "elapsed_s": 0.06257266597822309
+    },
+    {
+      "step": 200,
+      "loss": 2.357898473739624,
+      "validation": 2.941594123840332,
+      "elapsed_s": 1.7546894999686629
+    },
+    {
+      "step": 400,
+      "loss": 2.6824493408203125,
+      "validation": 2.9374868869781494,
+      "elapsed_s": 3.5496573749696836
+    },
+    {
+      "step": 600,
+      "loss": 2.6958017349243164,
+      "validation": 2.9450435638427734,
+      "elapsed_s": 4.957877665990964
+    },
+    {
+      "step": 800,
+      "loss": 2.6079766750335693,
+      "validation": 2.884775400161743,
+      "elapsed_s": 6.427062582923099
+    },
+    {
+      "step": 999,
+      "loss": 2.87319016456604,
+      "validation": 2.919746160507202,
+      "elapsed_s": 8.158920207992196
+    }
+  ],
+  "scope": "Local latent flow re-alignment after full rig encoder update; original train-only scaling retained. Occupancy weights unchanged, so this stage cannot fix occupancy failures. No test selection."
+}

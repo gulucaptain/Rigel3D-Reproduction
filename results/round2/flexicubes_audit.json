@@ -1,0 +1,27 @@
+{
+  "upstream": "https://github.com/MaxtirError/FlexiCubes",
+  "commit": "815e075a2a400d06c48d94c347674344ed6ae5c5",
+  "license": "Apache-2.0",
+  "modification": "Replace only kaolin.utils.testing.check_tensor with local shape check; geometry code unchanged",
+  "source_sha256": "fe443b5225680969c706644931a4f723e7137ce8007758c1870b6841af2d4238",
+  "checks": [
+    {
+      "device": "cpu",
+      "success": true,
+      "vertices": 446,
+      "faces": 888,
+      "radius_mean": 0.2920474410057068,
+      "finite_grad": true,
+      "grad_l1": 0.2889667749404907
+    },
+    {
+      "device": "mps",
+      "success": true,
+      "vertices": 446,
+      "faces": 888,
+      "radius_mean": 0.2920474708080292,
+      "finite_grad": true,
+      "grad_l1": 0.28896674513816833
+    }
+  ]
+}

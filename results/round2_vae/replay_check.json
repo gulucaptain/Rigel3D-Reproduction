@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "source": "results/round2_vae/rig/seed0/evaluation.json",
+      "cpu_validation": 9.730887571970621,
+      "recorded_validation": 9.730887571970621,
+      "absolute_difference": 0.0,
+      "skin_prediction_max_difference": 0.0,
+      "passed": true
+    },
+    {
+      "source": "results/round2_vae/rig/seed1/evaluation.json",
+      "cpu_validation": 9.385966300964355,
+      "recorded_validation": 9.385966300964355,
+      "absolute_difference": 0.0,
+      "skin_prediction_max_difference": 0.0,
+      "passed": true
+    },
+    {
+      "source": "results/round2_vae/rig/seed2/evaluation.json",
+      "cpu_validation": 10.089099407196045,
+      "recorded_validation": 10.089099407196045,
+      "absolute_difference": 0.0,
+      "skin_prediction_max_difference": 0.0,
+      "passed": true
+    }
+  ]
+}

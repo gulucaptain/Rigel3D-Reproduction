@@ -1,0 +1,15 @@
+{
+  "checks": [
+    {
+      "device": "cpu",
+      "max_abs_cpu_difference": 0.0,
+      "latent_rms": 2.700141668319702
+    },
+    {
+      "device": "mps",
+      "max_abs_cpu_difference": 4.0531158447265625e-05,
+      "latent_rms": 2.700141668319702
+    }
+  ],
+  "choice": "FP32 compute for actual pretrained encoding/mesh and joint adapters; checkpoint values unchanged apart from lossless fp16->fp32 expansion. Mixed fp16 CPU/MPS drift was .0179 on5-token probe, retained separately."
+}

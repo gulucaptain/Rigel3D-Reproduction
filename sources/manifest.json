@@ -1,0 +1,52 @@
+{
+  "reviewed": "2026-11-16",
+  "sources": [
+    {
+      "file": "paper.html",
+      "url": "https://arxiv.org/html/2605.13129v1",
+      "sha256": "0eb30f205f0016ca0141df4e9e505bafc1c865b498dad0e5aed7ac4f47c981cb"
+    },
+    {
+      "file": "project.html",
+      "url": "https://nchatzis.github.io/Rigel3D/",
+      "sha256": "9b2f0634c7aedf4b35869d31be413cc204266dd0ca8c16a07c934443e402d521"
+    },
+    {
+      "file": "hf-paper.md",
+      "url": "https://huggingface.co/papers/2605.13129.md",
+      "sha256": "8f5c25102384e098411849884261067922f1bf2155812346bbc023d18de49fc9"
+    },
+    {
+      "file": "anymate-card.md",
+      "url": "https://huggingface.co/datasets/yfdeng/Anymate/raw/main/README.md",
+      "sha256": "efa0a7925fd8ed954f8bf00470add2f285d12e361e41ec9dcb555452e8a9e9b1"
+    },
+    {
+      "file": "anymate-tree.json",
+      "url": "https://huggingface.co/api/datasets/yfdeng/Anymate/tree/main",
+      "sha256": "d1f83f94ecf3de3a5cbe3c2a7bf3f5711c11f9466cbecdee18baa443a163b783"
+    },
+    {
+      "file": "dataset.py.txt",
+      "url": "https://raw.githubusercontent.com/yfde/Anymate/dc96b5abb010c7fc7834335efad64c3a2e8a47a4/Anymate/dataset.py",
+      "sha256": "f502f68dfa7069a2e8efb9b78c8abef9d164c36164339d6e80eb1fa6c50c0a14"
+    },
+    {
+      "file": "Evaluate.py.txt",
+      "url": "https://raw.githubusercontent.com/yfde/Anymate/dc96b5abb010c7fc7834335efad64c3a2e8a47a4/Evaluate.py",
+      "sha256": "78a5279c85db73bb6ad079943a4ee38fe0cddb02ab3ad1d2282ba7371f31f66e"
+    },
+    {
+      "file": "eval_utils.py.txt",
+      "url": "https://raw.githubusercontent.com/yfde/Anymate/dc96b5abb010c7fc7834335efad64c3a2e8a47a4/Anymate/utils/eval_utils.py",
+      "sha256": "52a389ca8d4925cc17780ca75ecb130cf1e47675c963901f5929b6c31f737865"
+    },
+    {
+      "file": "rignet_loss.py.txt",
+      "url": "https://raw.githubusercontent.com/yfde/Anymate/dc96b5abb010c7fc7834335efad64c3a2e8a47a4/ThirdParty/Rignet_utils/Rignet_loss.py",
+      "sha256": "85d1b1f51d227f89a8ef9d99e31eea2ad8e923f662dc341d882aea0da308bb7a"
+    }
+  ],
+  "original_data_revision": "096e25372f38db1964c5f5ecaa68c45d78f72ec8",
+  "anymate_code_revision": "dc96b5abb010c7fc7834335efad64c3a2e8a47a4"
+}

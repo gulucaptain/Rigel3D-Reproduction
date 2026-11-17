@@ -1,0 +1,169 @@
+{
+  "scope": "Real single-view DINO-L normalized patch tokens, spatial8x8 pooling for Mac flow training. Native224 renders upsampled518; pooled64 tokens instead of original1374-token condition. No GT input at inference.",
+  "assets": [
+    {
+      "filename": "train_29825ccc5b5b180f.npz",
+      "sha256": "2cf6b44fae7b92e2ca6c6aee8f84ab21dfad5442ce3873ffe23f0a10734040d9"
+    },
+    {
+      "filename": "train_5927672b6bea8133.npz",
+      "sha256": "2bd4e786a01a22bbfd88ce7e7848886d38ae83f3c2e9dbe56e53f535a1f1485f"
+    },
+    {
+      "filename": "train_a0e44666673348fb.npz",
+      "sha256": "dfeeebf0d1e0f6fd75b0a906eabb13eb54a78ff65800e3bbce000de693715239"
+    },
+    {
+      "filename": "train_516c4309efb0d1f9.npz",
+      "sha256": "b8030a75f975219347f3418b6f4facd2566a9f499f1a40360457645d0dcd87d4"
+    },
+    {
+      "filename": "train_66b05e36d684fcbf.npz",
+      "sha256": "67fc9a1da6bd8feba036eed255b98e859a74d9742bd793e97b08ff1b675eac1d"
+    },
+    {
+      "filename": "train_b81f7afa37adc85a.npz",
+      "sha256": "d5e0bee510870622ae9d6eb5a5863b0ca487444a87bc168e676969a205372287"
+    },
+    {
+      "filename": "train_2629dd3811b59712.npz",
+      "sha256": "2469affa7069ad4f4d57232e3766d2ce3fa415cabdbedf538ff236c79396893f"
+    },
+    {
+      "filename": "train_70cdcde0592a4ff4.npz",
+      "sha256": "96880f87c51c4269e488becf582b271b7cec7bb01cac3a0b6e19df932e10f8f8"
+    },
+    {
+      "filename": "train_0d4d4861b64d0c22.npz",
+      "sha256": "621143c028d489c6a2960e60bd21d7e30665ef2aed3f5b5b59139637974fedc4"
+    },
+    {
+      "filename": "train_94de77c1a25a4a68.npz",
+      "sha256": "d21dbbaa38122dc30a9d0a7c463f79a6617aafbb341272021954e4cadcb07e1b"
+    },
+    {
+      "filename": "train_49fa17c86c6a41fe.npz",
+      "sha256": "cdb39b8f62ccaa53599c9dd478c3ff0cb618772c6584440e0aba69c13eebfca7"
+    },
+    {
+      "filename": "train_f97d8a86af0d53a5.npz",
+      "sha256": "bc9d9a6bd439213072fe653cc4840b023cb19ce31df92fe7df654ba6bc39b7a3"
+    },
+    {
+      "filename": "train_bd701aae163d7b51.npz",
+      "sha256": "fcba10f12f2acfaaac896f462d43fd01e2e6ca432144771f960a3032eebb52bc"
+    },
+    {
+      "filename": "train_a283de9a47ad815b.npz",
+      "sha256": "e4c324fb605bec92cc52729ceab72c984c0fd2c4ad52d1c93d95f3f7c374cfa6"
+    },
+    {
+      "filename": "train_3037ff9fc51c46b1.npz",
+      "sha256": "538465bc6f2448b8f79391b4d20114a30f37197dad3120c216a0f5ad4b896616"
+    },
+    {
+      "filename": "train_c276118efd8e7ac4.npz",
+      "sha256": "ca3b2e106d30acac1dcceac637b818b17f990db5d4246cd827a1d933fbbb2914"
+    },
+    {
+      "filename": "train_29c192ab10fd6d48.npz",
+      "sha256": "9e36889a4dac50083f9458c44fec53e25b470394c2a03588438b91c32190d109"
+    },
+    {
+      "filename": "train_96fd14992f5b3ce4.npz",
+      "sha256": "ee1cca830024f9e7cd11049c438641cbe401279bbb88378e937ad01e4b9b58d2"
+    },
+    {
+      "filename": "train_8b9d55eebfbee837.npz",
+      "sha256": "3fc2cc82d349064c719b504b1e211539c2116a1e97a4019a87f1400ed2e662c0"
+    },
+    {
+      "filename": "train_a48bd4b2022dddfa.npz",
+      "sha256": "24e41d6fd1d8abb3af218cdf1b6a7516db46db2f6f05a8726a0637f1c49adf1f"
+    },
+    {
+      "filename": "train_253a67e98510a9da.npz",
+      "sha256": "90f93293b1ee0443e6a055b1d6af3aee2cfb3925f56d52ab86faea8993530c33"
+    },
+    {
+      "filename": "train_54e93150885fd776.npz",
+      "sha256": "24dc4e91b9c83c4b24a5575441293bc9d7bf7489ef3f479611e9da67f3764611"
+    },
+    {
+      "filename": "train_386507ed560e7446.npz",
+      "sha256": "eab60f507ad7efcc15fc03b4092920dd4e4954a9390b9e644c9cf5a5b942cd10"
+    },
+    {
+      "filename": "train_7a7990ebb47de936.npz",
+      "sha256": "0c56ebb322b473fc24cb08a34a741fcec8fd68d23756e52cd2af7bb23d89d6fd"
+    },
+    {
+      "filename": "train_28cc099fac3f30f0.npz",
+      "sha256": "be6c4b3ffd9ee070d3684d041170529e6bb1e43c65a2837a52dbef47fe175f30"
+    },
+    {
+      "filename": "val_39120b5916f89e9a.npz",
+      "sha256": "ac97f965649c19cce00882f0495566eb29eafe8015c9b8da5eca9f15dfc83f65"
+    },
+    {
+      "filename": "val_f6989f7c75393938.npz",
+      "sha256": "f15929a4e4e896e66d43a877ad354df591500a4fd995c531a9ea2d902ad7a65a"
+    },
+    {
+      "filename": "val_1dde85bef53ecba5.npz",
+      "sha256": "bd77095f3c4ea50afb5fc353008e13376f825d6e8b32fb4a26a9fb7f61819b65"
+    },
+    {
+      "filename": "val_139492934acf6a47.npz",
+      "sha256": "4ba40b5893d11fd298264f376912d7147ffc1d2b7c1ad86c74fb1f1e1cf86f87"
+    },
+    {
+      "filename": "val_58d186455088e6d2.npz",
+      "sha256": "3c9321760bc2c31f9a71274f63e1179a3d1bcffcde739d09321dec92dbe4033b"
+    },
+    {
+      "filename": "val_9b186771f8df447b.npz",
+      "sha256": "cfbe226413c99b8f070db3f8feed12678d60a491bef91723886ccc55c7f63f00"
+    },
+    {
+      "filename": "test_0b7dc2f979ae74eb.npz",
+      "sha256": "15114d6e502ea2eaa33df21f2a037858b48c6ee544aad1cc1aed89314e30e1a3"
+    },
+    {
+      "filename": "test_5f71afc15c041461.npz",
+      "sha256": "be53685dc394ce3828ed71b82a2531b75426f571c430480bf0136c625caa74f4"
+    },
+    {
+      "filename": "test_fcefe59e0ca0640b.npz",
+      "sha256": "34f0b61f5237c50f9a7e8da54531e4294f18eb6f1e1f5f209af6f8e4d39cccb2"
+    },
+    {
+      "filename": "test_5f9868db50527fa2.npz",
+      "sha256": "5a81672f09381227026ae3839e096109cc61a96b2f32d925c5ff3524c1462e01"
+    },
+    {
+      "filename": "test_27b6e8cc90ef48b2.npz",
+      "sha256": "3ef76fe2f915bf32b88e05800bdac126b16e9c44ef4247f793454a6c3f81aba4"
+    },
+    {
+      "filename": "test_30f674276d267739.npz",
+      "sha256": "9b00d1383c42a61288bb92b5e7c520ec68fffa33de4c4cbac2e0435fcac1ae43"
+    },
+    {
+      "filename": "test_f764f51c6dd435c3.npz",
+      "sha256": "3810b1c1d6971c6d8179b6d3077fd97f4ec666ecbcee6f7241a13246bc183b3b"
+    },
+    {
+      "filename": "test_803c47b10c699939.npz",
+      "sha256": "71f0469174923e2162eda5240a171977407529a17eac328cf58fee6c78006af7"
+    },
+    {
+      "filename": "test_4e5dc0c2216e3436.npz",
+      "sha256": "503eab9391d2c0f4b0e1eb7825dbd792432b2fa6834cf5bf5a7c41081a23f094"
+    },
+    {
+      "filename": "test_763a49596dc0edf7.npz",
+      "sha256": "749c0458c89f91d9fe5547037c64c459bc94e982669ab3732293106c92fc12cf"
+    }
+  ]
+}

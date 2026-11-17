@@ -1,0 +1,3894 @@
+{
+  "source_manifest_sha256": "135bb5203ac725d16acb108218aa1b3f99996e7d5efcef1f00cce487d5d28f91",
+  "scope": "Original train0/test assets; explicit target normalization and GT-rig reconstruction context, not image-conditioned generation",
+  "assets": [
+    {
+      "asset_name": "fbx_9/fe4e4600907ef00ffe6bd8c7bd6fa42e2bcae5c636e1b28343cc1de9c39f6cde",
+      "split": "train",
+      "filename": "train_29825ccc5b5b180f.npz",
+      "prepared_sha256": "ee194b832fe07d01fd07d3e0e5cb3dd90b90ea604680e05e3325599f73b8e11c",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 37,
+      "bones": 30,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9979555606842041,
+      "skin_source_mass_max": 1.0003528594970703,
+      "source_mass_mean_abs_deviation": 0.0002534266677685082,
+      "normalization": {
+        "centre": [
+          -0.000244140625,
+          0.00023043155670166016,
+          0.000244140625
+        ],
+        "scale": 1.99658203125,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 5096,
+      "rig_active_voxels": 335,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_2/7c594521f1f52fcb4957ac98d988aa352d0d9fd3dc92e27b5cb199159e6d58e7/31",
+      "split": "train",
+      "filename": "train_5927672b6bea8133.npz",
+      "prepared_sha256": "d8cdacc6db4e01bbc59bc57e801c343aff43cd353db403321ba638c4d3630f96",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 29,
+      "bones": 20,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9308795928955078,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 0.0203267323813634,
+      "normalization": {
+        "centre": [
+          -0.0002905726432800293,
+          0.0002841949462890625,
+          -0.0013726651668548584
+        ],
+        "scale": 1.9939891695976257,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3628,
+      "rig_active_voxels": 160,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_1/03c6a8dfe60a030c42ec95bf1efcb71e04d289e5d3daaa31f27ef1b8e6512ead",
+      "split": "train",
+      "filename": "train_c994580c11b34c7b.npz",
+      "prepared_sha256": "efbd86721665504761473bc7828950a5093183233d03313f5b38c3ee9a2385cf",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 58,
+      "bones": 46,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9992122650146484,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 0.00010884616494877264,
+      "normalization": {
+        "centre": [
+          0.001953125,
+          0.0031032562255859375,
+          0.000244140625
+        ],
+        "scale": 1.99560546875,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 5485,
+      "rig_active_voxels": 469,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_6/f8b33968a60cdc3e888ca7550c572235880f3ba0089fea1eee8090367d6a5fc0/7",
+      "split": "train",
+      "filename": "train_a0e44666673348fb.npz",
+      "prepared_sha256": "d9da364d63d062415d2d544a7a493134a8aada0227598fa692cba01b45154625",
+      "skeleton_status": "excluded_from_skeleton",
+      "skeleton_exclusion_reason": "Expected one root",
+      "joints": 65,
+      "bones": 47,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.81561279296875,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 0.00038836603926029056,
+      "normalization": {
+        "centre": [
+          -0.0030179619789123535,
+          0.000603407621383667,
+          0.0060860514640808105
+        ],
+        "scale": 1.9911687970161438,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3322,
+      "rig_active_voxels": 348,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_4/0b353357c9c6cdd0cc7c4ead55b33d7114efbb2ae3416fd19bccce144d99fe9e/25",
+      "split": "train",
+      "filename": "train_0c4f6b861655e2e8.npz",
+      "prepared_sha256": "59b28a771eca731f01e701381943f87ec0384fe301e5beb9fbc7adfe31624d2d",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 45,
+      "bones": 34,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996414184570312,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 0.00011432825704105198,
+      "normalization": {
+        "centre": [
+          0.0034802407026290894,
+          0.0006358921527862549,
+          -0.003085494041442871
+        ],
+        "scale": 1.9983553290367126,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 2776,
+      "rig_active_voxels": 310,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "glb_0/9b5461f9609ac010c81dabb6d9b5922296f2ce7b6e2d38c7257349570c7b8623/18",
+      "split": "train",
+      "filename": "train_516c4309efb0d1f9.npz",
+      "prepared_sha256": "05fe1cec91ae222d56c04991d999dcd7b2fbb7e509ebe114af08d53e9ae3a962",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 91,
+      "bones": 60,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996566772460938,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 0.00010508138075238094,
+      "normalization": {
+        "centre": [
+          0.00047141313552856445,
+          0.0005678236484527588,
+          0.004414558410644531
+        ],
+        "scale": 1.9889105558395386,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 490,
+      "rig_active_voxels": 179,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_0/aafd6f51eeaed98566d42b8a26e0335befd4007bc0870a3658fcf1c42cb5601e",
+      "split": "train",
+      "filename": "train_66b05e36d684fcbf.npz",
+      "prepared_sha256": "e00ab1a3a7ac297346f8aac601bf8466cedde9ff768d30a2f0938a5532489449",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 14,
+      "bones": 9,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.999755859375,
+      "skin_source_mass_max": 1.000244140625,
+      "source_mass_mean_abs_deviation": 1.5187542885541916e-06,
+      "normalization": {
+        "centre": [
+          -0.0003662109375,
+          0.002880096435546875,
+          0.001953125
+        ],
+        "scale": 1.99609375,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 4784,
+      "rig_active_voxels": 176,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_9/1c78cb44435393952bc9c40d5b7e4da8a2db18be554683c1cf1b3fbba98a021b/27",
+      "split": "train",
+      "filename": "train_b81f7afa37adc85a.npz",
+      "prepared_sha256": "326ee96d97d82e22269707bcb8d1b501a4d2df91a4ada603ef02d6a61775b2da",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 96,
+      "bones": 61,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.0003738403320312,
+      "source_mass_mean_abs_deviation": 7.660590927116573e-05,
+      "normalization": {
+        "centre": [
+          -0.003801286220550537,
+          0.0002435147762298584,
+          -0.0019990503787994385
+        ],
+        "scale": 1.9893202185630798,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 5564,
+      "rig_active_voxels": 477,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "000-016/a4b2855f2ae84924814cb18be71e6f67/64",
+      "split": "train",
+      "filename": "train_a9b3440584eae3f5.npz",
+      "prepared_sha256": "8bd2bfb38c9d36867855567b776e666727519d95bd95c0bfba1550b200f64b11",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 47,
+      "bones": 35,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 5.187220813240856e-05,
+      "normalization": {
+        "centre": [
+          -0.01512765884399414,
+          0.0013134777545928955,
+          -0.007026195526123047
+        ],
+        "scale": 1.9913771748542786,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 4578,
+      "rig_active_voxels": 256,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "000-088/f0d289c4a9c848aca4f008deffd3154e/7",
+      "split": "train",
+      "filename": "train_e2c34e91ecc0fe62.npz",
+      "prepared_sha256": "109a117fdf970b5322c4a81dd3b85918052f978435a14ce3b530d6cb7490774a",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 71,
+      "bones": 47,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.999755859375,
+      "skin_source_mass_max": 1.000244140625,
+      "source_mass_mean_abs_deviation": 6.576257874257863e-05,
+      "normalization": {
+        "centre": [
+          0.0014703571796417236,
+          0.0001761317253112793,
+          -0.005341440439224243
+        ],
+        "scale": 1.9940379858016968,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3781,
+      "rig_active_voxels": 252,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "glb_0/944a6e57e7e4603f13af88d01ef48dbb43aafc8ebf624e71fe763cf6509fa8c9/25",
+      "split": "train",
+      "filename": "train_2629dd3811b59712.npz",
+      "prepared_sha256": "e77cfc7d74c13cce17308e62e9b191e45562cd47d0204a12dc010acd369988ef",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 22,
+      "bones": 13,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.999725341796875,
+      "skin_source_mass_max": 1.0003089904785156,
+      "source_mass_mean_abs_deviation": 4.807304503628984e-05,
+      "normalization": {
+        "centre": [
+          0.0016694366931915283,
+          0.0013324618339538574,
+          0.006207555532455444
+        ],
+        "scale": 1.9852257370948792,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 4606,
+      "rig_active_voxels": 174,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_4/3942a86e6410ed0f51c80777c2f0a7aba27effb7519138d3ae2d108bf17d84af/127",
+      "split": "train",
+      "filename": "train_70cdcde0592a4ff4.npz",
+      "prepared_sha256": "3b288e90a16070eae56f5b7c648d9bb7995be24dc47ea1c77acb07f3c145d29b",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 61,
+      "bones": 46,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.99754798412323,
+      "skin_source_mass_max": 1.000335693359375,
+      "source_mass_mean_abs_deviation": 0.00023403263185173273,
+      "normalization": {
+        "centre": [
+          8.851289749145508e-05,
+          0.0005314350128173828,
+          0.0015109479427337646
+        ],
+        "scale": 1.9958033561706543,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 4308,
+      "rig_active_voxels": 212,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_3/acf6eb542093975fd0c21775aee66f856a2232d55bcff0db98fac437d9f3ce8d/9",
+      "split": "train",
+      "filename": "train_0d4d4861b64d0c22.npz",
+      "prepared_sha256": "b4acbeb637cf3f0e2978af2c1781a7431cce630ce9ee43f95ac6444b418c05df",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 29,
+      "bones": 22,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.0003814697265625,
+      "source_mass_mean_abs_deviation": 8.279798930743709e-05,
+      "normalization": {
+        "centre": [
+          0.007913663983345032,
+          0.003072977066040039,
+          -0.001732468605041504
+        ],
+        "scale": 1.9695590734481812,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3407,
+      "rig_active_voxels": 185,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_8/50f1fdede9f280b989630115dc192c3e352460bb266c0b4a97d2a6faf8196928",
+      "split": "train",
+      "filename": "train_94de77c1a25a4a68.npz",
+      "prepared_sha256": "a6ce11c6e3dab22ab23d222dd3c988fd58574ff4032ac03396ce1fbe0e2f91f0",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 18,
+      "bones": 12,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.99969482421875,
+      "skin_source_mass_max": 1.00030517578125,
+      "source_mass_mean_abs_deviation": 2.2669759346172214e-05,
+      "normalization": {
+        "centre": [
+          0.00048828125,
+          0.00023734569549560547,
+          0.000244140625
+        ],
+        "scale": 1.9990234375,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 4617,
+      "rig_active_voxels": 96,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_7/3c8ee99ba96498a8214a43d4c413694abaa5e3673bf79d4c53f9cc1a5cbfe691",
+      "split": "train",
+      "filename": "train_49fa17c86c6a41fe.npz",
+      "prepared_sha256": "1ac2e9242d94863dbb129c4b58fcc292d1c4982d5b16f1c87ef49d14cecc4860",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 48,
+      "bones": 33,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.5805108547210693,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 0.0002273893987876363,
+      "normalization": {
+        "centre": [
+          0.000244140625,
+          0.00032258033752441406,
+          0.0009765625
+        ],
+        "scale": 1.9964251518249512,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 5983,
+      "rig_active_voxels": 375,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_8/71335a20bf5dba88445ea5348a26bc6a8952e90d04f5d0266897e3e1aab713ec",
+      "split": "train",
+      "filename": "train_f97d8a86af0d53a5.npz",
+      "prepared_sha256": "e6b96fea3be24e6b4b13f096cd064ef40936d4870600459b76f4f0c71d423a25",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 43,
+      "bones": 31,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9990028142929077,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 0.0001195835939142853,
+      "normalization": {
+        "centre": [
+          -0.00048470497131347656,
+          0.06866538524627686,
+          -0.09199318289756775
+        ],
+        "scale": 2.190636396408081,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 2581,
+      "rig_active_voxels": 472,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_9/67d10b6c18a18463dca6efff7f91eea75b4e37ac17c0d770af8a760976667dab/7",
+      "split": "train",
+      "filename": "train_bd701aae163d7b51.npz",
+      "prepared_sha256": "2ac727274bb4cf21af889a4919f45e44ad3cd463a1c339e248540652a1b6cb17",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 18,
+      "bones": 16,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.8840445280075073,
+      "skin_source_mass_max": 2.0,
+      "source_mass_mean_abs_deviation": 0.06686776917194948,
+      "normalization": {
+        "centre": [
+          -0.00011645257472991943,
+          0.0001304149627685547,
+          1.1622905731201172e-06
+        ],
+        "scale": 1.9996261596679688,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 2661,
+      "rig_active_voxels": 189,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_0/32a40c3cc39bf939aa7c2c09fc3caa4836c3bd72b47225bb456dc9bbf8ff2f13/176",
+      "split": "train",
+      "filename": "train_0a6d27c13bdd85a7.npz",
+      "prepared_sha256": "4b9e159158de69ba2786faaa2a9a6c99dbcb794e2645fc2b9880b860b6f5c7d1",
+      "skeleton_status": "excluded_from_skeleton",
+      "skeleton_exclusion_reason": "Disconnected cycle",
+      "joints": 42,
+      "bones": 31,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.999176025390625,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 7.001849735388532e-05,
+      "normalization": {
+        "centre": [
+          0.03494855761528015,
+          -0.10693460702896118,
+          0.014747262001037598
+        ],
+        "scale": 2.417361617088318,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 2751,
+      "rig_active_voxels": 439,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_4/13afb73ad758a95330a9c9e8495b03d5fa5eb5470bdc2b2d109a54b9e9cda417/151",
+      "split": "train",
+      "filename": "train_a283de9a47ad815b.npz",
+      "prepared_sha256": "a3b11954afa6538c940587383920317f0e7e424ba966c73451baa1c32e8e79b1",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 72,
+      "bones": 55,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.0003852844238281,
+      "source_mass_mean_abs_deviation": 4.2756873881444335e-05,
+      "normalization": {
+        "centre": [
+          0.0024796128273010254,
+          0.0001112520694732666,
+          -6.636977195739746e-05
+        ],
+        "scale": 1.9991227984428406,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3497,
+      "rig_active_voxels": 228,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "dae_0/fceb486025034ae7a80d516f7ec28b3928582aa0f5b9f6909b8c2d33100cb145",
+      "split": "train",
+      "filename": "train_c2a2cc06fc696313.npz",
+      "prepared_sha256": "aeccc31cba18431982b88ef251120e2a309fb99982ba3407b89ef778db575dd0",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 24,
+      "bones": 16,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 7.186445873230696e-05,
+      "normalization": {
+        "centre": [
+          0.0078125,
+          8.881092071533203e-06,
+          0.0
+        ],
+        "scale": 1.9638671875,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 4239,
+      "rig_active_voxels": 200,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_2/2ec967c582e8893cc6213e09c0f8325c931e401f9fdec253e6a0b3ef90c7ead0/73",
+      "split": "train",
+      "filename": "train_3037ff9fc51c46b1.npz",
+      "prepared_sha256": "8f9b43bd6f565b5e0878feee4020d73849925704d6b3818b75e70d9800e35ac0",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 65,
+      "bones": 45,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.006908416748046875,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 0.0034435871202731505,
+      "normalization": {
+        "centre": [
+          0.0026155859231948853,
+          0.0,
+          -0.002695918083190918
+        ],
+        "scale": 1.9993336200714111,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 4351,
+      "rig_active_voxels": 271,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_0/7de35799e20be15edd0f020ba5c063c24e001097e6239746757126cd73e97851",
+      "split": "train",
+      "filename": "train_c276118efd8e7ac4.npz",
+      "prepared_sha256": "479daecd5e8310af013fc547891ba2b72aa3de8334811e7226c6b40506899f9d",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 57,
+      "bones": 43,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.5092039108276367,
+      "skin_source_mass_max": 1.1666259765625,
+      "source_mass_mean_abs_deviation": 0.1018117579005775,
+      "normalization": {
+        "centre": [
+          0.0009765625,
+          0.0007017254829406738,
+          0.0
+        ],
+        "scale": 1.9996739625930786,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 4702,
+      "rig_active_voxels": 301,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_3/9dd5790e218aa7780672726d587579fc1cd3351e1acc6cce683e810622567bb3/13",
+      "split": "train",
+      "filename": "train_29c192ab10fd6d48.npz",
+      "prepared_sha256": "40c0ba37c679ee39d99cc1a4a0a839aa6a9a13b36f54b3eb2094e824fe93ffe0",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 29,
+      "bones": 22,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 0.00011043286940548569,
+      "normalization": {
+        "centre": [
+          5.015730857849121e-05,
+          0.0003472566604614258,
+          -0.0025928467512130737
+        ],
+        "scale": 1.9976398944854736,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3829,
+      "rig_active_voxels": 189,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_7/14fb53afa8b6c52aa182bb15da068f3a4b64fb79f745b68b22acdf3dd112bad7",
+      "split": "train",
+      "filename": "train_96fd14992f5b3ce4.npz",
+      "prepared_sha256": "15648ec2d1b3c09eba4161cb37e4708c605b301e9a4907722e494dd4657343fd",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 26,
+      "bones": 20,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9984035491943359,
+      "skin_source_mass_max": 1.0003480911254883,
+      "source_mass_mean_abs_deviation": 0.00015920478472253308,
+      "normalization": {
+        "centre": [
+          0.0028076171875,
+          0.006988525390625,
+          0.001596599817276001
+        ],
+        "scale": 1.98504638671875,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3820,
+      "rig_active_voxels": 148,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "glb_0/6612cca4461a236287139a7cd3a9f538932717cf6a3e7e51c6f2bd846dc9af45/55",
+      "split": "train",
+      "filename": "train_9c0299eb2c4f3e72.npz",
+      "prepared_sha256": "a92ad24d9601f2210d5f0c87ccdff91d4c0e285ddd523ce95cf61ec457d2023c",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 31,
+      "bones": 24,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996390342712402,
+      "skin_source_mass_max": 1.0003738403320312,
+      "source_mass_mean_abs_deviation": 0.00012348091695457697,
+      "normalization": {
+        "centre": [
+          0.0006608664989471436,
+          0.0015507340431213379,
+          -0.00022643804550170898
+        ],
+        "scale": 1.996755063533783,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3107,
+      "rig_active_voxels": 248,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_9/78ae49ae860669444c565eba06dd6232406879f63747223e3dabf8dc2a3e158f/25",
+      "split": "train",
+      "filename": "train_8b9d55eebfbee837.npz",
+      "prepared_sha256": "d1605f978112e0eadca8d47655a5fbff0f33573d1c6563059b59d2842a1ee94c",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 79,
+      "bones": 62,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9973067045211792,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 0.0001457458274671808,
+      "normalization": {
+        "centre": [
+          0.00014387071132659912,
+          0.0001423656940460205,
+          -0.00033089518547058105
+        ],
+        "scale": 1.9986724257469177,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3976,
+      "rig_active_voxels": 316,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_1/01cd28b0277ea3616c0a536a6c9f176723454a795027cc6c4ca1d630ddbb52c7",
+      "split": "train",
+      "filename": "train_a48bd4b2022dddfa.npz",
+      "prepared_sha256": "73e08515a496a4fececea25b3cb90e3fd057ce7ac18eb99a070d7dc54704ebb5",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 69,
+      "bones": 52,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 0.0001197036326630041,
+      "normalization": {
+        "centre": [
+          -0.00244140625,
+          0.0003674030303955078,
+          0.00048828125
+        ],
+        "scale": 1.995358943939209,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 2682,
+      "rig_active_voxels": 255,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_1/bd1be2ae78d67f96eb673845061d7c45ae07fecbe464e62c5c3d3735f196f37d/7",
+      "split": "train",
+      "filename": "train_253a67e98510a9da.npz",
+      "prepared_sha256": "8c99992263424e4c9d5ada4cedd3fbe2dc106f68935135192f3ba5d640611028",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 45,
+      "bones": 34,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 2.9634611564688385e-05,
+      "normalization": {
+        "centre": [
+          0.00028392672538757324,
+          0.0007329583168029785,
+          -0.0066179633140563965
+        ],
+        "scale": 1.9970039129257202,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 5400,
+      "rig_active_voxels": 166,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_6/210ed80d9fa48c818c02341d58f8a5f2cc8ade5f61df7504263b0f15f960567b/139",
+      "split": "train",
+      "filename": "train_54e93150885fd776.npz",
+      "prepared_sha256": "62e56aef6ff8d3dc0495c331dc28ea33fd68e720ba5c70bc17a946bebdc8b591",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 69,
+      "bones": 52,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 8.405940025113523e-05,
+      "normalization": {
+        "centre": [
+          -0.001712411642074585,
+          0.0003886222839355469,
+          -0.00019294023513793945
+        ],
+        "scale": 1.9985169172286987,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3895,
+      "rig_active_voxels": 272,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_5/cb4844eb63bc6dc876218d2c337d82b33a367559e1c28639978cbfc65c280a0b",
+      "split": "train",
+      "filename": "train_386507ed560e7446.npz",
+      "prepared_sha256": "792abfd261e868bce32aa355e7ba701772e3f1bab27f97ee78cc295d4ebc0206",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 55,
+      "bones": 41,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 9.782236884348094e-05,
+      "normalization": {
+        "centre": [
+          0.006103515625,
+          0.0009527206420898438,
+          -0.017822265625
+        ],
+        "scale": 1.97021484375,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 5192,
+      "rig_active_voxels": 464,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_3/85fa1bdca134e3acaeb4cf945e77e738eb068e0be47d1243a56db836f6720642/19",
+      "split": "train",
+      "filename": "train_7a7990ebb47de936.npz",
+      "prepared_sha256": "90c16d004f2a10bf63fe0ffbb80945177b70966c3eb93eb8caf59503bd6ff906",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 69,
+      "bones": 52,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9979978799819946,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 0.00021281346562318504,
+      "normalization": {
+        "centre": [
+          -0.0010080188512802124,
+          9.584426879882812e-05,
+          -0.002187103033065796
+        ],
+        "scale": 1.9991371631622314,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 2597,
+      "rig_active_voxels": 278,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_9/a0646b3c95ad5c390891ab75ca915534469eabf0da5d179b8910476dbdcf3176",
+      "split": "train",
+      "filename": "train_28cc099fac3f30f0.npz",
+      "prepared_sha256": "402657e81756b843d05f56d90a5475b09f68b3131ea31656216c2857bca28c3e",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 34,
+      "bones": 23,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9991781711578369,
+      "skin_source_mass_max": 1.000335693359375,
+      "source_mass_mean_abs_deviation": 8.101895218715072e-05,
+      "normalization": {
+        "centre": [
+          -0.001220703125,
+          0.0001112222671508789,
+          -0.0028076171875
+        ],
+        "scale": 1.9861056804656982,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 2490,
+      "rig_active_voxels": 193,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_8/fa4cfdf946d1c596f0d223a897e4347a772777d9b71648183b9a91b49ad31578",
+      "split": "train",
+      "filename": "train_23d4ba7a8bf8bff5.npz",
+      "prepared_sha256": "fe2ee150abe49ca537fe8ccf5e6ea844cfb5d1193722137722c0f4d23f8b66f4",
+      "skeleton_status": "excluded_from_skeleton",
+      "skeleton_exclusion_reason": "Expected one root",
+      "joints": 77,
+      "bones": 52,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 0.00010337968706153333,
+      "normalization": {
+        "centre": [
+          0.004638671875,
+          0.00043892860412597656,
+          0.000244140625
+        ],
+        "scale": 1.99658203125,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 2913,
+      "rig_active_voxels": 231,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_3/bcf125b9e48eedd911e6f2622620c427e9e3bab332cc62df707630517a011fdf",
+      "split": "train",
+      "filename": "train_1171d4a6ed260bd9.npz",
+      "prepared_sha256": "2115ab787c044514863862473731cdce87584a7776d2e3157e9640b5752098e8",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 45,
+      "bones": 34,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.0003679394721985,
+      "source_mass_mean_abs_deviation": 0.00011078906391048804,
+      "normalization": {
+        "centre": [
+          -0.0050048828125,
+          0.0004401206970214844,
+          -0.0009765625
+        ],
+        "scale": 1.991307258605957,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3411,
+      "rig_active_voxels": 207,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "dae_0/d7c0cf524d62c448b2e3c53fb185bcfc99eb3525be68827d297dad13deb9a1b3",
+      "split": "train",
+      "filename": "train_8fd5baa476087e73.npz",
+      "prepared_sha256": "e80663e8a91047a19fe2c77ad435c151c6b62debb6f5da996665033e5b606d8e",
+      "skeleton_status": "excluded_from_skeleton",
+      "skeleton_exclusion_reason": "Expected one root",
+      "joints": 28,
+      "bones": 19,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.999664306640625,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 6.711557216476649e-05,
+      "normalization": {
+        "centre": [
+          -0.00048828125,
+          2.384185791015625e-07,
+          0.001220703125
+        ],
+        "scale": 1.9970698356628418,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3468,
+      "rig_active_voxels": 131,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_2/e144d20bd0ac61ba02dadd7af40c02830b9bac3e89ebf254e68b960d4ac3408e/25",
+      "split": "train",
+      "filename": "train_ebfaa4e5d5c692c0.npz",
+      "prepared_sha256": "08b130c88f70bf10b40aa88e94ea68c75e0e2f9884021f6de3b9e1d02ece096e",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 23,
+      "bones": 17,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.8597869873046875,
+      "skin_source_mass_max": 1.62939453125,
+      "source_mass_mean_abs_deviation": 0.012492553156334907,
+      "normalization": {
+        "centre": [
+          -0.0038205385208129883,
+          0.003163933753967285,
+          -0.002333998680114746
+        ],
+        "scale": 1.9856878519058228,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 5512,
+      "rig_active_voxels": 206,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_0/fa1d28d34196a1d19d7d6debfca8f020e5576df17471a9219825d3352e4151ae",
+      "split": "train",
+      "filename": "train_843c08e1882e27ed.npz",
+      "prepared_sha256": "37cee1c05bf33d7831cae20ecf6acbf40da73d04e26ad516777909f980e60112",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 22,
+      "bones": 16,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9987057447433472,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 0.000131568216602318,
+      "normalization": {
+        "centre": [
+          0.001953125,
+          0.0006308555603027344,
+          -0.000732421875
+        ],
+        "scale": 1.9951171875,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 1221,
+      "rig_active_voxels": 100,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "glb_0/f1066ab769db3580961f85be616b5e2854216d697e6c11a5c255d8ed59335f17",
+      "split": "train",
+      "filename": "train_9a369700eec646ce.npz",
+      "prepared_sha256": "1217b6e92d558afa991ea257bb4328cd9a61e89dc9879e6b6386869a95e5464f",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 51,
+      "bones": 34,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 0.00010378495790064335,
+      "normalization": {
+        "centre": [
+          0.003173828125,
+          0.0,
+          0.000244140625
+        ],
+        "scale": 1.99658203125,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 4747,
+      "rig_active_voxels": 232,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "000-051/238eaf4c3a2b425ab9e848d7554d8b06/460",
+      "split": "train",
+      "filename": "train_b075da1a04a0adf2.npz",
+      "prepared_sha256": "b25967223247735a473dd158cdbe071857491de2819c0d0914555a9ad0742b50",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 69,
+      "bones": 52,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.000335693359375,
+      "source_mass_mean_abs_deviation": 0.00010815481800818816,
+      "normalization": {
+        "centre": [
+          -0.0007074177265167236,
+          3.8236379623413086e-05,
+          -6.608664989471436e-05
+        ],
+        "scale": 1.9990931153297424,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 2699,
+      "rig_active_voxels": 242,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_0/186d864fa0448ab3b8583dde904c819c29bf73d91895e4604ce01cca94420b0e",
+      "split": "train",
+      "filename": "train_b82952f49976ce76.npz",
+      "prepared_sha256": "75aa2946f031b1b4f081340c7d79f2b5761140fea98b9f2fd307a1156e83ef87",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 69,
+      "bones": 52,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996490478515625,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 0.00010018251487053931,
+      "normalization": {
+        "centre": [
+          0.0003662109375,
+          0.0010156631469726562,
+          0.003173828125
+        ],
+        "scale": 1.9930858612060547,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3499,
+      "rig_active_voxels": 276,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_0/5adabaf6f3b595cba972073e5a298d17d8759fe2753e34f7966c6c216cdda9a3",
+      "split": "train",
+      "filename": "train_8dfb8624619be95d.npz",
+      "prepared_sha256": "3df5e9bf8863d1db288a80b8db20824c103f51959ae581a8e18c154969d81f2d",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 29,
+      "bones": 22,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996566772460938,
+      "skin_source_mass_max": 1.0003735423088074,
+      "source_mass_mean_abs_deviation": 4.8152745875995606e-05,
+      "normalization": {
+        "centre": [
+          -0.000244140625,
+          1.5735626220703125e-05,
+          0.00537109375
+        ],
+        "scale": 1.9950857162475586,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 4770,
+      "rig_active_voxels": 219,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_2/bbb5b58b33237a09d2d5ca62a8fd44ee584791addc26b6a8a78a176d2128a691",
+      "split": "train",
+      "filename": "train_0f0197eb205cd079.npz",
+      "prepared_sha256": "70271738a9968418a92cbf0c8fe0d02d873dbca715c40e3b8704e69fcdddd07a",
+      "skeleton_status": "excluded_from_skeleton",
+      "skeleton_exclusion_reason": "Expected one root",
+      "joints": 44,
+      "bones": 32,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996414184570312,
+      "skin_source_mass_max": 1.0003509521484375,
+      "source_mass_mean_abs_deviation": 6.664817919954658e-05,
+      "normalization": {
+        "centre": [
+          0.0,
+          -0.0022512078285217285,
+          0.0050048828125
+        ],
+        "scale": 1.9927836656570435,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 2172,
+      "rig_active_voxels": 229,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "000-031/208ac3bb1879453e8cd2ec7cbfd6c940/83",
+      "split": "train",
+      "filename": "train_5243d7800ae64e9e.npz",
+      "prepared_sha256": "42a4cd50a8363b54cbad64ccbc5d20a8d5f2a318f20dea1b2c78e63491f8a185",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 45,
+      "bones": 34,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996490478515625,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 0.000109604858153034,
+      "normalization": {
+        "centre": [
+          2.1725893020629883e-05,
+          0.0017509758472442627,
+          -0.0002995729446411133
+        ],
+        "scale": 1.9954386353492737,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 5301,
+      "rig_active_voxels": 341,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "glb_0/64a35864fb2e72f4ad4fea07b3d507a37c56a5ec0feb37cee28ff1ab2a96f5cc/26",
+      "split": "train",
+      "filename": "train_4a35685b30dde131.npz",
+      "prepared_sha256": "0d5ea685f830d87143b9e6dec0197c211f9ee7affb5313db05940944facc5696",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 69,
+      "bones": 52,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.0003814697265625,
+      "source_mass_mean_abs_deviation": 9.069987572729588e-05,
+      "normalization": {
+        "centre": [
+          0.0008314549922943115,
+          0.00018993020057678223,
+          -7.110834121704102e-05
+        ],
+        "scale": 1.9966375231742859,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3041,
+      "rig_active_voxels": 281,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "dae_0/0c98012a91deb02283f40070fa57f646d1e22b44af12e36485294b4b4c6e5b79",
+      "split": "train",
+      "filename": "train_250cf4324f2cf30c.npz",
+      "prepared_sha256": "a8e3ba8277e79e612e2b10e2235b96dafb204e75a9d8a67b89c80896bb0b3592",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 38,
+      "bones": 30,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 9.828908514464274e-05,
+      "normalization": {
+        "centre": [
+          0.0009765625,
+          0.0007266998291015625,
+          -0.0023193359375
+        ],
+        "scale": 1.990234375,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3604,
+      "rig_active_voxels": 218,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "glb_0/ccef22c24d0983db5615c5d1ca4e413d5c0fe73eadd53fce1c8aecdf8b182b42/30",
+      "split": "train",
+      "filename": "train_555389787d89cfb4.npz",
+      "prepared_sha256": "b88debf5dc3cb944dd4091b409849e2d72b62bbb1ad7105d39a17f222df236cb",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 11,
+      "bones": 10,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996261596679688,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 0.00011081023694714531,
+      "normalization": {
+        "centre": [
+          -0.0005700886249542236,
+          4.3353065848350525e-05,
+          0.004949212074279785
+        ],
+        "scale": 1.9872543811798096,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 979,
+      "rig_active_voxels": 93,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_9/397f24eb03967eb46f8fd1c357c131a2181460e9ce6e4ad48936e00443446c7c/37",
+      "split": "train",
+      "filename": "train_6c1e21fc6b09efb1.npz",
+      "prepared_sha256": "d4e5954d36a86a74688c2fe8a52fedea242c59248f86effea05adbf8cd488cae",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 69,
+      "bones": 52,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 1.0,
+      "skin_source_mass_max": 1.0,
+      "source_mass_mean_abs_deviation": 0.0,
+      "normalization": {
+        "centre": [
+          -0.0010654330253601074,
+          0.004406243562698364,
+          0.0035586953163146973
+        ],
+        "scale": 1.9846882224082947,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3571,
+      "rig_active_voxels": 280,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "000-155/296633f9a2e140ecaaf181362bfcbded/300",
+      "split": "train",
+      "filename": "train_0bfbab9068d86097.npz",
+      "prepared_sha256": "5790d2cb205c52629b5e952b57c8f616d1288cfb1988af045fb7ab487b1a9b27",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 69,
+      "bones": 52,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 7.920214557088912e-05,
+      "normalization": {
+        "centre": [
+          0.0006980746984481812,
+          0.0001334547996520996,
+          -0.0007659867405891418
+        ],
+        "scale": 1.9986226558685303,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 2475,
+      "rig_active_voxels": 210,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_4/2bfb7c8b28bd096c9657e237181f88756195c586d49b3e0e79f61072d1faf5b2",
+      "split": "train",
+      "filename": "train_5993076e2142957a.npz",
+      "prepared_sha256": "1babd53696ce6d7abaa24797f011c92b25375b01555db5c5005f79b8a2e74319",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 35,
+      "bones": 28,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 0.00011187641212018207,
+      "normalization": {
+        "centre": [
+          -0.001220703125,
+          0.0009164810180664062,
+          0.001953125
+        ],
+        "scale": 1.9727764129638672,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 2319,
+      "rig_active_voxels": 231,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "glb_0/ca62486eb7d8f8160ec7be94ad1bdff087c4a543450e6bed1cdcc5958e086e71/181",
+      "split": "train",
+      "filename": "train_7807be4284182942.npz",
+      "prepared_sha256": "a430b7da8b1ea05fcda926dadff4118f0ebe2ce9384917d1ba21d4a1e9c642ba",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 69,
+      "bones": 52,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 9.439383575227112e-05,
+      "normalization": {
+        "centre": [
+          0.00018946826457977295,
+          0.0010360181331634521,
+          -0.001557871699333191
+        ],
+        "scale": 1.9975174069404602,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 2491,
+      "rig_active_voxels": 255,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_1/2f8b6933b45ac70a7b2fa05835a2d974d98c5f69fa59fe34847fe8e2982d204b/25",
+      "split": "train",
+      "filename": "train_55ac2beb092236d7.npz",
+      "prepared_sha256": "3e51a350172b0c191a164da6b74712bb8662f17ecce9620f3e91c6fc166a9cc7",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 54,
+      "bones": 36,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9990942478179932,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 0.00012777037773048505,
+      "normalization": {
+        "centre": [
+          0.004764854907989502,
+          0.005769133567810059,
+          0.003260999917984009
+        ],
+        "scale": 1.9862923622131348,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 5816,
+      "rig_active_voxels": 345,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_2/6cf548e1f7fe5ec6a808a36beb8a5d23fc8f6ba38afa06c025b2424639988c41",
+      "split": "train",
+      "filename": "train_860f62b117115a49.npz",
+      "prepared_sha256": "252b8b549e9a058c6f3932d4bc1b4d9ec984f2e4914644dc9933d5ad245e14f4",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 45,
+      "bones": 33,
+      "skin_valid_points": 7003,
+      "skin_source_mass_min": 0.0,
+      "skin_source_mass_max": 1.0003516674041748,
+      "source_mass_mean_abs_deviation": 0.15787828634347534,
+      "normalization": {
+        "centre": [
+          0.001708984375,
+          0.0040435791015625,
+          0.006103515625
+        ],
+        "scale": 1.988006591796875,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 4853,
+      "rig_active_voxels": 153,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_9/78b4774626d9f97a92296ac1728faa19204fd7bb7fc94c9e68fd986207f3134b",
+      "split": "train",
+      "filename": "train_fbadeea90395f2b5.npz",
+      "prepared_sha256": "fb3d95c6d7ac11460d333342a46d609294246daf77f92b0b1b9bdc92ebf88d15",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 34,
+      "bones": 24,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.999664306640625,
+      "skin_source_mass_max": 1.000340461730957,
+      "source_mass_mean_abs_deviation": 6.940765888430178e-05,
+      "normalization": {
+        "centre": [
+          0.0,
+          2.1457672119140625e-05,
+          0.0013427734375
+        ],
+        "scale": 1.9931211471557617,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 4815,
+      "rig_active_voxels": 236,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "glb_0/3c636deb4c1ad54241132e6a8b014b47a7670cd606eb919aeb17d861edc04f7a",
+      "split": "train",
+      "filename": "train_5c5288a4cc5e44ad.npz",
+      "prepared_sha256": "a83e07dbb07b3b85a8387e0781fca1904070c43b10193e83298bd87155645a74",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 25,
+      "bones": 18,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 7.710810314165428e-05,
+      "normalization": {
+        "centre": [
+          0.0,
+          0.0,
+          -0.000732421875
+        ],
+        "scale": 2.0,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3556,
+      "rig_active_voxels": 137,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "000-076/e9241ba0a3e243b083e409b1c11d971e",
+      "split": "train",
+      "filename": "train_4de0a044d7113c58.npz",
+      "prepared_sha256": "ea8aacd5c32f2b56d37bcf79ba4b55ee42166be8b73681f30ff9dec76231e2f2",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 57,
+      "bones": 42,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.2310047149658203,
+      "skin_source_mass_max": 1.0003814697265625,
+      "source_mass_mean_abs_deviation": 0.0035594313012552448,
+      "normalization": {
+        "centre": [
+          -0.088134765625,
+          0.00689697265625,
+          -0.14242827892303467
+        ],
+        "scale": 2.0045831203460693,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 4551,
+      "rig_active_voxels": 295,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_8/c23ba59d920f6032974633e25be6642c6758f5e336e35f7a8a1d8c64a6ab287a",
+      "split": "train",
+      "filename": "train_a6c19683ca06105e.npz",
+      "prepared_sha256": "8b58bb962bb9e41fbfefd617ff416654128a7964ed672eac5304fb90c9386587",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 29,
+      "bones": 22,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.999603271484375,
+      "skin_source_mass_max": 1.0003897547721863,
+      "source_mass_mean_abs_deviation": 9.842463623499498e-05,
+      "normalization": {
+        "centre": [
+          0.0040283203125,
+          -0.0004222989082336426,
+          -0.000732421875
+        ],
+        "scale": 1.9979149103164673,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3708,
+      "rig_active_voxels": 240,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_1/e02154e44b93e4a76135884216330cb31e123b4bf08d8c2e4a2201d08337705c",
+      "split": "train",
+      "filename": "train_0050528f29efc29a.npz",
+      "prepared_sha256": "5eff3293b6e2af77e056733ef691a19ab2478c19283684bce60dc1ae519e7a73",
+      "skeleton_status": "excluded_from_skeleton",
+      "skeleton_exclusion_reason": "Expected one root",
+      "joints": 25,
+      "bones": 21,
+      "skin_valid_points": 8134,
+      "skin_source_mass_min": 0.0,
+      "skin_source_mass_max": 1.0488277077674866,
+      "source_mass_mean_abs_deviation": 0.3322248920230777,
+      "normalization": {
+        "centre": [
+          1.96993350982666e-05,
+          6.616115570068359e-06,
+          0.03798988461494446
+        ],
+        "scale": 1.9997382760047913,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3385,
+      "rig_active_voxels": 243,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_8/3932c9ae6138287ad8904137b2e935b0731c658878a58ee3f2f0dfe480906e6c/379",
+      "split": "train",
+      "filename": "train_4ef0d685f6cb41aa.npz",
+      "prepared_sha256": "992a6b3a67cb7aedc4b0dcd38bb5e139c56c9579bb027b3db5ffbbcf70c162a1",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 28,
+      "bones": 21,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996109008789062,
+      "skin_source_mass_max": 1.0003814697265625,
+      "source_mass_mean_abs_deviation": 0.00011666515638353303,
+      "normalization": {
+        "centre": [
+          0.0036172568798065186,
+          0.0007910430431365967,
+          -0.0018446147441864014
+        ],
+        "scale": 1.9964175820350647,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 5929,
+      "rig_active_voxels": 197,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_5/793cdffccb2b003c65c4f3f6649deca0b463ae0b02ee2a50446179038718acb6",
+      "split": "train",
+      "filename": "train_7613bb05b6850b4f.npz",
+      "prepared_sha256": "ae177b40c3acd972124a793eec459fb8697528093f283ce3863f305f2267baa4",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 16,
+      "bones": 13,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.000335693359375,
+      "source_mass_mean_abs_deviation": 1.9110884750261903e-05,
+      "normalization": {
+        "centre": [
+          -0.000244140625,
+          0.0007853507995605469,
+          0.0006103515625
+        ],
+        "scale": 1.998429298400879,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3245,
+      "rig_active_voxels": 111,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_7/86621b4adeb578bda14985cc88d3764b60e530243312e9441012d1ccb7d1fb55/5569",
+      "split": "train",
+      "filename": "train_ca517181f49f1255.npz",
+      "prepared_sha256": "7de65172882a9c2aa4b81b46e0aa5934c53935d14b5dfa2bc9f9d29f2e3815c6",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 69,
+      "bones": 52,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996318817138672,
+      "skin_source_mass_max": 1.00034099817276,
+      "source_mass_mean_abs_deviation": 0.00010014061990659684,
+      "normalization": {
+        "centre": [
+          -0.0046004801988601685,
+          0.00030854344367980957,
+          0.00014418363571166992
+        ],
+        "scale": 1.9984237551689148,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 4880,
+      "rig_active_voxels": 347,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_3/5ab0f4add2f8def7079bb9d85981c3fe5f1dc6e1187ef2ca01e07dd6597bc0ee/211",
+      "split": "train",
+      "filename": "train_5e7bb393d2424d9a.npz",
+      "prepared_sha256": "4e6dc4905e8e1d5b308172e8a6d8ff6ed19529cd834fec14c9267451eb94f111",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 59,
+      "bones": 42,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.01143646240234375,
+      "skin_source_mass_max": 2.0,
+      "source_mass_mean_abs_deviation": 0.07866974609351018,
+      "normalization": {
+        "centre": [
+          0.00021654367446899414,
+          6.535649299621582e-05,
+          -0.00032223761081695557
+        ],
+        "scale": 1.9990223050117493,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 5195,
+      "rig_active_voxels": 222,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_3/66e3096bf9620879ed34d62f3efa5f43da976fd433e8315b76b71028d1d7dbb5",
+      "split": "train",
+      "filename": "train_71745e094201d950.npz",
+      "prepared_sha256": "a7a62133f40e19ed8483043cdbd8cfe8928751ef8d4b8804b7a716c35f4aaaac",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 76,
+      "bones": 53,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996261596679688,
+      "skin_source_mass_max": 1.000396728515625,
+      "source_mass_mean_abs_deviation": 8.207009523175657e-05,
+      "normalization": {
+        "centre": [
+          -0.002197265625,
+          0.00640106201171875,
+          0.0009765625
+        ],
+        "scale": 1.9725494384765625,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3989,
+      "rig_active_voxels": 316,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_4/131b1aad3f4310f16d4ba6dcc52e799ae0d537c88758409238dc7703bfc76098/8",
+      "split": "train",
+      "filename": "train_1620c5d3a23eac82.npz",
+      "prepared_sha256": "baf74ff2bb09f933e7b7d989ef95479ca9d0ec91a59183de5be7f787935c999c",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 81,
+      "bones": 51,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.999664306640625,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 4.214709042571485e-05,
+      "normalization": {
+        "centre": [
+          0.002011507749557495,
+          0.002846360206604004,
+          -0.0022323429584503174
+        ],
+        "scale": 1.9927091598510742,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 4911,
+      "rig_active_voxels": 299,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_0/fb0ee7bdaee192b71b44f5240779f065f013b59e464fcba6bf36dcae999f5062",
+      "split": "train",
+      "filename": "train_1b4a4c4c8aa04292.npz",
+      "prepared_sha256": "49acd636f4e4c58b7c4503e8d98ab4799474cd3a91ad5e70187fc595d3af7348",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 48,
+      "bones": 29,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 8.89413058757782e-05,
+      "normalization": {
+        "centre": [
+          0.0001220703125,
+          0.002285003662109375,
+          -0.00048828125
+        ],
+        "scale": 1.9876174926757812,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 4355,
+      "rig_active_voxels": 264,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_7/af01d08699210b552c1c7c54c8c18d0973fc5d31988e5e01e006d60b79b96b00/91",
+      "split": "train",
+      "filename": "train_98a03844231de9f4.npz",
+      "prepared_sha256": "fed7605c111d1654e56ffa9fcfaf6380d2c76e62d1a1b866c30ed44274e242de",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 74,
+      "bones": 54,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9950971603393555,
+      "skin_source_mass_max": 1.000244140625,
+      "source_mass_mean_abs_deviation": 0.001198896650748793,
+      "normalization": {
+        "centre": [
+          -7.137656211853027e-06,
+          0.0001093149185180664,
+          0.00018962472677230835
+        ],
+        "scale": 1.9989935159683228,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 2738,
+      "rig_active_voxels": 264,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_2/3e7005a30905fd9cef467ff1059f68ac748e4c6247d61bf84930cc365ac55890/62",
+      "split": "train",
+      "filename": "train_36eac975b3d03c3b.npz",
+      "prepared_sha256": "bb32685b7106398ab3132f48bbc7a8ac02694d837e533921722255f0a9f54694",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 21,
+      "bones": 17,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.8990976214408875,
+      "skin_source_mass_max": 1.0001220703125,
+      "source_mass_mean_abs_deviation": 0.03598863756633364,
+      "normalization": {
+        "centre": [
+          -0.007614642381668091,
+          7.826089859008789e-05,
+          5.939602851867676e-05
+        ],
+        "scale": 1.9818937182426453,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 2065,
+      "rig_active_voxels": 115,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "glb_0/2f8e5e83515b64540ede731f383d0f2a006ea40bdad30af02d0796a903b58927/20",
+      "split": "train",
+      "filename": "train_40e1594ebece9608.npz",
+      "prepared_sha256": "b0e296ebaed515e5ad3d55eee4cd0641a4e8ca2c11a34283009fb5aadcd64cc8",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 68,
+      "bones": 51,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 0.00011690825340338051,
+      "normalization": {
+        "centre": [
+          0.0007086992263793945,
+          0.0006042420864105225,
+          -0.004961282014846802
+        ],
+        "scale": 1.9959161877632141,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 5198,
+      "rig_active_voxels": 351,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_2/6bc3db577bc0e0772543c3c1f301ab176066da0ee6d43b6502b173d85b411fd8",
+      "split": "train",
+      "filename": "train_7f3b30fd4ce868d1.npz",
+      "prepared_sha256": "9a23425a9499eee4a56f6eb03f22164f7ed1daf28b13ea501ed421a32b3ae8ee",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 29,
+      "bones": 22,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 0.0001142358232755214,
+      "normalization": {
+        "centre": [
+          0.000732421875,
+          3.349781036376953e-05,
+          -0.00146484375
+        ],
+        "scale": 1.9999330043792725,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3038,
+      "rig_active_voxels": 206,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_7/99ae0f3519facc5f54ddbb8b84d39fa75f8f050413342b1b6b9ed01a24b73409/46",
+      "split": "train",
+      "filename": "train_5ffa911e9ba83840.npz",
+      "prepared_sha256": "cb3960f5cbced9582dae515787138b341b871908968c15928e52fef76564ed06",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 74,
+      "bones": 57,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 1.0,
+      "skin_source_mass_max": 2.572509765625,
+      "source_mass_mean_abs_deviation": 0.06891933428414632,
+      "normalization": {
+        "centre": [
+          -0.001677975058555603,
+          0.00042897462844848633,
+          -0.0005658864974975586
+        ],
+        "scale": 1.9989697933197021,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 2924,
+      "rig_active_voxels": 239,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_9/fc95bb4756fc8b0286313b3b12070eecee4f1bc129fff76269fdcd95efe6977d/7",
+      "split": "train",
+      "filename": "train_c356a78f6a0ce931.npz",
+      "prepared_sha256": "139d4ef324318d61b0372ce7e2504dabdd76cf24ac75583a0b56c3e7c1adc6ef",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 69,
+      "bones": 52,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.998014509677887,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 0.00025229970196960494,
+      "normalization": {
+        "centre": [
+          0.0002330690622329712,
+          1.6897916793823242e-05,
+          -0.002585083246231079
+        ],
+        "scale": 1.9994831681251526,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 2939,
+      "rig_active_voxels": 269,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_4/6ddcf9042969107fef50a2d329254e167bcfeeaecaf9b837920f898126dda4e4",
+      "split": "train",
+      "filename": "train_be8074df3c3957c0.npz",
+      "prepared_sha256": "5bb598d823c3a2fccae5bebc97a9d194092e0a01f11429e626cb07f100102e14",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 23,
+      "bones": 16,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996490478515625,
+      "skin_source_mass_max": 1.0003585815429688,
+      "source_mass_mean_abs_deviation": 7.230670598801225e-05,
+      "normalization": {
+        "centre": [
+          0.00830078125,
+          0.0013170242309570312,
+          0.00048828125
+        ],
+        "scale": 1.973928451538086,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 4914,
+      "rig_active_voxels": 176,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_6/98079cbf0577bd30f6e8a409c885d0bf0572062d8bcd007cd14e65b6c4b85f8e",
+      "split": "train",
+      "filename": "train_080c69ff0808e06d.npz",
+      "prepared_sha256": "4776790ed1d03221e88e5257183a3f950163bb820bc3bf4c04103af900ce0317",
+      "skeleton_status": "excluded_from_skeleton",
+      "skeleton_exclusion_reason": "Expected one root",
+      "joints": 80,
+      "bones": 47,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.999664306640625,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 4.354298289399594e-05,
+      "normalization": {
+        "centre": [
+          -0.000732421875,
+          0.00516510009765625,
+          -0.009033203125
+        ],
+        "scale": 1.99658203125,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 6103,
+      "rig_active_voxels": 331,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_0/25d068a61fead14598ed2c48404ec19efa09835e41219e8c0190373748ed1a12/73",
+      "split": "train",
+      "filename": "train_98a943b96596e293.npz",
+      "prepared_sha256": "373bedd68b6f7afdc75b5bf1e0a31c01d4f407e9e53abd0444fcb2b2098d0f9d",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 59,
+      "bones": 42,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.0099945068359375,
+      "skin_source_mass_max": 2.0,
+      "source_mass_mean_abs_deviation": 0.07903423861716874,
+      "normalization": {
+        "centre": [
+          -8.651614189147949e-05,
+          0.00040408968925476074,
+          0.002279415726661682
+        ],
+        "scale": 1.9989506602287292,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 5317,
+      "rig_active_voxels": 239,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "glb_0/b2c308a54df031c10bd10afb166f1c49a663087b187717658c13e0f3690c35f5/72",
+      "split": "train",
+      "filename": "train_f69b46c7ec06f47f.npz",
+      "prepared_sha256": "6d8f6cb54671cf92e0211c865153c359fd54c6ff3568c0ab187c9cb3b4f4d2d4",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 29,
+      "bones": 20,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.0003280639648438,
+      "source_mass_mean_abs_deviation": 4.5668995880987495e-05,
+      "normalization": {
+        "centre": [
+          -0.0008500218391418457,
+          0.0002598762512207031,
+          -0.00031720101833343506
+        ],
+        "scale": 1.9907724857330322,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 4277,
+      "rig_active_voxels": 172,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_2/90c42795a460fa881ebabd37d55f729ee5cee0e3687abdfb47967cb7cd1458c0",
+      "split": "train",
+      "filename": "train_8c8e5be6aec81615.npz",
+      "prepared_sha256": "7b5c4f743d4ff1becabfb49b196a6d8afc33233c7b1733db94346eda80cb29c8",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 46,
+      "bones": 30,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.999664306640625,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 5.8871330111287534e-05,
+      "normalization": {
+        "centre": [
+          -0.00390625,
+          0.004840850830078125,
+          -0.0009765625
+        ],
+        "scale": 1.9833984375,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 5574,
+      "rig_active_voxels": 290,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_6/b57491f95ba2c6bd384fa581a65e5d4fbc7dd77e8b3fe4cd6cd6b3da1a454e8f",
+      "split": "train",
+      "filename": "train_35b7bba146f274d3.npz",
+      "prepared_sha256": "13ae27b142eb67e5c1aabfb0b9658e19bef0e499d9ea1c0552b88eee00914321",
+      "skeleton_status": "excluded_from_skeleton",
+      "skeleton_exclusion_reason": "Expected one root",
+      "joints": 40,
+      "bones": 29,
+      "skin_valid_points": 5861,
+      "skin_source_mass_min": 0.0,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 0.2967633688967908,
+      "normalization": {
+        "centre": [
+          -0.003173828125,
+          8.499622344970703e-05,
+          0.001220703125
+        ],
+        "scale": 1.98779296875,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3021,
+      "rig_active_voxels": 104,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "000-143/55f58895c5c6464cb6471851e1c6dca2/57",
+      "split": "train",
+      "filename": "train_de89dd7c436f6794.npz",
+      "prepared_sha256": "e0cab7bf92139da07ce94e79cf2f974674aa4839255e731bd4487cf0e11d5c43",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 35,
+      "bones": 28,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 9.472452074987814e-05,
+      "normalization": {
+        "centre": [
+          -0.00039145350456237793,
+          0.000291675329208374,
+          -0.0012713074684143066
+        ],
+        "scale": 1.9864144325256348,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 5614,
+      "rig_active_voxels": 338,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_1/1306a15a4daf9c0f8fa5012f903f47b99c2cb3fe0b05244155e820253490fc65/49",
+      "split": "train",
+      "filename": "train_3bc89e528bd9c6c3.npz",
+      "prepared_sha256": "710f698abb002b544d1114a6bf3918269daa66b69f7f0a7cbb84bcb96bf624f2",
+      "skeleton_status": "excluded_from_skeleton",
+      "skeleton_exclusion_reason": "Expected one root",
+      "joints": 25,
+      "bones": 19,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.106689453125,
+      "skin_source_mass_max": 1.0087814331054688,
+      "source_mass_mean_abs_deviation": 0.025054895006178413,
+      "normalization": {
+        "centre": [
+          0.0007956326007843018,
+          0.0001518726348876953,
+          0.0010477006435394287
+        ],
+        "scale": 1.9977490901947021,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3834,
+      "rig_active_voxels": 189,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_0/ab50e57cb73f10221528662f7d3416c10063c601062f9045ffeeb7b424d75d8c",
+      "split": "train",
+      "filename": "train_53b70e7dd74483bf.npz",
+      "prepared_sha256": "96ee8d2aaf52b9c90e00979728c15fdd00757f00e0f3de8c0b5df11b96b61cb1",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 35,
+      "bones": 28,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.000369668006897,
+      "source_mass_mean_abs_deviation": 0.00011804357927758247,
+      "normalization": {
+        "centre": [
+          -0.005859375,
+          0.0006246566772460938,
+          0.0
+        ],
+        "scale": 1.9967975616455078,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 5103,
+      "rig_active_voxels": 229,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "dae_0/1cabe70a5f0eda9eec9c861fc437aadaef90bbed0579cd4b6c5c7dc4ab8a7558",
+      "split": "train",
+      "filename": "train_f66627b645a9dffa.npz",
+      "prepared_sha256": "5fe934a99d03722347a5637504feb94f9021b04fc3ccd391ca9004f9f3b8c9c1",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 27,
+      "bones": 22,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 6.616811879212037e-05,
+      "normalization": {
+        "centre": [
+          -0.0029296875,
+          0.0,
+          0.0084228515625
+        ],
+        "scale": 1.998046875,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3256,
+      "rig_active_voxels": 239,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_5/3d185eef655972f986f52f1086f3c2c47bce194d6bce94372edbfae1c5223224",
+      "split": "train",
+      "filename": "train_1653fe645069f999.npz",
+      "prepared_sha256": "97cddac19b297d6f9a134c4764aed758480fa19fe490e67d275154a1efc32548",
+      "skeleton_status": "excluded_from_skeleton",
+      "skeleton_exclusion_reason": "Expected one root",
+      "joints": 67,
+      "bones": 43,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.768310546875,
+      "skin_source_mass_max": 2.000228226184845,
+      "source_mass_mean_abs_deviation": 0.07342627992329653,
+      "normalization": {
+        "centre": [
+          0.000244140625,
+          0.00026679039001464844,
+          -0.001708984375
+        ],
+        "scale": 1.9955601692199707,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 5284,
+      "rig_active_voxels": 299,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_5/6e7d25855ecdca5f6258ad5012518894f14144a6efe0b5ff2cba97ae547554db/8",
+      "split": "train",
+      "filename": "train_d5e13ec8b307a5a7.npz",
+      "prepared_sha256": "e7a323e0642d37e2bc427f34bd88c1e60d93c5e0952d89909d8cb88e77c88785",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 16,
+      "bones": 12,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9972391128540039,
+      "skin_source_mass_max": 1.0003433227539062,
+      "source_mass_mean_abs_deviation": 0.00016811966634122655,
+      "normalization": {
+        "centre": [
+          -0.0054808855056762695,
+          3.6954879760742188e-06,
+          -0.0005214810371398926
+        ],
+        "scale": 1.9939923286437988,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 4952,
+      "rig_active_voxels": 212,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_3/56771ad3e6b9e22b3d283f5423bf928f6c1809ad5f7b0233846da07c6c9637aa/207",
+      "split": "train",
+      "filename": "train_363f6fc458cf5f58.npz",
+      "prepared_sha256": "952a2f4f7f6796726dd2401bf8961ff6cf698c4260fa56b623f697a00fb50d71",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 29,
+      "bones": 22,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9984292984008789,
+      "skin_source_mass_max": 1.0003585815429688,
+      "source_mass_mean_abs_deviation": 0.00015385340520879254,
+      "normalization": {
+        "centre": [
+          0.0007992684841156006,
+          0.002070188522338867,
+          -0.0011336952447891235
+        ],
+        "scale": 1.9950917959213257,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 2469,
+      "rig_active_voxels": 228,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_3/c10914c0c843329adb68f442950d9e0fb974b9030a28760690256cfe8831f834/25",
+      "split": "train",
+      "filename": "train_98725d01b91afd57.npz",
+      "prepared_sha256": "d64b6aa111b1466cbcbad4cce076e44a43f2626e1e470d33136196d1c64a8d48",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 45,
+      "bones": 34,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.0003662705421448,
+      "source_mass_mean_abs_deviation": 0.00011059652752010152,
+      "normalization": {
+        "centre": [
+          -0.0022879838943481445,
+          3.221631050109863e-05,
+          -0.0010745227336883545
+        ],
+        "scale": 1.998188078403473,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3972,
+      "rig_active_voxels": 273,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_1/28f17f72e3b5a98972fe793ffb31725c50e8441e5a4f3b69154ea9dd5459bbb6/73",
+      "split": "train",
+      "filename": "train_d563c01ebf5223d3.npz",
+      "prepared_sha256": "7324bd651ced6667a28ea75153456c1449385e1bc318e01e22ae8a9651d6cbfd",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 69,
+      "bones": 52,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 0.00011789540440076962,
+      "normalization": {
+        "centre": [
+          -0.0010876059532165527,
+          0.0005394220352172852,
+          0.005490988492965698
+        ],
+        "scale": 1.9973315000534058,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3807,
+      "rig_active_voxels": 290,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_1/6122f9f491636cf986f61619e8db8b5462f3604fda0e8b2b7281910234ea3ef1/25",
+      "split": "train",
+      "filename": "train_0616d77d643e2023.npz",
+      "prepared_sha256": "77b328d096ce6ce24d1802973a2fb233a72b7c6fd10b8e1c8bc4d259d157b7f1",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 67,
+      "bones": 52,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996795654296875,
+      "skin_source_mass_max": 1.0003433227539062,
+      "source_mass_mean_abs_deviation": 4.9056085117626935e-05,
+      "normalization": {
+        "centre": [
+          0.0003810673952102661,
+          4.023313522338867e-06,
+          -0.0009495913982391357
+        ],
+        "scale": 1.9990869164466858,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3683,
+      "rig_active_voxels": 331,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_3/c2997f8d0c58b4db255c1bf5910877c7b83d1fad7abbcc85f3d2fb48cda96c41/188",
+      "split": "train",
+      "filename": "train_d419a1e02df1029a.npz",
+      "prepared_sha256": "791279430876f8a7aef3623ad7fa232aa047884c2b56c1c24e41fde463598824",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 69,
+      "bones": 52,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996210932731628,
+      "skin_source_mass_max": 1.4294748306274414,
+      "source_mass_mean_abs_deviation": 0.006527635523525532,
+      "normalization": {
+        "centre": [
+          0.0016209185123443604,
+          0.0002643167972564697,
+          0.001830965280532837
+        ],
+        "scale": 1.9957626461982727,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 2788,
+      "rig_active_voxels": 256,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_0/d56a5e2c8231391f2b005a63ae292f63023ab118890ca37033f05effd80cd44f/13",
+      "split": "train",
+      "filename": "train_2c81e85410fe9a95.npz",
+      "prepared_sha256": "dd132c16e7f2c108708046203b457a8144e256db1681503c9ba78edb49a47665",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 69,
+      "bones": 52,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.000335693359375,
+      "source_mass_mean_abs_deviation": 1.903196971397847e-05,
+      "normalization": {
+        "centre": [
+          -0.0003156512975692749,
+          6.899237632751465e-05,
+          -0.0004051029682159424
+        ],
+        "scale": 1.999765694141388,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3745,
+      "rig_active_voxels": 284,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_6/939026e1c42a5537181b034374ec649faab6b2d9022eddb3226ba1e489bd4f15",
+      "split": "train",
+      "filename": "train_611824afa448d4a7.npz",
+      "prepared_sha256": "ba58ebd987800031439a5163c6b05e5656ad492e9d33b61b25830cb53dcc3d01",
+      "skeleton_status": "excluded_from_skeleton",
+      "skeleton_exclusion_reason": "Expected one root",
+      "joints": 35,
+      "bones": 21,
+      "skin_valid_points": 4047,
+      "skin_source_mass_min": 0.0,
+      "skin_source_mass_max": 2.79296875,
+      "source_mass_mean_abs_deviation": 0.6389404743313207,
+      "normalization": {
+        "centre": [
+          -0.001953125,
+          0.001163482666015625,
+          0.01171875
+        ],
+        "scale": 1.9658203125,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3222,
+      "rig_active_voxels": 287,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "000-156/1ca234dea53a4320a048fad3c3e2bfe4/224",
+      "split": "train",
+      "filename": "train_bab75b89f886ee03.npz",
+      "prepared_sha256": "3bc4defc399672d9db065f2b54ffd86e32c704f79f8e1666a1d85599a67c0beb",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 71,
+      "bones": 55,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 9.756803774507716e-05,
+      "normalization": {
+        "centre": [
+          4.9173831939697266e-05,
+          0.0011100172996520996,
+          0.0007454454898834229
+        ],
+        "scale": 1.9972800016403198,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 5516,
+      "rig_active_voxels": 336,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "000-056/1df49f839f674e3fb7a3d3481caf0855/18",
+      "split": "train",
+      "filename": "train_2383c7a62d347c0b.npz",
+      "prepared_sha256": "0bc087d20e9b09f567784d47cbda6a22f07c034c036178948645f07c823d2021",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 75,
+      "bones": 54,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 8.16680840216577e-05,
+      "normalization": {
+        "centre": [
+          0.002479344606399536,
+          0.0009778141975402832,
+          -0.002090662717819214
+        ],
+        "scale": 1.9920796751976013,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 5876,
+      "rig_active_voxels": 481,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_2/66b0c810befa169969d9bd7c7208f578f918ddcfb822e5fab8ec90ea79d6f63a",
+      "split": "train",
+      "filename": "train_37ec71c2fc9bbefe.npz",
+      "prepared_sha256": "a8303544a56c6ff3fd6f9c68515577515866d1f9252af757bc2caf5d3698060f",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 57,
+      "bones": 37,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996082782745361,
+      "skin_source_mass_max": 1.0003509521484375,
+      "source_mass_mean_abs_deviation": 5.525042797671631e-05,
+      "normalization": {
+        "centre": [
+          0.00048828125,
+          0.00018596649169921875,
+          0.0003662109375
+        ],
+        "scale": 1.9996280670166016,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3582,
+      "rig_active_voxels": 237,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_4/f6012b620c48dd50f51700b8f89a1f8858c4e442ca4601c293917cec922badca",
+      "split": "train",
+      "filename": "train_19beb57dbe5bbd2b.npz",
+      "prepared_sha256": "fc6a05cfa89733d32c3c5c159442bcb295f495736a61e044cde2f3e58501feea",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 92,
+      "bones": 59,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.2106475830078125,
+      "skin_source_mass_max": 1.14111328125,
+      "source_mass_mean_abs_deviation": 0.03321440951549448,
+      "normalization": {
+        "centre": [
+          0.0,
+          2.2232532501220703e-05,
+          6.103515625e-05
+        ],
+        "scale": 1.9999555349349976,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 2116,
+      "rig_active_voxels": 224,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_3/4aa9f1c40f5711c363f5e188b15cb38d60860cb162a3baa77b4449349a92a288/19",
+      "split": "train",
+      "filename": "train_eafc727172dc5685.npz",
+      "prepared_sha256": "9557c42f60cdd6b80b6c7021a10bb67f924b7dd8b6578725d4f37f3e25bc313b",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 50,
+      "bones": 39,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 0.00011164081661263481,
+      "normalization": {
+        "centre": [
+          -0.0003742128610610962,
+          0.0012347996234893799,
+          0.0011724978685379028
+        ],
+        "scale": 1.9971982836723328,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3358,
+      "rig_active_voxels": 263,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "glb_0/827b4c7a4ee861e05792aee1da7f31568d27942bb1fbd61757809f38df8573ad/13",
+      "split": "train",
+      "filename": "train_89e26e9f2de7e39d.npz",
+      "prepared_sha256": "6649fcba07a29f27bdd9c048fc3eb22ba8278969b72c08c8db8cac1434c30af4",
+      "skeleton_status": "excluded_from_skeleton",
+      "skeleton_exclusion_reason": "Expected one root",
+      "joints": 38,
+      "bones": 25,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 0.00010765883780550212,
+      "normalization": {
+        "centre": [
+          -0.05285570025444031,
+          0.007562547922134399,
+          0.0010136961936950684
+        ],
+        "scale": 1.9842451214790344,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 4955,
+      "rig_active_voxels": 319,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_7/ccb0b5533fdb975286a9d250bcad75360fdb35c4a1995157ebef45e8798c99ff/7",
+      "split": "train",
+      "filename": "train_b2a1bd369f86f0e3.npz",
+      "prepared_sha256": "1209447bc6dfd72df618a70feac56a7a6fb79158a9e523b66acdd90698857a60",
+      "skeleton_status": "excluded_from_skeleton",
+      "skeleton_exclusion_reason": "Expected one root",
+      "joints": 33,
+      "bones": 18,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.027169227600097656,
+      "skin_source_mass_max": 1.0,
+      "source_mass_mean_abs_deviation": 0.234030496008927,
+      "normalization": {
+        "centre": [
+          0.002490505576133728,
+          0.0004482567310333252,
+          -0.0010918974876403809
+        ],
+        "scale": 1.9963059425354004,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 4676,
+      "rig_active_voxels": 155,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_0/562fb1ec3cba5425386ecfee9c995c2528603ae094d9b6ee951e57bd4c378416",
+      "split": "val",
+      "filename": "val_39120b5916f89e9a.npz",
+      "prepared_sha256": "18e839ee48b77a584bbf86f7b79c8d8a06bc2a295bbf8395624d9d0961356610",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 59,
+      "bones": 42,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.0289459228515625,
+      "skin_source_mass_max": 1.56103515625,
+      "source_mass_mean_abs_deviation": 0.22200117477041204,
+      "normalization": {
+        "centre": [
+          0.00146484375,
+          0.0003895759582519531,
+          -0.000244140625
+        ],
+        "scale": 1.998244285583496,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3035,
+      "rig_active_voxels": 205,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_0/9cd407725225a3507f36c263ebe04489d26f5c0d029fbb2b0bdf76285bd8d55a",
+      "split": "val",
+      "filename": "val_f6989f7c75393938.npz",
+      "prepared_sha256": "b2915d4c943a4ab815ff887d4018c2925daa7cef874af3d2916f4efc2c1d7a99",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 70,
+      "bones": 53,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.797235369682312,
+      "skin_source_mass_max": 1.0003280639648438,
+      "source_mass_mean_abs_deviation": 0.001871562642918434,
+      "normalization": {
+        "centre": [
+          -0.0013427734375,
+          0.000743865966796875,
+          -0.00091552734375
+        ],
+        "scale": 1.9975357055664062,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3222,
+      "rig_active_voxels": 262,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_3/89f6c0932cd7540ccb9b45cef1b76a2f53024138c70b40c6472491a69ffa4cd0",
+      "split": "val",
+      "filename": "val_1dde85bef53ecba5.npz",
+      "prepared_sha256": "2c97c213cf05a49f59c8408b229069ec121361e505d0592972bf2859f0825e78",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 69,
+      "bones": 52,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9986796379089355,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 0.00012976674042874947,
+      "normalization": {
+        "centre": [
+          0.003173828125,
+          0.0020694732666015625,
+          -0.002685546875
+        ],
+        "scale": 1.9792594909667969,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3644,
+      "rig_active_voxels": 298,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "000-025/c20b4147e7c04d3289b981d6d8fe1141/519",
+      "split": "val",
+      "filename": "val_7e9313f4cf0d1371.npz",
+      "prepared_sha256": "a764e6b5284d444e4b3883be732c01f2f73855d9d835322d05a851144f0d622f",
+      "skeleton_status": "excluded_from_skeleton",
+      "skeleton_exclusion_reason": "Expected one root",
+      "joints": 59,
+      "bones": 49,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 0.0001153870252892375,
+      "normalization": {
+        "centre": [
+          0.000286102294921875,
+          0.030348286032676697,
+          0.00017321109771728516
+        ],
+        "scale": 1.9985439777374268,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 2243,
+      "rig_active_voxels": 177,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "glb_0/dbaa4465a411ebc9c383d6092404e9e413cd0758b11a0e9cc6e10a1a0cf1599c",
+      "split": "val",
+      "filename": "val_0557762e10427187.npz",
+      "prepared_sha256": "d6ae6d7b499e86240ad261ec957e2bc1a3e3d1fb6b6da34b6ffaf7c9374ad79a",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 70,
+      "bones": 53,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996185302734375,
+      "skin_source_mass_max": 1.0003681182861328,
+      "source_mass_mean_abs_deviation": 0.00011214111873414367,
+      "normalization": {
+        "centre": [
+          -0.003173828125,
+          0.0002605915069580078,
+          -0.002685546875
+        ],
+        "scale": 1.998502254486084,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 2890,
+      "rig_active_voxels": 257,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_9/3d66bf061b32fcb62f750fdae4e52e4535dffc689a50e58f472bd02d425faeed/19",
+      "split": "val",
+      "filename": "val_139492934acf6a47.npz",
+      "prepared_sha256": "3f68a1bdb890a3d8b3690c189a2bb335b3aa97d4eb74f4df7e0e7972258b01b0",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 69,
+      "bones": 52,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.0003547668457031,
+      "source_mass_mean_abs_deviation": 7.450288103427738e-05,
+      "normalization": {
+        "centre": [
+          0.006168365478515625,
+          0.0014505982398986816,
+          2.682209014892578e-07
+        ],
+        "scale": 1.9959591031074524,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3644,
+      "rig_active_voxels": 259,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_0/f50d43a0b0c19a502141b63ac12afe990c1749291e99d735f49c95e835b765d4/67",
+      "split": "val",
+      "filename": "val_58d186455088e6d2.npz",
+      "prepared_sha256": "f6478b2239dfd274798202928ff0fa6c665bf19d7e30f805691d2014ecd9f7ef",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 35,
+      "bones": 28,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996452331542969,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 0.00011605679901549593,
+      "normalization": {
+        "centre": [
+          0.0019060969352722168,
+          0.0001456141471862793,
+          -0.00029630959033966064
+        ],
+        "scale": 1.9949429035186768,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 2842,
+      "rig_active_voxels": 221,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_5/1ea3a4eb16bc1678bc543bdd2d9bb920db76924b3fd0df98724f8da11038ae78",
+      "split": "val",
+      "filename": "val_9b186771f8df447b.npz",
+      "prepared_sha256": "de77674df4e8f75194b69164f5870612683ac9050c43554ee3e852d3b6f278d9",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 27,
+      "bones": 19,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996566772460938,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 8.941425767261535e-05,
+      "normalization": {
+        "centre": [
+          0.00146484375,
+          -0.0005536079406738281,
+          -0.001220703125
+        ],
+        "scale": 1.96142578125,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 5209,
+      "rig_active_voxels": 175,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_6/bb074c3be0e73667afbd2f3c82c6ec14ae06173f9275b26207e651630955a35b/19",
+      "split": "val",
+      "filename": "val_8e7cf4607a65d21c.npz",
+      "prepared_sha256": "c27810ac2862b5e498e56a16cff849737e62246ab076e08b8d57dd3b6227d7bd",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 94,
+      "bones": 61,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9989070892333984,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 0.00012006732868030667,
+      "normalization": {
+        "centre": [
+          0.00019691884517669678,
+          0.0007775723934173584,
+          -0.00095367431640625
+        ],
+        "scale": 1.997663676738739,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3356,
+      "rig_active_voxels": 275,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_8/1962d42de37f886bc5c9575d8bd6f9b40cfde8c9067654c1bf0e9d36ceb561ed/601",
+      "split": "val",
+      "filename": "val_48d05644ece86f91.npz",
+      "prepared_sha256": "04d2124cc4045f80b6a52d20f8b2131fe7816d99a1c5c6ac6b19d16bc8f43b4c",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 22,
+      "bones": 18,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 8.108911424642429e-05,
+      "normalization": {
+        "centre": [
+          0.010939180850982666,
+          0.006805747747421265,
+          -0.0037169456481933594
+        ],
+        "scale": 1.9612642526626587,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 2636,
+      "rig_active_voxels": 207,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_9/e7be37984b85ebb43f038b4f451934c9a9402d28672ca5e897cd2352d75927b4",
+      "split": "val",
+      "filename": "val_fc1e39959de63ea8.npz",
+      "prepared_sha256": "1a3ccb2131879de62ddd10c4ba911e4c7209db2d880127923182a8bf5e9ca66d",
+      "skeleton_status": "excluded_from_skeleton",
+      "skeleton_exclusion_reason": "Expected one root",
+      "joints": 26,
+      "bones": 20,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.08764839172363281,
+      "skin_source_mass_max": 1.402587890625,
+      "source_mass_mean_abs_deviation": 0.0468724281527102,
+      "normalization": {
+        "centre": [
+          -0.002197265625,
+          5.3048133850097656e-05,
+          0.00341796875
+        ],
+        "scale": 1.9725501537322998,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 4172,
+      "rig_active_voxels": 192,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_5/2c2494eb28e8a28b04de415051e4cfaa35e61d40ee4923650e546ece3abbda68/73",
+      "split": "val",
+      "filename": "val_c2de2666cf0a4112.npz",
+      "prepared_sha256": "d0045f2a89731a8dec90fd4aea0b2bf6d7e85f5afdf9b374b8bab3564aafdbb8",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 21,
+      "bones": 15,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.999755859375,
+      "skin_source_mass_max": 1.000244140625,
+      "source_mass_mean_abs_deviation": 9.961746400222182e-06,
+      "normalization": {
+        "centre": [
+          0.0007426142692565918,
+          0.0009770095348358154,
+          0.0002757608890533447
+        ],
+        "scale": 1.9935447573661804,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 5155,
+      "rig_active_voxels": 225,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "000-003/a38ee59937b54e258e7ae700ef162a55/36",
+      "split": "val",
+      "filename": "val_63b5b154eebd58cf.npz",
+      "prepared_sha256": "15ad1a7a1546a46835f5a02e9a6926daa56f00f8713f3d42b4d17437f78aff20",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 89,
+      "bones": 60,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.0003929138183594,
+      "source_mass_mean_abs_deviation": 0.00011048069427488372,
+      "normalization": {
+        "centre": [
+          -0.003698676824569702,
+          -0.0032675564289093018,
+          -0.010959610342979431
+        ],
+        "scale": 1.983319103717804,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 528,
+      "rig_active_voxels": 238,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_3/df97300f44f18cb1304d2986ae5cce178b1f8228b7842f8491c9f605883f414e/13",
+      "split": "val",
+      "filename": "val_b6f2d8ab30604491.npz",
+      "prepared_sha256": "f2e855f655ff3380be2074a669da53032037c3813c33d5168d6164da9b37d888",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 67,
+      "bones": 50,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.91021728515625,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 0.00012395737576298416,
+      "normalization": {
+        "centre": [
+          0.00039523839950561523,
+          6.0111284255981445e-05,
+          -0.0003604888916015625
+        ],
+        "scale": 1.9979422688484192,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 2536,
+      "rig_active_voxels": 245,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_4/659da8d3211bda7f9685528a929f9cc16930f45eac2f11146b7b8398a0921198/91",
+      "split": "val",
+      "filename": "val_1b7456c0409de2fc.npz",
+      "prepared_sha256": "1e1f2ce4d8e7f8de8ecf20f73708c500c34f112a543f35f00bb4b02e388f59cd",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 45,
+      "bones": 34,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.0003399848937988,
+      "source_mass_mean_abs_deviation": 5.744049121858552e-05,
+      "normalization": {
+        "centre": [
+          -0.0006985664367675781,
+          7.18235969543457e-06,
+          -0.000323370099067688
+        ],
+        "scale": 1.9977014660835266,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3453,
+      "rig_active_voxels": 164,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_7/8c53aa4d0962eef89e6efe9120b145b90d5603b32235c0dc61ec7d5c1fa0643f/31",
+      "split": "val",
+      "filename": "val_587567411a97fc27.npz",
+      "prepared_sha256": "e0ad89476db67459e98ac10027c4a6e9f0f0a9d50d93b31ed016a8eaa536a0a4",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 26,
+      "bones": 19,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 8.829506987240165e-05,
+      "normalization": {
+        "centre": [
+          0.0007148087024688721,
+          8.854269981384277e-05,
+          -0.0006180703639984131
+        ],
+        "scale": 1.9969996809959412,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3042,
+      "rig_active_voxels": 119,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_5/b2c0140046712d30016db9135ce53b0e8fa17e1b337331574b4738cf22129ad4",
+      "split": "test",
+      "filename": "test_0b7dc2f979ae74eb.npz",
+      "prepared_sha256": "e2f709fa20e1988dafd687039e84393d28b9c8c3776e198d1acd7375011e8ec1",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 25,
+      "bones": 16,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996099472045898,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 7.09624873707071e-05,
+      "normalization": {
+        "centre": [
+          0.001708984375,
+          0.0012063980102539062,
+          0.0001220703125
+        ],
+        "scale": 1.98876953125,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 4682,
+      "rig_active_voxels": 148,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_9/985aac9abf3a264d154f5a68fa46fda015cd12affda1e7a69a054b49ae6e9d2d",
+      "split": "test",
+      "filename": "test_5f71afc15c041461.npz",
+      "prepared_sha256": "eedbd813a3fe9171cb2022cd056d3fd690aed69d92d64f92f2ae75db80ef19a5",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 81,
+      "bones": 57,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.99853515625,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 0.0001467863767175004,
+      "normalization": {
+        "centre": [
+          0.000244140625,
+          0.0013475418090820312,
+          0.00048828125
+        ],
+        "scale": 1.99560546875,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 5334,
+      "rig_active_voxels": 697,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_5/2d79e720cd61fa5e5764304334ccf839ff5c53eae00731fd95b5ab33b6760cec",
+      "split": "test",
+      "filename": "test_13e2877885fac83d.npz",
+      "prepared_sha256": "2ad48bf9f124f77a7970ef301b1ff31d91716ebf34c4a504fc8f88dc2567c56b",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 29,
+      "bones": 22,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 0.00010715063399402425,
+      "normalization": {
+        "centre": [
+          -0.00341796875,
+          4.017353057861328e-05,
+          0.001220703125
+        ],
+        "scale": 1.9872243404388428,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3149,
+      "rig_active_voxels": 191,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_3/1872b9de65ef74317d406338547269a2aa6a278427a552407176ebc91166590c",
+      "split": "test",
+      "filename": "test_fcefe59e0ca0640b.npz",
+      "prepared_sha256": "49d39af02e7724adb0ec9d8eae5b50b1377652556cb31fcf60cd693dd6f02221",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 69,
+      "bones": 52,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.000375747680664,
+      "source_mass_mean_abs_deviation": 8.864588744472712e-05,
+      "normalization": {
+        "centre": [
+          -0.0040283203125,
+          0.0010213851928710938,
+          -0.00048828125
+        ],
+        "scale": 1.9979572296142578,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3713,
+      "rig_active_voxels": 285,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_5/b4e297ae05c858615d01507910ced4d9b7e0ccdb4219c718e23c1be0630f7de7",
+      "split": "test",
+      "filename": "test_5f9868db50527fa2.npz",
+      "prepared_sha256": "f57a2a202bbbbf4b20a215a00f9de46b77ddb6396c9448e2fa0de50d49c18bb7",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 35,
+      "bones": 28,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9995994567871094,
+      "skin_source_mass_max": 1.0003719329833984,
+      "source_mass_mean_abs_deviation": 9.194399899570271e-05,
+      "normalization": {
+        "centre": [
+          0.001953125,
+          3.5643577575683594e-05,
+          0.00341796875
+        ],
+        "scale": 1.9921162128448486,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 5312,
+      "rig_active_voxels": 183,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "000-082/c098c598657843ca92ced396a8b22d33",
+      "split": "test",
+      "filename": "test_61e1f7bf54f94465.npz",
+      "prepared_sha256": "05b1c8d092e3b00e510a17153b6e46c466f2442735a942b9c459757555b9ba0e",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 56,
+      "bones": 39,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.0003700256347656,
+      "source_mass_mean_abs_deviation": 4.8698500904720277e-05,
+      "normalization": {
+        "centre": [
+          0.00146484375,
+          0.0006442070007324219,
+          -0.0006103515625
+        ],
+        "scale": 1.9811334609985352,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 2587,
+      "rig_active_voxels": 228,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_0/0459f448cea0d970d119d8ff85e9b163a600025c4fdc572f183f281df36460e2",
+      "split": "test",
+      "filename": "test_27b6e8cc90ef48b2.npz",
+      "prepared_sha256": "937f00e206c920fa58f64e0a8257125a0f9c81380200d422ed2413815834c423",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 66,
+      "bones": 49,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 0.00010865734657272696,
+      "normalization": {
+        "centre": [
+          -0.0003662109375,
+          0.00012505054473876953,
+          0.0015869140625
+        ],
+        "scale": 1.9938905239105225,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 4046,
+      "rig_active_voxels": 271,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_6/e0788bc7d901febbb83a8008cb7233c0651bd8b2deece56d8fb5c9fb87d8be88",
+      "split": "test",
+      "filename": "test_30f674276d267739.npz",
+      "prepared_sha256": "b751424a2c474aff2e37c4f2fb813e34c9428a8abcf81ebc9e6e2e6cc134cb67",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 29,
+      "bones": 22,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996347427368164,
+      "skin_source_mass_max": 1.0003738403320312,
+      "source_mass_mean_abs_deviation": 0.00011143875599373132,
+      "normalization": {
+        "centre": [
+          0.0,
+          0.00034546852111816406,
+          -0.00146484375
+        ],
+        "scale": 1.9944262504577637,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3700,
+      "rig_active_voxels": 279,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_2/9fa98e2046a5d786fe98bfdf268f6ccafe74934a09318db8655e42d7f5b1a0fc",
+      "split": "test",
+      "filename": "test_f764f51c6dd435c3.npz",
+      "prepared_sha256": "73d425e029a549dbeb9b0df88fee505197af118f2180323e38452378139d0875",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 50,
+      "bones": 37,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 2.8600479708984494e-05,
+      "normalization": {
+        "centre": [
+          0.0008544921875,
+          0.0041656494140625,
+          -0.00439453125
+        ],
+        "scale": 1.989715576171875,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3494,
+      "rig_active_voxels": 282,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_2/20311461344d98ec6aeacd51535ead76e91b7abe22fa1ec4a0afc43e13c4ba38",
+      "split": "test",
+      "filename": "test_803c47b10c699939.npz",
+      "prepared_sha256": "9424a572acc7e2e4781e4ce7916460c39e24fcc5e0dd04fc497037e1fd354953",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 24,
+      "bones": 18,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9177665710449219,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 0.015024694614112377,
+      "normalization": {
+        "centre": [
+          -0.00048828125,
+          0.002044677734375,
+          0.0001220703125
+        ],
+        "scale": 1.99591064453125,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3713,
+      "rig_active_voxels": 233,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_8/9f6d60aa301330312d6d3576762629503d6d8ec68f4c4837e69378339b5dc3b1",
+      "split": "test",
+      "filename": "test_4e5dc0c2216e3436.npz",
+      "prepared_sha256": "fd3a19792f497ac26b2cf5d52f1dee279ce7e86c035e7feb32ca9b2b54102580",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 35,
+      "bones": 28,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 0.00010045142698800191,
+      "normalization": {
+        "centre": [
+          -0.0003662109375,
+          1.6689300537109375e-05,
+          -0.00048828125
+        ],
+        "scale": 1.9989900588989258,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3691,
+      "rig_active_voxels": 216,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_2/c29afa31ba19b1eddf0e94b30033381e328f7bf5e77a39afa4b1f913f7b9fc30",
+      "split": "test",
+      "filename": "test_763a49596dc0edf7.npz",
+      "prepared_sha256": "5a768aee9f1dde2ea31650b71c9a5ee397642cb0b1bb4f2ed6aa6f5e096a5202",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 92,
+      "bones": 59,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9983711242675781,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 0.00020287894585635513,
+      "normalization": {
+        "centre": [
+          -0.000244140625,
+          3.272294998168945e-05,
+          -0.00439453125
+        ],
+        "scale": 1.9950517416000366,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 5111,
+      "rig_active_voxels": 319,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "000-073/c2a1b3d46cb441de9b840d5be57af5e7",
+      "split": "test",
+      "filename": "test_6f349665a69a2324.npz",
+      "prepared_sha256": "0c951ce13b9e7cf8d60d2097d1d16de4f3112ddb486a18cc8d88d64bab1c7a20",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 69,
+      "bones": 52,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9995880126953125,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 0.0001017172253341414,
+      "normalization": {
+        "centre": [
+          0.00048828125,
+          0.0008420944213867188,
+          -0.00048828125
+        ],
+        "scale": 1.9973392486572266,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3363,
+      "rig_active_voxels": 294,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_3/13260ace433edf3ee0384c678b82d3668256084dbe211469196ccc8961d014ec",
+      "split": "test",
+      "filename": "test_82a446604326a4d2.npz",
+      "prepared_sha256": "2fa3a0ab1ab3f8287ff0125370ab589a1c2c4ae354e216adc7017600e3d31707",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 68,
+      "bones": 51,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.999629020690918,
+      "skin_source_mass_max": 1.0003528594970703,
+      "source_mass_mean_abs_deviation": 0.00010321321315132082,
+      "normalization": {
+        "centre": [
+          -0.002685546875,
+          -0.0008119046688079834,
+          -0.002685546875
+        ],
+        "scale": 1.990881621837616,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 4768,
+      "rig_active_voxels": 318,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_0/72d640d3ea079ad6418195dfeea663a49f07e5b5b53d8e5ffb3172e17fb408f1",
+      "split": "test",
+      "filename": "test_da18f795f9b15dc2.npz",
+      "prepared_sha256": "2b44bc64f743052b8b51940cb530485f3749ba2e53fa04c2d788faae008b71c3",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 24,
+      "bones": 17,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.999755859375,
+      "skin_source_mass_max": 2.0,
+      "source_mass_mean_abs_deviation": 0.11114453784830403,
+      "normalization": {
+        "centre": [
+          0.0001220703125,
+          0.0,
+          0.0006103515625
+        ],
+        "scale": 2.0,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 2931,
+      "rig_active_voxels": 134,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_2/ac6ac5194b35f126024aab2cdddeccfc64d36746b4df99293e5c5972ec5804be",
+      "split": "test",
+      "filename": "test_ca539ff08d6d3cf5.npz",
+      "prepared_sha256": "bfa3992beb39a5811a2ef7e090733a5d60486e1f03fba31dd696be1b6e7ee530",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 16,
+      "bones": 11,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.999755859375,
+      "skin_source_mass_max": 1.000244140625,
+      "source_mass_mean_abs_deviation": 3.5824195947498083e-06,
+      "normalization": {
+        "centre": [
+          0.0,
+          0.008853107690811157,
+          -0.001953125
+        ],
+        "scale": 2.013960540294647,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 4721,
+      "rig_active_voxels": 112,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_7/e33cb66976a5c0db9065325d1273f46fade7c5f24438ac4bdb4cd0b5cf23af78",
+      "split": "test",
+      "filename": "test_8e59ede097085a5d.npz",
+      "prepared_sha256": "0307b52ec75fba79fc93a718e3a178de8739ec9fd3ec003531cc3cf83ce9c82d",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 34,
+      "bones": 25,
+      "skin_valid_points": 8142,
+      "skin_source_mass_min": 0.0,
+      "skin_source_mass_max": 1.0003509521484375,
+      "source_mass_mean_abs_deviation": 0.006328253432002384,
+      "normalization": {
+        "centre": [
+          -0.001708984375,
+          0.0017108917236328125,
+          0.000244140625
+        ],
+        "scale": 1.9926719665527344,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3607,
+      "rig_active_voxels": 193,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "glb_0/2bb240bbb77196e2c6887cc3ffac96d633903b967b251671a88aa0d6aa71e990",
+      "split": "test",
+      "filename": "test_6d363263cf3ae396.npz",
+      "prepared_sha256": "f366a1153f3ced2e69729a24fd5185f858e9a092411917aea4952dfce59a45e3",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 20,
+      "bones": 14,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 1.0,
+      "skin_source_mass_max": 1.0,
+      "source_mass_mean_abs_deviation": 0.0,
+      "normalization": {
+        "centre": [
+          -0.0018310546875,
+          0.000568389892578125,
+          -0.0009765625
+        ],
+        "scale": 1.9949569702148438,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 2901,
+      "rig_active_voxels": 184,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_4/6d9d94e1a6bc5185a095defa77dab561de8d59fefa6febb624a8c1933ff96d5f",
+      "split": "test",
+      "filename": "test_ba8e6316d7b723fe.npz",
+      "prepared_sha256": "a3172820af3ad4a682d09567a04b4d81bad6e044e6f7c5e41a3d909b435bf598",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 35,
+      "bones": 28,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 8.706685912329704e-05,
+      "normalization": {
+        "centre": [
+          -0.0001220703125,
+          0.0009765625,
+          0.0
+        ],
+        "scale": 1.99609375,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3307,
+      "rig_active_voxels": 225,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_5/9c1d451fa1eb75d3b833ebd4515f75d4ab8eb84d5d7e84d08a1e48529f85c979",
+      "split": "test",
+      "filename": "test_3538cea378737d10.npz",
+      "prepared_sha256": "af9d7b92dd2fe33997557acfde99e8acb353f3bfd9b98cb5dc55f3ac9de20f93",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 35,
+      "bones": 28,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 0.00011092835484305397,
+      "normalization": {
+        "centre": [
+          -0.00146484375,
+          0.00015652179718017578,
+          -0.000244140625
+        ],
+        "scale": 1.9977338314056396,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3282,
+      "rig_active_voxels": 274,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_2/ba4ac637e69a1fa83e9f22571d7db9813c9c2d5f87f04f363e48bfdad2a26f41",
+      "split": "test",
+      "filename": "test_d314823cd1d12f4c.npz",
+      "prepared_sha256": "16d6a7103308ad42478abc98ea168265ce7c91dd9e68e97eb0afe21f3dc1d557",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 82,
+      "bones": 62,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.0274505615234375,
+      "skin_source_mass_max": 2.13893985748291,
+      "source_mass_mean_abs_deviation": 0.08918163517228095,
+      "normalization": {
+        "centre": [
+          0.0068359375,
+          0.0010890960693359375,
+          0.00537109375
+        ],
+        "scale": 1.98828125,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 4077,
+      "rig_active_voxels": 444,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "dae_0/05cfce83c2d51db07f68e14e5e02a191ce682e40e0c860b33fbb5a205a4bdf87",
+      "split": "test",
+      "filename": "test_1bf38657f97190df.npz",
+      "prepared_sha256": "d2e39885ed5c57995b9d9c784afbc0cfe2be895a4f8be41f281b56e30ea8d498",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 16,
+      "bones": 8,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 1.0,
+      "skin_source_mass_max": 1.0,
+      "source_mass_mean_abs_deviation": 0.0,
+      "normalization": {
+        "centre": [
+          0.0,
+          -1.0132789611816406e-06,
+          0.0
+        ],
+        "scale": 2.0,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 4100,
+      "rig_active_voxels": 98,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_9/4e9c1616f8caa0f2ea9e9bab9cf031b6b215e8e52f82d0a57ee4a0ed5c055333",
+      "split": "test",
+      "filename": "test_9e13f68606224882.npz",
+      "prepared_sha256": "00cddb40ca5350945fae4b778a0de3be8bb664ee0641d578e880045430e35dcf",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 76,
+      "bones": 59,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.8917536735534668,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 0.01779348083800869,
+      "normalization": {
+        "centre": [
+          0.000732421875,
+          8.881092071533203e-06,
+          -0.00030517578125
+        ],
+        "scale": 1.999005675315857,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 2880,
+      "rig_active_voxels": 220,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_6/ea2db3f0410b3a477e366d60b78a5efd02a267f1720730761980612e8ab404a2",
+      "split": "test",
+      "filename": "test_eec12f70ec384a89.npz",
+      "prepared_sha256": "b061979ae132a8a2d8699f97f42687b2cfe00c07c0bb3f42de861257b2c00173",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 19,
+      "bones": 12,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 1.0,
+      "skin_source_mass_max": 1.0,
+      "source_mass_mean_abs_deviation": 0.0,
+      "normalization": {
+        "centre": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": 2.0,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 5409,
+      "rig_active_voxels": 86,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_9/be68194aded5c9d55cea9a41f2bf278d2880bbffb60923a9e4e2b811b70471aa",
+      "split": "test",
+      "filename": "test_2a7db728021fd2e8.npz",
+      "prepared_sha256": "971cfbd4f218c090c6dff703be204e7a7cbc8e2cd572ff1e72b366da0070dc02",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 53,
+      "bones": 40,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 1.0,
+      "skin_source_mass_max": 4.02948385477066,
+      "source_mass_mean_abs_deviation": 0.9719958276182297,
+      "normalization": {
+        "centre": [
+          -0.00244140625,
+          0.0001437664031982422,
+          -0.0001220703125
+        ],
+        "scale": 1.9931640625,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3044,
+      "rig_active_voxels": 185,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_1/b18589b7c7dded14e5c1595d35fda71c67d58022dfa6c3c18023371800c38719",
+      "split": "test",
+      "filename": "test_35445e638aaef9c0.npz",
+      "prepared_sha256": "c8ab4e2f80608b88cdff02c2a6b69c0355fd7d263c04b9ebfbc4bd5e21d51390",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 71,
+      "bones": 51,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.57080078125,
+      "skin_source_mass_max": 1.000244140625,
+      "source_mass_mean_abs_deviation": 7.670997001696378e-05,
+      "normalization": {
+        "centre": [
+          -0.001220703125,
+          2.4497509002685547e-05,
+          0.0
+        ],
+        "scale": 1.9999510049819946,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3804,
+      "rig_active_voxels": 229,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_3/717e6e95b228b2ea4ace274820fad779ec52825ba018294df2a31c3f0d6bbb70",
+      "split": "test",
+      "filename": "test_9a5f760647ea0123.npz",
+      "prepared_sha256": "34b0a07a78ba695ac710ad89a7c0d721b83cb54bb34b722b662a0402e2294cb7",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 30,
+      "bones": 23,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9989352226257324,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 0.0001040415299939923,
+      "normalization": {
+        "centre": [
+          -0.001953125,
+          -0.055552899837493896,
+          -0.0006103515625
+        ],
+        "scale": 2.108176112174988,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3573,
+      "rig_active_voxels": 291,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_1/a9bb464ebcd6a23dd4c0f8b277f17a658f737a0fd0f59288c8526913c911ee22",
+      "split": "test",
+      "filename": "test_ae3fd3e66abdf818.npz",
+      "prepared_sha256": "eee994531bf1d96385ee006ed40a455eb52e84528ef27e1dc824472bec08fa10",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 71,
+      "bones": 54,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9989871978759766,
+      "skin_source_mass_max": 1.0003662109375,
+      "source_mass_mean_abs_deviation": 0.0001240150013472885,
+      "normalization": {
+        "centre": [
+          0.0009765625,
+          0.0002772808074951172,
+          -0.002197265625
+        ],
+        "scale": 1.9896798133850098,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 2900,
+      "rig_active_voxels": 240,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "000-081/ba3a70862d2f4399b91a9f53c541cb0a",
+      "split": "test",
+      "filename": "test_47b11f322b3a0913.npz",
+      "prepared_sha256": "f1ee5cf4eea187209517edbb1e950c8bec335e70bf9b7789c81ee395d747629d",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 32,
+      "bones": 25,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996490478515625,
+      "skin_source_mass_max": 1.000335693359375,
+      "source_mass_mean_abs_deviation": 9.02516912901774e-05,
+      "normalization": {
+        "centre": [
+          -0.000244140625,
+          0.00011050701141357422,
+          0.001708984375
+        ],
+        "scale": 1.9997789859771729,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3574,
+      "rig_active_voxels": 195,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_2/54585cfade71499fb8847fc3906081ee4284ba5f77dd72d86b17b124527f3e7f",
+      "split": "test",
+      "filename": "test_591b551bcd1147fe.npz",
+      "prepared_sha256": "81ac2703ceb8854c0cd3423a2359829980565690ff91b9b181e87310a97e4954",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 92,
+      "bones": 59,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9984192848205566,
+      "skin_source_mass_max": 1.0003809928894043,
+      "source_mass_mean_abs_deviation": 0.0002018747036345303,
+      "normalization": {
+        "centre": [
+          -0.0001220703125,
+          0.00022780895233154297,
+          -0.012939453125
+        ],
+        "scale": 1.998567819595337,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 3651,
+      "rig_active_voxels": 226,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_9/2c1e88d42719f667856406684e5341252076d3920f1a6f60256516191cdbb48e",
+      "split": "test",
+      "filename": "test_f60814bfd7ff18b5.npz",
+      "prepared_sha256": "c6072db34aac9780f301fa51c63435729b9ce27f7ed62487c44191b2bd7a4c4b",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 61,
+      "bones": 46,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996337890625,
+      "skin_source_mass_max": 1.0003666877746582,
+      "source_mass_mean_abs_deviation": 0.00011012920731445774,
+      "normalization": {
+        "centre": [
+          -0.0009765625,
+          0.003948211669921875,
+          0.0030950307846069336
+        ],
+        "scale": 1.9901504516601562,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 4009,
+      "rig_active_voxels": 378,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    },
+    {
+      "asset_name": "fbx_1/f89a6ea6cc309aa7058ff2632775b6ef5984d120e7a06f770f5a2f30a9209f91",
+      "split": "test",
+      "filename": "test_e6ac830711216ab5.npz",
+      "prepared_sha256": "4df26bca07807365c397226642452e491fc8e0736b23a50893b16e3eef5276ca",
+      "skeleton_status": "eligible",
+      "skeleton_exclusion_reason": null,
+      "joints": 53,
+      "bones": 38,
+      "skin_valid_points": 8192,
+      "skin_source_mass_min": 0.9996261596679688,
+      "skin_source_mass_max": 1.000335693359375,
+      "source_mass_mean_abs_deviation": 8.27653639134951e-05,
+      "normalization": {
+        "centre": [
+          0.002197265625,
+          0.0003190040588378906,
+          -0.00146484375
+        ],
+        "scale": 1.9769010543823242,
+        "scope": "Unit longest extent of union of original points, joints and bones; reconstruction inputs include GT rig"
+      },
+      "surface_active_voxels": 6126,
+      "rig_active_voxels": 392,
+      "surface_context_tokens": 48,
+      "rig_context_tokens": 48
+    }
+  ]
+}

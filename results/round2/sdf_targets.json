@@ -1,0 +1,211 @@
+{
+  "resolution": 16,
+  "sign": "nearest oriented triangle normal; not watertight parity; unreliable signs for open/inconsistent meshes",
+  "assets": [
+    {
+      "filename": "train_29825ccc5b5b180f.npz",
+      "split": "train",
+      "negative_fraction": 0.107062894361897
+    },
+    {
+      "filename": "train_5927672b6bea8133.npz",
+      "split": "train",
+      "negative_fraction": 0.06228373702422145
+    },
+    {
+      "filename": "train_a0e44666673348fb.npz",
+      "split": "train",
+      "negative_fraction": 0.9668227152452676
+    },
+    {
+      "filename": "train_516c4309efb0d1f9.npz",
+      "split": "train",
+      "negative_fraction": 0.29208223081620194
+    },
+    {
+      "filename": "train_66b05e36d684fcbf.npz",
+      "split": "train",
+      "negative_fraction": 0.03419499287604315
+    },
+    {
+      "filename": "train_b81f7afa37adc85a.npz",
+      "split": "train",
+      "negative_fraction": 0.13983309586810502
+    },
+    {
+      "filename": "train_2629dd3811b59712.npz",
+      "split": "train",
+      "negative_fraction": 0.10360268674944026
+    },
+    {
+      "filename": "train_70cdcde0592a4ff4.npz",
+      "split": "train",
+      "negative_fraction": 0.08487685731732139
+    },
+    {
+      "filename": "train_0d4d4861b64d0c22.npz",
+      "split": "train",
+      "negative_fraction": 0.08365560757174842
+    },
+    {
+      "filename": "train_94de77c1a25a4a68.npz",
+      "split": "train",
+      "negative_fraction": 0.10278852025239162
+    },
+    {
+      "filename": "train_49fa17c86c6a41fe.npz",
+      "split": "train",
+      "negative_fraction": 0.05454915530225931
+    },
+    {
+      "filename": "train_f97d8a86af0d53a5.npz",
+      "split": "train",
+      "negative_fraction": 0.16588642377366172
+    },
+    {
+      "filename": "train_bd701aae163d7b51.npz",
+      "split": "train",
+      "negative_fraction": 0.01261958070425402
+    },
+    {
+      "filename": "train_a283de9a47ad815b.npz",
+      "split": "train",
+      "negative_fraction": 0.023610828414410746
+    },
+    {
+      "filename": "train_3037ff9fc51c46b1.npz",
+      "split": "train",
+      "negative_fraction": 0.08792998168125382
+    },
+    {
+      "filename": "train_c276118efd8e7ac4.npz",
+      "split": "train",
+      "negative_fraction": 0.08792998168125382
+    },
+    {
+      "filename": "train_29c192ab10fd6d48.npz",
+      "split": "train",
+      "negative_fraction": 0.41420720537349887
+    },
+    {
+      "filename": "train_96fd14992f5b3ce4.npz",
+      "split": "train",
+      "negative_fraction": 0.04416853246488907
+    },
+    {
+      "filename": "train_8b9d55eebfbee837.npz",
+      "split": "train",
+      "negative_fraction": 0.031956035009159375
+    },
+    {
+      "filename": "train_a48bd4b2022dddfa.npz",
+      "split": "train",
+      "negative_fraction": 0.020761245674740483
+    },
+    {
+      "filename": "train_253a67e98510a9da.npz",
+      "split": "train",
+      "negative_fraction": 0.046000407083248526
+    },
+    {
+      "filename": "train_54e93150885fd776.npz",
+      "split": "train",
+      "negative_fraction": 0.03399145125178099
+    },
+    {
+      "filename": "train_386507ed560e7446.npz",
+      "split": "train",
+      "negative_fraction": 0.195196417667413
+    },
+    {
+      "filename": "train_7a7990ebb47de936.npz",
+      "split": "train",
+      "negative_fraction": 0.009973539588845918
+    },
+    {
+      "filename": "train_28cc099fac3f30f0.npz",
+      "split": "train",
+      "negative_fraction": 0.028699369020964788
+    },
+    {
+      "filename": "val_39120b5916f89e9a.npz",
+      "split": "val",
+      "negative_fraction": 0.018318746183594546
+    },
+    {
+      "filename": "val_f6989f7c75393938.npz",
+      "split": "val",
+      "negative_fraction": 0.030938326887848564
+    },
+    {
+      "filename": "val_1dde85bef53ecba5.npz",
+      "split": "val",
+      "negative_fraction": 0.030734785263586403
+    },
+    {
+      "filename": "val_139492934acf6a47.npz",
+      "split": "val",
+      "negative_fraction": 0.09057602279666192
+    },
+    {
+      "filename": "val_58d186455088e6d2.npz",
+      "split": "val",
+      "negative_fraction": 0.01628332994097293
+    },
+    {
+      "filename": "val_9b186771f8df447b.npz",
+      "split": "val",
+      "negative_fraction": 0.19336454304905354
+    },
+    {
+      "filename": "test_0b7dc2f979ae74eb.npz",
+      "split": "test",
+      "negative_fraction": 0.0647262365153674
+    },
+    {
+      "filename": "test_5f71afc15c041461.npz",
+      "split": "test",
+      "negative_fraction": 0.08854060655404031
+    },
+    {
+      "filename": "test_fcefe59e0ca0640b.npz",
+      "split": "test",
+      "negative_fraction": 0.03724811723997558
+    },
+    {
+      "filename": "test_5f9868db50527fa2.npz",
+      "split": "test",
+      "negative_fraction": 0.08670873193568085
+    },
+    {
+      "filename": "test_27b6e8cc90ef48b2.npz",
+      "split": "test",
+      "negative_fraction": 0.029920618766537756
+    },
+    {
+      "filename": "test_30f674276d267739.npz",
+      "split": "test",
+      "negative_fraction": 0.22796661917362102
+    },
+    {
+      "filename": "test_f764f51c6dd435c3.npz",
+      "split": "test",
+      "negative_fraction": 0.02157541217178913
+    },
+    {
+      "filename": "test_803c47b10c699939.npz",
+      "split": "test",
+      "negative_fraction": 0.13861184612253205
+    },
+    {
+      "filename": "test_4e5dc0c2216e3436.npz",
+      "split": "test",
+      "negative_fraction": 0.028495827396702627
+    },
+    {
+      "filename": "test_763a49596dc0edf7.npz",
+      "split": "test",
+      "negative_fraction": 0.09057602279666192
+    }
+  ]
+}

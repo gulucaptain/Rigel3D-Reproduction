@@ -1,0 +1,56 @@
+{
+  "scope": "One fixed test image; same noise with actual versus zero DINO condition. Demonstrates sensitivity only, not correct image alignment or generation quality.",
+  "checks": [
+    {
+      "seed": 0,
+      "conditioned_status": {
+        "failure": null,
+        "steps": 25,
+        "cfg": 5,
+        "max_cells": 256
+      },
+      "zero_condition_status": {
+        "failure": null,
+        "steps": 25,
+        "cfg": 5,
+        "max_cells": 256
+      },
+      "surface_cell_jaccard": 0.309462915601023,
+      "rig_cell_jaccard": 0.6050156739811913
+    },
+    {
+      "seed": 1,
+      "conditioned_status": {
+        "failure": null,
+        "steps": 25,
+        "cfg": 5,
+        "max_cells": 256
+      },
+      "zero_condition_status": {
+        "failure": null,
+        "steps": 25,
+        "cfg": 5,
+        "max_cells": 256
+      },
+      "surface_cell_jaccard": 0.24271844660194175,
+      "rig_cell_jaccard": 0.32642487046632124
+    },
+    {
+      "seed": 2,
+      "conditioned_status": {
+        "failure": null,
+        "steps": 25,
+        "cfg": 5,
+        "max_cells": 256
+      },
+      "zero_condition_status": {
+        "failure": null,
+        "steps": 25,
+        "cfg": 5,
+        "max_cells": 256
+      },
+      "surface_cell_jaccard": 0.4143646408839779,
+      "rig_cell_jaccard": 0.2278177458033573
+    }
+  ]
+}

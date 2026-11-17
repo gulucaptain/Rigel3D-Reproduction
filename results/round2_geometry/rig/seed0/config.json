@@ -1,0 +1,27 @@
+{
+  "steps": 2000,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "mode": "rig",
+  "device": "cpu",
+  "name": "round2_geometry",
+  "points": 256,
+  "batch": 4,
+  "width": 64,
+  "layers": 2,
+  "balanced_stop": true,
+  "context": "geometry",
+  "cohort": true,
+  "vae_run": "vae4000",
+  "seed": 0,
+  "parameters": 596962,
+  "lr": 0.0001,
+  "warmup_steps": 200,
+  "scheduler": "linear warmup then cosine",
+  "source_manifest_sha256": "f7aac77af2315df0cab124afe34145e8229e65c93956aac20fd02d54e0ad7ea7",
+  "task_scope": "geometry context decoder training, cohort=True. GT rig coordinates and skin weights in rig context; GT bones at skinning evaluation. Reconstruction, not image generation.",
+  "checkpoint_selection": "Minimum validation teacher-forced skeleton+skin CE; test not used for selection"
+}

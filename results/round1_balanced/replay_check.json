@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "source": "results/round1_balanced/rig/seed0/evaluation.json",
+      "cpu_validation": 7.924528531730175,
+      "recorded_validation": 7.924528405070305,
+      "absolute_difference": 1.2665987014770508e-07,
+      "skin_prediction_max_difference": 1.430511474609375e-06,
+      "passed": true
+    },
+    {
+      "source": "results/round1_balanced/rig/seed1/evaluation.json",
+      "cpu_validation": 8.062409788370132,
+      "recorded_validation": 8.062409549951553,
+      "absolute_difference": 2.384185791015625e-07,
+      "skin_prediction_max_difference": 1.9669532775878906e-06,
+      "passed": true
+    },
+    {
+      "source": "results/round1_balanced/rig/seed2/evaluation.json",
+      "cpu_validation": 7.9445978328585625,
+      "recorded_validation": 7.944597482681274,
+      "absolute_difference": 3.501772880554199e-07,
+      "skin_prediction_max_difference": 1.4901161193847656e-06,
+      "passed": true
+    }
+  ]
+}

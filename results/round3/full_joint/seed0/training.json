@@ -1,0 +1,143 @@
+{
+  "seed": 0,
+  "steps": 250,
+  "best_step": 200,
+  "best_validation": 9.466684182484945,
+  "trainable_parameters": 178580055,
+  "warm_start_sha256": "31359535fff1597b6b495cd2ad483819dc5d9b56eb07a066495ea8b51b4b06c3",
+  "lr": 0.0001,
+  "weight_decay": 0,
+  "warmup": 25,
+  "geometry_every": 8,
+  "patch_cubes": 16,
+  "trace": [
+    {
+      "step": 0,
+      "loss": 7.538106441497803,
+      "elapsed_s": 2.2047061250777915,
+      "allocated_gb": 2.888631552,
+      "skin": 0.7795704007148743,
+      "skeleton": 6.678169250488281,
+      "geometry": 0.07847663015127182,
+      "kl": 6.938769817352295,
+      "anchor": 0.18829335272312164,
+      "validation": 9.506369272867838
+    },
+    {
+      "step": 25,
+      "loss": 7.76200008392334,
+      "elapsed_s": 24.25609358306974,
+      "allocated_gb": 2.508531712,
+      "skin": 1.2352656126022339,
+      "skeleton": 6.5227789878845215,
+      "geometry": 0.0,
+      "kl": 7.6021528244018555,
+      "anchor": 0.39477652311325073
+    },
+    {
+      "step": 50,
+      "loss": 6.980140209197998,
+      "elapsed_s": 43.925739208003506,
+      "allocated_gb": 2.5064384,
+      "skin": 0.49136990308761597,
+      "skeleton": 6.481649875640869,
+      "geometry": 0.0,
+      "kl": 8.628463745117188,
+      "anchor": 0.7111837267875671,
+      "validation": 9.648329734802246
+    },
+    {
+      "step": 75,
+      "loss": 5.856925010681152,
+      "elapsed_s": 64.27117620804347,
+      "allocated_gb": 2.506424576,
+      "skin": 0.5334985852241516,
+      "skeleton": 5.315826416015625,
+      "geometry": 0.0,
+      "kl": 6.7481303215026855,
+      "anchor": 0.7593023180961609
+    },
+    {
+      "step": 100,
+      "loss": 5.180648326873779,
+      "elapsed_s": 89.46974841703195,
+      "allocated_gb": 2.506424576,
+      "skin": 0.6627917289733887,
+      "skeleton": 4.506951808929443,
+      "geometry": 0.0,
+      "kl": 7.424689769744873,
+      "anchor": 1.0897189378738403,
+      "validation": 9.476239840189615
+    },
+    {
+      "step": 125,
+      "loss": 6.6314520835876465,
+      "elapsed_s": 122.37531999999192,
+      "allocated_gb": 2.506427392,
+      "skin": 0.974044680595398,
+      "skeleton": 5.642442226409912,
+      "geometry": 0.0,
+      "kl": 7.601487636566162,
+      "anchor": 1.4957488775253296
+    },
+    {
+      "step": 150,
+      "loss": 9.090509414672852,
+      "elapsed_s": 159.2437495830236,
+      "allocated_gb": 2.512932608,
+      "skin": 1.6000957489013672,
+      "skeleton": 7.4817633628845215,
+      "geometry": 0.0,
+      "kl": 6.752485752105713,
+      "anchor": 0.8643330335617065,
+      "validation": 9.580087820688883
+    },
+    {
+      "step": 175,
+      "loss": 7.049511432647705,
+      "elapsed_s": 199.7601885420736,
+      "allocated_gb": 2.506440192,
+      "skin": 0.4235523045063019,
+      "skeleton": 6.617612361907959,
+      "geometry": 0.0,
+      "kl": 7.612539768218994,
+      "anchor": 0.8338952660560608
+    },
+    {
+      "step": 200,
+      "loss": 7.274706840515137,
+      "elapsed_s": 233.9807732080808,
+      "allocated_gb": 2.88151552,
+      "skin": 1.2210208177566528,
+      "skeleton": 5.976930141448975,
+      "geometry": 0.06825229525566101,
+      "kl": 5.801911354064941,
+      "anchor": 0.8498006463050842,
+      "validation": 9.466684182484945
+    },
+    {
+      "step": 225,
+      "loss": 5.276710510253906,
+      "elapsed_s": 275.6893720420776,
+      "allocated_gb": 2.506431488,
+      "skin": 0.2179565578699112,
+      "skeleton": 5.053553104400635,
+      "geometry": 0.0,
+      "kl": 6.505444049835205,
+      "anchor": 0.519416093826294
+    },
+    {
+      "step": 249,
+      "loss": 7.146197319030762,
+      "elapsed_s": 295.4152603750117,
+      "allocated_gb": 2.506437632,
+      "skin": 0.6559925079345703,
+      "skeleton": 6.485376834869385,
+      "geometry": 0.0,
+      "kl": 7.067666053771973,
+      "anchor": 0.482074111700058,
+      "validation": 9.500811576843262
+    }
+  ],
+  "scope": "After2000-step adapter warm start, full original85.8M rig encoder +90.9M mesh weights + rig CA/AR/skin jointly updated; surface encoder remains frozen. Only250 short steps, small-patch oriented-SDF surrogate, not full rendering-loss convergence."
+}

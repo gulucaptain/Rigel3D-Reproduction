@@ -1,0 +1,90 @@
+{
+  "passed": true,
+  "scope": "Fixed normalized noisy occupancy state, image tokens and2 local rig queries per selected checkpoint. CPU/MPS velocity outputs, not exhaustive optimization replay.",
+  "checks": [
+    {
+      "run": "flows_frozen_surface",
+      "seed": 0,
+      "passed": true,
+      "max_cpu_mps_difference": 7.62939453125e-06,
+      "checkpoint_sha256": "426824160153563ce66e44ddda0909027bb43acb4f4f619eb7a05b5a0eb088db"
+    },
+    {
+      "run": "flows_frozen_surface",
+      "seed": 1,
+      "passed": true,
+      "max_cpu_mps_difference": 7.152557373046875e-06,
+      "checkpoint_sha256": "83f2fa7a46060cb30b17a3238ab152d64fb608d5f784c2fbbe89368c7413ba27"
+    },
+    {
+      "run": "flows_frozen_surface",
+      "seed": 2,
+      "passed": true,
+      "max_cpu_mps_difference": 8.106231689453125e-06,
+      "checkpoint_sha256": "33265b2ba9bf700fb6df6483bea0d0a53f14559b3c1318e2e29ba8c859f8d530"
+    },
+    {
+      "run": "flows_balanced_rig",
+      "seed": 0,
+      "passed": true,
+      "max_cpu_mps_difference": 8.702278137207031e-06,
+      "checkpoint_sha256": "6bbb23f38579ced89a8c96667172414cd47f98777fdb1fb0ff097f856fbe648f"
+    },
+    {
+      "run": "flows_balanced_rig",
+      "seed": 1,
+      "passed": true,
+      "max_cpu_mps_difference": 6.4373016357421875e-06,
+      "checkpoint_sha256": "f27dffbd70b79f1e4d92354ada0f75ebbcdfb7197ea8d4ad7d3e9c3aa2733047"
+    },
+    {
+      "run": "flows_balanced_rig",
+      "seed": 2,
+      "passed": true,
+      "max_cpu_mps_difference": 1.0013580322265625e-05,
+      "checkpoint_sha256": "6a1e706d51240cc2b58a8903441b92c040dc78bc8b3f0b8fd408f05b0e805a06"
+    },
+    {
+      "run": "flows_full_joint",
+      "seed": 0,
+      "passed": true,
+      "max_cpu_mps_difference": 7.62939453125e-06,
+      "checkpoint_sha256": "024732be8194cd9cf35b69bacbf38400acbec09e8ea37f412886d20125d72df4"
+    },
+    {
+      "run": "flows_full_joint",
+      "seed": 1,
+      "passed": true,
+      "max_cpu_mps_difference": 7.152557373046875e-06,
+      "checkpoint_sha256": "0c6f038f8b6be8433a9876b973a26c58a518ebe795b1ca19698e0ade38a16832"
+    },
+    {
+      "run": "flows_full_joint",
+      "seed": 2,
+      "passed": true,
+      "max_cpu_mps_difference": 8.106231689453125e-06,
+      "checkpoint_sha256": "0f83051407de26cd5670997dc00a2dcee8b3afab19218668d363a46c87b8a086"
+    },
+    {
+      "run": "flows_full_joint_balanced",
+      "seed": 0,
+      "passed": true,
+      "max_cpu_mps_difference": 8.702278137207031e-06,
+      "checkpoint_sha256": "5957facec85b84aeec082636339877ddbc65cfc7543da9c9733ae0c0c4fd1829"
+    },
+    {
+      "run": "flows_full_joint_balanced",
+      "seed": 1,
+      "passed": true,
+      "max_cpu_mps_difference": 6.4373016357421875e-06,
+      "checkpoint_sha256": "7b9f75c9283954a12c901031374f710d1fe28b542f7ad7befad1c039bd8dc14b"
+    },
+    {
+      "run": "flows_full_joint_balanced",
+      "seed": 2,
+      "passed": true,
+      "max_cpu_mps_difference": 1.0013580322265625e-05,
+      "checkpoint_sha256": "4858433b5a3ba46ec08677ef180517bfa0f09a02b4c31a8a8929b286b0a5558b"
+    }
+  ]
+}

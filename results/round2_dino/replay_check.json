@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "source": "results/round2_dino/rig/seed0/evaluation.json",
+      "cpu_validation": 9.63882573445638,
+      "recorded_validation": 9.63882573445638,
+      "absolute_difference": 0.0,
+      "skin_prediction_max_difference": 0.0,
+      "passed": true
+    },
+    {
+      "source": "results/round2_dino/rig/seed1/evaluation.json",
+      "cpu_validation": 9.072577317555746,
+      "recorded_validation": 9.072577317555746,
+      "absolute_difference": 0.0,
+      "skin_prediction_max_difference": 0.0,
+      "passed": true
+    },
+    {
+      "source": "results/round2_dino/rig/seed2/evaluation.json",
+      "cpu_validation": 9.741146723429361,
+      "recorded_validation": 9.741146723429361,
+      "absolute_difference": 0.0,
+      "skin_prediction_max_difference": 0.0,
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "scope": "Actual335-voxel rig encoder +16 surface input cubes/1024 output cubes; full pretrained rig and mesh weights + rig CA updated for3 steps. SDF-square/KL timing probe, not accuracy training. Source does not include AR/skin or distance-target overhead.",
+  "checks": [
+    {
+      "step": 0,
+      "seconds": 2.9984437499661,
+      "loss": 0.0012514195404946804,
+      "allocated_gb": 2.884991232,
+      "driver_gb": 4.173119488
+    },
+    {
+      "step": 1,
+      "seconds": 3.1676953750429675,
+      "loss": 0.0005300950142554939,
+      "allocated_gb": 2.8842048,
+      "driver_gb": 4.20667392
+    },
+    {
+      "step": 2,
+      "seconds": 0.9100038330070674,
+      "loss": 0.000308190326904878,
+      "allocated_gb": 2.883418368,
+      "driver_gb": 4.20667392
+    }
+  ]
+}

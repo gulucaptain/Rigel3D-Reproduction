@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "source": "results/round2_geometry/rig/seed0/evaluation.json",
+      "cpu_validation": 9.3088059425354,
+      "recorded_validation": 9.3088059425354,
+      "absolute_difference": 0.0,
+      "skin_prediction_max_difference": 0.0,
+      "passed": true
+    },
+    {
+      "source": "results/round2_geometry/rig/seed1/evaluation.json",
+      "cpu_validation": 9.317498524983725,
+      "recorded_validation": 9.317498524983725,
+      "absolute_difference": 0.0,
+      "skin_prediction_max_difference": 0.0,
+      "passed": true
+    },
+    {
+      "source": "results/round2_geometry/rig/seed2/evaluation.json",
+      "cpu_validation": 9.343153953552246,
+      "recorded_validation": 9.343153953552246,
+      "absolute_difference": 0.0,
+      "skin_prediction_max_difference": 0.0,
+      "passed": true
+    }
+  ]
+}

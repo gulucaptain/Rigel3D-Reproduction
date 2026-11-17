@@ -1,0 +1,47 @@
+{
+  "scope": "Untrained components only: no DINO/TRELLIS latent extraction, no generator training, no original benchmark",
+  "seed": 2026,
+  "quantization": [
+    {
+      "resolution": 32,
+      "joints": 3200,
+      "mean_error": 0.015432343360324225,
+      "max_error": 0.027041769810001816,
+      "bound": 0.027936303347885116
+    },
+    {
+      "resolution": 64,
+      "joints": 3200,
+      "mean_error": 0.007661367409844053,
+      "max_error": 0.013161163195287729,
+      "bound": 0.013746434980705375
+    },
+    {
+      "resolution": 128,
+      "joints": 3200,
+      "mean_error": 0.003800453336112507,
+      "max_error": 0.006753847756096094,
+      "bound": 0.006819097667594005
+    },
+    {
+      "resolution": 256,
+      "joints": 3200,
+      "mean_error": 0.0018788509282261134,
+      "max_error": 0.0033021303581167406,
+      "bound": 0.003396178054056622
+    }
+  ],
+  "torch": "2.15.0",
+  "platform": "macOS-15.7.1-arm64-arm-64bit",
+  "width": 32,
+  "points": 512,
+  "bones": 32,
+  "surface_tokens": 128,
+  "skeleton_tokens": 64,
+  "cpu_forward_backward_s": 0.051462708972394466,
+  "probability_sum_error": 2.384185791015625e-07,
+  "parameters": 46208,
+  "mps_forward_backward_s": 1.6496669580228627,
+  "cpu_mps_output_max_diff": 1.4901161193847656e-08,
+  "cpu_mps_gradient_max_diff": 1.7462298274040222e-09
+}

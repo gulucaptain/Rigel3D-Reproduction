@@ -1,0 +1,3195 @@
+{
+  "scope": "Held-out reconstruction proxy, not image-conditioned generation; skinning uses supplied GT bones and same-index weights only within that oracle-bone task",
+  "metric_version": 2,
+  "legacy": "evaluation.json retains v1 analytic J2B and equal-bone quadrature B2B; not used as paper-equivalent metrics",
+  "skeleton_definition": "Un-squared symmetric mean/2; RigNet bone sampling round(length/0.005), on the explicit unit geometry box",
+  "skin_definition": "Element mean L1 and vector-sum L1 both retained; L2 vector norm separate from mean squared element; threshold=.05",
+  "config": {
+    "steps": 2000,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "mode": "rig",
+    "device": "mps",
+    "name": "round1",
+    "points": 256,
+    "batch": 4,
+    "width": 64,
+    "layers": 2,
+    "seed": 0,
+    "parameters": 596962,
+    "lr": 0.0001,
+    "warmup_steps": 200,
+    "scheduler": "linear warmup then cosine",
+    "source_manifest_sha256": "f7aac77af2315df0cab124afe34145e8229e65c93956aac20fd02d54e0ad7ea7",
+    "task_scope": "Local geometry-feature decoder training. GT bones at skinning evaluation; rig mode context also encodes GT skin weights. Not image-conditioned generation or full Sparse VAE.",
+    "checkpoint_selection": "Minimum validation teacher-forced skeleton+skin CE; test not used for selection"
+  },
+  "best_step": 1999,
+  "splits": {
+    "train_monitor": [
+      {
+        "asset_name": "fbx_9/fe4e4600907ef00ffe6bd8c7bd6fa42e2bcae5c636e1b28343cc1de9c39f6cde",
+        "skin": {
+          "l1_element": 0.021104739213640675,
+          "l1_vector": 0.6331421764092202,
+          "l2_element": 0.0054239893177058475,
+          "l2_vector": 0.3520992416264165,
+          "kl": 0.4362629745943986,
+          "precision": 0.6655691964285715,
+          "recall": 0.9132161458333332
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.17393810675190646,
+          "j2b": 0.16915735378232621,
+          "b2b": 0.16304928950746553,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.16915166191845005,
+          "b2b_dense": 0.16297130412803096,
+          "j2b_abs_difference": 5.691863876167158e-06,
+          "b2b_abs_difference": 7.798537943456973e-05
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.09909909963607788,
+          "parent_accuracy": 0.6756756901741028,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.17208005191852135,
+          "j2b": 0.16554470141119665,
+          "b2b": 0.15153132359837138,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.003586920636501699,
+          "j2b": 0.003279378695282215,
+          "b2b": 0.00286076394444703,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.1975492356749015,
+          "j2b": 0.1920094480389381,
+          "b2b": 0.17405471601412403,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_2/7c594521f1f52fcb4957ac98d988aa352d0d9fd3dc92e27b5cb199159e6d58e7/31",
+        "skin": {
+          "l1_element": 0.019165886548313128,
+          "l1_vector": 0.38331773096626254,
+          "l2_element": 0.0043751668541950894,
+          "l2_vector": 0.22598472032260605,
+          "kl": 0.22992816614068695,
+          "precision": 0.8223632812499999,
+          "recall": 0.9028645833333333
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.14044672502605943,
+          "j2b": 0.125413574059143,
+          "b2b": 0.10881494350955268,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.12537985635782323,
+          "b2b_dense": 0.10864924863123843,
+          "j2b_abs_difference": 3.37177013197687e-05,
+          "b2b_abs_difference": 0.00016569487831424867
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.03448275849223137,
+          "parent_accuracy": 0.7931034564971924,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.1632544382220469,
+          "j2b": 0.1405169570316011,
+          "b2b": 0.14046201890818236,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.004047346826172673,
+          "j2b": 0.0037398095847674864,
+          "b2b": 0.00324730705617469,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.16689473859228482,
+          "j2b": 0.15513063700352955,
+          "b2b": 0.13674585858456947,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_1/03c6a8dfe60a030c42ec95bf1efcb71e04d289e5d3daaa31f27ef1b8e6512ead",
+        "skin": {
+          "l1_element": 0.014094038355178274,
+          "l1_vector": 0.6483257643382005,
+          "l2_element": 0.0040470936484079765,
+          "l2_vector": 0.36228088785836987,
+          "kl": 0.47693768604626824,
+          "precision": 0.6382356575715951,
+          "recall": 0.9459635416666666
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.16181778946940167,
+          "j2b": 0.16079100283964382,
+          "b2b": 0.1782413361033963,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.16078923482584692,
+          "b2b_dense": 0.1789716117944643,
+          "j2b_abs_difference": 1.7680137968933973e-06,
+          "b2b_abs_difference": 0.0007302756910680108
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.04597701132297516,
+          "parent_accuracy": 0.43103447556495667,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.162404570270171,
+          "j2b": 0.1418196169850487,
+          "b2b": 0.15501503319484938,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.0037231917103082435,
+          "j2b": 0.0033154154184157456,
+          "b2b": 0.0029629504237255622,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.16996976409012315,
+          "j2b": 0.1690878267359885,
+          "b2b": 0.18722584824438743,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_6/f8b33968a60cdc3e888ca7550c572235880f3ba0089fea1eee8090367d6a5fc0/7",
+        "skin": {
+          "l1_element": 0.013660079824191014,
+          "l1_vector": 0.6420237517369777,
+          "l2_element": 0.004196817980877969,
+          "l2_vector": 0.3465950651210139,
+          "kl": 0.5565940026059777,
+          "precision": 0.638037109375,
+          "recall": 0.9417317708333333
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": false
+      },
+      {
+        "asset_name": "fbx_4/0b353357c9c6cdd0cc7c4ead55b33d7114efbb2ae3416fd19bccce144d99fe9e/25",
+        "skin": {
+          "l1_element": 0.018674796257694172,
+          "l1_vector": 0.6349430727616019,
+          "l2_element": 0.005736330063328004,
+          "l2_vector": 0.36761632810690764,
+          "kl": 0.44323210134605295,
+          "precision": 0.6064181857638888,
+          "recall": 0.9641927083333333
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.18052928491627884,
+          "j2b": 0.17247361770631475,
+          "b2b": 0.17017401882761007,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.1724673950165735,
+          "b2b_dense": 0.17030666872099975,
+          "j2b_abs_difference": 6.222689741264276e-06,
+          "b2b_abs_difference": 0.00013264989338968025
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.03703703731298447,
+          "parent_accuracy": 0.6000000238418579,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.13989023693631866,
+          "j2b": 0.13017612408414628,
+          "b2b": 0.12956379346326752,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.003883064488153524,
+          "j2b": 0.0034511467532811675,
+          "b2b": 0.0031581506628825338,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.183113317263135,
+          "j2b": 0.17441676441440762,
+          "b2b": 0.17257677433730134,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "glb_0/9b5461f9609ac010c81dabb6d9b5922296f2ce7b6e2d38c7257349570c7b8623/18",
+        "skin": {
+          "l1_element": 0.020245007756520602,
+          "l1_vector": 1.214700465391236,
+          "l2_element": 0.008385683682808568,
+          "l2_vector": 0.6510361265141341,
+          "kl": 1.4447102030356778,
+          "precision": 0.498105074179293,
+          "recall": 0.8489583333333334
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.1822184389543759,
+          "j2b": 0.12096477619161912,
+          "b2b": 0.10497975680502228,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.12095869500547615,
+          "b2b_dense": 0.1032395936354718,
+          "j2b_abs_difference": 6.081186142967154e-06,
+          "b2b_abs_difference": 0.0017401631695504738
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.04395604506134987,
+          "parent_accuracy": 0.2747252881526947,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.13969036227430026,
+          "j2b": 0.0922034593955595,
+          "b2b": 0.10983724864073939,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.0032587828641078395,
+          "j2b": 0.002742645947207632,
+          "b2b": 0.00302249350079779,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.18232685953857947,
+          "j2b": 0.12124515715293296,
+          "b2b": 0.1055807469727337,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_0/aafd6f51eeaed98566d42b8a26e0335befd4007bc0870a3658fcf1c42cb5601e",
+        "skin": {
+          "l1_element": 0.027000482406766335,
+          "l1_vector": 0.24300434166089702,
+          "l2_element": 0.010228361412607618,
+          "l2_vector": 0.16827907237895323,
+          "kl": 0.16363062688545144,
+          "precision": 0.7893880208333334,
+          "recall": 0.9990234375
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.20167900683512574,
+          "j2b": 0.19033709049659883,
+          "b2b": 0.17862997349129706,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.1903327184085294,
+          "b2b_dense": 0.17840207569278407,
+          "j2b_abs_difference": 4.372088069443114e-06,
+          "b2b_abs_difference": 0.00022789779851298264
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.0476190485060215,
+          "parent_accuracy": 0.7142857313156128,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.20459682303364335,
+          "j2b": 0.19256248758054356,
+          "b2b": 0.16175050769725677,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.0036982119410563954,
+          "j2b": 0.0035434067913254295,
+          "b2b": 0.002922794144281173,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.21833170439447608,
+          "j2b": 0.21437740133580302,
+          "b2b": 0.20523937575046688,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_9/1c78cb44435393952bc9c40d5b7e4da8a2db18be554683c1cf1b3fbba98a021b/27",
+        "skin": {
+          "l1_element": 0.01577045304746226,
+          "l1_vector": 0.9619976358951978,
+          "l2_element": 0.0055343542508358885,
+          "l2_vector": 0.5265635584407391,
+          "kl": 0.8485561789166883,
+          "precision": 0.49602399553571425,
+          "recall": 0.844921875
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.1577171385136717,
+          "j2b": 0.14141165440962059,
+          "b2b": 0.13129941321033778,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.14140235786066546,
+          "b2b_dense": 0.1311863206474373,
+          "j2b_abs_difference": 9.29654895512333e-06,
+          "b2b_abs_difference": 0.0001130925629004853
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.0416666679084301,
+          "parent_accuracy": 0.1875,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.14240189224376806,
+          "j2b": 0.1278740088782247,
+          "b2b": 0.11294664417057723,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.0035775834371391943,
+          "j2b": 0.003186869847638856,
+          "b2b": 0.002916974335866963,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.1577171385136717,
+          "j2b": 0.14141165440962059,
+          "b2b": 0.13129941321033778,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "000-016/a4b2855f2ae84924814cb18be71e6f67/64",
+        "skin": {
+          "l1_element": 0.008461519893415108,
+          "l1_vector": 0.29615319626952885,
+          "l2_element": 0.0015046975967213006,
+          "l2_vector": 0.1559325685021788,
+          "kl": 0.20471006065144837,
+          "precision": 0.8682059151785714,
+          "recall": 0.94921875
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.12425160163379398,
+          "j2b": 0.11980498225326691,
+          "b2b": 0.10834703786764321,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.11979661817444845,
+          "b2b_dense": 0.10805031145098146,
+          "j2b_abs_difference": 8.364078818462461e-06,
+          "b2b_abs_difference": 0.0002967264166617578
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.014184396713972092,
+          "parent_accuracy": 0.25531914830207825,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.10012228849274804,
+          "j2b": 0.09227654212058925,
+          "b2b": 0.08650044008208532,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.003843108013751753,
+          "j2b": 0.0034290227473949744,
+          "b2b": 0.002989587262972248,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.13611792649558113,
+          "j2b": 0.13169050585668274,
+          "b2b": 0.1188897005652686,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "000-088/f0d289c4a9c848aca4f008deffd3154e/7",
+        "skin": {
+          "l1_element": 0.01734209823193164,
+          "l1_vector": 0.8150786169007872,
+          "l2_element": 0.007386210383515504,
+          "l2_vector": 0.4874009514696715,
+          "kl": 0.7464765210696701,
+          "precision": 0.5351748511904761,
+          "recall": 0.9235026041666667
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.1554159887765719,
+          "j2b": 0.14994056265178132,
+          "b2b": 0.13954967885222128,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.14993354783293134,
+          "b2b_dense": 0.1392701874292287,
+          "j2b_abs_difference": 7.0148188499874475e-06,
+          "b2b_abs_difference": 0.00027949142299257823
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.018779342994093895,
+          "parent_accuracy": 0.3380281627178192,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.10776384942121159,
+          "j2b": 0.10047590260498254,
+          "b2b": 0.08596356148861131,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.0036604726703603893,
+          "j2b": 0.0031522472470945292,
+          "b2b": 0.00272785137272641,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.15505955812636255,
+          "j2b": 0.14968153453796312,
+          "b2b": 0.13993443128954183,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "glb_0/944a6e57e7e4603f13af88d01ef48dbb43aafc8ebf624e71fe763cf6509fa8c9/25",
+        "skin": {
+          "l1_element": 0.018343200166185975,
+          "l1_vector": 0.23846160216041767,
+          "l2_element": 0.003772612429246571,
+          "l2_vector": 0.15191002277269802,
+          "kl": 0.1366253753299868,
+          "precision": 0.9035807291666667,
+          "recall": 0.94970703125
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.1232890832806391,
+          "j2b": 0.1135033402203348,
+          "b2b": 0.09487464719703897,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.11344824383006863,
+          "b2b_dense": 0.09465771386592627,
+          "j2b_abs_difference": 5.509639026617108e-05,
+          "b2b_abs_difference": 0.00021693333111270918
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.13636364042758942,
+          "parent_accuracy": 0.5454545617103577,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.1473930811612252,
+          "j2b": 0.14252241406320038,
+          "b2b": 0.11920160895900245,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.0038920346657450857,
+          "j2b": 0.0034859194510022235,
+          "b2b": 0.0033116979394557013,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.155379910630467,
+          "j2b": 0.15127450980544305,
+          "b2b": 0.1245653096919066,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_4/3942a86e6410ed0f51c80777c2f0a7aba27effb7519138d3ae2d108bf17d84af/127",
+        "skin": {
+          "l1_element": 0.008606517814818367,
+          "l1_vector": 0.3958998194816449,
+          "l2_element": 0.001936175501784731,
+          "l2_vector": 0.20210599705991583,
+          "kl": 0.26507857300221294,
+          "precision": 0.7838898189484127,
+          "recall": 0.9630533854166667
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.15770480448792865,
+          "j2b": 0.15636249049621437,
+          "b2b": 0.13818883966908233,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.15634569797677575,
+          "b2b_dense": 0.1369404881696436,
+          "j2b_abs_difference": 1.6792519438618703e-05,
+          "b2b_abs_difference": 0.0012483514994387213
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.032786883413791656,
+          "parent_accuracy": 0.4590163826942444,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.09758925320133066,
+          "j2b": 0.09040558361086812,
+          "b2b": 0.0787456465520888,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.004061067104577203,
+          "j2b": 0.0035402247826248276,
+          "b2b": 0.0030346147188328493,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.15739035577723184,
+          "j2b": 0.1561592032943906,
+          "b2b": 0.13753673573177252,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_3/acf6eb542093975fd0c21775aee66f856a2232d55bcff0db98fac437d9f3ce8d/9",
+        "skin": {
+          "l1_element": 0.017538383284617928,
+          "l1_vector": 0.3858444322615945,
+          "l2_element": 0.004289743587861363,
+          "l2_vector": 0.218237310821467,
+          "kl": 0.26336168194435744,
+          "precision": 0.7891927083333333,
+          "recall": 0.9337239583333334
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.139755610791051,
+          "j2b": 0.1379664690404663,
+          "b2b": 0.12195923501973198,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.13796192810289507,
+          "b2b_dense": 0.12166849157769034,
+          "j2b_abs_difference": 4.540937571240189e-06,
+          "b2b_abs_difference": 0.0002907434420416355
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.06896551698446274,
+          "parent_accuracy": 0.7241379022598267,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.08367876320112802,
+          "j2b": 0.07349520428729223,
+          "b2b": 0.07376250544414947,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.004063020858962427,
+          "j2b": 0.003723662977747736,
+          "b2b": 0.003130100966758711,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.1605234569082962,
+          "j2b": 0.1591700323000075,
+          "b2b": 0.14773687740758884,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_8/50f1fdede9f280b989630115dc192c3e352460bb266c0b4a97d2a6faf8196928",
+        "skin": {
+          "l1_element": 0.03541961253533582,
+          "l1_vector": 0.4250353504240298,
+          "l2_element": 0.01402795595188804,
+          "l2_vector": 0.272786666760306,
+          "kl": 0.31544950308079084,
+          "precision": 0.7121419270833333,
+          "recall": 0.9912109375
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.16592040851867854,
+          "j2b": 0.13719896208987514,
+          "b2b": 0.11470878739667548,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.13712105200052332,
+          "b2b_dense": 0.11441829443866881,
+          "j2b_abs_difference": 7.791008935181809e-05,
+          "b2b_abs_difference": 0.0002904929580066634
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.25925925374031067,
+          "parent_accuracy": 0.6111111044883728,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.14479819233677152,
+          "j2b": 0.11400600510578465,
+          "b2b": 0.0891330217556108,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.004586087458530511,
+          "j2b": 0.004274880657041137,
+          "b2b": 0.0036834419439721986,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.1758606378336729,
+          "j2b": 0.14547865948626643,
+          "b2b": 0.1202000234341262,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_7/3c8ee99ba96498a8214a43d4c413694abaa5e3673bf79d4c53f9cc1a5cbfe691",
+        "skin": {
+          "l1_element": 0.02500249935766674,
+          "l1_vector": 0.8250824788030025,
+          "l2_element": 0.009293182463786928,
+          "l2_vector": 0.4647128304993916,
+          "kl": 1.1969862548197938,
+          "precision": 0.5684508308531746,
+          "recall": 0.82119140625
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.13579883799545242,
+          "j2b": 0.11986055828792125,
+          "b2b": 0.11134871159023794,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.11984756950345973,
+          "b2b_dense": 0.11108885689299741,
+          "j2b_abs_difference": 1.298878446151508e-05,
+          "b2b_abs_difference": 0.000259854697240533
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.0763888880610466,
+          "parent_accuracy": 0.3958333432674408,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.09224165609024798,
+          "j2b": 0.07180757377786254,
+          "b2b": 0.06400366322209801,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.003830052075414423,
+          "j2b": 0.0034703075367298487,
+          "b2b": 0.002993197047874983,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.15408583496274003,
+          "j2b": 0.13878199676867267,
+          "b2b": 0.12500857777311009,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_8/71335a20bf5dba88445ea5348a26bc6a8952e90d04f5d0266897e3e1aab713ec",
+        "skin": {
+          "l1_element": 0.03769573323668883,
+          "l1_vector": 1.168567730337354,
+          "l2_element": 0.00911862811676822,
+          "l2_vector": 0.4955569114071878,
+          "kl": 1.2880592934569632,
+          "precision": 0.5018616691468254,
+          "recall": 0.6608072916666666
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.09130397254520359,
+          "j2b": 0.06686821999476211,
+          "b2b": 0.07075827384086256,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.06682787034734038,
+          "b2b_dense": 0.07101989926933606,
+          "j2b_abs_difference": 4.03496474217363e-05,
+          "b2b_abs_difference": 0.0002616254284735081
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.1705426424741745,
+          "parent_accuracy": 0.3255814015865326,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.09957342717807173,
+          "j2b": 0.0601708065627255,
+          "b2b": 0.06463869719574601,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.0038762599245533284,
+          "j2b": 0.0031390308226093913,
+          "b2b": 0.00269633084338404,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.09757308392158622,
+          "j2b": 0.07602102961951573,
+          "b2b": 0.07255198435845407,
+          "step": 0.005
+        }
+      }
+    ],
+    "val": [
+      {
+        "asset_name": "fbx_0/562fb1ec3cba5425386ecfee9c995c2528603ae094d9b6ee951e57bd4c378416",
+        "skin": {
+          "l1_element": 0.017090255288656365,
+          "l1_vector": 0.7177907221235673,
+          "l2_element": 0.0070092757987710655,
+          "l2_vector": 0.4411718311938709,
+          "kl": 0.59011908039821,
+          "precision": 0.6150949365304834,
+          "recall": 0.962890625
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.1677513037077381,
+          "j2b": 0.16253525543887967,
+          "b2b": 0.12010475776569866,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.16247213925618698,
+          "b2b_dense": 0.1183196711364248,
+          "j2b_abs_difference": 6.311618269269625e-05,
+          "b2b_abs_difference": 0.0017850866292738604
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.07344632595777512,
+          "parent_accuracy": 0.47457626461982727,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.1543237225118203,
+          "j2b": 0.14712039872372934,
+          "b2b": 0.09691899577393176,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.0040282554497982955,
+          "j2b": 0.003521739780789051,
+          "b2b": 0.00295687953929854,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.16971969663656097,
+          "j2b": 0.1641873889078195,
+          "b2b": 0.12389962464421408,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_0/9cd407725225a3507f36c263ebe04489d26f5c0d029fbb2b0bdf76285bd8d55a",
+        "skin": {
+          "l1_element": 0.009973657689468686,
+          "l1_vector": 0.5286038575418402,
+          "l2_element": 0.003039408586963275,
+          "l2_vector": 0.3071010943161098,
+          "kl": 0.4155166722877931,
+          "precision": 0.7700381324404763,
+          "recall": 0.8721028645833333
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.11493916384680022,
+          "j2b": 0.11138758342379919,
+          "b2b": 0.10598682657564193,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.1113598618575711,
+          "b2b_dense": 0.10571198779006277,
+          "j2b_abs_difference": 2.7721566228086636e-05,
+          "b2b_abs_difference": 0.00027483878557915675
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.07619047909975052,
+          "parent_accuracy": 0.37142857909202576,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.08127377050453269,
+          "j2b": 0.07755606807682458,
+          "b2b": 0.06987343039441501,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.0036898644278406255,
+          "j2b": 0.003120362681053413,
+          "b2b": 0.0027130765432622477,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.11944630773607584,
+          "j2b": 0.11660817320633982,
+          "b2b": 0.114177768937288,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_3/89f6c0932cd7540ccb9b45cef1b76a2f53024138c70b40c6472491a69ffa4cd0",
+        "skin": {
+          "l1_element": 0.016206850931345166,
+          "l1_vector": 0.8427562484299487,
+          "l2_element": 0.005816797953258555,
+          "l2_vector": 0.49794484494383695,
+          "kl": 0.6443113772973756,
+          "precision": 0.5696911649548368,
+          "recall": 0.94091796875
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.25430790660612207,
+          "j2b": 0.25042176872004773,
+          "b2b": 0.2064573648598861,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.2504196099381574,
+          "b2b_dense": 0.20386857202749775,
+          "j2b_abs_difference": 2.1587818903601175e-06,
+          "b2b_abs_difference": 0.002588792832388359
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.004830917809158564,
+          "parent_accuracy": 0.6231883764266968,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.1980315736199013,
+          "j2b": 0.19159462842176372,
+          "b2b": 0.1468881020143522,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.0036029836093018058,
+          "j2b": 0.0031614520622348166,
+          "b2b": 0.0027153665261985234,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.2539295365393953,
+          "j2b": 0.25013063029830584,
+          "b2b": 0.20698984282341804,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "000-025/c20b4147e7c04d3289b981d6d8fe1141/519",
+        "skin": {
+          "l1_element": 0.031904767788946506,
+          "l1_vector": 1.5633336216583789,
+          "l2_element": 0.009037171020767211,
+          "l2_vector": 0.6574859939625246,
+          "kl": 1.818753652155413,
+          "precision": 0.21628421491702743,
+          "recall": 0.7177734375
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": false
+      },
+      {
+        "asset_name": "glb_0/dbaa4465a411ebc9c383d6092404e9e413cd0758b11a0e9cc6e10a1a0cf1599c",
+        "skin": {
+          "l1_element": 0.019228436249442146,
+          "l1_vector": 1.0191071212204337,
+          "l2_element": 0.008404216450442235,
+          "l2_vector": 0.5991755628331387,
+          "kl": 1.1288415283980868,
+          "precision": 0.5375410776289682,
+          "recall": 0.7861328125
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.14881360280458053,
+          "j2b": 0.14447831863541474,
+          "b2b": 0.13289950982128948,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.14447047659766388,
+          "b2b_dense": 0.13157911436053554,
+          "j2b_abs_difference": 7.842037750865893e-06,
+          "b2b_abs_difference": 0.001320395460753937
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.009523809887468815,
+          "parent_accuracy": 0.4714285731315613,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.1310377210301581,
+          "j2b": 0.12481634129302872,
+          "b2b": 0.10249525841373042,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.00393327582604593,
+          "j2b": 0.0033986984736196946,
+          "b2b": 0.0029961312925878944,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.17134986643065797,
+          "j2b": 0.16484083947878725,
+          "b2b": 0.15658636909073265,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_9/3d66bf061b32fcb62f750fdae4e52e4535dffc689a50e58f472bd02d425faeed/19",
+        "skin": {
+          "l1_element": 0.017420390857536938,
+          "l1_vector": 0.9058603245919208,
+          "l2_element": 0.007345805000889696,
+          "l2_vector": 0.5176606740056645,
+          "kl": 0.8236545828031989,
+          "precision": 0.5434770145219365,
+          "recall": 0.9558919270833333
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.15028684569169293,
+          "j2b": 0.14714440148596136,
+          "b2b": 0.13458347320306,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.14713469391406597,
+          "b2b_dense": 0.1337765787725212,
+          "j2b_abs_difference": 9.707571895389844e-06,
+          "b2b_abs_difference": 0.0008068944305388015
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.019323671236634254,
+          "parent_accuracy": 0.695652186870575,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.1407585807171967,
+          "j2b": 0.1312589809949591,
+          "b2b": 0.11200903607466305,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.003676253362180571,
+          "j2b": 0.0032046120600745485,
+          "b2b": 0.002903554879525404,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.15143398297058924,
+          "j2b": 0.14824122179381338,
+          "b2b": 0.134377531522883,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_0/f50d43a0b0c19a502141b63ac12afe990c1749291e99d735f49c95e835b765d4/67",
+        "skin": {
+          "l1_element": 0.02328351615922014,
+          "l1_vector": 0.651938452458164,
+          "l2_element": 0.00845578039972954,
+          "l2_vector": 0.38934168234765887,
+          "kl": 0.5146070709582458,
+          "precision": 0.6985863095238096,
+          "recall": 0.9293619791666666
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.09472712257655264,
+          "j2b": 0.09039319930683083,
+          "b2b": 0.0825249639838278,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.09037123029919734,
+          "b2b_dense": 0.08228552837057991,
+          "j2b_abs_difference": 2.1969007633487747e-05,
+          "b2b_abs_difference": 0.0002394356132478931
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.05714285746216774,
+          "parent_accuracy": 0.6000000238418579,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.08360282152097734,
+          "j2b": 0.07477347575112189,
+          "b2b": 0.06796845788697808,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.004011925516136678,
+          "j2b": 0.0035254706950428117,
+          "b2b": 0.0029348428412576235,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.1685601896338702,
+          "j2b": 0.1658917098447528,
+          "b2b": 0.14658368782568834,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_5/1ea3a4eb16bc1678bc543bdd2d9bb920db76924b3fd0df98724f8da11038ae78",
+        "skin": {
+          "l1_element": 0.04672724354756135,
+          "l1_vector": 0.8878176274036657,
+          "l2_element": 0.021324785370436538,
+          "l2_vector": 0.5581268233258787,
+          "kl": 0.9964657998853873,
+          "precision": 0.70849609375,
+          "recall": 0.78564453125
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.19813587870262625,
+          "j2b": 0.17859796685631513,
+          "b2b": 0.14724943623856365,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.17859031649964685,
+          "b2b_dense": 0.14662324811138988,
+          "j2b_abs_difference": 7.650356668276181e-06,
+          "b2b_abs_difference": 0.0006261881271737713
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.07407407462596893,
+          "parent_accuracy": 0.37037035822868347,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.19488041671976836,
+          "j2b": 0.16773508710245943,
+          "b2b": 0.15430830573195964,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.003839227460609701,
+          "j2b": 0.003504599512858434,
+          "b2b": 0.0030113549123284237,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.2442092382770088,
+          "j2b": 0.22342919498443636,
+          "b2b": 0.18974523244010397,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_6/bb074c3be0e73667afbd2f3c82c6ec14ae06173f9275b26207e651630955a35b/19",
+        "skin": {
+          "l1_element": 0.016156452633711457,
+          "l1_vector": 0.9855436106563988,
+          "l2_element": 0.00667606157404203,
+          "l2_vector": 0.5764062985919961,
+          "kl": 0.9289722103476264,
+          "precision": 0.5770516267586581,
+          "recall": 0.8982747395833334
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.14805929373356402,
+          "j2b": 0.14739636219585828,
+          "b2b": 0.14936727619459406,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.14739271164219825,
+          "b2b_dense": 0.14953766930813117,
+          "j2b_abs_difference": 3.6505536600284216e-06,
+          "b2b_abs_difference": 0.00017039311353711506
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.07801418751478195,
+          "parent_accuracy": 0.27659574151039124,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.11255028594318305,
+          "j2b": 0.10486421463505041,
+          "b2b": 0.10297470269998135,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.0037998341091578887,
+          "j2b": 0.0031568598598226165,
+          "b2b": 0.002721049941085495,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.1480674108786362,
+          "j2b": 0.1473996252233792,
+          "b2b": 0.14934253161871894,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_8/1962d42de37f886bc5c9575d8bd6f9b40cfde8c9067654c1bf0e9d36ceb561ed/601",
+        "skin": {
+          "l1_element": 0.058043781025695046,
+          "l1_vector": 1.0447880584625109,
+          "l2_element": 0.029351707315153314,
+          "l2_vector": 0.6517824291832125,
+          "kl": 1.0847119337635456,
+          "precision": 0.5695917038690477,
+          "recall": 0.8598307291666667
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.1790747325032838,
+          "j2b": 0.1779099222428445,
+          "b2b": 0.1591534839231752,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.17790666657306234,
+          "b2b_dense": 0.1592256989067679,
+          "j2b_abs_difference": 3.2556697821539693e-06,
+          "b2b_abs_difference": 7.221498359272216e-05
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.01515151560306549,
+          "parent_accuracy": 0.4545454680919647,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.20151778072390536,
+          "j2b": 0.19736626024125947,
+          "b2b": 0.19143618174693774,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.003612942163961636,
+          "j2b": 0.0031673483192315634,
+          "b2b": 0.0025747279512101833,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.20787629745106015,
+          "j2b": 0.20776915009694846,
+          "b2b": 0.19078993868575417,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_9/e7be37984b85ebb43f038b4f451934c9a9402d28672ca5e897cd2352d75927b4",
+        "skin": {
+          "l1_element": 0.03524985862138337,
+          "l1_vector": 0.7049971724276674,
+          "l2_element": 0.011631569283643966,
+          "l2_vector": 0.37662227730027115,
+          "kl": 1.2654288944204377,
+          "precision": 0.6894763764880952,
+          "recall": 0.7614908854166667
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": false
+      },
+      {
+        "asset_name": "fbx_5/2c2494eb28e8a28b04de415051e4cfaa35e61d40ee4923650e546ece3abbda68/73",
+        "skin": {
+          "l1_element": 0.05999455780982674,
+          "l1_vector": 0.899918367147401,
+          "l2_element": 0.03367409461855327,
+          "l2_vector": 0.5823698574308942,
+          "kl": 0.8703637772372024,
+          "precision": 0.5133789062499999,
+          "recall": 0.9638671875
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.13359969676473077,
+          "j2b": 0.10525325984371706,
+          "b2b": 0.092945863310749,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.10522827511116194,
+          "b2b_dense": 0.09292059340678417,
+          "j2b_abs_difference": 2.498473255511946e-05,
+          "b2b_abs_difference": 2.5269903964827978e-05
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.0,
+          "parent_accuracy": 0.190476194024086,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.1509553038465128,
+          "j2b": 0.12530030785321142,
+          "b2b": 0.10414544064352796,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.003989746073616062,
+          "j2b": 0.0034710823843627165,
+          "b2b": 0.0030705174241362453,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.17687697214203976,
+          "j2b": 0.14837222252671045,
+          "b2b": 0.11932993419765556,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "000-003/a38ee59937b54e258e7ae700ef162a55/36",
+        "skin": {
+          "l1_element": 0.026131350860998874,
+          "l1_vector": 1.5678810516599324,
+          "l2_element": 0.010410725137545162,
+          "l2_vector": 0.7769733974647419,
+          "kl": 5.612738714471636,
+          "precision": 0.29664713541666665,
+          "recall": 0.2584635416666667
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.32733891801432674,
+          "j2b": 0.23517927487956458,
+          "b2b": 0.1660891458562109,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.23517218116548808,
+          "b2b_dense": 0.16329969478768216,
+          "j2b_abs_difference": 7.0937140765059414e-06,
+          "b2b_abs_difference": 0.0027894510685287366
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.06367041170597076,
+          "parent_accuracy": 0.07865168899297714,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.12830451671793497,
+          "j2b": 0.07847129232944584,
+          "b2b": 0.058608075420150924,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.002944159457599584,
+          "j2b": 0.0022535478831343346,
+          "b2b": 0.0021706738950751144,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.32705610803554946,
+          "j2b": 0.2352198856496152,
+          "b2b": 0.16652747941154206,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_3/df97300f44f18cb1304d2986ae5cce178b1f8228b7842f8491c9f605883f414e/13",
+        "skin": {
+          "l1_element": 0.011947639972025761,
+          "l1_vector": 0.597381998601288,
+          "l2_element": 0.004024739381268902,
+          "l2_vector": 0.3579756231248437,
+          "kl": 0.45045756788304664,
+          "precision": 0.6638456974882756,
+          "recall": 0.9602864583333333
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.12305698138070123,
+          "j2b": 0.11225047995678389,
+          "b2b": 0.11242647130376845,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.11224272343926789,
+          "b2b_dense": 0.11274524275222848,
+          "j2b_abs_difference": 7.756517515999928e-06,
+          "b2b_abs_difference": 0.00031877144846002847
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.03482586890459061,
+          "parent_accuracy": 0.5223880410194397,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.0863999770128713,
+          "j2b": 0.07295616497396273,
+          "b2b": 0.07383028063708189,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.003743985361096761,
+          "j2b": 0.003315930558117689,
+          "b2b": 0.002891702662996179,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.12434569496384049,
+          "j2b": 0.11268489504079456,
+          "b2b": 0.1124156757656383,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_4/659da8d3211bda7f9685528a929f9cc16930f45eac2f11146b7b8398a0921198/91",
+        "skin": {
+          "l1_element": 0.033627718536075366,
+          "l1_vector": 1.1433424302265625,
+          "l2_element": 0.013287571506860963,
+          "l2_vector": 0.5726186962769796,
+          "kl": 1.561087107951134,
+          "precision": 0.4238091715142497,
+          "recall": 0.8085286458333333
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.16676341976220913,
+          "j2b": 0.13184756735033631,
+          "b2b": 0.13680012718304985,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.1318352447778616,
+          "b2b_dense": 0.13720829085587563,
+          "j2b_abs_difference": 1.2322572474715576e-05,
+          "b2b_abs_difference": 0.00040816367282578425
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.014814814552664757,
+          "parent_accuracy": 0.6000000238418579,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.14712028958213688,
+          "j2b": 0.10951965025789055,
+          "b2b": 0.11003162126922449,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.003919205530074745,
+          "j2b": 0.00340999230651399,
+          "b2b": 0.00289261926009334,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.1895926588419517,
+          "j2b": 0.15220003144563127,
+          "b2b": 0.1580173857394429,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_7/8c53aa4d0962eef89e6efe9120b145b90d5603b32235c0dc61ec7d5c1fa0643f/31",
+        "skin": {
+          "l1_element": 0.03930112443933028,
+          "l1_vector": 0.7467213643472753,
+          "l2_element": 0.01222032224556449,
+          "l2_vector": 0.4189622724769048,
+          "kl": 0.589205161311869,
+          "precision": 0.5374302455357143,
+          "recall": 0.9456380208333333
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.112273360997103,
+          "j2b": 0.11009999250781013,
+          "b2b": 0.10332692819672742,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.11008985631155475,
+          "b2b_dense": 0.10311128367533656,
+          "j2b_abs_difference": 1.013619625538087e-05,
+          "b2b_abs_difference": 0.000215644521390862
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.11538461595773697,
+          "parent_accuracy": 0.42307692766189575,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.08238681122171662,
+          "j2b": 0.07475295957622051,
+          "b2b": 0.0747407304581408,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.004136401958335019,
+          "j2b": 0.0038369630479456636,
+          "b2b": 0.0035414411808901867,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.11983206195911136,
+          "j2b": 0.11795266370983158,
+          "b2b": 0.11431712637257814,
+          "step": 0.005
+        }
+      }
+    ],
+    "test": [
+      {
+        "asset_name": "fbx_5/b2c0140046712d30016db9135ce53b0e8fa17e1b337331574b4738cf22129ad4",
+        "skin": {
+          "l1_element": 0.06412524501782069,
+          "l1_vector": 1.026003920285131,
+          "l2_element": 0.03894780231133179,
+          "l2_vector": 0.6545439124662875,
+          "kl": 1.4662927643417605,
+          "precision": 0.5527018229166667,
+          "recall": 0.7379557291666666
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.1845646529658976,
+          "j2b": 0.17437959616498114,
+          "b2b": 0.14257246828166453,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.17435038754430576,
+          "b2b_dense": 0.1413841162088063,
+          "j2b_abs_difference": 2.9208620675374997e-05,
+          "b2b_abs_difference": 0.001188352072858223
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.02666666731238365,
+          "parent_accuracy": 0.4000000059604645,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.20712114832655465,
+          "j2b": 0.19305882140973185,
+          "b2b": 0.16111409170288726,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.004278632939438326,
+          "j2b": 0.003924591113583887,
+          "b2b": 0.0036834392986993666,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.2059898393295284,
+          "j2b": 0.19829137532394114,
+          "b2b": 0.16645292606768355,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_9/985aac9abf3a264d154f5a68fa46fda015cd12affda1e7a69a054b49ae6e9d2d",
+        "skin": {
+          "l1_element": 0.02014766729967629,
+          "l1_vector": 1.1484170360815484,
+          "l2_element": 0.00841792786535446,
+          "l2_vector": 0.6360920615459649,
+          "kl": 1.1465900011423436,
+          "precision": 0.3915442088293651,
+          "recall": 0.8562825520833333
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.2004740268857674,
+          "j2b": 0.18574457585136123,
+          "b2b": 0.1854518579221473,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.18573941717807396,
+          "b2b_dense": 0.18530031383353646,
+          "j2b_abs_difference": 5.1586732872643815e-06,
+          "b2b_abs_difference": 0.00015154408861084434
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.03703703731298447,
+          "parent_accuracy": 0.2839506268501282,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.18222890976553688,
+          "j2b": 0.16942191247579463,
+          "b2b": 0.16725992643897858,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.0038293500377664866,
+          "j2b": 0.003537244503639196,
+          "b2b": 0.002889971135429073,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.1998311484055567,
+          "j2b": 0.18508925717354402,
+          "b2b": 0.18391682861150865,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_5/2d79e720cd61fa5e5764304334ccf839ff5c53eae00731fd95b5ab33b6760cec",
+        "skin": {
+          "l1_element": 0.032350664019449846,
+          "l1_vector": 0.7117146084278965,
+          "l2_element": 0.011399402888624217,
+          "l2_vector": 0.4006981231343303,
+          "kl": 0.8384763750598414,
+          "precision": 0.6422572544642857,
+          "recall": 0.82255859375
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.1208903364068907,
+          "j2b": 0.11676467249821623,
+          "b2b": 0.11093048750414111,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.11675554549389744,
+          "b2b_dense": 0.11111416935750527,
+          "j2b_abs_difference": 9.127004318792986e-06,
+          "b2b_abs_difference": 0.0001836818533641621
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.02298850566148758,
+          "parent_accuracy": 0.8965517282485962,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.10490736500154407,
+          "j2b": 0.08923179651214096,
+          "b2b": 0.0832753746486776,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.0038608346793786424,
+          "j2b": 0.003401617742548925,
+          "b2b": 0.0027670616098879907,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.1510398974509067,
+          "j2b": 0.14880101433870646,
+          "b2b": 0.14688870419556946,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_3/1872b9de65ef74317d406338547269a2aa6a278427a552407176ebc91166590c",
+        "skin": {
+          "l1_element": 0.013567281010296407,
+          "l1_vector": 0.7054986125354132,
+          "l2_element": 0.005451726338730817,
+          "l2_vector": 0.43153871028341173,
+          "kl": 0.639532939085845,
+          "precision": 0.6914452138573233,
+          "recall": 0.87060546875
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.08924554259019465,
+          "j2b": 0.07732281162489124,
+          "b2b": 0.07717670249047898,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.07730268115630823,
+          "b2b_dense": 0.07703445566844062,
+          "j2b_abs_difference": 2.0130468583012817e-05,
+          "b2b_abs_difference": 0.0001422468220383527
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.04830917716026306,
+          "parent_accuracy": 0.5797101259231567,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.07322709120021909,
+          "j2b": 0.05599037849371496,
+          "b2b": 0.058301987956590494,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.003438845382323295,
+          "j2b": 0.0029927426311949145,
+          "b2b": 0.002903025868677649,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.10381586397843318,
+          "j2b": 0.09362677015660285,
+          "b2b": 0.09990757391825787,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_5/b4e297ae05c858615d01507910ced4d9b7e0ccdb4219c718e23c1be0630f7de7",
+        "skin": {
+          "l1_element": 0.02786018646802252,
+          "l1_vector": 0.7800852211046305,
+          "l2_element": 0.009585764189211895,
+          "l2_vector": 0.40397426438233597,
+          "kl": 1.002896335341376,
+          "precision": 0.6567847842261905,
+          "recall": 0.7673828125
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.16840933228676808,
+          "j2b": 0.1665882987945493,
+          "b2b": 0.15340412588154717,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.16657774743363085,
+          "b2b_dense": 0.15276646945576794,
+          "j2b_abs_difference": 1.0551360918459318e-05,
+          "b2b_abs_difference": 0.0006376564257792317
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.095238097012043,
+          "parent_accuracy": 0.48571428656578064,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.11298870218086522,
+          "j2b": 0.10125123650274528,
+          "b2b": 0.08526613834417313,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.003542566801690323,
+          "j2b": 0.003181692751266266,
+          "b2b": 0.0027770270118821633,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.16961261615286924,
+          "j2b": 0.16837483183035626,
+          "b2b": 0.15487212611069118,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "000-082/c098c598657843ca92ced396a8b22d33",
+        "skin": {
+          "l1_element": 0.011122367902469506,
+          "l1_vector": 0.4337723481963108,
+          "l2_element": 0.004267714813913389,
+          "l2_vector": 0.257914723597901,
+          "kl": 0.41239448514027954,
+          "precision": 0.7869628906249999,
+          "recall": 0.94580078125
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.11343268063139106,
+          "j2b": 0.10758328450215349,
+          "b2b": 0.09895486948728738,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.10757733012477379,
+          "b2b_dense": 0.09864793803882904,
+          "j2b_abs_difference": 5.954377379699394e-06,
+          "b2b_abs_difference": 0.0003069314484583363
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.02976190485060215,
+          "parent_accuracy": 0.5,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.08474072883003883,
+          "j2b": 0.0775975386757001,
+          "b2b": 0.07673750073596211,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.0037860670158048767,
+          "j2b": 0.0033929404313715657,
+          "b2b": 0.002825211390871244,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.11755139482346666,
+          "j2b": 0.11156518041175875,
+          "b2b": 0.10650863142763284,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_0/0459f448cea0d970d119d8ff85e9b163a600025c4fdc572f183f281df36460e2",
+        "skin": {
+          "l1_element": 0.01410923373084613,
+          "l1_vector": 0.6913524528114605,
+          "l2_element": 0.005267233258972232,
+          "l2_vector": 0.4123188912468046,
+          "kl": 0.5634293636910235,
+          "precision": 0.7089736164443196,
+          "recall": 0.9109700520833333
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.13799638582283572,
+          "j2b": 0.1267596052275476,
+          "b2b": 0.11671553953454841,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.12675357165403864,
+          "b2b_dense": 0.1161933461183369,
+          "j2b_abs_difference": 6.033573508951173e-06,
+          "b2b_abs_difference": 0.0005221934162115138
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.005050505045801401,
+          "parent_accuracy": 0.5303030014038086,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.12317737172293208,
+          "j2b": 0.1138364473834684,
+          "b2b": 0.11379978125057053,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.0035236039086757364,
+          "j2b": 0.003136008617656183,
+          "b2b": 0.002811537161190032,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.13963157005980464,
+          "j2b": 0.1286942788124173,
+          "b2b": 0.12259685588882223,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_6/e0788bc7d901febbb83a8008cb7233c0651bd8b2deece56d8fb5c9fb87d8be88",
+        "skin": {
+          "l1_element": 0.051935683533458454,
+          "l1_vector": 1.1425850377360858,
+          "l2_element": 0.02217621184858123,
+          "l2_vector": 0.6420268168058978,
+          "kl": 3.32891497322582,
+          "precision": 0.6461472284226191,
+          "recall": 0.5490885416666667
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.10530146322084273,
+          "j2b": 0.10098680767467147,
+          "b2b": 0.1053345025577034,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.10097381546381995,
+          "b2b_dense": 0.1054595355243336,
+          "j2b_abs_difference": 1.2992210851520136e-05,
+          "b2b_abs_difference": 0.00012503296663020358
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.04597701132297516,
+          "parent_accuracy": 0.7241379022598267,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.08395012582949807,
+          "j2b": 0.06860653917208215,
+          "b2b": 0.0717016855580216,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.003919234397000543,
+          "j2b": 0.0034731501175088294,
+          "b2b": 0.002810273570528982,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.13836799182118087,
+          "j2b": 0.13579111363179575,
+          "b2b": 0.13180497459050036,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_2/9fa98e2046a5d786fe98bfdf268f6ccafe74934a09318db8655e42d7f5b1a0fc",
+        "skin": {
+          "l1_element": 0.027490562819743467,
+          "l1_vector": 1.0171508243305083,
+          "l2_element": 0.0147588884836682,
+          "l2_vector": 0.6245692668871619,
+          "kl": 1.2139669960774357,
+          "precision": 0.4796567798520924,
+          "recall": 0.8626302083333334
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.12490922837807615,
+          "j2b": 0.11633136982951822,
+          "b2b": 0.10340679839540537,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.11631887698719807,
+          "b2b_dense": 0.10290285176330989,
+          "j2b_abs_difference": 1.2492842320147024e-05,
+          "b2b_abs_difference": 0.0005039466320954783
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.013333333656191826,
+          "parent_accuracy": 0.46000000834465027,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.09974371819602312,
+          "j2b": 0.0919894874252059,
+          "b2b": 0.07506782711395923,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.0036523520573667964,
+          "j2b": 0.003276054671688189,
+          "b2b": 0.0031701416873157594,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.14295121441395042,
+          "j2b": 0.13746748087918897,
+          "b2b": 0.13406178849360179,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_2/20311461344d98ec6aeacd51535ead76e91b7abe22fa1ec4a0afc43e13c4ba38",
+        "skin": {
+          "l1_element": 0.04884221017380059,
+          "l1_vector": 0.8791597831284106,
+          "l2_element": 0.01834240122562609,
+          "l2_vector": 0.47333735920781467,
+          "kl": 2.0007130962419484,
+          "precision": 0.64169921875,
+          "recall": 0.6661783854166666
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.09020451663302033,
+          "j2b": 0.07842784507051091,
+          "b2b": 0.07313950031085747,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.07838107157930965,
+          "b2b_dense": 0.07303426493271115,
+          "j2b_abs_difference": 4.6773491201260176e-05,
+          "b2b_abs_difference": 0.00010523537814632888
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.0833333358168602,
+          "parent_accuracy": 0.4166666567325592,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.10062068862340942,
+          "j2b": 0.08644799326635791,
+          "b2b": 0.08279362021343979,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.0035205658287917924,
+          "j2b": 0.0031292444571051478,
+          "b2b": 0.002839545034515764,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.12142890857742311,
+          "j2b": 0.10829867860918112,
+          "b2b": 0.10233422032002727,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_8/9f6d60aa301330312d6d3576762629503d6d8ec68f4c4837e69378339b5dc3b1",
+        "skin": {
+          "l1_element": 0.01742394435275239,
+          "l1_vector": 0.487870441877067,
+          "l2_element": 0.0053643892153124205,
+          "l2_vector": 0.2812966701742696,
+          "kl": 0.38136415284172964,
+          "precision": 0.82509765625,
+          "recall": 0.8923502604166667
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.14630767177242726,
+          "j2b": 0.14437895724237768,
+          "b2b": 0.14588267218683793,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.14437282087310851,
+          "b2b_dense": 0.14646785113196648,
+          "j2b_abs_difference": 6.136369269160724e-06,
+          "b2b_abs_difference": 0.0005851789451285505
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.01904761977493763,
+          "parent_accuracy": 0.8285714387893677,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.13424437913213716,
+          "j2b": 0.12991132264425434,
+          "b2b": 0.12099216466360213,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.0037196789911008612,
+          "j2b": 0.003207473776486665,
+          "b2b": 0.0025386821965517493,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.15846352093777702,
+          "j2b": 0.15644279175584666,
+          "b2b": 0.15711195346736753,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_2/c29afa31ba19b1eddf0e94b30033381e328f7bf5e77a39afa4b1f913f7b9fc30",
+        "skin": {
+          "l1_element": 0.013970055444587308,
+          "l1_vector": 0.8242332712306512,
+          "l2_element": 0.004822645256759686,
+          "l2_vector": 0.47130976918096534,
+          "kl": 0.933788788198715,
+          "precision": 0.6944010416666666,
+          "recall": 0.74306640625
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.19812520684776203,
+          "j2b": 0.1921475015166405,
+          "b2b": 0.17695988900960175,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.19214424473438352,
+          "b2b_dense": 0.17614080442615515,
+          "j2b_abs_difference": 3.256782256988444e-06,
+          "b2b_abs_difference": 0.0008190845834465943
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.010869565419852734,
+          "parent_accuracy": 0.260869562625885,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.16379586796524354,
+          "j2b": 0.15641158460602717,
+          "b2b": 0.1362631554051696,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.0037343202350655635,
+          "j2b": 0.003293036415421693,
+          "b2b": 0.002913107156948828,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.19793314811257084,
+          "j2b": 0.19184611020238423,
+          "b2b": 0.17680276075969037,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "000-073/c2a1b3d46cb441de9b840d5be57af5e7",
+        "skin": {
+          "l1_element": 0.014890800338310872,
+          "l1_vector": 0.7743216175921653,
+          "l2_element": 0.005645552923241005,
+          "l2_vector": 0.44103488907786137,
+          "kl": 0.7195815425379186,
+          "precision": 0.6370058869082307,
+          "recall": 0.8938802083333333
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.15772708478171432,
+          "j2b": 0.15694509305848528,
+          "b2b": 0.1631590720594659,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.15694357970722805,
+          "b2b_dense": 0.16358174586307714,
+          "j2b_abs_difference": 1.513351257226292e-06,
+          "b2b_abs_difference": 0.0004226738036112454
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.028985507786273956,
+          "parent_accuracy": 0.6086956262588501,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.11605172417669694,
+          "j2b": 0.10715741608620494,
+          "b2b": 0.11159273268590147,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.003774559293272658,
+          "j2b": 0.0032994600909553922,
+          "b2b": 0.002800412004646473,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.16448315023557383,
+          "j2b": 0.16383195764003766,
+          "b2b": 0.1702282469963197,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_3/13260ace433edf3ee0384c678b82d3668256084dbe211469196ccc8961d014ec",
+        "skin": {
+          "l1_element": 0.01587491366621511,
+          "l1_vector": 0.8096205969769705,
+          "l2_element": 0.005603401335901148,
+          "l2_vector": 0.4407986780216169,
+          "kl": 0.8619207431959662,
+          "precision": 0.6718449031437312,
+          "recall": 0.82041015625
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.14605893181683416,
+          "j2b": 0.1436387876543374,
+          "b2b": 0.13696186787973647,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.14363144899333874,
+          "b2b_dense": 0.13678617171474086,
+          "j2b_abs_difference": 7.3386609986680895e-06,
+          "b2b_abs_difference": 0.00017569616499560348
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.019607843831181526,
+          "parent_accuracy": 0.47058823704719543,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.11071370821291052,
+          "j2b": 0.09261527519429391,
+          "b2b": 0.0929296331954963,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.0038355569725868964,
+          "j2b": 0.0032278494261365797,
+          "b2b": 0.0027854222334389193,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.14870736916658392,
+          "j2b": 0.14665143350931237,
+          "b2b": 0.14805610972375513,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_0/72d640d3ea079ad6418195dfeea663a49f07e5b5b53d8e5ffb3172e17fb408f1",
+        "skin": {
+          "l1_element": 0.06031295499430443,
+          "l1_vector": 1.0253202349031754,
+          "l2_element": 0.03010914883304426,
+          "l2_vector": 0.5929201988351962,
+          "kl": 1.3307028450253038,
+          "precision": 0.46427641369047623,
+          "recall": 0.8470052083333333
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.13073211488249525,
+          "j2b": 0.11918077651040236,
+          "b2b": 0.09686331892222183,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.11917325003939579,
+          "b2b_dense": 0.09630347671727023,
+          "j2b_abs_difference": 7.526471006574775e-06,
+          "b2b_abs_difference": 0.0005598422049516022
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.02777777798473835,
+          "parent_accuracy": 0.4583333432674408,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.13636495793078252,
+          "j2b": 0.12558008921186356,
+          "b2b": 0.10305806465340649,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.004230942423967038,
+          "j2b": 0.003841026010314631,
+          "b2b": 0.003364854849638203,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.1517120401286638,
+          "j2b": 0.14056655225346248,
+          "b2b": 0.11409477491413707,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_2/ac6ac5194b35f126024aab2cdddeccfc64d36746b4df99293e5c5972ec5804be",
+        "skin": {
+          "l1_element": 0.0997900234523102,
+          "l1_vector": 1.0976902579754122,
+          "l2_element": 0.08583803647017475,
+          "l2_vector": 0.7521575664076845,
+          "kl": 2.6419818007061346,
+          "precision": 0.45553385416666664,
+          "recall": 0.62109375
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.15008026797318275,
+          "j2b": 0.137910892479727,
+          "b2b": 0.10269889672557173,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.1378999169347417,
+          "b2b_dense": 0.10224159112219676,
+          "j2b_abs_difference": 1.0975544985275532e-05,
+          "b2b_abs_difference": 0.0004573056033749662
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.0833333358168602,
+          "parent_accuracy": 0.5625,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.19671068766406125,
+          "j2b": 0.18129070147497162,
+          "b2b": 0.11724363267804715,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.0040123814318332,
+          "j2b": 0.0038713657930652453,
+          "b2b": 0.003602192612496883,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.20744831424560972,
+          "j2b": 0.19708440349901168,
+          "b2b": 0.14114339250304944,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_7/e33cb66976a5c0db9065325d1273f46fade7c5f24438ac4bdb4cd0b5cf23af78",
+        "skin": {
+          "l1_element": 0.050411859138537005,
+          "l1_vector": 1.2602964784634252,
+          "l2_element": 0.02477813191279789,
+          "l2_vector": 0.7200247762904184,
+          "kl": 1.6669502167870203,
+          "precision": 0.46677052331349206,
+          "recall": 0.7685872395833333
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.11537708266362237,
+          "j2b": 0.09457319608395885,
+          "b2b": 0.08448839391201846,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.0945495996028903,
+          "b2b_dense": 0.08414682908083299,
+          "j2b_abs_difference": 2.3596481068546837e-05,
+          "b2b_abs_difference": 0.0003415648311854702
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.05882352963089943,
+          "parent_accuracy": 0.44117647409439087,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.11501636770081868,
+          "j2b": 0.09282584576164657,
+          "b2b": 0.0716492921383114,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.0033451016669054905,
+          "j2b": 0.0030268753337914624,
+          "b2b": 0.002619088813717475,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.1156757056333978,
+          "j2b": 0.09979827871661508,
+          "b2b": 0.09005037097249756,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "glb_0/2bb240bbb77196e2c6887cc3ffac96d633903b967b251671a88aa0d6aa71e990",
+        "skin": {
+          "l1_element": 0.049755982671963496,
+          "l1_vector": 0.696583757407489,
+          "l2_element": 0.03231226991485893,
+          "l2_vector": 0.46343085613159174,
+          "kl": 1.46820980064437,
+          "precision": 0.5691731770833333,
+          "recall": 0.853515625
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.11536245310285487,
+          "j2b": 0.11248453736269315,
+          "b2b": 0.09871673007748523,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.11241974999198895,
+          "b2b_dense": 0.09851505369149935,
+          "j2b_abs_difference": 6.478737070420015e-05,
+          "b2b_abs_difference": 0.00020167638598588
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.11666666716337204,
+          "parent_accuracy": 0.3499999940395355,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.11121186035927774,
+          "j2b": 0.10288289247872906,
+          "b2b": 0.07977964212617433,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.003207920575043728,
+          "j2b": 0.0029441963541338794,
+          "b2b": 0.002362142079604033,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.13770365675616453,
+          "j2b": 0.13604030574121778,
+          "b2b": 0.11456099436692026,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_4/6d9d94e1a6bc5185a095defa77dab561de8d59fefa6febb624a8c1933ff96d5f",
+        "skin": {
+          "l1_element": 0.028568468362729433,
+          "l1_vector": 0.7999171141564243,
+          "l2_element": 0.011360374417831805,
+          "l2_vector": 0.4567056916883555,
+          "kl": 0.8625593172540604,
+          "precision": 0.6055896577380953,
+          "recall": 0.8308919270833333
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.11729416776044302,
+          "j2b": 0.11369986887578057,
+          "b2b": 0.09854143131457316,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.11368721556944927,
+          "b2b_dense": 0.09769890604021622,
+          "j2b_abs_difference": 1.2653306331295022e-05,
+          "b2b_abs_difference": 0.0008425252743569367
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.009523809887468815,
+          "parent_accuracy": 0.7142857313156128,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.1121123433937623,
+          "j2b": 0.10142615314136305,
+          "b2b": 0.08213555660337954,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.0039890446602495345,
+          "j2b": 0.0035166404297679657,
+          "b2b": 0.003009478168331172,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.12377684225316501,
+          "j2b": 0.12081007010331152,
+          "b2b": 0.10410753816270338,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_5/9c1d451fa1eb75d3b833ebd4515f75d4ab8eb84d5d7e84d08a1e48529f85c979",
+        "skin": {
+          "l1_element": 0.01995906480641199,
+          "l1_vector": 0.5588538145795358,
+          "l2_element": 0.006958390104754181,
+          "l2_vector": 0.34638140320389676,
+          "kl": 0.3844580517035945,
+          "precision": 0.67900390625,
+          "recall": 0.95654296875
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.2016007381741113,
+          "j2b": 0.19304148180978714,
+          "b2b": 0.17593974930174394,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.19303474974320917,
+          "b2b_dense": 0.17569543893477485,
+          "j2b_abs_difference": 6.732066577974649e-06,
+          "b2b_abs_difference": 0.0002443103669690916
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.02857142873108387,
+          "parent_accuracy": 0.7142857313156128,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.20175201617214028,
+          "j2b": 0.19285678131067802,
+          "b2b": 0.17353457569453484,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.0036595522879435643,
+          "j2b": 0.0032437659400141117,
+          "b2b": 0.002873406826791878,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.21249974408075006,
+          "j2b": 0.20425114211874934,
+          "b2b": 0.18908431740079723,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_2/ba4ac637e69a1fa83e9f22571d7db9813c9c2d5f87f04f363e48bfdad2a26f41",
+        "skin": {
+          "l1_element": 0.022179722872162248,
+          "l1_vector": 1.375142818074059,
+          "l2_element": 0.007780326282360156,
+          "l2_vector": 0.6629832538279149,
+          "kl": 2.1530521880556694,
+          "precision": 0.2995930989583333,
+          "recall": 0.6166341145833334
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.12201009778619624,
+          "j2b": 0.11640423674577481,
+          "b2b": 0.08946826431947656,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.1163643105776568,
+          "b2b_dense": 0.08889669131904655,
+          "j2b_abs_difference": 3.992616811801519e-05,
+          "b2b_abs_difference": 0.000571573000430009
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.04471544548869133,
+          "parent_accuracy": 0.13414634764194489,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.13082941173205243,
+          "j2b": 0.1220473559511569,
+          "b2b": 0.09848568070143507,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.003621527951340954,
+          "j2b": 0.0031730484490245904,
+          "b2b": 0.0026283395568186757,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.12284537391672745,
+          "j2b": 0.11719063016719913,
+          "b2b": 0.09059379362205866,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "dae_0/05cfce83c2d51db07f68e14e5e02a191ce682e40e0c860b33fbb5a205a4bdf87",
+        "skin": {
+          "l1_element": 0.20688823068675788,
+          "l1_vector": 1.655105845494063,
+          "l2_element": 0.10881828775297926,
+          "l2_vector": 0.9231753587299101,
+          "kl": 2.0900721950269388,
+          "precision": 0.15031156994047618,
+          "recall": 0.859375
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.09694556898356407,
+          "j2b": 0.08945091218394868,
+          "b2b": 0.07824646992688276,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.08943884688077108,
+          "b2b_dense": 0.07802666745413175,
+          "j2b_abs_difference": 1.2065303177599684e-05,
+          "b2b_abs_difference": 0.00021980247275101006
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.0625,
+          "parent_accuracy": 0.5,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.10510150622025899,
+          "j2b": 0.10383534078043496,
+          "b2b": 0.0939031464168322,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.00347282026513987,
+          "j2b": 0.003127225235111563,
+          "b2b": 0.0025340695174920747,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.1127204643045091,
+          "j2b": 0.11233923297225723,
+          "b2b": 0.10613188237903774,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_9/4e9c1616f8caa0f2ea9e9bab9cf031b6b215e8e52f82d0a57ee4a0ed5c055333",
+        "skin": {
+          "l1_element": 0.013827193317583,
+          "l1_vector": 0.815804405737397,
+          "l2_element": 0.004967117949595221,
+          "l2_vector": 0.4716805382721895,
+          "kl": 0.6653713792100578,
+          "precision": 0.6226888020833333,
+          "recall": 0.9038736979166666
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.19477760879711148,
+          "j2b": 0.1930151326334949,
+          "b2b": 0.14371531155672818,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.1930040626106902,
+          "b2b_dense": 0.1404221408772572,
+          "j2b_abs_difference": 1.1070022804704482e-05,
+          "b2b_abs_difference": 0.0032931706794709636
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.04385964944958687,
+          "parent_accuracy": 0.2763157784938812,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.1692368791530645,
+          "j2b": 0.16379881848383487,
+          "b2b": 0.12397084555435144,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.0034542475923543562,
+          "j2b": 0.003085409998717244,
+          "b2b": 0.0030279184059388772,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.2094616048384762,
+          "j2b": 0.208671430244951,
+          "b2b": 0.15960088585224697,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_6/ea2db3f0410b3a477e366d60b78a5efd02a267f1720730761980612e8ab404a2",
+        "skin": {
+          "l1_element": 0.06380849595640263,
+          "l1_vector": 0.7657019514768315,
+          "l2_element": 0.038678309374465696,
+          "l2_vector": 0.4927693656177735,
+          "kl": 0.914209081330075,
+          "precision": 0.5828776041666666,
+          "recall": 0.912109375
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.25194853983080867,
+          "j2b": 0.23461233635838483,
+          "b2b": 0.19604660780897504,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.23460728455897986,
+          "b2b_dense": 0.19545715083506882,
+          "j2b_abs_difference": 5.051799404964807e-06,
+          "b2b_abs_difference": 0.0005894569739062216
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.07017543911933899,
+          "parent_accuracy": 0.5263158082962036,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.2510868283734994,
+          "j2b": 0.23629589393035558,
+          "b2b": 0.20421505331208933,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.004311542000446092,
+          "j2b": 0.0037233891942646336,
+          "b2b": 0.0033444051664292583,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.2563813452237414,
+          "j2b": 0.23890556165947674,
+          "b2b": 0.20235433806233571,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_9/be68194aded5c9d55cea9a41f2bf278d2880bbffb60923a9e4e2b811b70471aa",
+        "skin": {
+          "l1_element": 0.014426336956541408,
+          "l1_vector": 0.5770534782616563,
+          "l2_element": 0.003883907093841464,
+          "l2_vector": 0.3312053942800476,
+          "kl": 0.4854957547484524,
+          "precision": 0.8292968749999999,
+          "recall": 0.8456054687499999
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.17564294074069622,
+          "j2b": 0.1705889039087161,
+          "b2b": 0.12162466321255591,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.17057429561182824,
+          "b2b_dense": 0.11920160421872575,
+          "j2b_abs_difference": 1.4608296887846928e-05,
+          "b2b_abs_difference": 0.0024230589938301628
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.069182388484478,
+          "parent_accuracy": 0.4716981053352356,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.15848932917155045,
+          "j2b": 0.15188134016627913,
+          "b2b": 0.09928262938865522,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.0038316156389971642,
+          "j2b": 0.0034862683602255133,
+          "b2b": 0.00302967274319003,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.19761565941743375,
+          "j2b": 0.19290095820769743,
+          "b2b": 0.14176003287028116,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_1/b18589b7c7dded14e5c1595d35fda71c67d58022dfa6c3c18023371800c38719",
+        "skin": {
+          "l1_element": 0.012646593657967295,
+          "l1_vector": 0.644976276556332,
+          "l2_element": 0.005064464750568651,
+          "l2_vector": 0.3926049447758143,
+          "kl": 0.6865066476297647,
+          "precision": 0.5628247186840937,
+          "recall": 0.970703125
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.1661645242522539,
+          "j2b": 0.16288896755199236,
+          "b2b": 0.1348915326216102,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.1628476545397773,
+          "b2b_dense": 0.1334540563649057,
+          "j2b_abs_difference": 4.131301221507733e-05,
+          "b2b_abs_difference": 0.001437476256704484
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.04694835841655731,
+          "parent_accuracy": 0.2957746386528015,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.1297592260623084,
+          "j2b": 0.1240473137832907,
+          "b2b": 0.09823386712751854,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.004011677575106152,
+          "j2b": 0.0035039821220925037,
+          "b2b": 0.0031111798937190106,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.16674410834961037,
+          "j2b": 0.16325454578975063,
+          "b2b": 0.1353359664029626,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_3/717e6e95b228b2ea4ace274820fad779ec52825ba018294df2a31c3f0d6bbb70",
+        "skin": {
+          "l1_element": 0.031572679405774184,
+          "l1_vector": 0.7261716263328062,
+          "l2_element": 0.013399901869293952,
+          "l2_vector": 0.4579683860508777,
+          "kl": 0.5829001527847439,
+          "precision": 0.72001953125,
+          "recall": 0.904296875
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.13653145192632313,
+          "j2b": 0.11485925688212688,
+          "b2b": 0.10336704326288688,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.11482582012537554,
+          "b2b_dense": 0.10348408638621459,
+          "j2b_abs_difference": 3.343675675133995e-05,
+          "b2b_abs_difference": 0.00011704312332770639
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.1111111119389534,
+          "parent_accuracy": 0.30000001192092896,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.12348494989419949,
+          "j2b": 0.10610730337802057,
+          "b2b": 0.08220281351593363,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.0032548882356565638,
+          "j2b": 0.003044572898198282,
+          "b2b": 0.002876673317125376,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.14993244281493723,
+          "j2b": 0.12795989572858696,
+          "b2b": 0.11809575445908659,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_1/a9bb464ebcd6a23dd4c0f8b277f17a658f737a0fd0f59288c8526913c911ee22",
+        "skin": {
+          "l1_element": 0.013673065457987422,
+          "l1_vector": 0.7383455347313208,
+          "l2_element": 0.004295781797949669,
+          "l2_vector": 0.40189088650640287,
+          "kl": 0.6722278792182221,
+          "precision": 0.6882161458333333,
+          "recall": 0.8513020833333333
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.16932253456710677,
+          "j2b": 0.1678422601246053,
+          "b2b": 0.15745870150234287,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.1678382095026994,
+          "b2b_dense": 0.1569942199166186,
+          "j2b_abs_difference": 4.050621905893337e-06,
+          "b2b_abs_difference": 0.00046448158572426346
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.0422535203397274,
+          "parent_accuracy": 0.35211268067359924,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.16503598035606779,
+          "j2b": 0.16174526698163688,
+          "b2b": 0.15456468490020103,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.003668671800927586,
+          "j2b": 0.0031048202460326763,
+          "b2b": 0.002757127649012465,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.17475538409810354,
+          "j2b": 0.1732990703982458,
+          "b2b": 0.15803838952969113,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "000-081/ba3a70862d2f4399b91a9f53c541cb0a",
+        "skin": {
+          "l1_element": 0.02601244276591754,
+          "l1_vector": 0.6503110691479386,
+          "l2_element": 0.008931818043214763,
+          "l2_vector": 0.37245232761449276,
+          "kl": 0.5966306942957909,
+          "precision": 0.7501348586309523,
+          "recall": 0.8499348958333333
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.09301703054785175,
+          "j2b": 0.08653168452419528,
+          "b2b": 0.07284428183892902,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.08647966561790085,
+          "b2b_dense": 0.0724290388172321,
+          "j2b_abs_difference": 5.201890629442929e-05,
+          "b2b_abs_difference": 0.00041524302169691774
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.0,
+          "parent_accuracy": 0.65625,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.10173471701199568,
+          "j2b": 0.08865502294664435,
+          "b2b": 0.07404098784760713,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.0035497487040090274,
+          "j2b": 0.0032158218364451065,
+          "b2b": 0.0027007503117658514,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.10340578614323205,
+          "j2b": 0.09530247650166868,
+          "b2b": 0.08170357600176104,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_2/54585cfade71499fb8847fc3906081ee4284ba5f77dd72d86b17b124527f3e7f",
+        "skin": {
+          "l1_element": 0.014016293206787815,
+          "l1_vector": 0.8269612992004811,
+          "l2_element": 0.004927522270032313,
+          "l2_vector": 0.4791524121224831,
+          "kl": 0.8139657830628119,
+          "precision": 0.7095377604166666,
+          "recall": 0.78828125
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.16021837854811855,
+          "j2b": 0.15707983474033832,
+          "b2b": 0.14778626870099446,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.15707420839538874,
+          "b2b_dense": 0.14724988668361685,
+          "j2b_abs_difference": 5.6263449495774775e-06,
+          "b2b_abs_difference": 0.0005363820173776013
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.021739130839705467,
+          "parent_accuracy": 0.21739129722118378,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.10979231836915437,
+          "j2b": 0.10290630198538803,
+          "b2b": 0.10618552801603044,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.0036008926949679747,
+          "j2b": 0.0031838379573791635,
+          "b2b": 0.002706189669050461,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.16009141077882066,
+          "j2b": 0.15696492479071159,
+          "b2b": 0.1477536453534544,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_9/2c1e88d42719f667856406684e5341252076d3920f1a6f60256516191cdbb48e",
+        "skin": {
+          "l1_element": 0.017213389328207023,
+          "l1_vector": 0.791815909097523,
+          "l2_element": 0.00701066158496752,
+          "l2_vector": 0.46804219095281435,
+          "kl": 0.7973032171720285,
+          "precision": 0.7193367125496031,
+          "recall": 0.8579427083333333
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.17363795017567837,
+          "j2b": 0.1731659552413301,
+          "b2b": 0.18285716726032808,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.17316463218456402,
+          "b2b_dense": 0.18315453521203257,
+          "j2b_abs_difference": 1.3230567660893477e-06,
+          "b2b_abs_difference": 0.0002973679517044858
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.02185792289674282,
+          "parent_accuracy": 0.5737704634666443,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.16368832207099382,
+          "j2b": 0.1592517474000163,
+          "b2b": 0.16455880050464397,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.0039080333385657275,
+          "j2b": 0.0034863133899521144,
+          "b2b": 0.003024959857728409,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.17356123025229964,
+          "j2b": 0.17315443252486792,
+          "b2b": 0.18570550702673483,
+          "step": 0.005
+        }
+      },
+      {
+        "asset_name": "fbx_1/f89a6ea6cc309aa7058ff2632775b6ef5984d120e7a06f770f5a2f30a9209f91",
+        "skin": {
+          "l1_element": 0.02706930052001184,
+          "l1_vector": 1.0286334197604499,
+          "l2_element": 0.012979417572138779,
+          "l2_vector": 0.6218007294665444,
+          "kl": 1.1923794771226277,
+          "precision": 0.5495256696428572,
+          "recall": 0.8560546874999999
+        },
+        "generated_joint_count": 96,
+        "capped": true,
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.13998644251587794,
+          "j2b": 0.11628127330039582,
+          "b2b": 0.10553217140435638,
+          "step": 0.005
+        },
+        "metric_sensitivity": {
+          "j2b_dense": 0.11626090921830688,
+          "b2b_dense": 0.10549275359773885,
+          "j2b_abs_difference": 2.0364082088941693e-05,
+          "b2b_abs_difference": 3.94178066175227e-05
+        },
+        "teacher_forced": {
+          "coordinate_accuracy": 0.006289307959377766,
+          "parent_accuracy": 0.3396226465702057,
+          "eos_at_true_end": false,
+          "continue_accuracy": 1.0
+        },
+        "teacher_forced_geometry_diagnostic": {
+          "j2j": 0.14500780314703593,
+          "j2b": 0.125199231212326,
+          "b2b": 0.1134276697877871,
+          "step": 0.005
+        },
+        "quantized_gt_oracle": {
+          "j2j": 0.003790683565896418,
+          "j2b": 0.0032186432514233775,
+          "b2b": 0.0026332119733244487,
+          "step": 0.005
+        },
+        "gt_count_prefix_diagnostic": {
+          "j2j": 0.14282907231294018,
+          "j2b": 0.1183181815730715,
+          "b2b": 0.10815014011288761,
+          "step": 0.005
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rigel3d-reproduction"
+version = "0.1.0"
+description = "Independent small-scale Rigel3D reproduction with reconstruction and image-only generation pilots"
+requires-python = ">=3.12"
+dependencies = ["torch", "numpy", "scipy", "matplotlib", "safetensors", "pillow", "pyarrow"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

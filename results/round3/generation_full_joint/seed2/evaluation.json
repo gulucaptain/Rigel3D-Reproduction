@@ -1,0 +1,299 @@
+{
+  "seed": 2,
+  "cfg": 5,
+  "steps": 25,
+  "view": 0,
+  "scope": "Single input image only. Occupancy64^3 and local coordinates/latents predicted; actual pretrained256 mesh + joint adapted rig. Every empty/budget failure retained. Target geometry/rig read only outside generation function for scoring.",
+  "assets": [
+    {
+      "filename": "test_0b7dc2f979ae74eb.npz",
+      "steps": 25,
+      "cfg": 5,
+      "mesh_attempted": false,
+      "input_scope": "One image tokens + noise + learned weights/train statistics only. No target occupancy/geometry/rig/count/prefix or normalization read at runtime.",
+      "budget_policy": "Fail explicitly above fixed16000 surface/12000 rig cells; no truncation",
+      "surface_voxels": 0,
+      "rig_voxels": 0,
+      "failure": "empty_predicted_surface_occupancy",
+      "surface_occupancy": {
+        "iou": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "predicted_count": 0,
+        "target_count": 4682
+      },
+      "rig_occupancy": {
+        "iou": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "predicted_count": 0,
+        "target_count": 148
+      },
+      "surface_occupancy_latent_mse": 1.4533920288085938,
+      "rig_occupancy_latent_mse": 0.9425333142280579,
+      "mesh_chamfer": null,
+      "elapsed_s": 3.2611554169561714
+    },
+    {
+      "filename": "test_5f71afc15c041461.npz",
+      "steps": 25,
+      "cfg": 5,
+      "mesh_attempted": false,
+      "input_scope": "One image tokens + noise + learned weights/train statistics only. No target occupancy/geometry/rig/count/prefix or normalization read at runtime.",
+      "budget_policy": "Fail explicitly above fixed16000 surface/12000 rig cells; no truncation",
+      "surface_voxels": 227,
+      "rig_voxels": 0,
+      "failure": "empty_predicted_rig_occupancy",
+      "surface_occupancy": {
+        "iou": 0.002343186733958183,
+        "precision": 0.05726872246696035,
+        "recall": 0.0024371953505811774,
+        "predicted_count": 227,
+        "target_count": 5334
+      },
+      "rig_occupancy": {
+        "iou": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "predicted_count": 0,
+        "target_count": 697
+      },
+      "surface_occupancy_latent_mse": 1.9405510425567627,
+      "rig_occupancy_latent_mse": 2.9492170810699463,
+      "mesh_chamfer": null,
+      "elapsed_s": 3.337639541947283
+    },
+    {
+      "filename": "test_fcefe59e0ca0640b.npz",
+      "steps": 25,
+      "cfg": 5,
+      "mesh_attempted": false,
+      "input_scope": "One image tokens + noise + learned weights/train statistics only. No target occupancy/geometry/rig/count/prefix or normalization read at runtime.",
+      "budget_policy": "Fail explicitly above fixed16000 surface/12000 rig cells; no truncation",
+      "surface_voxels": 0,
+      "rig_voxels": 22,
+      "failure": "empty_predicted_surface_occupancy",
+      "surface_occupancy": {
+        "iou": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "predicted_count": 0,
+        "target_count": 3713
+      },
+      "rig_occupancy": {
+        "iou": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "predicted_count": 22,
+        "target_count": 285
+      },
+      "surface_occupancy_latent_mse": 1.1033964157104492,
+      "rig_occupancy_latent_mse": 1.8048439025878906,
+      "mesh_chamfer": null,
+      "elapsed_s": 3.4064555410295725
+    },
+    {
+      "filename": "test_5f9868db50527fa2.npz",
+      "steps": 25,
+      "cfg": 5,
+      "mesh_attempted": false,
+      "input_scope": "One image tokens + noise + learned weights/train statistics only. No target occupancy/geometry/rig/count/prefix or normalization read at runtime.",
+      "budget_policy": "Fail explicitly above fixed16000 surface/12000 rig cells; no truncation",
+      "surface_voxels": 2,
+      "rig_voxels": 0,
+      "failure": "empty_predicted_rig_occupancy",
+      "surface_occupancy": {
+        "iou": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "predicted_count": 2,
+        "target_count": 5312
+      },
+      "rig_occupancy": {
+        "iou": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "predicted_count": 0,
+        "target_count": 183
+      },
+      "surface_occupancy_latent_mse": 2.0160887241363525,
+      "rig_occupancy_latent_mse": 1.0806218385696411,
+      "mesh_chamfer": null,
+      "elapsed_s": 3.697620333987288
+    },
+    {
+      "filename": "test_27b6e8cc90ef48b2.npz",
+      "steps": 25,
+      "cfg": 5,
+      "mesh_attempted": false,
+      "input_scope": "One image tokens + noise + learned weights/train statistics only. No target occupancy/geometry/rig/count/prefix or normalization read at runtime.",
+      "budget_policy": "Fail explicitly above fixed16000 surface/12000 rig cells; no truncation",
+      "surface_voxels": 0,
+      "rig_voxels": 0,
+      "failure": "empty_predicted_surface_occupancy",
+      "surface_occupancy": {
+        "iou": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "predicted_count": 0,
+        "target_count": 4046
+      },
+      "rig_occupancy": {
+        "iou": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "predicted_count": 0,
+        "target_count": 271
+      },
+      "surface_occupancy_latent_mse": 1.3248389959335327,
+      "rig_occupancy_latent_mse": 2.0804548263549805,
+      "mesh_chamfer": null,
+      "elapsed_s": 3.413180415984243
+    },
+    {
+      "filename": "test_30f674276d267739.npz",
+      "steps": 25,
+      "cfg": 5,
+      "mesh_attempted": false,
+      "input_scope": "One image tokens + noise + learned weights/train statistics only. No target occupancy/geometry/rig/count/prefix or normalization read at runtime.",
+      "budget_policy": "Fail explicitly above fixed16000 surface/12000 rig cells; no truncation",
+      "surface_voxels": 0,
+      "rig_voxels": 0,
+      "failure": "empty_predicted_surface_occupancy",
+      "surface_occupancy": {
+        "iou": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "predicted_count": 0,
+        "target_count": 3700
+      },
+      "rig_occupancy": {
+        "iou": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "predicted_count": 0,
+        "target_count": 279
+      },
+      "surface_occupancy_latent_mse": 1.0270761251449585,
+      "rig_occupancy_latent_mse": 1.401743769645691,
+      "mesh_chamfer": null,
+      "elapsed_s": 3.312831124989316
+    },
+    {
+      "filename": "test_f764f51c6dd435c3.npz",
+      "steps": 25,
+      "cfg": 5,
+      "mesh_attempted": false,
+      "input_scope": "One image tokens + noise + learned weights/train statistics only. No target occupancy/geometry/rig/count/prefix or normalization read at runtime.",
+      "budget_policy": "Fail explicitly above fixed16000 surface/12000 rig cells; no truncation",
+      "surface_voxels": 0,
+      "rig_voxels": 0,
+      "failure": "empty_predicted_surface_occupancy",
+      "surface_occupancy": {
+        "iou": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "predicted_count": 0,
+        "target_count": 3494
+      },
+      "rig_occupancy": {
+        "iou": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "predicted_count": 0,
+        "target_count": 282
+      },
+      "surface_occupancy_latent_mse": 0.9834103584289551,
+      "rig_occupancy_latent_mse": 1.3438163995742798,
+      "mesh_chamfer": null,
+      "elapsed_s": 3.630436124978587
+    },
+    {
+      "filename": "test_803c47b10c699939.npz",
+      "steps": 25,
+      "cfg": 5,
+      "mesh_attempted": false,
+      "input_scope": "One image tokens + noise + learned weights/train statistics only. No target occupancy/geometry/rig/count/prefix or normalization read at runtime.",
+      "budget_policy": "Fail explicitly above fixed16000 surface/12000 rig cells; no truncation",
+      "surface_voxels": 0,
+      "rig_voxels": 0,
+      "failure": "empty_predicted_surface_occupancy",
+      "surface_occupancy": {
+        "iou": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "predicted_count": 0,
+        "target_count": 3713
+      },
+      "rig_occupancy": {
+        "iou": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "predicted_count": 0,
+        "target_count": 233
+      },
+      "surface_occupancy_latent_mse": 1.0699589252471924,
+      "rig_occupancy_latent_mse": 1.1528875827789307,
+      "mesh_chamfer": null,
+      "elapsed_s": 3.6868094169767573
+    },
+    {
+      "filename": "test_4e5dc0c2216e3436.npz",
+      "steps": 25,
+      "cfg": 5,
+      "mesh_attempted": false,
+      "input_scope": "One image tokens + noise + learned weights/train statistics only. No target occupancy/geometry/rig/count/prefix or normalization read at runtime.",
+      "budget_policy": "Fail explicitly above fixed16000 surface/12000 rig cells; no truncation",
+      "surface_voxels": 0,
+      "rig_voxels": 2,
+      "failure": "empty_predicted_surface_occupancy",
+      "surface_occupancy": {
+        "iou": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "predicted_count": 0,
+        "target_count": 3691
+      },
+      "rig_occupancy": {
+        "iou": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "predicted_count": 2,
+        "target_count": 216
+      },
+      "surface_occupancy_latent_mse": 0.9850260615348816,
+      "rig_occupancy_latent_mse": 1.3599739074707031,
+      "mesh_chamfer": null,
+      "elapsed_s": 3.328582084039226
+    },
+    {
+      "filename": "test_763a49596dc0edf7.npz",
+      "steps": 25,
+      "cfg": 5,
+      "mesh_attempted": false,
+      "input_scope": "One image tokens + noise + learned weights/train statistics only. No target occupancy/geometry/rig/count/prefix or normalization read at runtime.",
+      "budget_policy": "Fail explicitly above fixed16000 surface/12000 rig cells; no truncation",
+      "surface_voxels": 0,
+      "rig_voxels": 0,
+      "failure": "empty_predicted_surface_occupancy",
+      "surface_occupancy": {
+        "iou": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "predicted_count": 0,
+        "target_count": 5111
+      },
+      "rig_occupancy": {
+        "iou": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "predicted_count": 0,
+        "target_count": 319
+      },
+      "surface_occupancy_latent_mse": 1.789839506149292,
+      "rig_occupancy_latent_mse": 2.0726194381713867,
+      "mesh_chamfer": null,
+      "elapsed_s": 3.3064549169503152
+    }
+  ]
+}

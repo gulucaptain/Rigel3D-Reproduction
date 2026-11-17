@@ -1,0 +1,26 @@
+[
+  {
+    "type": "file",
+    "oid": "87e053bd7f2d8a094c70889a4a71538f6f5cc226",
+    "size": 117111953,
+    "lfs": {
+      "oid": "46f5d7b51486463d2bf7082b63c7f613059148817e0cd127bf923346e1c82c9d",
+      "size": 117111953,
+      "pointerSize": 134
+    },
+    "xetHash": "00aa316fb2538c281ca421c36a9513a891a1afb6ccde5d5beedf49ccf93739de",
+    "path": "github/alignment.parquet"
+  },
+  {
+    "type": "file",
+    "oid": "8ec44f3827fe26cff4a79b7e0dc389a69454f290",
+    "size": 797466051,
+    "lfs": {
+      "oid": "f14bf4daceac97072eee5721489ad160089b9fc1514e6a9e096574c3e4276da6",
+      "size": 797466051,
+      "pointerSize": 134
+    },
+    "xetHash": "a768935f528425c25d190bafec53907a4f7cb58897cf3553e78125459c804a4b",
+    "path": "github/github.parquet"
+  }
+]

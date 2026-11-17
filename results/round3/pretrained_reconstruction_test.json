@@ -1,0 +1,195 @@
+{
+  "scope": "GT occupied surface coordinates and encoded original multiview DINO-L features; official pretrained weights, native FP32 kernels, full256 mesh extraction. This is reconstruction, not image generation.",
+  "assets": [
+    {
+      "filename": "test_0b7dc2f979ae74eb.npz",
+      "split": "test",
+      "decoder_cubes": 299648,
+      "sdf_min": -0.1849759966135025,
+      "sdf_max": 0.24701988697052002,
+      "negative_corners": 773138,
+      "network_s": 1.9039337919093668,
+      "vertices": 227846,
+      "faces": 452536,
+      "mesh_chamfer": 0.01051696499781215,
+      "elapsed_s": 7.248165832948871,
+      "extraction": {
+        "sparse_cubes": 299648,
+        "sdf_negative": 108115,
+        "res": 256,
+        "consistency": 0.0
+      }
+    },
+    {
+      "filename": "test_5f71afc15c041461.npz",
+      "split": "test",
+      "decoder_cubes": 341376,
+      "sdf_min": -0.1629427969455719,
+      "sdf_max": 0.26816967129707336,
+      "negative_corners": 814323,
+      "network_s": 1.7572764999931678,
+      "vertices": 256373,
+      "faces": 505740,
+      "mesh_chamfer": 0.011734663632829994,
+      "elapsed_s": 6.74972704204265,
+      "extraction": {
+        "sparse_cubes": 341376,
+        "sdf_negative": 110785,
+        "res": 256,
+        "consistency": 0.0
+      }
+    },
+    {
+      "filename": "test_fcefe59e0ca0640b.npz",
+      "split": "test",
+      "decoder_cubes": 237632,
+      "sdf_min": -0.15365366637706757,
+      "sdf_max": 0.22392156720161438,
+      "negative_corners": 637341,
+      "network_s": 1.3145959579851478,
+      "vertices": 147152,
+      "faces": 293402,
+      "mesh_chamfer": 0.008749603639406514,
+      "elapsed_s": 5.022918667062186,
+      "extraction": {
+        "sparse_cubes": 237632,
+        "sdf_negative": 83093,
+        "res": 256,
+        "consistency": 0.0
+      }
+    },
+    {
+      "filename": "test_5f9868db50527fa2.npz",
+      "split": "test",
+      "decoder_cubes": 339968,
+      "sdf_min": -0.20055070519447327,
+      "sdf_max": 0.3629986643791199,
+      "negative_corners": 830128,
+      "network_s": 1.797715708031319,
+      "vertices": 224857,
+      "faces": 445624,
+      "mesh_chamfer": 0.011304557890621847,
+      "elapsed_s": 6.262089500087313,
+      "extraction": {
+        "sparse_cubes": 339968,
+        "sdf_negative": 108562,
+        "res": 256,
+        "consistency": 0.0
+      }
+    },
+    {
+      "filename": "test_27b6e8cc90ef48b2.npz",
+      "split": "test",
+      "decoder_cubes": 258944,
+      "sdf_min": -0.15763235092163086,
+      "sdf_max": 0.26184940338134766,
+      "negative_corners": 681335,
+      "network_s": 1.2974872500635684,
+      "vertices": 153025,
+      "faces": 304380,
+      "mesh_chamfer": 0.0093699260986624,
+      "elapsed_s": 5.455917250015773,
+      "extraction": {
+        "sparse_cubes": 258944,
+        "sdf_negative": 87402,
+        "res": 256,
+        "consistency": 0.0
+      }
+    },
+    {
+      "filename": "test_30f674276d267739.npz",
+      "split": "test",
+      "decoder_cubes": 236800,
+      "sdf_min": -0.16178980469703674,
+      "sdf_max": 0.23609797656536102,
+      "negative_corners": 652139,
+      "network_s": 1.3575143329799175,
+      "vertices": 165799,
+      "faces": 330582,
+      "mesh_chamfer": 0.008979096789390927,
+      "elapsed_s": 5.73191437497735,
+      "extraction": {
+        "sparse_cubes": 236800,
+        "sdf_negative": 88027,
+        "res": 256,
+        "consistency": 0.0
+      }
+    },
+    {
+      "filename": "test_f764f51c6dd435c3.npz",
+      "split": "test",
+      "decoder_cubes": 223616,
+      "sdf_min": -0.15587063133716583,
+      "sdf_max": 0.20504029095172882,
+      "negative_corners": 623304,
+      "network_s": 1.3603822910226882,
+      "vertices": 139814,
+      "faces": 278710,
+      "mesh_chamfer": 0.008813446785381786,
+      "elapsed_s": 5.00961054104846,
+      "extraction": {
+        "sparse_cubes": 223616,
+        "sdf_negative": 81734,
+        "res": 256,
+        "consistency": 0.0
+      }
+    },
+    {
+      "filename": "test_803c47b10c699939.npz",
+      "split": "test",
+      "decoder_cubes": 237632,
+      "sdf_min": -0.13736450672149658,
+      "sdf_max": 0.31729182600975037,
+      "negative_corners": 668436,
+      "network_s": 1.2415088339475915,
+      "vertices": 142354,
+      "faces": 284146,
+      "mesh_chamfer": 0.009134632481331572,
+      "elapsed_s": 4.8774623749777675,
+      "extraction": {
+        "sparse_cubes": 237632,
+        "sdf_negative": 87883,
+        "res": 256,
+        "consistency": 0.0
+      }
+    },
+    {
+      "filename": "test_4e5dc0c2216e3436.npz",
+      "split": "test",
+      "decoder_cubes": 236224,
+      "sdf_min": -0.17784342169761658,
+      "sdf_max": 0.24674567580223083,
+      "negative_corners": 644681,
+      "network_s": 1.3137111250543967,
+      "vertices": 177223,
+      "faces": 352740,
+      "mesh_chamfer": 0.00892494393658146,
+      "elapsed_s": 5.274378499947488,
+      "extraction": {
+        "sparse_cubes": 236224,
+        "sdf_negative": 88665,
+        "res": 256,
+        "consistency": 0.0
+      }
+    },
+    {
+      "filename": "test_763a49596dc0edf7.npz",
+      "split": "test",
+      "decoder_cubes": 327104,
+      "sdf_min": -0.17648983001708984,
+      "sdf_max": 0.22406460344791412,
+      "negative_corners": 762179,
+      "network_s": 1.6648886669427156,
+      "vertices": 204848,
+      "faces": 404524,
+      "mesh_chamfer": 0.011138234469964172,
+      "elapsed_s": 6.094880499993451,
+      "extraction": {
+        "sparse_cubes": 327104,
+        "sdf_negative": 98410,
+        "res": 256,
+        "consistency": 0.0
+      }
+    }
+  ]
+}

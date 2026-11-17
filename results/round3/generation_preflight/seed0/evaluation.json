@@ -1,0 +1,35 @@
+{
+  "seed": 0,
+  "cfg": 5,
+  "steps": 25,
+  "view": 0,
+  "scope": "Single input image only. Occupancy64^3 and local coordinates/latents predicted; actual pretrained256 mesh + joint adapted rig. Every empty/budget failure retained. Target geometry/rig read only outside generation function for scoring.",
+  "assets": [
+    {
+      "filename": "test_0b7dc2f979ae74eb.npz",
+      "steps": 25,
+      "cfg": 5,
+      "input_scope": "One image tokens + noise + learned weights/train statistics only. No target occupancy/geometry/rig/count/prefix or normalization read at runtime.",
+      "budget_policy": "Fail explicitly above fixed16000 surface/12000 rig cells; no truncation",
+      "surface_voxels": 6687,
+      "rig_voxels": 0,
+      "failure": "empty_predicted_rig_occupancy",
+      "surface_occupancy": {
+        "iou": 0.04880073800738007,
+        "precision": 0.079108718408853,
+        "recall": 0.11298590346005981,
+        "predicted_count": 6687,
+        "target_count": 4682
+      },
+      "rig_occupancy": {
+        "iou": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "predicted_count": 0,
+        "target_count": 148
+      },
+      "mesh_chamfer": null,
+      "elapsed_s": 3.434914958081208
+    }
+  ]
+}

@@ -1,0 +1,394 @@
+{
+  "scope": "Fixed source cohort:25 train/6 val/10 test,24/6/10 eligible skeletons; three seeds all reported. Decoder reconstruction uses GT rig geometry/weights; strict generation only uses one image plus noise.",
+  "reconstruction": [
+    {
+      "suite": "round2_geometry",
+      "label": "Geometry proxy",
+      "runs": [
+        {
+          "seed": 0,
+          "skin_l1": 0.034666598033304304,
+          "j2j": 0.15199875068322194,
+          "j2b": 0.14418629007588904,
+          "b2b": 0.1394273349223072,
+          "cap_hits": 7,
+          "count_mean": 77.9,
+          "count_mae": 46.5,
+          "teacher_j2j": 0.14854936895025933,
+          "coordinate_accuracy": 0.03126779906451702,
+          "eos_recall": 0.2,
+          "quantization_j2j": 0.003715915057921972
+        },
+        {
+          "seed": 1,
+          "skin_l1": 0.03243575629621788,
+          "j2j": 0.12682239445868002,
+          "j2b": 0.1148524920934656,
+          "b2b": 0.10703685327720266,
+          "cap_hits": 1,
+          "count_mean": 62.3,
+          "count_mae": 28.1,
+          "teacher_j2j": 0.11651428416721929,
+          "coordinate_accuracy": 0.03320591831579804,
+          "eos_recall": 0.1,
+          "quantization_j2j": 0.003715915057921972
+        },
+        {
+          "seed": 2,
+          "skin_l1": 0.02997728664138184,
+          "j2j": 0.13283118272393563,
+          "j2b": 0.12396842643388514,
+          "b2b": 0.11661640838106258,
+          "cap_hits": 1,
+          "count_mean": 59.0,
+          "count_mae": 26.4,
+          "teacher_j2j": 0.12403482004866906,
+          "coordinate_accuracy": 0.028579655569046736,
+          "eos_recall": 0.2,
+          "quantization_j2j": 0.003715915057921972
+        }
+      ],
+      "metrics": {
+        "skin_l1": {
+          "mean": 0.032359880323634675,
+          "std": 0.002345576305519613
+        },
+        "j2j": {
+          "mean": 0.13721744262194585,
+          "std": 0.013148828278821169
+        },
+        "j2b": {
+          "mean": 0.12766906953441326,
+          "std": 0.015012960918370573
+        },
+        "b2b": {
+          "mean": 0.12102686552685749,
+          "std": 0.016639559022901818
+        },
+        "count_mean": {
+          "mean": 66.39999999999999,
+          "std": 10.095048291117784
+        },
+        "count_mae": {
+          "mean": 33.666666666666664,
+          "std": 11.146449359923245
+        },
+        "teacher_j2j": {
+          "mean": 0.12969949105538256,
+          "std": 0.016751956228299617
+        },
+        "coordinate_accuracy": {
+          "mean": 0.031017790983120602,
+          "std": 0.002323242299259243
+        },
+        "eos_recall": {
+          "mean": 0.16666666666666666,
+          "std": 0.05773502691896258
+        },
+        "quantization_j2j": {
+          "mean": 0.0037159150579219717,
+          "std": 5.311484201212962e-19
+        }
+      },
+      "cap_hits": 9,
+      "evaluations": 30
+    },
+    {
+      "suite": "round2_dino",
+      "label": "Real DINO",
+      "runs": [
+        {
+          "seed": 0,
+          "skin_l1": 0.038955560956667815,
+          "j2j": 0.13932119930022335,
+          "j2b": 0.13083070627267618,
+          "b2b": 0.11716060131729164,
+          "cap_hits": 1,
+          "count_mean": 59.3,
+          "count_mae": 16.9,
+          "teacher_j2j": 0.14480533589015016,
+          "coordinate_accuracy": 0.025024390779435635,
+          "eos_recall": 0.1,
+          "quantization_j2j": 0.003715915057921972
+        },
+        {
+          "seed": 1,
+          "skin_l1": 0.035434080152220195,
+          "j2j": 0.14175493027192515,
+          "j2b": 0.13140157740554925,
+          "b2b": 0.1228332547154392,
+          "cap_hits": 1,
+          "count_mean": 43.2,
+          "count_mae": 11.4,
+          "teacher_j2j": 0.12993341056247248,
+          "coordinate_accuracy": 0.027164627332240343,
+          "eos_recall": 0.3,
+          "quantization_j2j": 0.003715915057921972
+        },
+        {
+          "seed": 2,
+          "skin_l1": 0.037503285950644984,
+          "j2j": 0.15845720621069828,
+          "j2b": 0.15118918258437178,
+          "b2b": 0.13761344889730476,
+          "cap_hits": 4,
+          "count_mean": 58.6,
+          "count_mae": 21.2,
+          "teacher_j2j": 0.12838961979280453,
+          "coordinate_accuracy": 0.02673360761255026,
+          "eos_recall": 0.2,
+          "quantization_j2j": 0.003715915057921972
+        }
+      ],
+      "metrics": {
+        "skin_l1": {
+          "mean": 0.03729764235317767,
+          "std": 0.0017697241962824999
+        },
+        "j2j": {
+          "mean": 0.1465111119276156,
+          "std": 0.010416939957390596
+        },
+        "j2b": {
+          "mean": 0.13780715542086575,
+          "std": 0.011592690012080764
+        },
+        "b2b": {
+          "mean": 0.1258691016433452,
+          "std": 0.010558978097338271
+        },
+        "count_mean": {
+          "mean": 53.699999999999996,
+          "std": 9.099999999999998
+        },
+        "count_mae": {
+          "mean": 16.5,
+          "std": 4.912229636326054
+        },
+        "teacher_j2j": {
+          "mean": 0.13437612208180905,
+          "std": 0.009064888194577883
+        },
+        "coordinate_accuracy": {
+          "mean": 0.02630754190807541,
+          "std": 0.0011319461620976422
+        },
+        "eos_recall": {
+          "mean": 0.20000000000000004,
+          "std": 0.09999999999999999
+        },
+        "quantization_j2j": {
+          "mean": 0.0037159150579219717,
+          "std": 5.311484201212962e-19
+        }
+      },
+      "cap_hits": 6,
+      "evaluations": 30
+    },
+    {
+      "suite": "round2_vae",
+      "label": "Sparse VAE",
+      "runs": [
+        {
+          "seed": 0,
+          "skin_l1": 0.03240648218581175,
+          "j2j": 0.12769664906681316,
+          "j2b": 0.11623748831587541,
+          "b2b": 0.10834220530022798,
+          "cap_hits": 5,
+          "count_mean": 83.3,
+          "count_mae": 37.9,
+          "teacher_j2j": 0.12749964495548138,
+          "coordinate_accuracy": 0.03299362706020474,
+          "eos_recall": 0.0,
+          "quantization_j2j": 0.003715915057921972
+        },
+        {
+          "seed": 1,
+          "skin_l1": 0.03278732686537778,
+          "j2j": 0.14242044335479237,
+          "j2b": 0.13277673990977648,
+          "b2b": 0.12043725203285179,
+          "cap_hits": 1,
+          "count_mean": 40.7,
+          "count_mae": 20.5,
+          "teacher_j2j": 0.13441130522884576,
+          "coordinate_accuracy": 0.04370318837463856,
+          "eos_recall": 0.1,
+          "quantization_j2j": 0.003715915057921972
+        },
+        {
+          "seed": 2,
+          "skin_l1": 0.038297565217613704,
+          "j2j": 0.15657972175624552,
+          "j2b": 0.1464607938142492,
+          "b2b": 0.13834472843295614,
+          "cap_hits": 0,
+          "count_mean": 38.7,
+          "count_mae": 18.9,
+          "teacher_j2j": 0.13658572651897424,
+          "coordinate_accuracy": 0.027544648107141256,
+          "eos_recall": 0.5,
+          "quantization_j2j": 0.003715915057921972
+        }
+      ],
+      "metrics": {
+        "skin_l1": {
+          "mean": 0.03449712475626774,
+          "std": 0.0032967819828834686
+        },
+        "j2j": {
+          "mean": 0.14223227139261702,
+          "std": 0.014442455764559917
+        },
+        "j2b": {
+          "mean": 0.1318250073466337,
+          "std": 0.015134113616786998
+        },
+        "b2b": {
+          "mean": 0.12237472858867864,
+          "std": 0.015094807389819723
+        },
+        "count_mean": {
+          "mean": 54.23333333333333,
+          "std": 25.192326874136363
+        },
+        "count_mae": {
+          "mean": 25.766666666666666,
+          "std": 10.53818453687984
+        },
+        "teacher_j2j": {
+          "mean": 0.1328322255677671,
+          "std": 0.004744400802697361
+        },
+        "coordinate_accuracy": {
+          "mean": 0.034747154513994856,
+          "std": 0.008220751169599996
+        },
+        "eos_recall": {
+          "mean": 0.19999999999999998,
+          "std": 0.2645751311064591
+        },
+        "quantization_j2j": {
+          "mean": 0.0037159150579219717,
+          "std": 5.311484201212962e-19
+        }
+      },
+      "cap_hits": 6,
+      "evaluations": 30
+    }
+  ],
+  "sparse_vae": {
+    "surface": {
+      "test_mse": {
+        "mean": 0.7509756217400233,
+        "std": 0.006718264467277686
+      }
+    },
+    "rig": {
+      "test_mse": {
+        "mean": 0.7024292101462682,
+        "std": 0.00946500475945751
+      }
+    }
+  },
+  "generation": {
+    "runs": [
+      {
+        "seed": 0,
+        "test_assets": 10,
+        "mesh_valid": 2,
+        "failures": 8,
+        "cap_hits": 7,
+        "mesh_chamfer_nonempty": 0.07582224639232112,
+        "mesh_chamfer_all_with_empty_penalty": 1.4008050953335658,
+        "j2j_all_with_empty_penalty": 0.13421503336358095,
+        "gt_latent_reconstruction_mesh_valid": 9,
+        "gt_latent_reconstruction_chamfer": 0.26213471471833183,
+        "gt_latent_reconstruction_sdf_mae": 0.03510080156847835
+      },
+      {
+        "seed": 1,
+        "test_assets": 10,
+        "mesh_valid": 4,
+        "failures": 6,
+        "cap_hits": 3,
+        "mesh_chamfer_nonempty": 0.26529131968541514,
+        "mesh_chamfer_all_with_empty_penalty": 1.1453470124154923,
+        "j2j_all_with_empty_penalty": 0.1607481610506034,
+        "gt_latent_reconstruction_mesh_valid": 10,
+        "gt_latent_reconstruction_chamfer": 0.08848511269111385,
+        "gt_latent_reconstruction_sdf_mae": 0.03609595112502575
+      },
+      {
+        "seed": 2,
+        "test_assets": 10,
+        "mesh_valid": 7,
+        "failures": 3,
+        "cap_hits": 0,
+        "mesh_chamfer_nonempty": 0.14325318892443814,
+        "mesh_chamfer_all_with_empty_penalty": 0.6198924745177699,
+        "j2j_all_with_empty_penalty": 0.1538674234728753,
+        "gt_latent_reconstruction_mesh_valid": 10,
+        "gt_latent_reconstruction_chamfer": 0.09657029796317873,
+        "gt_latent_reconstruction_sdf_mae": 0.036681021377444264
+      }
+    ],
+    "metrics": {
+      "mesh_chamfer_all_with_empty_penalty": {
+        "mean": 1.0553481940889426,
+        "std": 0.3981594791192095
+      },
+      "j2j_all_with_empty_penalty": {
+        "mean": 0.14961020596235322,
+        "std": 0.013769337017913436
+      },
+      "gt_latent_reconstruction_chamfer": {
+        "mean": 0.14906337512420814,
+        "std": 0.09800606324829161
+      },
+      "gt_latent_reconstruction_sdf_mae": {
+        "mean": 0.03595925802364945,
+        "std": 0.0007989289168223736
+      }
+    },
+    "failure_count": 17,
+    "mesh_valid": 13,
+    "evaluations": 30
+  },
+  "cfg_sensitivity": [
+    {
+      "cfg": 1,
+      "nonempty_meshes": 16,
+      "evaluations": 30,
+      "cap_hits": 9,
+      "j2j_mean": 0.14909579308922621
+    },
+    {
+      "cfg": 3,
+      "nonempty_meshes": 15,
+      "evaluations": 30,
+      "cap_hits": 10,
+      "j2j_mean": 0.15057876353673316
+    },
+    {
+      "cfg": 5,
+      "nonempty_meshes": 13,
+      "evaluations": 30,
+      "cap_hits": 10,
+      "j2j_mean": 0.14961020596235325
+    }
+  ],
+  "generation_shift": {
+    "surface": {
+      "normalized_latent_rms": 1.6580121199289957,
+      "coarse_occupancy_iou": 0.23485830350177875
+    },
+    "rig": {
+      "normalized_latent_rms": 1.4405448238054912,
+      "coarse_occupancy_iou": 0.05329526929699951
+    }
+  },
+  "uncertainty": "Mean and sample SD over three training seeds. Not benchmark confidence intervals.",
+  "claim": "Independent small pipeline verification, not original architecture/scale, paper baselines or numerical reproduction. All original paper tables remain unmatched."
+}

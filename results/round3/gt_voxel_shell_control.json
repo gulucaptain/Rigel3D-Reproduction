@@ -1,0 +1,75 @@
+{
+  "scope": "GT64^3 surface occupied cells, exact256 subdivision, all101 predicted channels set to zero: default bias makes a shell near supplied GT positions. No DINO/learned decoder. Not generation; probes how much CD is explained by GT support. May contain double surfaces and does not prove valid geometry.",
+  "assets": [
+    {
+      "filename": "test_0b7dc2f979ae74eb.npz",
+      "vertices": 288172,
+      "faces": 578546,
+      "mesh_chamfer": 0.013417934773352735,
+      "elapsed_s": 4.893779167090543
+    },
+    {
+      "filename": "test_5f71afc15c041461.npz",
+      "vertices": 382272,
+      "faces": 767788,
+      "mesh_chamfer": 0.01421937089462444,
+      "elapsed_s": 4.694128124974668
+    },
+    {
+      "filename": "test_fcefe59e0ca0640b.npz",
+      "vertices": 170112,
+      "faces": 340640,
+      "mesh_chamfer": 0.012718659677386258,
+      "elapsed_s": 2.92259049997665
+    },
+    {
+      "filename": "test_5f9868db50527fa2.npz",
+      "vertices": 335848,
+      "faces": 673488,
+      "mesh_chamfer": 0.01407017772510035,
+      "elapsed_s": 4.295152709004469
+    },
+    {
+      "filename": "test_27b6e8cc90ef48b2.npz",
+      "vertices": 193020,
+      "faces": 386630,
+      "mesh_chamfer": 0.012980190802036568,
+      "elapsed_s": 3.1449837499530986
+    },
+    {
+      "filename": "test_30f674276d267739.npz",
+      "vertices": 183336,
+      "faces": 367136,
+      "mesh_chamfer": 0.012397253717393806,
+      "elapsed_s": 2.971758957952261
+    },
+    {
+      "filename": "test_f764f51c6dd435c3.npz",
+      "vertices": 155740,
+      "faces": 311786,
+      "mesh_chamfer": 0.012476945362604326,
+      "elapsed_s": 2.800207124906592
+    },
+    {
+      "filename": "test_803c47b10c699939.npz",
+      "vertices": 161768,
+      "faces": 324384,
+      "mesh_chamfer": 0.01222828077319609,
+      "elapsed_s": 3.1210412919754162
+    },
+    {
+      "filename": "test_4e5dc0c2216e3436.npz",
+      "vertices": 188456,
+      "faces": 377196,
+      "mesh_chamfer": 0.01253597390670737,
+      "elapsed_s": 3.1672468750039116
+    },
+    {
+      "filename": "test_763a49596dc0edf7.npz",
+      "vertices": 324456,
+      "faces": 650420,
+      "mesh_chamfer": 0.014089297744920943,
+      "elapsed_s": 4.086690041003749
+    }
+  ]
+}

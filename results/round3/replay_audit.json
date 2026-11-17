@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "official_weight_hashes": 8,
+  "checks": [
+    {
+      "seed": 0,
+      "surface_head_bitwise_frozen": true,
+      "cpu_mps_logits_max_abs_difference": 9.5367431640625e-07,
+      "checkpoint_sha256": "31359535fff1597b6b495cd2ad483819dc5d9b56eb07a066495ea8b51b4b06c3",
+      "passed": true
+    },
+    {
+      "seed": 1,
+      "surface_head_bitwise_frozen": true,
+      "cpu_mps_logits_max_abs_difference": 9.5367431640625e-07,
+      "checkpoint_sha256": "4b2f7d04172862bfb774e07a4b35cab81c15600b414e6cd60279ef620b2bd0d7",
+      "passed": true
+    },
+    {
+      "seed": 2,
+      "surface_head_bitwise_frozen": true,
+      "cpu_mps_logits_max_abs_difference": 1.1920928955078125e-06,
+      "checkpoint_sha256": "eaa1d0de916f9000a44c13eb09f7f8eb4b3d90f7539b2dc38e98f65f6b3d7806",
+      "passed": true
+    }
+  ],
+  "scope": "Source hashes and frozen surface parameters checked. CPU/MPS AR logits replay on one fixed held-out asset and two-token probe per seed; not full CUDA mesh parity or exhaustive optimization replay."
+}

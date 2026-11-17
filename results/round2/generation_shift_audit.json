@@ -1,0 +1,785 @@
+{
+  "scope": "CFG5 held-out diagnostic only; normalized training latent RMS is 1 by construction. Target coordinates are accessed solely after image-only sample() for scoring. No checkpoint/config selection.",
+  "assets": [
+    {
+      "seed": 0,
+      "filename": "test_0b7dc2f979ae74eb.npz",
+      "status": {
+        "failure": null,
+        "steps": 25,
+        "cfg": 5,
+        "max_cells": 256,
+        "surface_positive_cells_before_cap": 978,
+        "surface_cell_cap_hit": true,
+        "rig_positive_cells_before_cap": 701,
+        "rig_cell_cap_hit": true
+      },
+      "surface": {
+        "normalized_latent_rms": 1.776057481765747,
+        "coarse_occupancy_iou": 0.23140495867768596,
+        "target_coarse_cells": 489,
+        "predicted_coarse_cells": 256
+      },
+      "rig": {
+        "normalized_latent_rms": 1.7377444505691528,
+        "coarse_occupancy_iou": 0.027586206896551724,
+        "target_coarse_cells": 42,
+        "predicted_coarse_cells": 256
+      }
+    },
+    {
+      "seed": 0,
+      "filename": "test_5f71afc15c041461.npz",
+      "status": {
+        "failure": null,
+        "steps": 25,
+        "cfg": 5,
+        "max_cells": 256,
+        "surface_positive_cells_before_cap": 1192,
+        "surface_cell_cap_hit": true,
+        "rig_positive_cells_before_cap": 697,
+        "rig_cell_cap_hit": true
+      },
+      "surface": {
+        "normalized_latent_rms": 2.0063118934631348,
+        "coarse_occupancy_iou": 0.09553349875930521,
+        "target_coarse_cells": 627,
+        "predicted_coarse_cells": 256
+      },
+      "rig": {
+        "normalized_latent_rms": 2.07392954826355,
+        "coarse_occupancy_iou": 0.02588235294117647,
+        "target_coarse_cells": 180,
+        "predicted_coarse_cells": 256
+      }
+    },
+    {
+      "seed": 0,
+      "filename": "test_fcefe59e0ca0640b.npz",
+      "status": {
+        "failure": null,
+        "steps": 25,
+        "cfg": 5,
+        "max_cells": 256,
+        "surface_positive_cells_before_cap": 801,
+        "surface_cell_cap_hit": true,
+        "rig_positive_cells_before_cap": 625,
+        "rig_cell_cap_hit": true
+      },
+      "surface": {
+        "normalized_latent_rms": 1.5211896896362305,
+        "coarse_occupancy_iou": 0.23933649289099526,
+        "target_coarse_cells": 267,
+        "predicted_coarse_cells": 256
+      },
+      "rig": {
+        "normalized_latent_rms": 1.3765217065811157,
+        "coarse_occupancy_iou": 0.07407407407407407,
+        "target_coarse_cells": 63,
+        "predicted_coarse_cells": 256
+      }
+    },
+    {
+      "seed": 0,
+      "filename": "test_5f9868db50527fa2.npz",
+      "status": {
+        "failure": null,
+        "steps": 25,
+        "cfg": 5,
+        "max_cells": 256,
+        "surface_positive_cells_before_cap": 899,
+        "surface_cell_cap_hit": true,
+        "rig_positive_cells_before_cap": 628,
+        "rig_cell_cap_hit": true
+      },
+      "surface": {
+        "normalized_latent_rms": 1.9039638042449951,
+        "coarse_occupancy_iou": 0.22741935483870968,
+        "target_coarse_cells": 505,
+        "predicted_coarse_cells": 256
+      },
+      "rig": {
+        "normalized_latent_rms": 1.3519028425216675,
+        "coarse_occupancy_iou": 0.05517241379310345,
+        "target_coarse_cells": 50,
+        "predicted_coarse_cells": 256
+      }
+    },
+    {
+      "seed": 0,
+      "filename": "test_27b6e8cc90ef48b2.npz",
+      "status": {
+        "failure": null,
+        "steps": 25,
+        "cfg": 5,
+        "max_cells": 256,
+        "surface_positive_cells_before_cap": 780,
+        "surface_cell_cap_hit": true,
+        "rig_positive_cells_before_cap": 497,
+        "rig_cell_cap_hit": true
+      },
+      "surface": {
+        "normalized_latent_rms": 1.521543264389038,
+        "coarse_occupancy_iou": 0.2988505747126437,
+        "target_coarse_cells": 309,
+        "predicted_coarse_cells": 256
+      },
+      "rig": {
+        "normalized_latent_rms": 1.2969075441360474,
+        "coarse_occupancy_iou": 0.03908794788273615,
+        "target_coarse_cells": 63,
+        "predicted_coarse_cells": 256
+      }
+    },
+    {
+      "seed": 0,
+      "filename": "test_30f674276d267739.npz",
+      "status": {
+        "failure": null,
+        "steps": 25,
+        "cfg": 5,
+        "max_cells": 256,
+        "surface_positive_cells_before_cap": 806,
+        "surface_cell_cap_hit": true,
+        "rig_positive_cells_before_cap": 668,
+        "rig_cell_cap_hit": true
+      },
+      "surface": {
+        "normalized_latent_rms": 1.1356244087219238,
+        "coarse_occupancy_iou": 0.2323008849557522,
+        "target_coarse_cells": 301,
+        "predicted_coarse_cells": 256
+      },
+      "rig": {
+        "normalized_latent_rms": 0.9706854820251465,
+        "coarse_occupancy_iou": 0.06229508196721312,
+        "target_coarse_cells": 68,
+        "predicted_coarse_cells": 256
+      }
+    },
+    {
+      "seed": 0,
+      "filename": "test_f764f51c6dd435c3.npz",
+      "status": {
+        "failure": null,
+        "steps": 25,
+        "cfg": 5,
+        "max_cells": 256,
+        "surface_positive_cells_before_cap": 747,
+        "surface_cell_cap_hit": true,
+        "rig_positive_cells_before_cap": 471,
+        "rig_cell_cap_hit": true
+      },
+      "surface": {
+        "normalized_latent_rms": 1.8345491886138916,
+        "coarse_occupancy_iou": 0.2740740740740741,
+        "target_coarse_cells": 260,
+        "predicted_coarse_cells": 256
+      },
+      "rig": {
+        "normalized_latent_rms": 1.4248775243759155,
+        "coarse_occupancy_iou": 0.09634551495016612,
+        "target_coarse_cells": 74,
+        "predicted_coarse_cells": 256
+      }
+    },
+    {
+      "seed": 0,
+      "filename": "test_803c47b10c699939.npz",
+      "status": {
+        "failure": null,
+        "steps": 25,
+        "cfg": 5,
+        "max_cells": 256,
+        "surface_positive_cells_before_cap": 700,
+        "surface_cell_cap_hit": true,
+        "rig_positive_cells_before_cap": 615,
+        "rig_cell_cap_hit": true
+      },
+      "surface": {
+        "normalized_latent_rms": 1.8937410116195679,
+        "coarse_occupancy_iou": 0.2617283950617284,
+        "target_coarse_cells": 255,
+        "predicted_coarse_cells": 256
+      },
+      "rig": {
+        "normalized_latent_rms": 1.9847664833068848,
+        "coarse_occupancy_iou": 0.059027777777777776,
+        "target_coarse_cells": 49,
+        "predicted_coarse_cells": 256
+      }
+    },
+    {
+      "seed": 0,
+      "filename": "test_4e5dc0c2216e3436.npz",
+      "status": {
+        "failure": null,
+        "steps": 25,
+        "cfg": 5,
+        "max_cells": 256,
+        "surface_positive_cells_before_cap": 844,
+        "surface_cell_cap_hit": true,
+        "rig_positive_cells_before_cap": 487,
+        "rig_cell_cap_hit": true
+      },
+      "surface": {
+        "normalized_latent_rms": 2.028682231903076,
+        "coarse_occupancy_iou": 0.22851153039832284,
+        "target_coarse_cells": 330,
+        "predicted_coarse_cells": 256
+      },
+      "rig": {
+        "normalized_latent_rms": 2.0600175857543945,
+        "coarse_occupancy_iou": 0.04040404040404041,
+        "target_coarse_cells": 53,
+        "predicted_coarse_cells": 256
+      }
+    },
+    {
+      "seed": 0,
+      "filename": "test_763a49596dc0edf7.npz",
+      "status": {
+        "failure": null,
+        "steps": 25,
+        "cfg": 5,
+        "max_cells": 256,
+        "surface_positive_cells_before_cap": 846,
+        "surface_cell_cap_hit": true,
+        "rig_positive_cells_before_cap": 773,
+        "rig_cell_cap_hit": true
+      },
+      "surface": {
+        "normalized_latent_rms": 1.63711678981781,
+        "coarse_occupancy_iou": 0.18693009118541035,
+        "target_coarse_cells": 525,
+        "predicted_coarse_cells": 256
+      },
+      "rig": {
+        "normalized_latent_rms": 1.149682641029358,
+        "coarse_occupancy_iou": 0.02702702702702703,
+        "target_coarse_cells": 86,
+        "predicted_coarse_cells": 256
+      }
+    },
+    {
+      "seed": 1,
+      "filename": "test_0b7dc2f979ae74eb.npz",
+      "status": {
+        "failure": null,
+        "steps": 25,
+        "cfg": 5,
+        "max_cells": 256,
+        "surface_positive_cells_before_cap": 976,
+        "surface_cell_cap_hit": true,
+        "rig_positive_cells_before_cap": 598,
+        "rig_cell_cap_hit": true
+      },
+      "surface": {
+        "normalized_latent_rms": 1.2315500974655151,
+        "coarse_occupancy_iou": 0.10207100591715976,
+        "target_coarse_cells": 489,
+        "predicted_coarse_cells": 256
+      },
+      "rig": {
+        "normalized_latent_rms": 1.2467689514160156,
+        "coarse_occupancy_iou": 0.017064846416382253,
+        "target_coarse_cells": 42,
+        "predicted_coarse_cells": 256
+      }
+    },
+    {
+      "seed": 1,
+      "filename": "test_5f71afc15c041461.npz",
+      "status": {
+        "failure": null,
+        "steps": 25,
+        "cfg": 5,
+        "max_cells": 256,
+        "surface_positive_cells_before_cap": 1341,
+        "surface_cell_cap_hit": true,
+        "rig_positive_cells_before_cap": 558,
+        "rig_cell_cap_hit": true
+      },
+      "surface": {
+        "normalized_latent_rms": 1.6002212762832642,
+        "coarse_occupancy_iou": 0.1092964824120603,
+        "target_coarse_cells": 627,
+        "predicted_coarse_cells": 256
+      },
+      "rig": {
+        "normalized_latent_rms": 1.9971860647201538,
+        "coarse_occupancy_iou": 0.030732860520094562,
+        "target_coarse_cells": 180,
+        "predicted_coarse_cells": 256
+      }
+    },
+    {
+      "seed": 1,
+      "filename": "test_fcefe59e0ca0640b.npz",
+      "status": {
+        "failure": null,
+        "steps": 25,
+        "cfg": 5,
+        "max_cells": 256,
+        "surface_positive_cells_before_cap": 526,
+        "surface_cell_cap_hit": true,
+        "rig_positive_cells_before_cap": 774,
+        "rig_cell_cap_hit": true
+      },
+      "surface": {
+        "normalized_latent_rms": 1.9598125219345093,
+        "coarse_occupancy_iou": 0.32741116751269034,
+        "target_coarse_cells": 267,
+        "predicted_coarse_cells": 256
+      },
+      "rig": {
+        "normalized_latent_rms": 1.518622875213623,
+        "coarse_occupancy_iou": 0.07046979865771812,
+        "target_coarse_cells": 63,
+        "predicted_coarse_cells": 256
+      }
+    },
+    {
+      "seed": 1,
+      "filename": "test_5f9868db50527fa2.npz",
+      "status": {
+        "failure": null,
+        "steps": 25,
+        "cfg": 5,
+        "max_cells": 256,
+        "surface_positive_cells_before_cap": 1072,
+        "surface_cell_cap_hit": true,
+        "rig_positive_cells_before_cap": 519,
+        "rig_cell_cap_hit": true
+      },
+      "surface": {
+        "normalized_latent_rms": 1.363216757774353,
+        "coarse_occupancy_iou": 0.1780185758513932,
+        "target_coarse_cells": 505,
+        "predicted_coarse_cells": 256
+      },
+      "rig": {
+        "normalized_latent_rms": 0.8833672404289246,
+        "coarse_occupancy_iou": 0.04081632653061224,
+        "target_coarse_cells": 50,
+        "predicted_coarse_cells": 256
+      }
+    },
+    {
+      "seed": 1,
+      "filename": "test_27b6e8cc90ef48b2.npz",
+      "status": {
+        "failure": null,
+        "steps": 25,
+        "cfg": 5,
+        "max_cells": 256,
+        "surface_positive_cells_before_cap": 576,
+        "surface_cell_cap_hit": true,
+        "rig_positive_cells_before_cap": 398,
+        "rig_cell_cap_hit": true
+      },
+      "surface": {
+        "normalized_latent_rms": 1.8227423429489136,
+        "coarse_occupancy_iou": 0.32941176470588235,
+        "target_coarse_cells": 309,
+        "predicted_coarse_cells": 256
+      },
+      "rig": {
+        "normalized_latent_rms": 1.5399808883666992,
+        "coarse_occupancy_iou": 0.06688963210702341,
+        "target_coarse_cells": 63,
+        "predicted_coarse_cells": 256
+      }
+    },
+    {
+      "seed": 1,
+      "filename": "test_30f674276d267739.npz",
+      "status": {
+        "failure": null,
+        "steps": 25,
+        "cfg": 5,
+        "max_cells": 256,
+        "surface_positive_cells_before_cap": 775,
+        "surface_cell_cap_hit": true,
+        "rig_positive_cells_before_cap": 628,
+        "rig_cell_cap_hit": true
+      },
+      "surface": {
+        "normalized_latent_rms": 1.6817176342010498,
+        "coarse_occupancy_iou": 0.2923433874709977,
+        "target_coarse_cells": 301,
+        "predicted_coarse_cells": 256
+      },
+      "rig": {
+        "normalized_latent_rms": 1.1101328134536743,
+        "coarse_occupancy_iou": 0.08361204013377926,
+        "target_coarse_cells": 68,
+        "predicted_coarse_cells": 256
+      }
+    },
+    {
+      "seed": 1,
+      "filename": "test_f764f51c6dd435c3.npz",
+      "status": {
+        "failure": null,
+        "steps": 25,
+        "cfg": 5,
+        "max_cells": 256,
+        "surface_positive_cells_before_cap": 558,
+        "surface_cell_cap_hit": true,
+        "rig_positive_cells_before_cap": 677,
+        "rig_cell_cap_hit": true
+      },
+      "surface": {
+        "normalized_latent_rms": 2.1064698696136475,
+        "coarse_occupancy_iou": 0.3264781491002571,
+        "target_coarse_cells": 260,
+        "predicted_coarse_cells": 256
+      },
+      "rig": {
+        "normalized_latent_rms": 1.8525787591934204,
+        "coarse_occupancy_iou": 0.1111111111111111,
+        "target_coarse_cells": 74,
+        "predicted_coarse_cells": 256
+      }
+    },
+    {
+      "seed": 1,
+      "filename": "test_803c47b10c699939.npz",
+      "status": {
+        "failure": null,
+        "steps": 25,
+        "cfg": 5,
+        "max_cells": 256,
+        "surface_positive_cells_before_cap": 918,
+        "surface_cell_cap_hit": true,
+        "rig_positive_cells_before_cap": 604,
+        "rig_cell_cap_hit": true
+      },
+      "surface": {
+        "normalized_latent_rms": 1.216442346572876,
+        "coarse_occupancy_iou": 0.23728813559322035,
+        "target_coarse_cells": 255,
+        "predicted_coarse_cells": 256
+      },
+      "rig": {
+        "normalized_latent_rms": 1.6590739488601685,
+        "coarse_occupancy_iou": 0.05172413793103448,
+        "target_coarse_cells": 49,
+        "predicted_coarse_cells": 256
+      }
+    },
+    {
+      "seed": 1,
+      "filename": "test_4e5dc0c2216e3436.npz",
+      "status": {
+        "failure": null,
+        "steps": 25,
+        "cfg": 5,
+        "max_cells": 256,
+        "surface_positive_cells_before_cap": 654,
+        "surface_cell_cap_hit": true,
+        "rig_positive_cells_before_cap": 548,
+        "rig_cell_cap_hit": true
+      },
+      "surface": {
+        "normalized_latent_rms": 2.0742361545562744,
+        "coarse_occupancy_iou": 0.22338204592901878,
+        "target_coarse_cells": 330,
+        "predicted_coarse_cells": 256
+      },
+      "rig": {
+        "normalized_latent_rms": 1.8495289087295532,
+        "coarse_occupancy_iou": 0.04391891891891892,
+        "target_coarse_cells": 53,
+        "predicted_coarse_cells": 256
+      }
+    },
+    {
+      "seed": 1,
+      "filename": "test_763a49596dc0edf7.npz",
+      "status": {
+        "failure": null,
+        "steps": 25,
+        "cfg": 5,
+        "max_cells": 256,
+        "surface_positive_cells_before_cap": 1026,
+        "surface_cell_cap_hit": true,
+        "rig_positive_cells_before_cap": 735,
+        "rig_cell_cap_hit": true
+      },
+      "surface": {
+        "normalized_latent_rms": 1.54151451587677,
+        "coarse_occupancy_iou": 0.15703703703703703,
+        "target_coarse_cells": 525,
+        "predicted_coarse_cells": 256
+      },
+      "rig": {
+        "normalized_latent_rms": 1.3006682395935059,
+        "coarse_occupancy_iou": 0.03323262839879154,
+        "target_coarse_cells": 86,
+        "predicted_coarse_cells": 256
+      }
+    },
+    {
+      "seed": 2,
+      "filename": "test_0b7dc2f979ae74eb.npz",
+      "status": {
+        "failure": null,
+        "steps": 25,
+        "cfg": 5,
+        "max_cells": 256,
+        "surface_positive_cells_before_cap": 1250,
+        "surface_cell_cap_hit": true,
+        "rig_positive_cells_before_cap": 961,
+        "rig_cell_cap_hit": true
+      },
+      "surface": {
+        "normalized_latent_rms": 1.6791014671325684,
+        "coarse_occupancy_iou": 0.11360239162929746,
+        "target_coarse_cells": 489,
+        "predicted_coarse_cells": 256
+      },
+      "rig": {
+        "normalized_latent_rms": 1.7469509840011597,
+        "coarse_occupancy_iou": 0.013605442176870748,
+        "target_coarse_cells": 42,
+        "predicted_coarse_cells": 256
+      }
+    },
+    {
+      "seed": 2,
+      "filename": "test_5f71afc15c041461.npz",
+      "status": {
+        "failure": null,
+        "steps": 25,
+        "cfg": 5,
+        "max_cells": 256,
+        "surface_positive_cells_before_cap": 1083,
+        "surface_cell_cap_hit": true,
+        "rig_positive_cells_before_cap": 1335,
+        "rig_cell_cap_hit": true
+      },
+      "surface": {
+        "normalized_latent_rms": 1.983384132385254,
+        "coarse_occupancy_iou": 0.10651629072681704,
+        "target_coarse_cells": 627,
+        "predicted_coarse_cells": 256
+      },
+      "rig": {
+        "normalized_latent_rms": 1.4554301500320435,
+        "coarse_occupancy_iou": 0.02830188679245283,
+        "target_coarse_cells": 180,
+        "predicted_coarse_cells": 256
+      }
+    },
+    {
+      "seed": 2,
+      "filename": "test_fcefe59e0ca0640b.npz",
+      "status": {
+        "failure": null,
+        "steps": 25,
+        "cfg": 5,
+        "max_cells": 256,
+        "surface_positive_cells_before_cap": 425,
+        "surface_cell_cap_hit": true,
+        "rig_positive_cells_before_cap": 541,
+        "rig_cell_cap_hit": true
+      },
+      "surface": {
+        "normalized_latent_rms": 1.4956886768341064,
+        "coarse_occupancy_iou": 0.39095744680851063,
+        "target_coarse_cells": 267,
+        "predicted_coarse_cells": 256
+      },
+      "rig": {
+        "normalized_latent_rms": 1.1615815162658691,
+        "coarse_occupancy_iou": 0.09246575342465753,
+        "target_coarse_cells": 63,
+        "predicted_coarse_cells": 256
+      }
+    },
+    {
+      "seed": 2,
+      "filename": "test_5f9868db50527fa2.npz",
+      "status": {
+        "failure": null,
+        "steps": 25,
+        "cfg": 5,
+        "max_cells": 256,
+        "surface_positive_cells_before_cap": 948,
+        "surface_cell_cap_hit": true,
+        "rig_positive_cells_before_cap": 566,
+        "rig_cell_cap_hit": true
+      },
+      "surface": {
+        "normalized_latent_rms": 1.6436787843704224,
+        "coarse_occupancy_iou": 0.23941368078175895,
+        "target_coarse_cells": 505,
+        "predicted_coarse_cells": 256
+      },
+      "rig": {
+        "normalized_latent_rms": 0.6342066526412964,
+        "coarse_occupancy_iou": 0.04794520547945205,
+        "target_coarse_cells": 50,
+        "predicted_coarse_cells": 256
+      }
+    },
+    {
+      "seed": 2,
+      "filename": "test_27b6e8cc90ef48b2.npz",
+      "status": {
+        "failure": null,
+        "steps": 25,
+        "cfg": 5,
+        "max_cells": 256,
+        "surface_positive_cells_before_cap": 640,
+        "surface_cell_cap_hit": true,
+        "rig_positive_cells_before_cap": 521,
+        "rig_cell_cap_hit": true
+      },
+      "surface": {
+        "normalized_latent_rms": 1.6454520225524902,
+        "coarse_occupancy_iou": 0.342042755344418,
+        "target_coarse_cells": 309,
+        "predicted_coarse_cells": 256
+      },
+      "rig": {
+        "normalized_latent_rms": 1.1111401319503784,
+        "coarse_occupancy_iou": 0.09246575342465753,
+        "target_coarse_cells": 63,
+        "predicted_coarse_cells": 256
+      }
+    },
+    {
+      "seed": 2,
+      "filename": "test_30f674276d267739.npz",
+      "status": {
+        "failure": null,
+        "steps": 25,
+        "cfg": 5,
+        "max_cells": 256,
+        "surface_positive_cells_before_cap": 731,
+        "surface_cell_cap_hit": true,
+        "rig_positive_cells_before_cap": 664,
+        "rig_cell_cap_hit": true
+      },
+      "surface": {
+        "normalized_latent_rms": 1.108703851699829,
+        "coarse_occupancy_iou": 0.2834101382488479,
+        "target_coarse_cells": 301,
+        "predicted_coarse_cells": 256
+      },
+      "rig": {
+        "normalized_latent_rms": 1.0294196605682373,
+        "coarse_occupancy_iou": 0.06229508196721312,
+        "target_coarse_cells": 68,
+        "predicted_coarse_cells": 256
+      }
+    },
+    {
+      "seed": 2,
+      "filename": "test_f764f51c6dd435c3.npz",
+      "status": {
+        "failure": null,
+        "steps": 25,
+        "cfg": 5,
+        "max_cells": 256,
+        "surface_positive_cells_before_cap": 705,
+        "surface_cell_cap_hit": true,
+        "rig_positive_cells_before_cap": 515,
+        "rig_cell_cap_hit": true
+      },
+      "surface": {
+        "normalized_latent_rms": 1.7891470193862915,
+        "coarse_occupancy_iou": 0.27722772277227725,
+        "target_coarse_cells": 260,
+        "predicted_coarse_cells": 256
+      },
+      "rig": {
+        "normalized_latent_rms": 1.5600347518920898,
+        "coarse_occupancy_iou": 0.09271523178807947,
+        "target_coarse_cells": 74,
+        "predicted_coarse_cells": 256
+      }
+    },
+    {
+      "seed": 2,
+      "filename": "test_803c47b10c699939.npz",
+      "status": {
+        "failure": null,
+        "steps": 25,
+        "cfg": 5,
+        "max_cells": 256,
+        "surface_positive_cells_before_cap": 421,
+        "surface_cell_cap_hit": true,
+        "rig_positive_cells_before_cap": 645,
+        "rig_cell_cap_hit": true
+      },
+      "surface": {
+        "normalized_latent_rms": 1.374268651008606,
+        "coarse_occupancy_iou": 0.34120734908136485,
+        "target_coarse_cells": 255,
+        "predicted_coarse_cells": 256
+      },
+      "rig": {
+        "normalized_latent_rms": 1.5254629850387573,
+        "coarse_occupancy_iou": 0.05172413793103448,
+        "target_coarse_cells": 49,
+        "predicted_coarse_cells": 256
+      }
+    },
+    {
+      "seed": 2,
+      "filename": "test_4e5dc0c2216e3436.npz",
+      "status": {
+        "failure": null,
+        "steps": 25,
+        "cfg": 5,
+        "max_cells": 256,
+        "surface_positive_cells_before_cap": 794,
+        "surface_cell_cap_hit": true,
+        "rig_positive_cells_before_cap": 453,
+        "rig_cell_cap_hit": true
+      },
+      "surface": {
+        "normalized_latent_rms": 1.8301128149032593,
+        "coarse_occupancy_iou": 0.22338204592901878,
+        "target_coarse_cells": 330,
+        "predicted_coarse_cells": 256
+      },
+      "rig": {
+        "normalized_latent_rms": 1.6419175863265991,
+        "coarse_occupancy_iou": 0.03691275167785235,
+        "target_coarse_cells": 53,
+        "predicted_coarse_cells": 256
+      }
+    },
+    {
+      "seed": 2,
+      "filename": "test_763a49596dc0edf7.npz",
+      "status": {
+        "failure": null,
+        "steps": 25,
+        "cfg": 5,
+        "max_cells": 256,
+        "surface_positive_cells_before_cap": 906,
+        "surface_cell_cap_hit": true,
+        "rig_positive_cells_before_cap": 582,
+        "rig_cell_cap_hit": true
+      },
+      "surface": {
+        "normalized_latent_rms": 1.334122896194458,
+        "coarse_occupancy_iou": 0.1691616766467066,
+        "target_coarse_cells": 525,
+        "predicted_coarse_cells": 256
+      },
+      "rig": {
+        "normalized_latent_rms": 0.9652557969093323,
+        "coarse_occupancy_iou": 0.023952095808383235,
+        "target_coarse_cells": 86,
+        "predicted_coarse_cells": 256
+      }
+    }
+  ]
+}

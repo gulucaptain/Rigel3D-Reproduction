@@ -1,0 +1,383 @@
+{
+  "scope": "First3 fixed VALIDATION assets,3 perturbation seeds for each positive noise level. Perturb GT occupancy posterior by sigma times train-channel std, then decode with frozen official VAE. This is a GT perturbation diagnostic, not image generation.",
+  "assets": [
+    {
+      "filename": "val_39120b5916f89e9a.npz",
+      "mode": "surface",
+      "sigma": 0,
+      "seed": 0,
+      "iou": 1.0,
+      "recall": 1.0,
+      "predicted_voxels": 3035
+    },
+    {
+      "filename": "val_39120b5916f89e9a.npz",
+      "mode": "surface",
+      "sigma": 0.1,
+      "seed": 0,
+      "iou": 0.999012508229098,
+      "recall": 1.0,
+      "predicted_voxels": 3038
+    },
+    {
+      "filename": "val_39120b5916f89e9a.npz",
+      "mode": "surface",
+      "sigma": 0.1,
+      "seed": 1,
+      "iou": 0.9996706192358367,
+      "recall": 1.0,
+      "predicted_voxels": 3036
+    },
+    {
+      "filename": "val_39120b5916f89e9a.npz",
+      "mode": "surface",
+      "sigma": 0.1,
+      "seed": 2,
+      "iou": 0.9993410214168039,
+      "recall": 0.9993410214168039,
+      "predicted_voxels": 3033
+    },
+    {
+      "filename": "val_39120b5916f89e9a.npz",
+      "mode": "surface",
+      "sigma": 0.5,
+      "seed": 0,
+      "iou": 0.8342704942290619,
+      "recall": 0.928830313014827,
+      "predicted_voxels": 3163
+    },
+    {
+      "filename": "val_39120b5916f89e9a.npz",
+      "mode": "surface",
+      "sigma": 0.5,
+      "seed": 1,
+      "iou": 0.8268540669856459,
+      "recall": 0.9110378912685337,
+      "predicted_voxels": 3074
+    },
+    {
+      "filename": "val_39120b5916f89e9a.npz",
+      "mode": "surface",
+      "sigma": 0.5,
+      "seed": 2,
+      "iou": 0.8304932735426009,
+      "recall": 0.915321252059308,
+      "predicted_voxels": 3088
+    },
+    {
+      "filename": "val_39120b5916f89e9a.npz",
+      "mode": "rig",
+      "sigma": 0,
+      "seed": 0,
+      "iou": 1.0,
+      "recall": 1.0,
+      "predicted_voxels": 205
+    },
+    {
+      "filename": "val_39120b5916f89e9a.npz",
+      "mode": "rig",
+      "sigma": 0.1,
+      "seed": 0,
+      "iou": 1.0,
+      "recall": 1.0,
+      "predicted_voxels": 205
+    },
+    {
+      "filename": "val_39120b5916f89e9a.npz",
+      "mode": "rig",
+      "sigma": 0.1,
+      "seed": 1,
+      "iou": 1.0,
+      "recall": 1.0,
+      "predicted_voxels": 205
+    },
+    {
+      "filename": "val_39120b5916f89e9a.npz",
+      "mode": "rig",
+      "sigma": 0.1,
+      "seed": 2,
+      "iou": 1.0,
+      "recall": 1.0,
+      "predicted_voxels": 205
+    },
+    {
+      "filename": "val_39120b5916f89e9a.npz",
+      "mode": "rig",
+      "sigma": 0.5,
+      "seed": 0,
+      "iou": 1.0,
+      "recall": 1.0,
+      "predicted_voxels": 205
+    },
+    {
+      "filename": "val_39120b5916f89e9a.npz",
+      "mode": "rig",
+      "sigma": 0.5,
+      "seed": 1,
+      "iou": 1.0,
+      "recall": 1.0,
+      "predicted_voxels": 205
+    },
+    {
+      "filename": "val_39120b5916f89e9a.npz",
+      "mode": "rig",
+      "sigma": 0.5,
+      "seed": 2,
+      "iou": 1.0,
+      "recall": 1.0,
+      "predicted_voxels": 205
+    },
+    {
+      "filename": "val_f6989f7c75393938.npz",
+      "mode": "surface",
+      "sigma": 0,
+      "seed": 0,
+      "iou": 0.996901146575767,
+      "recall": 0.9984481688392303,
+      "predicted_voxels": 3222
+    },
+    {
+      "filename": "val_f6989f7c75393938.npz",
+      "mode": "surface",
+      "sigma": 0.1,
+      "seed": 0,
+      "iou": 0.9941231054747912,
+      "recall": 0.9975170701427685,
+      "predicted_voxels": 3225
+    },
+    {
+      "filename": "val_f6989f7c75393938.npz",
+      "mode": "surface",
+      "sigma": 0.1,
+      "seed": 1,
+      "iou": 0.995664292350573,
+      "recall": 0.9978274363749224,
+      "predicted_voxels": 3222
+    },
+    {
+      "filename": "val_f6989f7c75393938.npz",
+      "mode": "surface",
+      "sigma": 0.1,
+      "seed": 2,
+      "iou": 0.9944324157129601,
+      "recall": 0.9978274363749224,
+      "predicted_voxels": 3226
+    },
+    {
+      "filename": "val_f6989f7c75393938.npz",
+      "mode": "surface",
+      "sigma": 0.5,
+      "seed": 0,
+      "iou": 0.7981778023191607,
+      "recall": 0.8972687771570453,
+      "predicted_voxels": 3291
+    },
+    {
+      "filename": "val_f6989f7c75393938.npz",
+      "mode": "surface",
+      "sigma": 0.5,
+      "seed": 1,
+      "iou": 0.803392658509455,
+      "recall": 0.8966480446927374,
+      "predicted_voxels": 3263
+    },
+    {
+      "filename": "val_f6989f7c75393938.npz",
+      "mode": "surface",
+      "sigma": 0.5,
+      "seed": 2,
+      "iou": 0.7866302864938608,
+      "recall": 0.8947858472998138,
+      "predicted_voxels": 3326
+    },
+    {
+      "filename": "val_f6989f7c75393938.npz",
+      "mode": "rig",
+      "sigma": 0,
+      "seed": 0,
+      "iou": 1.0,
+      "recall": 1.0,
+      "predicted_voxels": 262
+    },
+    {
+      "filename": "val_f6989f7c75393938.npz",
+      "mode": "rig",
+      "sigma": 0.1,
+      "seed": 0,
+      "iou": 1.0,
+      "recall": 1.0,
+      "predicted_voxels": 262
+    },
+    {
+      "filename": "val_f6989f7c75393938.npz",
+      "mode": "rig",
+      "sigma": 0.1,
+      "seed": 1,
+      "iou": 1.0,
+      "recall": 1.0,
+      "predicted_voxels": 262
+    },
+    {
+      "filename": "val_f6989f7c75393938.npz",
+      "mode": "rig",
+      "sigma": 0.1,
+      "seed": 2,
+      "iou": 1.0,
+      "recall": 1.0,
+      "predicted_voxels": 262
+    },
+    {
+      "filename": "val_f6989f7c75393938.npz",
+      "mode": "rig",
+      "sigma": 0.5,
+      "seed": 0,
+      "iou": 1.0,
+      "recall": 1.0,
+      "predicted_voxels": 262
+    },
+    {
+      "filename": "val_f6989f7c75393938.npz",
+      "mode": "rig",
+      "sigma": 0.5,
+      "seed": 1,
+      "iou": 1.0,
+      "recall": 1.0,
+      "predicted_voxels": 262
+    },
+    {
+      "filename": "val_f6989f7c75393938.npz",
+      "mode": "rig",
+      "sigma": 0.5,
+      "seed": 2,
+      "iou": 1.0,
+      "recall": 1.0,
+      "predicted_voxels": 262
+    },
+    {
+      "filename": "val_1dde85bef53ecba5.npz",
+      "mode": "surface",
+      "sigma": 0,
+      "seed": 0,
+      "iou": 0.9983539094650206,
+      "recall": 0.9986278814489572,
+      "predicted_voxels": 3640
+    },
+    {
+      "filename": "val_1dde85bef53ecba5.npz",
+      "mode": "surface",
+      "sigma": 0.1,
+      "seed": 0,
+      "iou": 0.9926128590971273,
+      "recall": 0.995609220636663,
+      "predicted_voxels": 3639
+    },
+    {
+      "filename": "val_1dde85bef53ecba5.npz",
+      "mode": "surface",
+      "sigma": 0.1,
+      "seed": 1,
+      "iou": 0.993431855500821,
+      "recall": 0.9961580680570802,
+      "predicted_voxels": 3640
+    },
+    {
+      "filename": "val_1dde85bef53ecba5.npz",
+      "mode": "surface",
+      "sigma": 0.1,
+      "seed": 2,
+      "iou": 0.9923434509160514,
+      "recall": 0.9958836443468716,
+      "predicted_voxels": 3642
+    },
+    {
+      "filename": "val_1dde85bef53ecba5.npz",
+      "mode": "surface",
+      "sigma": 0.5,
+      "seed": 0,
+      "iou": 0.759656652360515,
+      "recall": 0.8743139407244785,
+      "predicted_voxels": 3736
+    },
+    {
+      "filename": "val_1dde85bef53ecba5.npz",
+      "mode": "surface",
+      "sigma": 0.5,
+      "seed": 1,
+      "iou": 0.7391509433962264,
+      "recall": 0.8600439077936334,
+      "predicted_voxels": 3730
+    },
+    {
+      "filename": "val_1dde85bef53ecba5.npz",
+      "mode": "surface",
+      "sigma": 0.5,
+      "seed": 2,
+      "iou": 0.7524498366775548,
+      "recall": 0.8850164654226125,
+      "predicted_voxels": 3867
+    },
+    {
+      "filename": "val_1dde85bef53ecba5.npz",
+      "mode": "rig",
+      "sigma": 0,
+      "seed": 0,
+      "iou": 1.0,
+      "recall": 1.0,
+      "predicted_voxels": 298
+    },
+    {
+      "filename": "val_1dde85bef53ecba5.npz",
+      "mode": "rig",
+      "sigma": 0.1,
+      "seed": 0,
+      "iou": 1.0,
+      "recall": 1.0,
+      "predicted_voxels": 298
+    },
+    {
+      "filename": "val_1dde85bef53ecba5.npz",
+      "mode": "rig",
+      "sigma": 0.1,
+      "seed": 1,
+      "iou": 1.0,
+      "recall": 1.0,
+      "predicted_voxels": 298
+    },
+    {
+      "filename": "val_1dde85bef53ecba5.npz",
+      "mode": "rig",
+      "sigma": 0.1,
+      "seed": 2,
+      "iou": 1.0,
+      "recall": 1.0,
+      "predicted_voxels": 298
+    },
+    {
+      "filename": "val_1dde85bef53ecba5.npz",
+      "mode": "rig",
+      "sigma": 0.5,
+      "seed": 0,
+      "iou": 1.0,
+      "recall": 1.0,
+      "predicted_voxels": 298
+    },
+    {
+      "filename": "val_1dde85bef53ecba5.npz",
+      "mode": "rig",
+      "sigma": 0.5,
+      "seed": 1,
+      "iou": 1.0,
+      "recall": 1.0,
+      "predicted_voxels": 298
+    },
+    {
+      "filename": "val_1dde85bef53ecba5.npz",
+      "mode": "rig",
+      "sigma": 0.5,
+      "seed": 2,
+      "iou": 1.0,
+      "recall": 1.0,
+      "predicted_voxels": 298
+    }
+  ]
+}

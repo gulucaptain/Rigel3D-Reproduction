@@ -1,0 +1,1792 @@
+{
+  "config": {
+    "steps": 2000,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "mode": "rig",
+    "device": "mps",
+    "name": "round1",
+    "points": 256,
+    "batch": 4,
+    "width": 64,
+    "layers": 2,
+    "seed": 1,
+    "parameters": 596962,
+    "lr": 0.0001,
+    "warmup_steps": 200,
+    "scheduler": "linear warmup then cosine",
+    "source_manifest_sha256": "f7aac77af2315df0cab124afe34145e8229e65c93956aac20fd02d54e0ad7ea7",
+    "task_scope": "Local geometry-feature decoder training. GT bones at skinning evaluation; rig mode context also encodes GT skin weights. Not image-conditioned generation or full Sparse VAE.",
+    "checkpoint_selection": "Minimum validation teacher-forced skeleton+skin CE; test not used for selection"
+  },
+  "best_step": 1999,
+  "best_validation": 7.443816289305687,
+  "elapsed_s": 277.00020854210015,
+  "splits": {
+    "train_monitor": [
+      {
+        "asset_name": "fbx_9/fe4e4600907ef00ffe6bd8c7bd6fa42e2bcae5c636e1b28343cc1de9c39f6cde",
+        "skin": {
+          "l1_element": 0.02103669647718765,
+          "l1_vector": 0.6311008943156297,
+          "l2_element": 0.00546309305038606,
+          "kl": 0.4287490194307677,
+          "precision": 0.6857747395833333,
+          "recall": 0.8955403645833333
+        },
+        "teacher_forced": {
+          "skin": 1.2416787147521973,
+          "skeleton": 6.254283905029297,
+          "coords": 4.669335842132568,
+          "parent": 1.4557321071624756,
+          "stop": 0.12921617925167084
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.1664427751221611,
+          "j2b": 0.1542613136337831,
+          "b2b": 0.15075418728644163,
+          "joint_count": 96,
+          "joint_count_abs_error": 59,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_2/7c594521f1f52fcb4957ac98d988aa352d0d9fd3dc92e27b5cb199159e6d58e7/31",
+        "skin": {
+          "l1_element": 0.01993249083160615,
+          "l1_vector": 0.39864981663212296,
+          "l2_element": 0.004434337578313359,
+          "kl": 0.21474955615152574,
+          "precision": 0.7978422619047618,
+          "recall": 0.9213541666666667
+        },
+        "teacher_forced": {
+          "skin": 0.8046067357063293,
+          "skeleton": 5.860589504241943,
+          "coords": 4.40069580078125,
+          "parent": 1.3598026037216187,
+          "stop": 0.10009103268384933
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.15013880307817695,
+          "j2b": 0.14029780760330368,
+          "b2b": 0.12404770007750571,
+          "joint_count": 96,
+          "joint_count_abs_error": 67,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_1/03c6a8dfe60a030c42ec95bf1efcb71e04d289e5d3daaa31f27ef1b8e6512ead",
+        "skin": {
+          "l1_element": 0.014329294671211893,
+          "l1_vector": 0.659147554875747,
+          "l2_element": 0.004299751102070213,
+          "kl": 0.5248936291502826,
+          "precision": 0.6320630270337302,
+          "recall": 0.9158528645833333
+        },
+        "teacher_forced": {
+          "skin": 1.0352020263671875,
+          "skeleton": 6.6641645431518555,
+          "coords": 4.527769088745117,
+          "parent": 2.0550146102905273,
+          "stop": 0.08138071745634079
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.1547118210135835,
+          "j2b": 0.1477353241510059,
+          "b2b": 0.14486716214746326,
+          "joint_count": 96,
+          "joint_count_abs_error": 38,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_6/f8b33968a60cdc3e888ca7550c572235880f3ba0089fea1eee8090367d6a5fc0/7",
+        "skin": {
+          "l1_element": 0.015172500943002615,
+          "l1_vector": 0.7131075443211228,
+          "l2_element": 0.004740741180035386,
+          "kl": 0.6831763284093993,
+          "precision": 0.5886904761904762,
+          "recall": 0.9111653645833334
+        },
+        "teacher_forced": {
+          "skin": 1.0195567607879639,
+          "skeleton": 0.0
+        },
+        "skeleton_eligible": false
+      },
+      {
+        "asset_name": "fbx_4/0b353357c9c6cdd0cc7c4ead55b33d7114efbb2ae3416fd19bccce144d99fe9e/25",
+        "skin": {
+          "l1_element": 0.017544675714052486,
+          "l1_vector": 0.5965189742777846,
+          "l2_element": 0.005162547139115596,
+          "kl": 0.3943209723957578,
+          "precision": 0.6393275669642856,
+          "recall": 0.9814453125
+        },
+        "teacher_forced": {
+          "skin": 0.7838987112045288,
+          "skeleton": 5.8734283447265625,
+          "coords": 4.388999938964844,
+          "parent": 1.3978155851364136,
+          "stop": 0.08661293983459473
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.1625524601408516,
+          "j2b": 0.15582875900711865,
+          "b2b": 0.15088038596872488,
+          "joint_count": 96,
+          "joint_count_abs_error": 51,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "glb_0/9b5461f9609ac010c81dabb6d9b5922296f2ce7b6e2d38c7257349570c7b8623/18",
+        "skin": {
+          "l1_element": 0.019713831019436932,
+          "l1_vector": 1.182829861166216,
+          "l2_element": 0.008199962423915796,
+          "kl": 1.3490450260009614,
+          "precision": 0.5390113467261904,
+          "recall": 0.8831380208333333
+        },
+        "teacher_forced": {
+          "skin": 1.7049404382705688,
+          "skeleton": 6.948477745056152,
+          "coords": 4.256886959075928,
+          "parent": 2.6259050369262695,
+          "stop": 0.06568593531847
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.2062030410295333,
+          "j2b": 0.1484414638419176,
+          "b2b": 0.1443769066926533,
+          "joint_count": 96,
+          "joint_count_abs_error": 5,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_0/aafd6f51eeaed98566d42b8a26e0335befd4007bc0870a3658fcf1c42cb5601e",
+        "skin": {
+          "l1_element": 0.024794264431282156,
+          "l1_vector": 0.22314837988153938,
+          "l2_element": 0.009126211211380063,
+          "kl": 0.14987303585894532,
+          "precision": 0.7994791666666667,
+          "recall": 1.0
+        },
+        "teacher_forced": {
+          "skin": 0.16160127520561218,
+          "skeleton": 5.469730854034424,
+          "coords": 4.401186943054199,
+          "parent": 0.8489351272583008,
+          "stop": 0.21960888803005219
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.17698963675720802,
+          "j2b": 0.1716695977262958,
+          "b2b": 0.15506506685838115,
+          "joint_count": 96,
+          "joint_count_abs_error": 82,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_9/1c78cb44435393952bc9c40d5b7e4da8a2db18be554683c1cf1b3fbba98a021b/27",
+        "skin": {
+          "l1_element": 0.015875479489687348,
+          "l1_vector": 0.9684042488709282,
+          "l2_element": 0.005735706420084131,
+          "kl": 0.8337534859996598,
+          "precision": 0.5079706101190476,
+          "recall": 0.8721354166666667
+        },
+        "teacher_forced": {
+          "skin": 1.3933477401733398,
+          "skeleton": 7.579253196716309,
+          "coords": 4.637948036193848,
+          "parent": 2.846775770187378,
+          "stop": 0.094528928399086
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.1575122728066775,
+          "j2b": 0.13739246021065532,
+          "b2b": 0.13114895920559513,
+          "joint_count": 96,
+          "joint_count_abs_error": 0,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "000-016/a4b2855f2ae84924814cb18be71e6f67/64",
+        "skin": {
+          "l1_element": 0.009353837554818709,
+          "l1_vector": 0.32738431441865473,
+          "l2_element": 0.0017638323464613688,
+          "kl": 0.22467844880058827,
+          "precision": 0.8531087239583333,
+          "recall": 0.9452799479166667
+        },
+        "teacher_forced": {
+          "skin": 0.7432891726493835,
+          "skeleton": 6.984839916229248,
+          "coords": 4.458493709564209,
+          "parent": 2.440990447998047,
+          "stop": 0.0853557288646698
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.10293407773119972,
+          "j2b": 0.09647431149009585,
+          "b2b": 0.09290196177351298,
+          "joint_count": 96,
+          "joint_count_abs_error": 49,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "000-088/f0d289c4a9c848aca4f008deffd3154e/7",
+        "skin": {
+          "l1_element": 0.017904759172879262,
+          "l1_vector": 0.8415236811253253,
+          "l2_element": 0.00807486404189263,
+          "kl": 0.8240143116337302,
+          "precision": 0.5239164806547619,
+          "recall": 0.8972981770833333
+        },
+        "teacher_forced": {
+          "skin": 1.0945765972137451,
+          "skeleton": 6.898067951202393,
+          "coords": 4.378144264221191,
+          "parent": 2.455022096633911,
+          "stop": 0.06490177661180496
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.11888250226991573,
+          "j2b": 0.10882610266014763,
+          "b2b": 0.10363347475646742,
+          "joint_count": 96,
+          "joint_count_abs_error": 25,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "glb_0/944a6e57e7e4603f13af88d01ef48dbb43aafc8ebf624e71fe763cf6509fa8c9/25",
+        "skin": {
+          "l1_element": 0.018244477095697112,
+          "l1_vector": 0.23717820224406244,
+          "l2_element": 0.0036301497331237415,
+          "kl": 0.13930131362724324,
+          "precision": 0.9215494791666666,
+          "recall": 0.9357096354166667
+        },
+        "teacher_forced": {
+          "skin": 0.4859093427658081,
+          "skeleton": 6.04888916015625,
+          "coords": 4.274770736694336,
+          "parent": 1.607384443283081,
+          "stop": 0.16673359274864197
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.1420669163132523,
+          "j2b": 0.13885981499515943,
+          "b2b": 0.12599104113655477,
+          "joint_count": 96,
+          "joint_count_abs_error": 74,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_4/3942a86e6410ed0f51c80777c2f0a7aba27effb7519138d3ae2d108bf17d84af/127",
+        "skin": {
+          "l1_element": 0.008679745755920709,
+          "l1_vector": 0.39926830477235264,
+          "l2_element": 0.0019860810742858893,
+          "kl": 0.2947244607789863,
+          "precision": 0.7992740603580446,
+          "recall": 0.96201171875
+        },
+        "teacher_forced": {
+          "skin": 0.7343593239784241,
+          "skeleton": 6.254124164581299,
+          "coords": 4.336378574371338,
+          "parent": 1.828116536140442,
+          "stop": 0.08962923288345337
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.1417706319270285,
+          "j2b": 0.13985204324376524,
+          "b2b": 0.1313263555556765,
+          "joint_count": 96,
+          "joint_count_abs_error": 35,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_3/acf6eb542093975fd0c21775aee66f856a2232d55bcff0db98fac437d9f3ce8d/9",
+        "skin": {
+          "l1_element": 0.01827004497050514,
+          "l1_vector": 0.40194098935111305,
+          "l2_element": 0.0046405239146283745,
+          "kl": 0.27295686415573595,
+          "precision": 0.7966006324404762,
+          "recall": 0.9447916666666667
+        },
+        "teacher_forced": {
+          "skin": 0.7477318048477173,
+          "skeleton": 5.47332239151001,
+          "coords": 4.213111400604248,
+          "parent": 1.1738392114639282,
+          "stop": 0.0863717570900917
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.10538636387072198,
+          "j2b": 0.09889796966369632,
+          "b2b": 0.09542961736372763,
+          "joint_count": 96,
+          "joint_count_abs_error": 67,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_8/50f1fdede9f280b989630115dc192c3e352460bb266c0b4a97d2a6faf8196928",
+        "skin": {
+          "l1_element": 0.03749362197739734,
+          "l1_vector": 0.4499234637287682,
+          "l2_element": 0.013466524512588665,
+          "kl": 0.32063425789649436,
+          "precision": 0.6793294270833334,
+          "recall": 0.9931640625
+        },
+        "teacher_forced": {
+          "skin": 0.39781108498573303,
+          "skeleton": 5.664494514465332,
+          "coords": 4.150755882263184,
+          "parent": 1.3227487802505493,
+          "stop": 0.19098980724811554
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.13519779310548263,
+          "j2b": 0.10916836477884674,
+          "b2b": 0.09021256244795844,
+          "joint_count": 96,
+          "joint_count_abs_error": 78,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_7/3c8ee99ba96498a8214a43d4c413694abaa5e3673bf79d4c53f9cc1a5cbfe691",
+        "skin": {
+          "l1_element": 0.025451729540764186,
+          "l1_vector": 0.8399070748452181,
+          "l2_element": 0.009389948087553985,
+          "kl": 1.2071578095745226,
+          "precision": 0.5599214099702381,
+          "recall": 0.7998372395833333
+        },
+        "teacher_forced": {
+          "skin": 1.6123015880584717,
+          "skeleton": 6.296290874481201,
+          "coords": 4.27964973449707,
+          "parent": 1.9218463897705078,
+          "stop": 0.09479481726884842
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.1061119144623705,
+          "j2b": 0.08320925950762367,
+          "b2b": 0.07715973972052423,
+          "joint_count": 96,
+          "joint_count_abs_error": 48,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_8/71335a20bf5dba88445ea5348a26bc6a8952e90d04f5d0266897e3e1aab713ec",
+        "skin": {
+          "l1_element": 0.04049760760629156,
+          "l1_vector": 1.2554258357950383,
+          "l2_element": 0.009572673476986673,
+          "kl": 1.3516301890535565,
+          "precision": 0.4228806620896465,
+          "recall": 0.6284505208333333
+        },
+        "teacher_forced": {
+          "skin": 2.3035755157470703,
+          "skeleton": 6.199934959411621,
+          "coords": 4.053642272949219,
+          "parent": 2.0523393154144287,
+          "stop": 0.09395334869623184
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.10993646220792652,
+          "j2b": 0.08531391433368087,
+          "b2b": 0.06401369539150867,
+          "joint_count": 96,
+          "joint_count_abs_error": 53,
+          "eos": false,
+          "capped": true
+        }
+      }
+    ],
+    "val": [
+      {
+        "asset_name": "fbx_0/562fb1ec3cba5425386ecfee9c995c2528603ae094d9b6ee951e57bd4c378416",
+        "skin": {
+          "l1_element": 0.01814124085985877,
+          "l1_vector": 0.7619321161140684,
+          "l2_element": 0.0070875412000110756,
+          "kl": 0.6186973578317616,
+          "precision": 0.591906438830267,
+          "recall": 0.9609375
+        },
+        "teacher_forced": {
+          "skin": 0.8937891125679016,
+          "skeleton": 6.716727256774902,
+          "coords": 4.531842231750488,
+          "parent": 2.104886293411255,
+          "stop": 0.0799989327788353
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.1433146061459042,
+          "j2b": 0.13613089837108083,
+          "b2b": 0.12794954394522454,
+          "joint_count": 96,
+          "joint_count_abs_error": 37,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_0/9cd407725225a3507f36c263ebe04489d26f5c0d029fbb2b0bdf76285bd8d55a",
+        "skin": {
+          "l1_element": 0.01021085282675785,
+          "l1_vector": 0.5411751998181661,
+          "l2_element": 0.003220668948009743,
+          "kl": 0.40411053908134403,
+          "precision": 0.7519443609775641,
+          "recall": 0.8938151041666667
+        },
+        "teacher_forced": {
+          "skin": 0.9124773740768433,
+          "skeleton": 6.474673271179199,
+          "coords": 4.230720520019531,
+          "parent": 2.1849985122680664,
+          "stop": 0.05895422399044037
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.07852452936550801,
+          "j2b": 0.06601370635202264,
+          "b2b": 0.0637120405762268,
+          "joint_count": 96,
+          "joint_count_abs_error": 26,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_3/89f6c0932cd7540ccb9b45cef1b76a2f53024138c70b40c6472491a69ffa4cd0",
+        "skin": {
+          "l1_element": 0.020403665601387493,
+          "l1_vector": 1.0609906112721497,
+          "l2_element": 0.009241862180418649,
+          "kl": 1.105823335964447,
+          "precision": 0.5153389524971557,
+          "recall": 0.8727213541666666
+        },
+        "teacher_forced": {
+          "skin": 1.5223525762557983,
+          "skeleton": 6.952274799346924,
+          "coords": 5.009173393249512,
+          "parent": 1.85770845413208,
+          "stop": 0.08539313077926636
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.2208109659082214,
+          "j2b": 0.21858586581919875,
+          "b2b": 0.21910281827131667,
+          "joint_count": 96,
+          "joint_count_abs_error": 27,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "000-025/c20b4147e7c04d3289b981d6d8fe1141/519",
+        "skin": {
+          "l1_element": 0.02842510943747916,
+          "l1_vector": 1.3928303624364786,
+          "l2_element": 0.007902001742559592,
+          "kl": 1.5689499535006717,
+          "precision": 0.31906027999777997,
+          "recall": 0.7154947916666666
+        },
+        "teacher_forced": {
+          "skin": 2.3116021156311035,
+          "skeleton": 0.0
+        },
+        "skeleton_eligible": false
+      },
+      {
+        "asset_name": "glb_0/dbaa4465a411ebc9c383d6092404e9e413cd0758b11a0e9cc6e10a1a0cf1599c",
+        "skin": {
+          "l1_element": 0.015017477131672133,
+          "l1_vector": 0.7959262879786232,
+          "l2_element": 0.004986667218153697,
+          "kl": 0.6014819882903195,
+          "precision": 0.5882962577786797,
+          "recall": 0.9222005208333333
+        },
+        "teacher_forced": {
+          "skin": 1.0904960632324219,
+          "skeleton": 6.625483512878418,
+          "coords": 4.58399772644043,
+          "parent": 1.970698595046997,
+          "stop": 0.07078751176595688
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.1220159611219057,
+          "j2b": 0.11666726636786906,
+          "b2b": 0.11618225054923029,
+          "joint_count": 96,
+          "joint_count_abs_error": 26,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_9/3d66bf061b32fcb62f750fdae4e52e4535dffc689a50e58f472bd02d425faeed/19",
+        "skin": {
+          "l1_element": 0.01830331305134666,
+          "l1_vector": 0.9517722786700263,
+          "l2_element": 0.007933554626789747,
+          "kl": 0.8948971858393946,
+          "precision": 0.500305152746559,
+          "recall": 0.9313151041666666
+        },
+        "teacher_forced": {
+          "skin": 1.134498119354248,
+          "skeleton": 6.765820026397705,
+          "coords": 4.8107218742370605,
+          "parent": 1.8774573802947998,
+          "stop": 0.07764087617397308
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.15409818576485346,
+          "j2b": 0.13766952184503012,
+          "b2b": 0.131037945709597,
+          "joint_count": 96,
+          "joint_count_abs_error": 27,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_0/f50d43a0b0c19a502141b63ac12afe990c1749291e99d735f49c95e835b765d4/67",
+        "skin": {
+          "l1_element": 0.0213119941397355,
+          "l1_vector": 0.5967358359125942,
+          "l2_element": 0.0066952378269002815,
+          "kl": 0.4216060793788619,
+          "precision": 0.7002883184523809,
+          "recall": 0.9454752604166666
+        },
+        "teacher_forced": {
+          "skin": 0.9196059703826904,
+          "skeleton": 5.837499618530273,
+          "coords": 4.3186116218566895,
+          "parent": 1.3765754699707031,
+          "stop": 0.14231270551681519
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.11893943023123266,
+          "j2b": 0.11376716958598383,
+          "b2b": 0.10521755517776439,
+          "joint_count": 96,
+          "joint_count_abs_error": 61,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_5/1ea3a4eb16bc1678bc543bdd2d9bb920db76924b3fd0df98724f8da11038ae78",
+        "skin": {
+          "l1_element": 0.04605331539213969,
+          "l1_vector": 0.8750129924506542,
+          "l2_element": 0.017796902251711592,
+          "kl": 1.0288490759080062,
+          "precision": 0.6405831473214285,
+          "recall": 0.7581380208333333
+        },
+        "teacher_forced": {
+          "skin": 1.6035106182098389,
+          "skeleton": 6.159457683563232,
+          "coords": 4.400357246398926,
+          "parent": 1.6107431650161743,
+          "stop": 0.14835751056671143
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.18918055775033485,
+          "j2b": 0.17374073086263428,
+          "b2b": 0.16858041210118624,
+          "joint_count": 96,
+          "joint_count_abs_error": 69,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_6/bb074c3be0e73667afbd2f3c82c6ec14ae06173f9275b26207e651630955a35b/19",
+        "skin": {
+          "l1_element": 0.01379149974386628,
+          "l1_vector": 0.8412814843758429,
+          "l2_element": 0.004702534510086822,
+          "kl": 0.7116303374198185,
+          "precision": 0.5757368065961816,
+          "recall": 0.9300130208333333
+        },
+        "teacher_forced": {
+          "skin": 1.2172555923461914,
+          "skeleton": 7.284584999084473,
+          "coords": 4.4110236167907715,
+          "parent": 2.789594888687134,
+          "stop": 0.08396616578102112
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.1131738339546434,
+          "j2b": 0.10307006233476146,
+          "b2b": 0.10158143386405405,
+          "joint_count": 96,
+          "joint_count_abs_error": 2,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_8/1962d42de37f886bc5c9575d8bd6f9b40cfde8c9067654c1bf0e9d36ceb561ed/601",
+        "skin": {
+          "l1_element": 0.05811076731253243,
+          "l1_vector": 1.0459938116255838,
+          "l2_element": 0.03168279706663857,
+          "kl": 1.4641519791481992,
+          "precision": 0.5839192708333334,
+          "recall": 0.7356119791666667
+        },
+        "teacher_forced": {
+          "skin": 1.9021414518356323,
+          "skeleton": 6.737598896026611,
+          "coords": 5.096932888031006,
+          "parent": 1.445473551750183,
+          "stop": 0.19519256055355072
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.19117458253064576,
+          "j2b": 0.18946007059296838,
+          "b2b": 0.1768702571491666,
+          "joint_count": 96,
+          "joint_count_abs_error": 74,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_9/e7be37984b85ebb43f038b4f451934c9a9402d28672ca5e897cd2352d75927b4",
+        "skin": {
+          "l1_element": 0.03878822191759197,
+          "l1_vector": 0.7757644383518395,
+          "l2_element": 0.013447809867762625,
+          "kl": 1.459234817970419,
+          "precision": 0.6598353794642857,
+          "recall": 0.7227213541666667
+        },
+        "teacher_forced": {
+          "skin": 2.104301929473877,
+          "skeleton": 0.0
+        },
+        "skeleton_eligible": false
+      },
+      {
+        "asset_name": "fbx_5/2c2494eb28e8a28b04de415051e4cfaa35e61d40ee4923650e546ece3abbda68/73",
+        "skin": {
+          "l1_element": 0.06450031050202694,
+          "l1_vector": 0.967504657530404,
+          "l2_element": 0.037597201173466634,
+          "kl": 1.023566456969001,
+          "precision": 0.4551757812499999,
+          "recall": 0.9345703125
+        },
+        "teacher_forced": {
+          "skin": 1.0661964416503906,
+          "skeleton": 6.345118045806885,
+          "coords": 4.626844882965088,
+          "parent": 1.544183611869812,
+          "stop": 0.17408955097198486
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.1412897971417848,
+          "j2b": 0.1064872860555344,
+          "b2b": 0.08771518820112931,
+          "joint_count": 96,
+          "joint_count_abs_error": 75,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "000-003/a38ee59937b54e258e7ae700ef162a55/36",
+        "skin": {
+          "l1_element": 0.02473297885009395,
+          "l1_vector": 1.483978731005637,
+          "l2_element": 0.00854751390089831,
+          "kl": 6.407946324592823,
+          "precision": 0.23572823660714284,
+          "recall": 0.29931640625
+        },
+        "teacher_forced": {
+          "skin": 7.37235164642334,
+          "skeleton": 7.782331943511963,
+          "coords": 4.3700103759765625,
+          "parent": 3.352097988128662,
+          "stop": 0.06022344529628754
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.2864664912972431,
+          "j2b": 0.19440778672906658,
+          "b2b": 0.18998719241861478,
+          "joint_count": 96,
+          "joint_count_abs_error": 7,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_3/df97300f44f18cb1304d2986ae5cce178b1f8228b7842f8491c9f605883f414e/13",
+        "skin": {
+          "l1_element": 0.009387478765324973,
+          "l1_vector": 0.4693739382662487,
+          "l2_element": 0.003093794787544572,
+          "kl": 0.38277549728186594,
+          "precision": 0.7213006882440476,
+          "recall": 0.947265625
+        },
+        "teacher_forced": {
+          "skin": 0.6081135272979736,
+          "skeleton": 6.116932392120361,
+          "coords": 4.241245746612549,
+          "parent": 1.790697693824768,
+          "stop": 0.08498912304639816
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.09324202126383693,
+          "j2b": 0.08428360915260609,
+          "b2b": 0.07657839551901813,
+          "joint_count": 96,
+          "joint_count_abs_error": 29,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_4/659da8d3211bda7f9685528a929f9cc16930f45eac2f11146b7b8398a0921198/91",
+        "skin": {
+          "l1_element": 0.03265159753636675,
+          "l1_vector": 1.1101543162364693,
+          "l2_element": 0.012767097313210093,
+          "kl": 1.221171843690965,
+          "precision": 0.38919439935064937,
+          "recall": 0.9021809895833334
+        },
+        "teacher_forced": {
+          "skin": 1.4998658895492554,
+          "skeleton": 6.326894283294678,
+          "coords": 4.624464511871338,
+          "parent": 1.5894685983657837,
+          "stop": 0.11296121031045914
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.15511176676518695,
+          "j2b": 0.12025730066046415,
+          "b2b": 0.11731348300075997,
+          "joint_count": 96,
+          "joint_count_abs_error": 51,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_7/8c53aa4d0962eef89e6efe9120b145b90d5603b32235c0dc61ec7d5c1fa0643f/31",
+        "skin": {
+          "l1_element": 0.04196001111063815,
+          "l1_vector": 0.7972402111021248,
+          "l2_element": 0.014487072489676161,
+          "kl": 0.6250134079209775,
+          "precision": 0.539750744047619,
+          "recall": 0.9278971354166666
+        },
+        "teacher_forced": {
+          "skin": 1.0485565662384033,
+          "skeleton": 6.006605625152588,
+          "coords": 4.028639793395996,
+          "parent": 1.8291854858398438,
+          "stop": 0.14878027141094208
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.07936954632056298,
+          "j2b": 0.07562340751813926,
+          "b2b": 0.0655876007272405,
+          "joint_count": 96,
+          "joint_count_abs_error": 70,
+          "eos": false,
+          "capped": true
+        }
+      }
+    ],
+    "test": [
+      {
+        "asset_name": "fbx_5/b2c0140046712d30016db9135ce53b0e8fa17e1b337331574b4738cf22129ad4",
+        "skin": {
+          "l1_element": 0.0469002707779884,
+          "l1_vector": 0.7504043324478145,
+          "l2_element": 0.023704129449397857,
+          "kl": 0.7942335620822972,
+          "precision": 0.6390625,
+          "recall": 0.8834635416666666
+        },
+        "teacher_forced": {
+          "skin": 1.1031508445739746,
+          "skeleton": 6.516329288482666,
+          "coords": 4.820653438568115,
+          "parent": 1.5300140380859375,
+          "stop": 0.16566202044487
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.17194666920762464,
+          "j2b": 0.1620423152161961,
+          "b2b": 0.1551463991348706,
+          "joint_count": 96,
+          "joint_count_abs_error": 71,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_9/985aac9abf3a264d154f5a68fa46fda015cd12affda1e7a69a054b49ae6e9d2d",
+        "skin": {
+          "l1_element": 0.02061405953205378,
+          "l1_vector": 1.1750013933270653,
+          "l2_element": 0.00867568420412135,
+          "kl": 1.2319261586203056,
+          "precision": 0.4319149925595238,
+          "recall": 0.85400390625
+        },
+        "teacher_forced": {
+          "skin": 1.6288774013519287,
+          "skeleton": 7.670070648193359,
+          "coords": 4.891219615936279,
+          "parent": 2.706037759780884,
+          "stop": 0.07281281054019928
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.18874410116582796,
+          "j2b": 0.17330388909351715,
+          "b2b": 0.16756087428084665,
+          "joint_count": 96,
+          "joint_count_abs_error": 15,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_5/2d79e720cd61fa5e5764304334ccf839ff5c53eae00731fd95b5ab33b6760cec",
+        "skin": {
+          "l1_element": 0.03467677167333919,
+          "l1_vector": 0.7628889768134623,
+          "l2_element": 0.013407778544137505,
+          "kl": 1.0200520091944796,
+          "precision": 0.6384579613095238,
+          "recall": 0.7558268229166667
+        },
+        "teacher_forced": {
+          "skin": 1.5297720432281494,
+          "skeleton": 5.72106409072876,
+          "coords": 4.481081485748291,
+          "parent": 1.1471484899520874,
+          "stop": 0.09283418208360672
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.10978309610741856,
+          "j2b": 0.09079169929336378,
+          "b2b": 0.08915871515231713,
+          "joint_count": 96,
+          "joint_count_abs_error": 67,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_3/1872b9de65ef74317d406338547269a2aa6a278427a552407176ebc91166590c",
+        "skin": {
+          "l1_element": 0.01736388818224511,
+          "l1_vector": 0.9029221854767456,
+          "l2_element": 0.007988161497993806,
+          "kl": 0.8830166322743995,
+          "precision": 0.618444700915404,
+          "recall": 0.8623046874999999
+        },
+        "teacher_forced": {
+          "skin": 1.2547727823257446,
+          "skeleton": 6.2170844078063965,
+          "coords": 4.244409084320068,
+          "parent": 1.9174445867538452,
+          "stop": 0.055230773985385895
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.07651434464033609,
+          "j2b": 0.058105003663919456,
+          "b2b": 0.058620343387024515,
+          "joint_count": 96,
+          "joint_count_abs_error": 27,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_5/b4e297ae05c858615d01507910ced4d9b7e0ccdb4219c718e23c1be0630f7de7",
+        "skin": {
+          "l1_element": 0.025155292717813922,
+          "l1_vector": 0.7043481960987898,
+          "l2_element": 0.007659589082489521,
+          "kl": 0.6899542648112116,
+          "precision": 0.6751906622023809,
+          "recall": 0.8214518229166666
+        },
+        "teacher_forced": {
+          "skin": 1.3472363948822021,
+          "skeleton": 5.988558769226074,
+          "coords": 4.3702216148376465,
+          "parent": 1.4769262075424194,
+          "stop": 0.1414106786251068
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.09961978950181315,
+          "j2b": 0.09217107782962919,
+          "b2b": 0.08599680821298485,
+          "joint_count": 96,
+          "joint_count_abs_error": 61,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "000-082/c098c598657843ca92ced396a8b22d33",
+        "skin": {
+          "l1_element": 0.014002742495645273,
+          "l1_vector": 0.5461069573301657,
+          "l2_element": 0.005820025630421976,
+          "kl": 0.5231378312859198,
+          "precision": 0.7265710255456349,
+          "recall": 0.93701171875
+        },
+        "teacher_forced": {
+          "skin": 0.7341861724853516,
+          "skeleton": 6.205351829528809,
+          "coords": 4.286961555480957,
+          "parent": 1.846720576286316,
+          "stop": 0.07166950404644012
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.09819817707763372,
+          "j2b": 0.087769567490139,
+          "b2b": 0.08249411359923164,
+          "joint_count": 96,
+          "joint_count_abs_error": 40,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_0/0459f448cea0d970d119d8ff85e9b163a600025c4fdc572f183f281df36460e2",
+        "skin": {
+          "l1_element": 0.014453031814746487,
+          "l1_vector": 0.7081985589225779,
+          "l2_element": 0.005136893320538891,
+          "kl": 0.544108013179704,
+          "precision": 0.6891470508658009,
+          "recall": 0.9142252604166666
+        },
+        "teacher_forced": {
+          "skin": 1.069586992263794,
+          "skeleton": 6.577301979064941,
+          "coords": 4.613940715789795,
+          "parent": 1.8693122863769531,
+          "stop": 0.09404921531677246
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.13487340258803707,
+          "j2b": 0.1283101080219086,
+          "b2b": 0.12528106924208302,
+          "joint_count": 96,
+          "joint_count_abs_error": 30,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_6/e0788bc7d901febbb83a8008cb7233c0651bd8b2deece56d8fb5c9fb87d8be88",
+        "skin": {
+          "l1_element": 0.050788757049284566,
+          "l1_vector": 1.1173526550842605,
+          "l2_element": 0.020236970577926974,
+          "kl": 3.664585638577261,
+          "precision": 0.6234367249503967,
+          "recall": 0.55712890625
+        },
+        "teacher_forced": {
+          "skin": 4.61793327331543,
+          "skeleton": 5.777500629425049,
+          "coords": 4.414473056793213,
+          "parent": 1.2371468544006348,
+          "stop": 0.12588059902191162
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.08789721933667578,
+          "j2b": 0.07829786328270565,
+          "b2b": 0.07186711280953038,
+          "joint_count": 96,
+          "joint_count_abs_error": 67,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_2/9fa98e2046a5d786fe98bfdf268f6ccafe74934a09318db8655e42d7f5b1a0fc",
+        "skin": {
+          "l1_element": 0.030579184704707645,
+          "l1_vector": 1.1314298340741828,
+          "l2_element": 0.018364627898900303,
+          "kl": 1.357686226889715,
+          "precision": 0.4528506324404762,
+          "recall": 0.8391927083333334
+        },
+        "teacher_forced": {
+          "skin": 1.4830906391143799,
+          "skeleton": 6.446185111999512,
+          "coords": 4.490359783172607,
+          "parent": 1.8547232151031494,
+          "stop": 0.10110172629356384
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.09137984999105077,
+          "j2b": 0.08301210499979181,
+          "b2b": 0.07697485507921006,
+          "joint_count": 96,
+          "joint_count_abs_error": 46,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_2/20311461344d98ec6aeacd51535ead76e91b7abe22fa1ec4a0afc43e13c4ba38",
+        "skin": {
+          "l1_element": 0.04808204763837615,
+          "l1_vector": 0.8654768574907707,
+          "l2_element": 0.018509843287014167,
+          "kl": 1.8785158739254542,
+          "precision": 0.6548688616071429,
+          "recall": 0.6422526041666666
+        },
+        "teacher_forced": {
+          "skin": 2.575464963912964,
+          "skeleton": 5.819767951965332,
+          "coords": 4.219449996948242,
+          "parent": 1.4016326665878296,
+          "stop": 0.19868525862693787
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.09140581681115267,
+          "j2b": 0.062135839239796334,
+          "b2b": 0.05631624733963501,
+          "joint_count": 96,
+          "joint_count_abs_error": 72,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_8/9f6d60aa301330312d6d3576762629503d6d8ec68f4c4837e69378339b5dc3b1",
+        "skin": {
+          "l1_element": 0.019629136820386164,
+          "l1_vector": 0.5496158309708126,
+          "l2_element": 0.006304204631442289,
+          "kl": 0.4012741523256812,
+          "precision": 0.8081287202380952,
+          "recall": 0.9080078125
+        },
+        "teacher_forced": {
+          "skin": 0.9573317766189575,
+          "skeleton": 5.885188579559326,
+          "coords": 4.524899005889893,
+          "parent": 1.2206424474716187,
+          "stop": 0.13964717090129852
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.11338011721314814,
+          "j2b": 0.10386278073546235,
+          "b2b": 0.09609622890932487,
+          "joint_count": 96,
+          "joint_count_abs_error": 61,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_2/c29afa31ba19b1eddf0e94b30033381e328f7bf5e77a39afa4b1f913f7b9fc30",
+        "skin": {
+          "l1_element": 0.014945778296920403,
+          "l1_vector": 0.8818009195183037,
+          "l2_element": 0.005446736162157887,
+          "kl": 1.0611157330950873,
+          "precision": 0.6829659598214286,
+          "recall": 0.7224283854166667
+        },
+        "teacher_forced": {
+          "skin": 1.7859091758728027,
+          "skeleton": 7.697470188140869,
+          "coords": 4.857569694519043,
+          "parent": 2.7683517932891846,
+          "stop": 0.07154880464076996
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.18347993135276108,
+          "j2b": 0.17138782916866444,
+          "b2b": 0.16995173142163297,
+          "joint_count": 96,
+          "joint_count_abs_error": 4,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "000-073/c2a1b3d46cb441de9b840d5be57af5e7",
+        "skin": {
+          "l1_element": 0.012449105219560544,
+          "l1_vector": 0.6473534714171484,
+          "l2_element": 0.003846061555098539,
+          "kl": 0.5002631602387724,
+          "precision": 0.6696921026022589,
+          "recall": 0.9479166666666666
+        },
+        "teacher_forced": {
+          "skin": 0.9079759120941162,
+          "skeleton": 6.589717388153076,
+          "coords": 4.573112487792969,
+          "parent": 1.9290271997451782,
+          "stop": 0.08757789433002472
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.11908079287426071,
+          "j2b": 0.11490326398356376,
+          "b2b": 0.11207950409660158,
+          "joint_count": 96,
+          "joint_count_abs_error": 27,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_3/13260ace433edf3ee0384c678b82d3668256084dbe211469196ccc8961d014ec",
+        "skin": {
+          "l1_element": 0.013833176904313977,
+          "l1_vector": 0.7054920221200129,
+          "l2_element": 0.0038048875971636487,
+          "kl": 0.7241666039581381,
+          "precision": 0.688538842884546,
+          "recall": 0.8392578124999999
+        },
+        "teacher_forced": {
+          "skin": 1.3795031309127808,
+          "skeleton": 6.566417217254639,
+          "coords": 4.570998191833496,
+          "parent": 1.93051016330719,
+          "stop": 0.06490892916917801
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.1111908423175097,
+          "j2b": 0.09024749426787715,
+          "b2b": 0.0882340559083572,
+          "joint_count": 96,
+          "joint_count_abs_error": 28,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_0/72d640d3ea079ad6418195dfeea663a49f07e5b5b53d8e5ffb3172e17fb408f1",
+        "skin": {
+          "l1_element": 0.055456970301861225,
+          "l1_vector": 0.942768495131641,
+          "l2_element": 0.0300666039544075,
+          "kl": 1.425320274143056,
+          "precision": 0.5090169270833333,
+          "recall": 0.8134765625
+        },
+        "teacher_forced": {
+          "skin": 1.6469792127609253,
+          "skeleton": 6.441017150878906,
+          "coords": 4.388544082641602,
+          "parent": 1.9050248861312866,
+          "stop": 0.1474478840827942
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.10613498762905599,
+          "j2b": 0.08738814359310296,
+          "b2b": 0.0798921186228364,
+          "joint_count": 96,
+          "joint_count_abs_error": 72,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_2/ac6ac5194b35f126024aab2cdddeccfc64d36746b4df99293e5c5972ec5804be",
+        "skin": {
+          "l1_element": 0.08879344128370857,
+          "l1_vector": 0.9767278541207944,
+          "l2_element": 0.06376417981790361,
+          "kl": 1.5319627708029127,
+          "precision": 0.4690755208333333,
+          "recall": 0.8134765625
+        },
+        "teacher_forced": {
+          "skin": 1.5364739894866943,
+          "skeleton": 5.579144477844238,
+          "coords": 4.3702712059021,
+          "parent": 0.9967494606971741,
+          "stop": 0.21212400496006012
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.11821187978124333,
+          "j2b": 0.10106881320078925,
+          "b2b": 0.08665238457139324,
+          "joint_count": 96,
+          "joint_count_abs_error": 80,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_7/e33cb66976a5c0db9065325d1273f46fade7c5f24438ac4bdb4cd0b5cf23af78",
+        "skin": {
+          "l1_element": 0.04006280118394189,
+          "l1_vector": 1.0015700295985472,
+          "l2_element": 0.014143288715899009,
+          "kl": 0.8727931685750793,
+          "precision": 0.49373837425595235,
+          "recall": 0.9133463541666667
+        },
+        "teacher_forced": {
+          "skin": 1.472522258758545,
+          "skeleton": 6.127382278442383,
+          "coords": 4.398773193359375,
+          "parent": 1.6209022998809814,
+          "stop": 0.10770706832408905
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.12230622666547053,
+          "j2b": 0.09949740338278311,
+          "b2b": 0.09330408999751583,
+          "joint_count": 96,
+          "joint_count_abs_error": 62,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "glb_0/2bb240bbb77196e2c6887cc3ffac96d633903b967b251671a88aa0d6aa71e990",
+        "skin": {
+          "l1_element": 0.049966896626242416,
+          "l1_vector": 0.6995365527673938,
+          "l2_element": 0.03419154168321813,
+          "kl": 1.7154685252419002,
+          "precision": 0.5779296875,
+          "recall": 0.84375
+        },
+        "teacher_forced": {
+          "skin": 1.715468406677246,
+          "skeleton": 6.040518760681152,
+          "coords": 4.317900657653809,
+          "parent": 1.51079523563385,
+          "stop": 0.21182310581207275
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.08924101396883662,
+          "j2b": 0.0813659349618189,
+          "b2b": 0.06874949116919846,
+          "joint_count": 96,
+          "joint_count_abs_error": 76,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_4/6d9d94e1a6bc5185a095defa77dab561de8d59fefa6febb624a8c1933ff96d5f",
+        "skin": {
+          "l1_element": 0.03077552989833929,
+          "l1_vector": 0.8617148371535002,
+          "l2_element": 0.012020634946938823,
+          "kl": 0.9949318970684997,
+          "precision": 0.6158156622023809,
+          "recall": 0.8583984375
+        },
+        "teacher_forced": {
+          "skin": 1.401479721069336,
+          "skeleton": 6.048463821411133,
+          "coords": 4.576513290405273,
+          "parent": 1.315969705581665,
+          "stop": 0.15598130226135254
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.13303995309602798,
+          "j2b": 0.12885764883582676,
+          "b2b": 0.12079338185538843,
+          "joint_count": 96,
+          "joint_count_abs_error": 61,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_5/9c1d451fa1eb75d3b833ebd4515f75d4ab8eb84d5d7e84d08a1e48529f85c979",
+        "skin": {
+          "l1_element": 0.025978366335028945,
+          "l1_vector": 0.7273942573808104,
+          "l2_element": 0.010504309162942657,
+          "kl": 0.5535129566671166,
+          "precision": 0.656742931547619,
+          "recall": 0.9563802083333333
+        },
+        "teacher_forced": {
+          "skin": 0.9547222852706909,
+          "skeleton": 6.36114501953125,
+          "coords": 4.923700332641602,
+          "parent": 1.292672038078308,
+          "stop": 0.1447726935148239
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.1618141503355918,
+          "j2b": 0.15639461017649237,
+          "b2b": 0.14520858500719655,
+          "joint_count": 96,
+          "joint_count_abs_error": 61,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_2/ba4ac637e69a1fa83e9f22571d7db9813c9c2d5f87f04f363e48bfdad2a26f41",
+        "skin": {
+          "l1_element": 0.021022660553314868,
+          "l1_vector": 1.3034049543055217,
+          "l2_element": 0.0075156374486416285,
+          "kl": 1.9245282082464197,
+          "precision": 0.34716564360119045,
+          "recall": 0.6764322916666667
+        },
+        "teacher_forced": {
+          "skin": 2.5706377029418945,
+          "skeleton": 7.945268630981445,
+          "coords": 4.7783708572387695,
+          "parent": 3.1020281314849854,
+          "stop": 0.0648699700832367
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.1523905702739819,
+          "j2b": 0.14189832496838428,
+          "b2b": 0.1284102830864779,
+          "joint_count": 96,
+          "joint_count_abs_error": 14,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "dae_0/05cfce83c2d51db07f68e14e5e02a191ce682e40e0c860b33fbb5a205a4bdf87",
+        "skin": {
+          "l1_element": 0.2103067585893541,
+          "l1_vector": 1.6824540687148328,
+          "l2_element": 0.1080453673664107,
+          "kl": 2.0634041130840117,
+          "precision": 0.1375860305059524,
+          "recall": 0.904296875
+        },
+        "teacher_forced": {
+          "skin": 2.063404083251953,
+          "skeleton": 6.149841785430908,
+          "coords": 4.180064678192139,
+          "parent": 1.686589002609253,
+          "stop": 0.28318849205970764
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.0844475204820666,
+          "j2b": 0.07517775213730277,
+          "b2b": 0.06795334335538508,
+          "joint_count": 96,
+          "joint_count_abs_error": 80,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_9/4e9c1616f8caa0f2ea9e9bab9cf031b6b215e8e52f82d0a57ee4a0ed5c055333",
+        "skin": {
+          "l1_element": 0.010756298064640814,
+          "l1_vector": 0.6346215858138081,
+          "l2_element": 0.002798000701521536,
+          "kl": 0.4340146608768427,
+          "precision": 0.6433779761904762,
+          "recall": 0.93603515625
+        },
+        "teacher_forced": {
+          "skin": 0.946262001991272,
+          "skeleton": 7.198095798492432,
+          "coords": 4.734829902648926,
+          "parent": 2.395220994949341,
+          "stop": 0.06804497539997101
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.145230553861163,
+          "j2b": 0.14183230726825163,
+          "b2b": 0.13982509179283384,
+          "joint_count": 96,
+          "joint_count_abs_error": 20,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_6/ea2db3f0410b3a477e366d60b78a5efd02a267f1720730761980612e8ab404a2",
+        "skin": {
+          "l1_element": 0.05106163349678028,
+          "l1_vector": 0.6127396019613633,
+          "l2_element": 0.029251532971727306,
+          "kl": 0.8967139619602256,
+          "precision": 0.5977539062499999,
+          "recall": 0.92578125
+        },
+        "teacher_forced": {
+          "skin": 0.8967139720916748,
+          "skeleton": 6.103471755981445,
+          "coords": 4.451616287231445,
+          "parent": 1.4495748281478882,
+          "stop": 0.20228056609630585
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.20192743556733714,
+          "j2b": 0.18612401127312755,
+          "b2b": 0.17686612822726772,
+          "joint_count": 96,
+          "joint_count_abs_error": 77,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_9/be68194aded5c9d55cea9a41f2bf278d2880bbffb60923a9e4e2b811b70471aa",
+        "skin": {
+          "l1_element": 0.01508612149832982,
+          "l1_vector": 0.6034448599331927,
+          "l2_element": 0.0035707622858666883,
+          "kl": 0.49188008833134095,
+          "precision": 0.7549990699404762,
+          "recall": 0.8333984375
+        },
+        "teacher_forced": {
+          "skin": 1.3020100593566895,
+          "skeleton": 6.608717441558838,
+          "coords": 4.598196506500244,
+          "parent": 1.9413731098175049,
+          "stop": 0.06914781033992767
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.14978732955347512,
+          "j2b": 0.14603495155543092,
+          "b2b": 0.13765143420984227,
+          "joint_count": 96,
+          "joint_count_abs_error": 43,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_1/b18589b7c7dded14e5c1595d35fda71c67d58022dfa6c3c18023371800c38719",
+        "skin": {
+          "l1_element": 0.01596088277760257,
+          "l1_vector": 0.814005021657731,
+          "l2_element": 0.007655911914040187,
+          "kl": 0.8893486175301017,
+          "precision": 0.5125387037008131,
+          "recall": 0.955078125
+        },
+        "teacher_forced": {
+          "skin": 0.93315589427948,
+          "skeleton": 6.992097854614258,
+          "coords": 4.4759135246276855,
+          "parent": 2.4457387924194336,
+          "stop": 0.07044535875320435
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.10695113087178455,
+          "j2b": 0.10162020361665973,
+          "b2b": 0.09852493408846816,
+          "joint_count": 96,
+          "joint_count_abs_error": 25,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_3/717e6e95b228b2ea4ace274820fad779ec52825ba018294df2a31c3f0d6bbb70",
+        "skin": {
+          "l1_element": 0.028938246721714033,
+          "l1_vector": 0.6655796745994228,
+          "l2_element": 0.011108756549556745,
+          "kl": 0.49285725168944566,
+          "precision": 0.7098307291666666,
+          "recall": 0.92333984375
+        },
+        "teacher_forced": {
+          "skin": 0.8822305202484131,
+          "skeleton": 6.246464252471924,
+          "coords": 4.338622570037842,
+          "parent": 1.7790062427520752,
+          "stop": 0.1288352608680725
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.10093937411495801,
+          "j2b": 0.08430911922764088,
+          "b2b": 0.07703154631534254,
+          "joint_count": 96,
+          "joint_count_abs_error": 66,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_1/a9bb464ebcd6a23dd4c0f8b277f17a658f737a0fd0f59288c8526913c911ee22",
+        "skin": {
+          "l1_element": 0.01502755396858662,
+          "l1_vector": 0.8114879143036775,
+          "l2_element": 0.004320855686816444,
+          "kl": 0.71196789014558,
+          "precision": 0.6041034648944805,
+          "recall": 0.865234375
+        },
+        "teacher_forced": {
+          "skin": 1.2214468717575073,
+          "skeleton": 6.921504020690918,
+          "coords": 4.6445231437683105,
+          "parent": 2.1828832626342773,
+          "stop": 0.09409742057323456
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.16065151684307794,
+          "j2b": 0.1562306788599775,
+          "b2b": 0.14715686604043837,
+          "joint_count": 96,
+          "joint_count_abs_error": 25,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "000-081/ba3a70862d2f4399b91a9f53c541cb0a",
+        "skin": {
+          "l1_element": 0.02379453532377297,
+          "l1_vector": 0.5948633830943242,
+          "l2_element": 0.007316701048598313,
+          "kl": 0.4916424417442632,
+          "precision": 0.755717540922619,
+          "recall": 0.8658854166666666
+        },
+        "teacher_forced": {
+          "skin": 1.1547183990478516,
+          "skeleton": 6.041162967681885,
+          "coords": 4.351593017578125,
+          "parent": 1.5476082563400269,
+          "stop": 0.14196160435676575
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.08392297594853924,
+          "j2b": 0.07165944848739943,
+          "b2b": 0.06303840023330506,
+          "joint_count": 96,
+          "joint_count_abs_error": 64,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_2/54585cfade71499fb8847fc3906081ee4284ba5f77dd72d86b17b124527f3e7f",
+        "skin": {
+          "l1_element": 0.011637023290903943,
+          "l1_vector": 0.6865843741633326,
+          "l2_element": 0.003216216377184445,
+          "kl": 0.6291902875141617,
+          "precision": 0.6708658854166667,
+          "recall": 0.8209309895833332
+        },
+        "teacher_forced": {
+          "skin": 1.3571721315383911,
+          "skeleton": 7.601722717285156,
+          "coords": 4.706873416900635,
+          "parent": 2.8300609588623047,
+          "stop": 0.0647881031036377
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.12954667271452208,
+          "j2b": 0.12534133027260494,
+          "b2b": 0.12517394419363143,
+          "joint_count": 96,
+          "joint_count_abs_error": 4,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_9/2c1e88d42719f667856406684e5341252076d3920f1a6f60256516191cdbb48e",
+        "skin": {
+          "l1_element": 0.013494424355496686,
+          "l1_vector": 0.6207435203528475,
+          "l2_element": 0.004593957921201603,
+          "kl": 0.5243178813912721,
+          "precision": 0.7673802759740259,
+          "recall": 0.8930013020833334
+        },
+        "teacher_forced": {
+          "skin": 1.0558695793151855,
+          "skeleton": 6.621904373168945,
+          "coords": 4.622745513916016,
+          "parent": 1.8931522369384766,
+          "stop": 0.1060064509510994
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.13632950120506832,
+          "j2b": 0.1332777181521417,
+          "b2b": 0.1374070443406055,
+          "joint_count": 96,
+          "joint_count_abs_error": 35,
+          "eos": false,
+          "capped": true
+        }
+      },
+      {
+        "asset_name": "fbx_1/f89a6ea6cc309aa7058ff2632775b6ef5984d120e7a06f770f5a2f30a9209f91",
+        "skin": {
+          "l1_element": 0.025280258645369886,
+          "l1_vector": 0.9606498285240557,
+          "l2_element": 0.01054792240081661,
+          "kl": 1.0066514123088364,
+          "precision": 0.5418666294642858,
+          "recall": 0.8640950520833333
+        },
+        "teacher_forced": {
+          "skin": 1.442053198814392,
+          "skeleton": 7.243631839752197,
+          "coords": 4.687715530395508,
+          "parent": 2.462329149246216,
+          "stop": 0.09358730912208557
+        },
+        "skeleton_eligible": true,
+        "skeleton": {
+          "j2j": 0.1334067245524586,
+          "j2b": 0.10253235040272934,
+          "b2b": 0.09361290985672516,
+          "joint_count": 96,
+          "joint_count_abs_error": 43,
+          "eos": false,
+          "capped": true
+        }
+      }
+    ]
+  }
+}

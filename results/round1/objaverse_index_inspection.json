@@ -1,0 +1,14 @@
+{
+  "rows": 5236361,
+  "row_groups": 1,
+  "columns": [
+    "fileIdentifier",
+    "source",
+    "license",
+    "fileType",
+    "sha256",
+    "metadata"
+  ],
+  "first_rowgroup_bytes": 1112959207,
+  "transfer": 65536
+}

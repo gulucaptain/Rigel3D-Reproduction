@@ -1,0 +1,96 @@
+{
+  "seed": 2,
+  "scope": "GT-context diagnostic. Candidate coordinates from supplied GT-rig voxels are an oracle support control, not the paper decoder and never main generation. Teacher forcing uses GT prefix; free statistics use BOS only.",
+  "assets": [
+    {
+      "filename": "test_0b7dc2f979ae74eb.npz",
+      "teacher_matched_l2": 0.4184071854695167,
+      "gt_rig_supported_teacher_l2": 0.3986167872175141,
+      "gt_joint_to_rig_voxel_distance": 0.007266537562245955,
+      "free_joint_to_rig_voxel_distance": 0.08992751353966842,
+      "free_fraction_within_one_voxel": 0.09090909090909091,
+      "capped": false
+    },
+    {
+      "filename": "test_5f71afc15c041461.npz",
+      "teacher_matched_l2": 0.4006664990136625,
+      "gt_rig_supported_teacher_l2": 0.41925074528193773,
+      "gt_joint_to_rig_voxel_distance": 0.007900216392668526,
+      "free_joint_to_rig_voxel_distance": 0.1033194884235545,
+      "free_fraction_within_one_voxel": 0.015384615384615385,
+      "capped": false
+    },
+    {
+      "filename": "test_fcefe59e0ca0640b.npz",
+      "teacher_matched_l2": 0.28620273876467534,
+      "gt_rig_supported_teacher_l2": 0.35153024984501624,
+      "gt_joint_to_rig_voxel_distance": 0.0070641279726550935,
+      "free_joint_to_rig_voxel_distance": 0.05353164858855739,
+      "free_fraction_within_one_voxel": 0.020833333333333332,
+      "capped": true
+    },
+    {
+      "filename": "test_5f9868db50527fa2.npz",
+      "teacher_matched_l2": 0.3306325086218987,
+      "gt_rig_supported_teacher_l2": 0.34970086663664307,
+      "gt_joint_to_rig_voxel_distance": 0.007125615912553213,
+      "free_joint_to_rig_voxel_distance": 0.10737385066093168,
+      "free_fraction_within_one_voxel": 0.03125,
+      "capped": true
+    },
+    {
+      "filename": "test_27b6e8cc90ef48b2.npz",
+      "teacher_matched_l2": 0.38008540423607096,
+      "gt_rig_supported_teacher_l2": 0.3665720008159339,
+      "gt_joint_to_rig_voxel_distance": 0.007150427520300528,
+      "free_joint_to_rig_voxel_distance": 0.09452995927356256,
+      "free_fraction_within_one_voxel": 0.0,
+      "capped": true
+    },
+    {
+      "filename": "test_30f674276d267739.npz",
+      "teacher_matched_l2": 0.3314769766545177,
+      "gt_rig_supported_teacher_l2": 0.25680140473047663,
+      "gt_joint_to_rig_voxel_distance": 0.00751762774223473,
+      "free_joint_to_rig_voxel_distance": 0.07623831568485093,
+      "free_fraction_within_one_voxel": 0.0,
+      "capped": false
+    },
+    {
+      "filename": "test_f764f51c6dd435c3.npz",
+      "teacher_matched_l2": 0.33266177488600673,
+      "gt_rig_supported_teacher_l2": 0.3124908335488139,
+      "gt_joint_to_rig_voxel_distance": 0.0068124410349382596,
+      "free_joint_to_rig_voxel_distance": 0.05797299248012729,
+      "free_fraction_within_one_voxel": 0.0625,
+      "capped": true
+    },
+    {
+      "filename": "test_803c47b10c699939.npz",
+      "teacher_matched_l2": 0.28438294552072735,
+      "gt_rig_supported_teacher_l2": 0.2270690829282531,
+      "gt_joint_to_rig_voxel_distance": 0.007100501197217456,
+      "free_joint_to_rig_voxel_distance": 0.08205890725226721,
+      "free_fraction_within_one_voxel": 0.0759493670886076,
+      "capped": false
+    },
+    {
+      "filename": "test_4e5dc0c2216e3436.npz",
+      "teacher_matched_l2": 0.31294805600834924,
+      "gt_rig_supported_teacher_l2": 0.33962812714809204,
+      "gt_joint_to_rig_voxel_distance": 0.0066870995911481376,
+      "free_joint_to_rig_voxel_distance": 0.10365635788528431,
+      "free_fraction_within_one_voxel": 0.0,
+      "capped": true
+    },
+    {
+      "filename": "test_763a49596dc0edf7.npz",
+      "teacher_matched_l2": 0.4131657112721133,
+      "gt_rig_supported_teacher_l2": 0.43357741915022036,
+      "gt_joint_to_rig_voxel_distance": 0.007777980962039256,
+      "free_joint_to_rig_voxel_distance": 0.11296822748788014,
+      "free_fraction_within_one_voxel": 0.0,
+      "capped": false
+    }
+  ]
+}

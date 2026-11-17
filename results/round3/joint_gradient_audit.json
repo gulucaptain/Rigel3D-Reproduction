@@ -1,0 +1,21 @@
+{
+  "scope": "Mesh output SDF-only loss, no AR/skin terms; surface encoder stays frozen; gradients reach mesh rig CA; rig-head gradient activates after initial zero CA output projection updates. Mesh backbone frozen.",
+  "checks": [
+    {
+      "step": 0,
+      "loss": 0.0009832913056015968,
+      "surface_head_grad_l1": 0,
+      "rig_head_grad_l1": 0.0,
+      "mesh_adapter_grad_l1": 0.9700852632522583,
+      "frozen_mesh_has_grad": false
+    },
+    {
+      "step": 1,
+      "loss": 0.0008922008564695716,
+      "surface_head_grad_l1": 0,
+      "rig_head_grad_l1": 0.006791518069803715,
+      "mesh_adapter_grad_l1": 0.8731117844581604,
+      "frozen_mesh_has_grad": false
+    }
+  ]
+}

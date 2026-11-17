@@ -1,0 +1,12 @@
+{
+  "failure": "Zero visible exported vertices: unevaluated FBX mesh data versus posed rendered geometry; retained before correction",
+  "projection": {
+    "vertices": 1871,
+    "observed_vertices": 0,
+    "observed_fraction": 0.0,
+    "active_surface_voxels": 0,
+    "feature_channels": 384,
+    "visibility": "Blender ray cast per original mesh vertex, tolerance 2e-4; four-view patch bilinear average",
+    "scope": "Actual sparse surface feature input only; no learned TRELLIS encoder/SLats"
+  }
+}

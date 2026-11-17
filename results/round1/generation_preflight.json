@@ -1,0 +1,51 @@
+{
+  "asset_name": "fbx_9/fe4e4600907ef00ffe6bd8c7bd6fa42e2bcae5c636e1b28343cc1de9c39f6cde",
+  "source_url": "https://github.com/d-dcarl/ComradeQuackAlpha/blob/8584b181018a3b443e2c22ccc94af98063182ac1/Assets/Public/Animations/Bear/Bear_IDLE.fbx",
+  "sha256": "fe4e4600907ef00ffe6bd8c7bd6fa42e2bcae5c636e1b28343cc1de9c39f6cde",
+  "bytes": 964512,
+  "source_license": null,
+  "scope": "Original TRAIN asset preflight only; never train on test meshes; original files and images remain local",
+  "blender": "5.2.3 LTS",
+  "meshes": 1,
+  "vertices": 1871,
+  "armatures": 1,
+  "views": 4,
+  "render_scope": "Original train asset, four 224x224 CPU Cycles views; explicit independent normalization; not author TRELLIS rendering or learned mesh reconstruction",
+  "normalization": {
+    "centre": [
+      9.282119572162628e-05,
+      -0.06888659484684467,
+      0.06662859371863306
+    ],
+    "longest_extent": 0.21556397899985313,
+    "normalized_extent": 0.9
+  },
+  "dinov2": {
+    "repository_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+    "model": "dinov2_vits14",
+    "device": "mps",
+    "shape": [
+      4,
+      256,
+      384
+    ],
+    "feature_mean": 0.07510805130004883,
+    "feature_std": 2.5000171661376953,
+    "checkpoints": [
+      {
+        "filename": "dinov2_vits14_pretrain.pth",
+        "sha256": "b938bf1bc15cd2ec0feacfe3a1bb553fe8ea9ca46a7e1d8d00217f29aef60cd9"
+      }
+    ],
+    "scope": "Real original-train-asset views and pretrained features only; no Sparse VAE, FlexiCubes or generator training; not fed into completed geometry-feature runs"
+  },
+  "surface_feature_projection": {
+    "vertices": 1871,
+    "observed_vertices": 1253,
+    "observed_fraction": 0.669695350080171,
+    "active_surface_voxels": 1028,
+    "feature_channels": 384,
+    "visibility": "Blender ray cast per original mesh vertex, tolerance 2e-4; four-view patch bilinear average",
+    "scope": "Actual sparse surface feature input only; no learned TRELLIS encoder/SLats"
+  }
+}

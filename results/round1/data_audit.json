@@ -1,0 +1,1309 @@
+{
+  "passed": true,
+  "assets": 144,
+  "asset_ids_disjoint": true,
+  "source_families_disjoint": true,
+  "official_split": "train and val exclusively original train0; test exclusively original test",
+  "exclusions": {
+    "Expected one root": 14,
+    "Disconnected cycle": 1
+  },
+  "checks": [
+    {
+      "asset_name": "fbx_9/fe4e4600907ef00ffe6bd8c7bd6fa42e2bcae5c636e1b28343cc1de9c39f6cde",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_2/7c594521f1f52fcb4957ac98d988aa352d0d9fd3dc92e27b5cb199159e6d58e7/31",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_1/03c6a8dfe60a030c42ec95bf1efcb71e04d289e5d3daaa31f27ef1b8e6512ead",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_6/f8b33968a60cdc3e888ca7550c572235880f3ba0089fea1eee8090367d6a5fc0/7",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "excluded_from_skeleton",
+      "reason": "Expected one root"
+    },
+    {
+      "asset_name": "fbx_4/0b353357c9c6cdd0cc7c4ead55b33d7114efbb2ae3416fd19bccce144d99fe9e/25",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "glb_0/9b5461f9609ac010c81dabb6d9b5922296f2ce7b6e2d38c7257349570c7b8623/18",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_0/aafd6f51eeaed98566d42b8a26e0335befd4007bc0870a3658fcf1c42cb5601e",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_9/1c78cb44435393952bc9c40d5b7e4da8a2db18be554683c1cf1b3fbba98a021b/27",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "000-016/a4b2855f2ae84924814cb18be71e6f67/64",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "000-088/f0d289c4a9c848aca4f008deffd3154e/7",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "glb_0/944a6e57e7e4603f13af88d01ef48dbb43aafc8ebf624e71fe763cf6509fa8c9/25",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_4/3942a86e6410ed0f51c80777c2f0a7aba27effb7519138d3ae2d108bf17d84af/127",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_3/acf6eb542093975fd0c21775aee66f856a2232d55bcff0db98fac437d9f3ce8d/9",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_8/50f1fdede9f280b989630115dc192c3e352460bb266c0b4a97d2a6faf8196928",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_7/3c8ee99ba96498a8214a43d4c413694abaa5e3673bf79d4c53f9cc1a5cbfe691",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_8/71335a20bf5dba88445ea5348a26bc6a8952e90d04f5d0266897e3e1aab713ec",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_9/67d10b6c18a18463dca6efff7f91eea75b4e37ac17c0d770af8a760976667dab/7",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_0/32a40c3cc39bf939aa7c2c09fc3caa4836c3bd72b47225bb456dc9bbf8ff2f13/176",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "excluded_from_skeleton",
+      "reason": "Disconnected cycle"
+    },
+    {
+      "asset_name": "fbx_4/13afb73ad758a95330a9c9e8495b03d5fa5eb5470bdc2b2d109a54b9e9cda417/151",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "dae_0/fceb486025034ae7a80d516f7ec28b3928582aa0f5b9f6909b8c2d33100cb145",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_2/2ec967c582e8893cc6213e09c0f8325c931e401f9fdec253e6a0b3ef90c7ead0/73",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_0/7de35799e20be15edd0f020ba5c063c24e001097e6239746757126cd73e97851",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_3/9dd5790e218aa7780672726d587579fc1cd3351e1acc6cce683e810622567bb3/13",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_7/14fb53afa8b6c52aa182bb15da068f3a4b64fb79f745b68b22acdf3dd112bad7",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "glb_0/6612cca4461a236287139a7cd3a9f538932717cf6a3e7e51c6f2bd846dc9af45/55",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_9/78ae49ae860669444c565eba06dd6232406879f63747223e3dabf8dc2a3e158f/25",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_1/01cd28b0277ea3616c0a536a6c9f176723454a795027cc6c4ca1d630ddbb52c7",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_1/bd1be2ae78d67f96eb673845061d7c45ae07fecbe464e62c5c3d3735f196f37d/7",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_6/210ed80d9fa48c818c02341d58f8a5f2cc8ade5f61df7504263b0f15f960567b/139",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_5/cb4844eb63bc6dc876218d2c337d82b33a367559e1c28639978cbfc65c280a0b",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_3/85fa1bdca134e3acaeb4cf945e77e738eb068e0be47d1243a56db836f6720642/19",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_9/a0646b3c95ad5c390891ab75ca915534469eabf0da5d179b8910476dbdcf3176",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_8/fa4cfdf946d1c596f0d223a897e4347a772777d9b71648183b9a91b49ad31578",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "excluded_from_skeleton",
+      "reason": "Expected one root"
+    },
+    {
+      "asset_name": "fbx_3/bcf125b9e48eedd911e6f2622620c427e9e3bab332cc62df707630517a011fdf",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "dae_0/d7c0cf524d62c448b2e3c53fb185bcfc99eb3525be68827d297dad13deb9a1b3",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "excluded_from_skeleton",
+      "reason": "Expected one root"
+    },
+    {
+      "asset_name": "fbx_2/e144d20bd0ac61ba02dadd7af40c02830b9bac3e89ebf254e68b960d4ac3408e/25",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_0/fa1d28d34196a1d19d7d6debfca8f020e5576df17471a9219825d3352e4151ae",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "glb_0/f1066ab769db3580961f85be616b5e2854216d697e6c11a5c255d8ed59335f17",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "000-051/238eaf4c3a2b425ab9e848d7554d8b06/460",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_0/186d864fa0448ab3b8583dde904c819c29bf73d91895e4604ce01cca94420b0e",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_0/5adabaf6f3b595cba972073e5a298d17d8759fe2753e34f7966c6c216cdda9a3",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_2/bbb5b58b33237a09d2d5ca62a8fd44ee584791addc26b6a8a78a176d2128a691",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "excluded_from_skeleton",
+      "reason": "Expected one root"
+    },
+    {
+      "asset_name": "000-031/208ac3bb1879453e8cd2ec7cbfd6c940/83",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "glb_0/64a35864fb2e72f4ad4fea07b3d507a37c56a5ec0feb37cee28ff1ab2a96f5cc/26",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "dae_0/0c98012a91deb02283f40070fa57f646d1e22b44af12e36485294b4b4c6e5b79",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "glb_0/ccef22c24d0983db5615c5d1ca4e413d5c0fe73eadd53fce1c8aecdf8b182b42/30",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_9/397f24eb03967eb46f8fd1c357c131a2181460e9ce6e4ad48936e00443446c7c/37",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "000-155/296633f9a2e140ecaaf181362bfcbded/300",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_4/2bfb7c8b28bd096c9657e237181f88756195c586d49b3e0e79f61072d1faf5b2",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "glb_0/ca62486eb7d8f8160ec7be94ad1bdff087c4a543450e6bed1cdcc5958e086e71/181",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_1/2f8b6933b45ac70a7b2fa05835a2d974d98c5f69fa59fe34847fe8e2982d204b/25",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_2/6cf548e1f7fe5ec6a808a36beb8a5d23fc8f6ba38afa06c025b2424639988c41",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 7003,
+      "excluded_weight_points": 1189,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_9/78b4774626d9f97a92296ac1728faa19204fd7bb7fc94c9e68fd986207f3134b",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "glb_0/3c636deb4c1ad54241132e6a8b014b47a7670cd606eb919aeb17d861edc04f7a",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "000-076/e9241ba0a3e243b083e409b1c11d971e",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_8/c23ba59d920f6032974633e25be6642c6758f5e336e35f7a8a1d8c64a6ab287a",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_1/e02154e44b93e4a76135884216330cb31e123b4bf08d8c2e4a2201d08337705c",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8134,
+      "excluded_weight_points": 58,
+      "skeleton_status": "excluded_from_skeleton",
+      "reason": "Expected one root"
+    },
+    {
+      "asset_name": "fbx_8/3932c9ae6138287ad8904137b2e935b0731c658878a58ee3f2f0dfe480906e6c/379",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_5/793cdffccb2b003c65c4f3f6649deca0b463ae0b02ee2a50446179038718acb6",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_7/86621b4adeb578bda14985cc88d3764b60e530243312e9441012d1ccb7d1fb55/5569",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_3/5ab0f4add2f8def7079bb9d85981c3fe5f1dc6e1187ef2ca01e07dd6597bc0ee/211",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_3/66e3096bf9620879ed34d62f3efa5f43da976fd433e8315b76b71028d1d7dbb5",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_4/131b1aad3f4310f16d4ba6dcc52e799ae0d537c88758409238dc7703bfc76098/8",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_0/fb0ee7bdaee192b71b44f5240779f065f013b59e464fcba6bf36dcae999f5062",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_7/af01d08699210b552c1c7c54c8c18d0973fc5d31988e5e01e006d60b79b96b00/91",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_2/3e7005a30905fd9cef467ff1059f68ac748e4c6247d61bf84930cc365ac55890/62",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "glb_0/2f8e5e83515b64540ede731f383d0f2a006ea40bdad30af02d0796a903b58927/20",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_2/6bc3db577bc0e0772543c3c1f301ab176066da0ee6d43b6502b173d85b411fd8",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_7/99ae0f3519facc5f54ddbb8b84d39fa75f8f050413342b1b6b9ed01a24b73409/46",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_9/fc95bb4756fc8b0286313b3b12070eecee4f1bc129fff76269fdcd95efe6977d/7",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_4/6ddcf9042969107fef50a2d329254e167bcfeeaecaf9b837920f898126dda4e4",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_6/98079cbf0577bd30f6e8a409c885d0bf0572062d8bcd007cd14e65b6c4b85f8e",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "excluded_from_skeleton",
+      "reason": "Expected one root"
+    },
+    {
+      "asset_name": "fbx_0/25d068a61fead14598ed2c48404ec19efa09835e41219e8c0190373748ed1a12/73",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "glb_0/b2c308a54df031c10bd10afb166f1c49a663087b187717658c13e0f3690c35f5/72",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_2/90c42795a460fa881ebabd37d55f729ee5cee0e3687abdfb47967cb7cd1458c0",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_6/b57491f95ba2c6bd384fa581a65e5d4fbc7dd77e8b3fe4cd6cd6b3da1a454e8f",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 5861,
+      "excluded_weight_points": 2331,
+      "skeleton_status": "excluded_from_skeleton",
+      "reason": "Expected one root"
+    },
+    {
+      "asset_name": "000-143/55f58895c5c6464cb6471851e1c6dca2/57",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_1/1306a15a4daf9c0f8fa5012f903f47b99c2cb3fe0b05244155e820253490fc65/49",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "excluded_from_skeleton",
+      "reason": "Expected one root"
+    },
+    {
+      "asset_name": "fbx_0/ab50e57cb73f10221528662f7d3416c10063c601062f9045ffeeb7b424d75d8c",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "dae_0/1cabe70a5f0eda9eec9c861fc437aadaef90bbed0579cd4b6c5c7dc4ab8a7558",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_5/3d185eef655972f986f52f1086f3c2c47bce194d6bce94372edbfae1c5223224",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "excluded_from_skeleton",
+      "reason": "Expected one root"
+    },
+    {
+      "asset_name": "fbx_5/6e7d25855ecdca5f6258ad5012518894f14144a6efe0b5ff2cba97ae547554db/8",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_3/56771ad3e6b9e22b3d283f5423bf928f6c1809ad5f7b0233846da07c6c9637aa/207",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_3/c10914c0c843329adb68f442950d9e0fb974b9030a28760690256cfe8831f834/25",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_1/28f17f72e3b5a98972fe793ffb31725c50e8441e5a4f3b69154ea9dd5459bbb6/73",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_1/6122f9f491636cf986f61619e8db8b5462f3604fda0e8b2b7281910234ea3ef1/25",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_3/c2997f8d0c58b4db255c1bf5910877c7b83d1fad7abbcc85f3d2fb48cda96c41/188",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_0/d56a5e2c8231391f2b005a63ae292f63023ab118890ca37033f05effd80cd44f/13",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_6/939026e1c42a5537181b034374ec649faab6b2d9022eddb3226ba1e489bd4f15",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 4047,
+      "excluded_weight_points": 4145,
+      "skeleton_status": "excluded_from_skeleton",
+      "reason": "Expected one root"
+    },
+    {
+      "asset_name": "000-156/1ca234dea53a4320a048fad3c3e2bfe4/224",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "000-056/1df49f839f674e3fb7a3d3481caf0855/18",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_2/66b0c810befa169969d9bd7c7208f578f918ddcfb822e5fab8ec90ea79d6f63a",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_4/f6012b620c48dd50f51700b8f89a1f8858c4e442ca4601c293917cec922badca",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_3/4aa9f1c40f5711c363f5e188b15cb38d60860cb162a3baa77b4449349a92a288/19",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "glb_0/827b4c7a4ee861e05792aee1da7f31568d27942bb1fbd61757809f38df8573ad/13",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "excluded_from_skeleton",
+      "reason": "Expected one root"
+    },
+    {
+      "asset_name": "fbx_7/ccb0b5533fdb975286a9d250bcad75360fdb35c4a1995157ebef45e8798c99ff/7",
+      "split": "train",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "excluded_from_skeleton",
+      "reason": "Expected one root"
+    },
+    {
+      "asset_name": "fbx_0/562fb1ec3cba5425386ecfee9c995c2528603ae094d9b6ee951e57bd4c378416",
+      "split": "val",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_0/9cd407725225a3507f36c263ebe04489d26f5c0d029fbb2b0bdf76285bd8d55a",
+      "split": "val",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_3/89f6c0932cd7540ccb9b45cef1b76a2f53024138c70b40c6472491a69ffa4cd0",
+      "split": "val",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "000-025/c20b4147e7c04d3289b981d6d8fe1141/519",
+      "split": "val",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "excluded_from_skeleton",
+      "reason": "Expected one root"
+    },
+    {
+      "asset_name": "glb_0/dbaa4465a411ebc9c383d6092404e9e413cd0758b11a0e9cc6e10a1a0cf1599c",
+      "split": "val",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_9/3d66bf061b32fcb62f750fdae4e52e4535dffc689a50e58f472bd02d425faeed/19",
+      "split": "val",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_0/f50d43a0b0c19a502141b63ac12afe990c1749291e99d735f49c95e835b765d4/67",
+      "split": "val",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_5/1ea3a4eb16bc1678bc543bdd2d9bb920db76924b3fd0df98724f8da11038ae78",
+      "split": "val",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_6/bb074c3be0e73667afbd2f3c82c6ec14ae06173f9275b26207e651630955a35b/19",
+      "split": "val",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_8/1962d42de37f886bc5c9575d8bd6f9b40cfde8c9067654c1bf0e9d36ceb561ed/601",
+      "split": "val",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_9/e7be37984b85ebb43f038b4f451934c9a9402d28672ca5e897cd2352d75927b4",
+      "split": "val",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "excluded_from_skeleton",
+      "reason": "Expected one root"
+    },
+    {
+      "asset_name": "fbx_5/2c2494eb28e8a28b04de415051e4cfaa35e61d40ee4923650e546ece3abbda68/73",
+      "split": "val",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "000-003/a38ee59937b54e258e7ae700ef162a55/36",
+      "split": "val",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_3/df97300f44f18cb1304d2986ae5cce178b1f8228b7842f8491c9f605883f414e/13",
+      "split": "val",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_4/659da8d3211bda7f9685528a929f9cc16930f45eac2f11146b7b8398a0921198/91",
+      "split": "val",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_7/8c53aa4d0962eef89e6efe9120b145b90d5603b32235c0dc61ec7d5c1fa0643f/31",
+      "split": "val",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_5/b2c0140046712d30016db9135ce53b0e8fa17e1b337331574b4738cf22129ad4",
+      "split": "test",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_9/985aac9abf3a264d154f5a68fa46fda015cd12affda1e7a69a054b49ae6e9d2d",
+      "split": "test",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_5/2d79e720cd61fa5e5764304334ccf839ff5c53eae00731fd95b5ab33b6760cec",
+      "split": "test",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_3/1872b9de65ef74317d406338547269a2aa6a278427a552407176ebc91166590c",
+      "split": "test",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_5/b4e297ae05c858615d01507910ced4d9b7e0ccdb4219c718e23c1be0630f7de7",
+      "split": "test",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "000-082/c098c598657843ca92ced396a8b22d33",
+      "split": "test",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_0/0459f448cea0d970d119d8ff85e9b163a600025c4fdc572f183f281df36460e2",
+      "split": "test",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_6/e0788bc7d901febbb83a8008cb7233c0651bd8b2deece56d8fb5c9fb87d8be88",
+      "split": "test",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_2/9fa98e2046a5d786fe98bfdf268f6ccafe74934a09318db8655e42d7f5b1a0fc",
+      "split": "test",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_2/20311461344d98ec6aeacd51535ead76e91b7abe22fa1ec4a0afc43e13c4ba38",
+      "split": "test",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_8/9f6d60aa301330312d6d3576762629503d6d8ec68f4c4837e69378339b5dc3b1",
+      "split": "test",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_2/c29afa31ba19b1eddf0e94b30033381e328f7bf5e77a39afa4b1f913f7b9fc30",
+      "split": "test",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "000-073/c2a1b3d46cb441de9b840d5be57af5e7",
+      "split": "test",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_3/13260ace433edf3ee0384c678b82d3668256084dbe211469196ccc8961d014ec",
+      "split": "test",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_0/72d640d3ea079ad6418195dfeea663a49f07e5b5b53d8e5ffb3172e17fb408f1",
+      "split": "test",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_2/ac6ac5194b35f126024aab2cdddeccfc64d36746b4df99293e5c5972ec5804be",
+      "split": "test",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_7/e33cb66976a5c0db9065325d1273f46fade7c5f24438ac4bdb4cd0b5cf23af78",
+      "split": "test",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8142,
+      "excluded_weight_points": 50,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "glb_0/2bb240bbb77196e2c6887cc3ffac96d633903b967b251671a88aa0d6aa71e990",
+      "split": "test",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_4/6d9d94e1a6bc5185a095defa77dab561de8d59fefa6febb624a8c1933ff96d5f",
+      "split": "test",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_5/9c1d451fa1eb75d3b833ebd4515f75d4ab8eb84d5d7e84d08a1e48529f85c979",
+      "split": "test",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_2/ba4ac637e69a1fa83e9f22571d7db9813c9c2d5f87f04f363e48bfdad2a26f41",
+      "split": "test",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "dae_0/05cfce83c2d51db07f68e14e5e02a191ce682e40e0c860b33fbb5a205a4bdf87",
+      "split": "test",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_9/4e9c1616f8caa0f2ea9e9bab9cf031b6b215e8e52f82d0a57ee4a0ed5c055333",
+      "split": "test",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_6/ea2db3f0410b3a477e366d60b78a5efd02a267f1720730761980612e8ab404a2",
+      "split": "test",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_9/be68194aded5c9d55cea9a41f2bf278d2880bbffb60923a9e4e2b811b70471aa",
+      "split": "test",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_1/b18589b7c7dded14e5c1595d35fda71c67d58022dfa6c3c18023371800c38719",
+      "split": "test",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_3/717e6e95b228b2ea4ace274820fad779ec52825ba018294df2a31c3f0d6bbb70",
+      "split": "test",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_1/a9bb464ebcd6a23dd4c0f8b277f17a658f737a0fd0f59288c8526913c911ee22",
+      "split": "test",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "000-081/ba3a70862d2f4399b91a9f53c541cb0a",
+      "split": "test",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_2/54585cfade71499fb8847fc3906081ee4284ba5f77dd72d86b17b124527f3e7f",
+      "split": "test",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_9/2c1e88d42719f667856406684e5341252076d3920f1a6f60256516191cdbb48e",
+      "split": "test",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    },
+    {
+      "asset_name": "fbx_1/f89a6ea6cc309aa7058ff2632775b6ef5984d120e7a06f770f5a2f30a9209f91",
+      "split": "test",
+      "endpoint_to_joint_max_error": 0.0,
+      "valid_weight_points": 8192,
+      "excluded_weight_points": 0,
+      "skeleton_status": "eligible",
+      "reason": null
+    }
+  ]
+}

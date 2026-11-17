@@ -1,0 +1,1440 @@
+{
+  "scope": "GT binary64^3 occupancy encoded into continuous16^3x8 posterior mean and decoded. Not generated occupancy. Official surface pretrained VAE also applied to thin rig as transfer baseline.",
+  "assets": [
+    {
+      "filename": "train_29825ccc5b5b180f.npz",
+      "split": "train",
+      "surface": {
+        "iou": 0.9815318584442139,
+        "precision": 0.9905827045440674,
+        "recall": 0.9907770752906799,
+        "predicted_voxels": 5097,
+        "target_voxels": 5096,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 0.004378190264105797
+      },
+      "rig": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 335,
+        "target_voxels": 335,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 9.317004269600066e-27
+      },
+      "elapsed_s": 5.2469437919789925
+    },
+    {
+      "filename": "train_5927672b6bea8133.npz",
+      "split": "train",
+      "surface": {
+        "iou": 0.9994487166404724,
+        "precision": 1.0,
+        "recall": 0.9994487166404724,
+        "predicted_voxels": 3626,
+        "target_voxels": 3628,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 1.76390112756053e-05
+      },
+      "rig": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 160,
+        "target_voxels": 160,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 5.912746966602213e-28
+      },
+      "elapsed_s": 5.079794583958574
+    },
+    {
+      "filename": "train_a0e44666673348fb.npz",
+      "split": "train",
+      "surface": {
+        "iou": 0.9910072088241577,
+        "precision": 0.9957831501960754,
+        "recall": 0.9951836466789246,
+        "predicted_voxels": 3320,
+        "target_voxels": 3322,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 0.001051349681802094
+      },
+      "rig": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 348,
+        "target_voxels": 348,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 6.2946889612669034e-21
+      },
+      "elapsed_s": 5.06366387498565
+    },
+    {
+      "filename": "train_516c4309efb0d1f9.npz",
+      "split": "train",
+      "surface": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 490,
+        "target_voxels": 490,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 1.477624555270011e-20
+      },
+      "rig": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 179,
+        "target_voxels": 179,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 1.4617094128763832e-18
+      },
+      "elapsed_s": 5.032255791011266
+    },
+    {
+      "filename": "train_66b05e36d684fcbf.npz",
+      "split": "train",
+      "surface": {
+        "iou": 0.9546938538551331,
+        "precision": 0.9758030772209167,
+        "recall": 0.9778428077697754,
+        "predicted_voxels": 4794,
+        "target_voxels": 4784,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 0.011476162821054459
+      },
+      "rig": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 176,
+        "target_voxels": 176,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 2.7151442577530427e-27
+      },
+      "elapsed_s": 5.076558292028494
+    },
+    {
+      "filename": "train_b81f7afa37adc85a.npz",
+      "split": "train",
+      "surface": {
+        "iou": 0.9312077760696411,
+        "precision": 0.9629098773002625,
+        "recall": 0.965851902961731,
+        "predicted_voxels": 5581,
+        "target_voxels": 5564,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 0.022629056125879288
+      },
+      "rig": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 477,
+        "target_voxels": 477,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 6.966691924738564e-22
+      },
+      "elapsed_s": 5.090283082914539
+    },
+    {
+      "filename": "train_2629dd3811b59712.npz",
+      "split": "train",
+      "surface": {
+        "iou": 0.9956663250923157,
+        "precision": 0.9980452060699463,
+        "recall": 0.9976118206977844,
+        "predicted_voxels": 4604,
+        "target_voxels": 4606,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 0.0011499490356072783
+      },
+      "rig": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 174,
+        "target_voxels": 174,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 3.3237539738800436e-22
+      },
+      "elapsed_s": 5.0111441250192
+    },
+    {
+      "filename": "train_70cdcde0592a4ff4.npz",
+      "split": "train",
+      "surface": {
+        "iou": 0.988001823425293,
+        "precision": 0.9939647316932678,
+        "recall": 0.9939647316932678,
+        "predicted_voxels": 4308,
+        "target_voxels": 4308,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 0.002586456248536706
+      },
+      "rig": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 212,
+        "target_voxels": 212,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 1.0746051315360428e-22
+      },
+      "elapsed_s": 5.006703500053845
+    },
+    {
+      "filename": "train_0d4d4861b64d0c22.npz",
+      "split": "train",
+      "surface": {
+        "iou": 0.9979466199874878,
+        "precision": 0.999412477016449,
+        "recall": 0.9985324144363403,
+        "predicted_voxels": 3404,
+        "target_voxels": 3407,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 0.00019724585581570864
+      },
+      "rig": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 185,
+        "target_voxels": 185,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 5.7413334237619155e-28
+      },
+      "elapsed_s": 5.011574500007555
+    },
+    {
+      "filename": "train_94de77c1a25a4a68.npz",
+      "split": "train",
+      "surface": {
+        "iou": 0.9943832159042358,
+        "precision": 0.9973998069763184,
+        "recall": 0.9969677329063416,
+        "predicted_voxels": 4615,
+        "target_voxels": 4617,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 0.0008960761479102075
+      },
+      "rig": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 96,
+        "target_voxels": 96,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 2.0742402723559068e-28
+      },
+      "elapsed_s": 5.01556716603227
+    },
+    {
+      "filename": "train_49fa17c86c6a41fe.npz",
+      "split": "train",
+      "surface": {
+        "iou": 0.7961193919181824,
+        "precision": 0.8815072178840637,
+        "recall": 0.8915259838104248,
+        "predicted_voxels": 6051,
+        "target_voxels": 5983,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 0.09400340914726257
+      },
+      "rig": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 375,
+        "target_voxels": 375,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 5.305022692206542e-23
+      },
+      "elapsed_s": 5.0599722500192
+    },
+    {
+      "filename": "train_f97d8a86af0d53a5.npz",
+      "split": "train",
+      "surface": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 2581,
+        "target_voxels": 2581,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 3.0664180877381774e-15
+      },
+      "rig": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 472,
+        "target_voxels": 472,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 2.7863924265598607e-21
+      },
+      "elapsed_s": 5.101453042007051
+    },
+    {
+      "filename": "train_bd701aae163d7b51.npz",
+      "split": "train",
+      "surface": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 2661,
+        "target_voxels": 2661,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 9.8700169814947e-08
+      },
+      "rig": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 189,
+        "target_voxels": 189,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 3.1145157421841444e-24
+      },
+      "elapsed_s": 5.102293791947886
+    },
+    {
+      "filename": "train_a283de9a47ad815b.npz",
+      "split": "train",
+      "surface": {
+        "iou": 0.9911655783653259,
+        "precision": 0.996561586856842,
+        "recall": 0.994566798210144,
+        "predicted_voxels": 3490,
+        "target_voxels": 3497,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 0.0016242623096331954
+      },
+      "rig": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 228,
+        "target_voxels": 228,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 1.2520433226271079e-18
+      },
+      "elapsed_s": 5.011725084041245
+    },
+    {
+      "filename": "train_3037ff9fc51c46b1.npz",
+      "split": "train",
+      "surface": {
+        "iou": 0.9853847622871399,
+        "precision": 0.9935528635978699,
+        "recall": 0.9917260408401489,
+        "predicted_voxels": 4343,
+        "target_voxels": 4351,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 0.0037519526667892933
+      },
+      "rig": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 271,
+        "target_voxels": 271,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 2.771523950974706e-23
+      },
+      "elapsed_s": 4.991553499945439
+    },
+    {
+      "filename": "train_c276118efd8e7ac4.npz",
+      "split": "train",
+      "surface": {
+        "iou": 0.9883868098258972,
+        "precision": 0.9927889704704285,
+        "recall": 0.99553382396698,
+        "predicted_voxels": 4715,
+        "target_voxels": 4702,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 0.0028509735129773617
+      },
+      "rig": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 301,
+        "target_voxels": 301,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 5.871353433398749e-21
+      },
+      "elapsed_s": 5.007654290995561
+    },
+    {
+      "filename": "train_29c192ab10fd6d48.npz",
+      "split": "train",
+      "surface": {
+        "iou": 0.9955671429634094,
+        "precision": 0.9984309673309326,
+        "recall": 0.9971271753311157,
+        "predicted_voxels": 3824,
+        "target_voxels": 3829,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 0.0005061215488240123
+      },
+      "rig": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 189,
+        "target_voxels": 189,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 3.328608844771827e-24
+      },
+      "elapsed_s": 5.014518916956149
+    },
+    {
+      "filename": "train_96fd14992f5b3ce4.npz",
+      "split": "train",
+      "surface": {
+        "iou": 0.9947780966758728,
+        "precision": 0.9973822236061096,
+        "recall": 0.9973822236061096,
+        "predicted_voxels": 3820,
+        "target_voxels": 3820,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 0.001039495225995779
+      },
+      "rig": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 148,
+        "target_voxels": 148,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 1.479774881538288e-29
+      },
+      "elapsed_s": 5.0083029579836875
+    },
+    {
+      "filename": "train_8b9d55eebfbee837.npz",
+      "split": "train",
+      "surface": {
+        "iou": 0.9957339763641357,
+        "precision": 0.9977369904518127,
+        "recall": 0.9979879260063171,
+        "predicted_voxels": 3977,
+        "target_voxels": 3976,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 0.000569771567825228
+      },
+      "rig": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 316,
+        "target_voxels": 316,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 1.1679058186328706e-21
+      },
+      "elapsed_s": 5.015625709085725
+    },
+    {
+      "filename": "train_a48bd4b2022dddfa.npz",
+      "split": "train",
+      "surface": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 2682,
+        "target_voxels": 2682,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 1.2044118591347797e-07
+      },
+      "rig": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 255,
+        "target_voxels": 255,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 5.8639233860353005e-24
+      },
+      "elapsed_s": 5.024316790979356
+    },
+    {
+      "filename": "train_253a67e98510a9da.npz",
+      "split": "train",
+      "surface": {
+        "iou": 0.8705395460128784,
+        "precision": 0.9264355301856995,
+        "recall": 0.9351851940155029,
+        "predicted_voxels": 5451,
+        "target_voxels": 5400,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 0.05481407791376114
+      },
+      "rig": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 166,
+        "target_voxels": 166,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 6.120026321608833e-22
+      },
+      "elapsed_s": 5.035760416067205
+    },
+    {
+      "filename": "train_54e93150885fd776.npz",
+      "split": "train",
+      "surface": {
+        "iou": 0.998973548412323,
+        "precision": 0.99948650598526,
+        "recall": 0.99948650598526,
+        "predicted_voxels": 3895,
+        "target_voxels": 3895,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 0.00020456839411053807
+      },
+      "rig": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 272,
+        "target_voxels": 272,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 6.596346421083633e-24
+      },
+      "elapsed_s": 5.623663916951045
+    },
+    {
+      "filename": "train_386507ed560e7446.npz",
+      "split": "train",
+      "surface": {
+        "iou": 0.9299777150154114,
+        "precision": 0.9630697965621948,
+        "recall": 0.9643682837486267,
+        "predicted_voxels": 5199,
+        "target_voxels": 5192,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 0.021354062482714653
+      },
+      "rig": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 464,
+        "target_voxels": 464,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 5.4551979849612846e-24
+      },
+      "elapsed_s": 5.476467708009295
+    },
+    {
+      "filename": "train_7a7990ebb47de936.npz",
+      "split": "train",
+      "surface": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 2597,
+        "target_voxels": 2597,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 3.4471960740556015e-14
+      },
+      "rig": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 278,
+        "target_voxels": 278,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 2.549433889289481e-23
+      },
+      "elapsed_s": 5.5774511670460925
+    },
+    {
+      "filename": "train_28cc099fac3f30f0.npz",
+      "split": "train",
+      "surface": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 2490,
+        "target_voxels": 2490,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 1.1417033540794819e-08
+      },
+      "rig": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 193,
+        "target_voxels": 193,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 5.504046624958261e-27
+      },
+      "elapsed_s": 5.490307791973464
+    },
+    {
+      "filename": "val_39120b5916f89e9a.npz",
+      "split": "val",
+      "surface": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 3035,
+        "target_voxels": 3035,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 3.83879950049959e-08
+      },
+      "rig": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 205,
+        "target_voxels": 205,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 5.62937947720655e-29
+      },
+      "elapsed_s": 5.471667457954027
+    },
+    {
+      "filename": "val_f6989f7c75393938.npz",
+      "split": "val",
+      "surface": {
+        "iou": 0.9969011545181274,
+        "precision": 0.9984481930732727,
+        "recall": 0.9984481930732727,
+        "predicted_voxels": 3222,
+        "target_voxels": 3222,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 0.000595211866311729
+      },
+      "rig": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 262,
+        "target_voxels": 262,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 3.0943622133841735e-19
+      },
+      "elapsed_s": 5.492939500021748
+    },
+    {
+      "filename": "val_1dde85bef53ecba5.npz",
+      "split": "val",
+      "surface": {
+        "iou": 0.998353898525238,
+        "precision": 0.9997252821922302,
+        "recall": 0.9986279010772705,
+        "predicted_voxels": 3640,
+        "target_voxels": 3644,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 0.00026139034889638424
+      },
+      "rig": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 298,
+        "target_voxels": 298,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 7.297854539598226e-26
+      },
+      "elapsed_s": 5.505009624990635
+    },
+    {
+      "filename": "val_139492934acf6a47.npz",
+      "split": "val",
+      "surface": {
+        "iou": 0.9898934960365295,
+        "precision": 0.9953309297561646,
+        "recall": 0.9945115447044373,
+        "predicted_voxels": 3641,
+        "target_voxels": 3644,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 0.0020088148303329945
+      },
+      "rig": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 259,
+        "target_voxels": 259,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 3.2580205848965195e-24
+      },
+      "elapsed_s": 5.437859458033927
+    },
+    {
+      "filename": "val_58d186455088e6d2.npz",
+      "split": "val",
+      "surface": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 2842,
+        "target_voxels": 2842,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 9.653033927747856e-09
+      },
+      "rig": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 221,
+        "target_voxels": 221,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 4.498927976662664e-25
+      },
+      "elapsed_s": 5.469647958991118
+    },
+    {
+      "filename": "val_9b186771f8df447b.npz",
+      "split": "val",
+      "surface": {
+        "iou": 0.9675655364990234,
+        "precision": 0.9820095896720886,
+        "recall": 0.985025942325592,
+        "predicted_voxels": 5225,
+        "target_voxels": 5209,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 0.00944571290165186
+      },
+      "rig": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 175,
+        "target_voxels": 175,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 1.0626857728541002e-27
+      },
+      "elapsed_s": 5.453440250013955
+    },
+    {
+      "filename": "test_0b7dc2f979ae74eb.npz",
+      "split": "test",
+      "surface": {
+        "iou": 0.993821918964386,
+        "precision": 0.9974342584609985,
+        "recall": 0.9963690638542175,
+        "predicted_voxels": 4677,
+        "target_voxels": 4682,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 0.001235298695974052
+      },
+      "rig": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 148,
+        "target_voxels": 148,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 1.5949444004511076e-26
+      },
+      "elapsed_s": 5.681531958980486
+    },
+    {
+      "filename": "test_5f71afc15c041461.npz",
+      "split": "test",
+      "surface": {
+        "iou": 0.9854937791824341,
+        "precision": 0.9919505715370178,
+        "recall": 0.9934383034706116,
+        "predicted_voxels": 5342,
+        "target_voxels": 5334,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 0.0031410036608576775
+      },
+      "rig": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 697,
+        "target_voxels": 697,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 2.862034860917227e-16
+      },
+      "elapsed_s": 6.282840083935298
+    },
+    {
+      "filename": "test_fcefe59e0ca0640b.npz",
+      "split": "test",
+      "surface": {
+        "iou": 0.9948924779891968,
+        "precision": 0.9981122016906738,
+        "recall": 0.9967681169509888,
+        "predicted_voxels": 3708,
+        "target_voxels": 3713,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 0.000880188075825572
+      },
+      "rig": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 285,
+        "target_voxels": 285,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 2.5641023791688313e-22
+      },
+      "elapsed_s": 6.144757707952522
+    },
+    {
+      "filename": "test_5f9868db50527fa2.npz",
+      "split": "test",
+      "surface": {
+        "iou": 0.9278742074966431,
+        "precision": 0.9589015245437622,
+        "recall": 0.9663026928901672,
+        "predicted_voxels": 5353,
+        "target_voxels": 5312,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 0.02430000901222229
+      },
+      "rig": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 183,
+        "target_voxels": 183,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 8.575487005680289e-25
+      },
+      "elapsed_s": 5.449212707928382
+    },
+    {
+      "filename": "test_27b6e8cc90ef48b2.npz",
+      "split": "test",
+      "surface": {
+        "iou": 0.9813634157180786,
+        "precision": 0.9920674562454224,
+        "recall": 0.9891250729560852,
+        "predicted_voxels": 4034,
+        "target_voxels": 4046,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 0.0035503185354173183
+      },
+      "rig": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 271,
+        "target_voxels": 271,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 9.692539882667888e-24
+      },
+      "elapsed_s": 5.482065749936737
+    },
+    {
+      "filename": "test_30f674276d267739.npz",
+      "split": "test",
+      "surface": {
+        "iou": 0.9986493587493896,
+        "precision": 0.9994593262672424,
+        "recall": 0.9991891980171204,
+        "predicted_voxels": 3699,
+        "target_voxels": 3700,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 0.00014763567014597356
+      },
+      "rig": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 279,
+        "target_voxels": 279,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 3.442051887041605e-26
+      },
+      "elapsed_s": 5.667770624975674
+    },
+    {
+      "filename": "test_f764f51c6dd435c3.npz",
+      "split": "test",
+      "surface": {
+        "iou": 0.9948615431785583,
+        "precision": 0.9974241852760315,
+        "recall": 0.9974241852760315,
+        "predicted_voxels": 3494,
+        "target_voxels": 3494,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 0.0008301486377604306
+      },
+      "rig": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 282,
+        "target_voxels": 282,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 3.5357350607439e-21
+      },
+      "elapsed_s": 5.538708291947842
+    },
+    {
+      "filename": "test_803c47b10c699939.npz",
+      "split": "test",
+      "surface": {
+        "iou": 0.991148054599762,
+        "precision": 0.9959568977355957,
+        "recall": 0.9951521754264832,
+        "predicted_voxels": 3710,
+        "target_voxels": 3713,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 0.0013405743520706892
+      },
+      "rig": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 233,
+        "target_voxels": 233,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 5.458466235691615e-23
+      },
+      "elapsed_s": 5.520145750022493
+    },
+    {
+      "filename": "test_4e5dc0c2216e3436.npz",
+      "split": "test",
+      "surface": {
+        "iou": 0.9997290968894958,
+        "precision": 1.0,
+        "recall": 0.9997290968894958,
+        "predicted_voxels": 3690,
+        "target_voxels": 3691,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 4.423208793014055e-06
+      },
+      "rig": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 216,
+        "target_voxels": 216,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 1.0569287830643379e-26
+      },
+      "elapsed_s": 5.4947310839779675
+    },
+    {
+      "filename": "test_763a49596dc0edf7.npz",
+      "split": "test",
+      "surface": {
+        "iou": 0.970129132270813,
+        "precision": 0.9847418069839478,
+        "recall": 0.9849344491958618,
+        "predicted_voxels": 5112,
+        "target_voxels": 5111,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 0.008763067424297333
+      },
+      "rig": {
+        "iou": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "predicted_voxels": 319,
+        "target_voxels": 319,
+        "latent_shape": [
+          1,
+          8,
+          16,
+          16,
+          16
+        ],
+        "bce": 3.6654355696778275e-23
+      },
+      "elapsed_s": 5.602538542007096
+    }
+  ]
+}

@@ -1,0 +1,370 @@
+{
+  "seed": 0,
+  "steps": 25,
+  "cfg": 1.0,
+  "view": 0,
+  "scope": "Strict image-only inference; target geometry accessed only outside generate_asset for evaluation. GT-latent reconstruction reported separately.",
+  "decoder_checkpoint_sha256": "ae75dba678b6b634e5962da0ca81b51d2c8b04f19b358e166fc64fcb46f7f113",
+  "assets": [
+    {
+      "filename": "test_0b7dc2f979ae74eb.npz",
+      "generation": {
+        "failure": "empty_mesh",
+        "steps": 25,
+        "cfg": 1.0,
+        "max_cells": 256,
+        "surface_positive_cells_before_cap": 1352,
+        "surface_cell_cap_hit": true,
+        "rig_positive_cells_before_cap": 865,
+        "rig_cell_cap_hit": true,
+        "eos": false,
+        "capped": true,
+        "vertices": 0,
+        "faces": 0,
+        "generated_joints": 96,
+        "surface_cells": 256,
+        "rig_cells": 256,
+        "input_scope": "one image DINO feature + noise; no target mesh, rig, skin, occupancy, count, prefix, or normalization at inference",
+        "mesh_chamfer": null,
+        "skeleton": {
+          "j2j": 0.19267135221029782,
+          "j2b": 0.1849746337684669,
+          "b2b": 0.15145023207729616,
+          "step": 0.005
+        },
+        "skin_rows_sum_max_error": null
+      },
+      "gt_latent_reconstruction": {
+        "input_scope": "GT sparse positions and GT rig/skin-derived encoded DINO latents; not generation",
+        "sdf_mae": 0.060215361416339874,
+        "mesh_chamfer": 0.12671682953414223,
+        "vertices": 861,
+        "faces": 1674
+      }
+    },
+    {
+      "filename": "test_5f71afc15c041461.npz",
+      "generation": {
+        "failure": "empty_mesh",
+        "steps": 25,
+        "cfg": 1.0,
+        "max_cells": 256,
+        "surface_positive_cells_before_cap": 1455,
+        "surface_cell_cap_hit": true,
+        "rig_positive_cells_before_cap": 853,
+        "rig_cell_cap_hit": true,
+        "eos": false,
+        "capped": true,
+        "vertices": 0,
+        "faces": 0,
+        "generated_joints": 96,
+        "surface_cells": 256,
+        "rig_cells": 256,
+        "input_scope": "one image DINO feature + noise; no target mesh, rig, skin, occupancy, count, prefix, or normalization at inference",
+        "mesh_chamfer": null,
+        "skeleton": {
+          "j2j": 0.20325323398873452,
+          "j2b": 0.18785147880183312,
+          "b2b": 0.189115627193559,
+          "step": 0.005
+        },
+        "skin_rows_sum_max_error": null
+      },
+      "gt_latent_reconstruction": {
+        "input_scope": "GT sparse positions and GT rig/skin-derived encoded DINO latents; not generation",
+        "sdf_mae": 0.03234799951314926,
+        "mesh_chamfer": 0.13550480266570164,
+        "vertices": 162,
+        "faces": 320
+      }
+    },
+    {
+      "filename": "test_fcefe59e0ca0640b.npz",
+      "generation": {
+        "failure": "empty_mesh",
+        "steps": 25,
+        "cfg": 1.0,
+        "max_cells": 256,
+        "surface_positive_cells_before_cap": 1155,
+        "surface_cell_cap_hit": true,
+        "rig_positive_cells_before_cap": 813,
+        "rig_cell_cap_hit": true,
+        "eos": false,
+        "capped": true,
+        "vertices": 0,
+        "faces": 0,
+        "generated_joints": 96,
+        "surface_cells": 256,
+        "rig_cells": 256,
+        "input_scope": "one image DINO feature + noise; no target mesh, rig, skin, occupancy, count, prefix, or normalization at inference",
+        "mesh_chamfer": null,
+        "skeleton": {
+          "j2j": 0.10242494706060473,
+          "j2b": 0.09485541367577043,
+          "b2b": 0.09244601883635069,
+          "step": 0.005
+        },
+        "skin_rows_sum_max_error": null
+      },
+      "gt_latent_reconstruction": {
+        "input_scope": "GT sparse positions and GT rig/skin-derived encoded DINO latents; not generation",
+        "sdf_mae": 0.01443188264966011,
+        "mesh_chamfer": 0.08764054467002073,
+        "vertices": 88,
+        "faces": 136
+      }
+    },
+    {
+      "filename": "test_5f9868db50527fa2.npz",
+      "generation": {
+        "failure": null,
+        "steps": 25,
+        "cfg": 1.0,
+        "max_cells": 256,
+        "surface_positive_cells_before_cap": 1336,
+        "surface_cell_cap_hit": true,
+        "rig_positive_cells_before_cap": 787,
+        "rig_cell_cap_hit": true,
+        "eos": true,
+        "capped": false,
+        "vertices": 326,
+        "faces": 632,
+        "generated_joints": 88,
+        "surface_cells": 256,
+        "rig_cells": 256,
+        "input_scope": "one image DINO feature + noise; no target mesh, rig, skin, occupancy, count, prefix, or normalization at inference",
+        "mesh_chamfer": 0.05174459118312483,
+        "skeleton": {
+          "j2j": 0.11288090395685987,
+          "j2b": 0.10571804460389675,
+          "b2b": 0.10056103468282984,
+          "step": 0.005
+        },
+        "skin_rows_sum_max_error": 2.384185791015625e-07
+      },
+      "gt_latent_reconstruction": {
+        "input_scope": "GT sparse positions and GT rig/skin-derived encoded DINO latents; not generation",
+        "sdf_mae": 0.020819898694753647,
+        "mesh_chamfer": 0.07742837057779495,
+        "vertices": 212,
+        "faces": 420
+      }
+    },
+    {
+      "filename": "test_27b6e8cc90ef48b2.npz",
+      "generation": {
+        "failure": null,
+        "steps": 25,
+        "cfg": 1.0,
+        "max_cells": 256,
+        "surface_positive_cells_before_cap": 1297,
+        "surface_cell_cap_hit": true,
+        "rig_positive_cells_before_cap": 768,
+        "rig_cell_cap_hit": true,
+        "eos": true,
+        "capped": false,
+        "vertices": 96,
+        "faces": 188,
+        "generated_joints": 90,
+        "surface_cells": 256,
+        "rig_cells": 256,
+        "input_scope": "one image DINO feature + noise; no target mesh, rig, skin, occupancy, count, prefix, or normalization at inference",
+        "mesh_chamfer": 0.07097881621770265,
+        "skeleton": {
+          "j2j": 0.11884464282544949,
+          "j2b": 0.11216526383201965,
+          "b2b": 0.11764298418045113,
+          "step": 0.005
+        },
+        "skin_rows_sum_max_error": 1.7881393432617188e-07
+      },
+      "gt_latent_reconstruction": {
+        "input_scope": "GT sparse positions and GT rig/skin-derived encoded DINO latents; not generation",
+        "sdf_mae": 0.013283062726259232,
+        "mesh_chamfer": 0.1242983672153615,
+        "vertices": 18,
+        "faces": 32
+      }
+    },
+    {
+      "filename": "test_30f674276d267739.npz",
+      "generation": {
+        "failure": null,
+        "steps": 25,
+        "cfg": 1.0,
+        "max_cells": 256,
+        "surface_positive_cells_before_cap": 1125,
+        "surface_cell_cap_hit": true,
+        "rig_positive_cells_before_cap": 832,
+        "rig_cell_cap_hit": true,
+        "eos": true,
+        "capped": false,
+        "vertices": 20,
+        "faces": 36,
+        "generated_joints": 90,
+        "surface_cells": 256,
+        "rig_cells": 256,
+        "input_scope": "one image DINO feature + noise; no target mesh, rig, skin, occupancy, count, prefix, or normalization at inference",
+        "mesh_chamfer": 0.15012922498468248,
+        "skeleton": {
+          "j2j": 0.08438573840219862,
+          "j2b": 0.07827018744519329,
+          "b2b": 0.08749233074474005,
+          "step": 0.005
+        },
+        "skin_rows_sum_max_error": 1.1920928955078125e-07
+      },
+      "gt_latent_reconstruction": {
+        "input_scope": "GT sparse positions and GT rig/skin-derived encoded DINO latents; not generation",
+        "sdf_mae": 0.07060211151838303,
+        "mesh_chamfer": 0.049348099516650326,
+        "vertices": 312,
+        "faces": 588
+      }
+    },
+    {
+      "filename": "test_f764f51c6dd435c3.npz",
+      "generation": {
+        "failure": "empty_mesh",
+        "steps": 25,
+        "cfg": 1.0,
+        "max_cells": 256,
+        "surface_positive_cells_before_cap": 1151,
+        "surface_cell_cap_hit": true,
+        "rig_positive_cells_before_cap": 818,
+        "rig_cell_cap_hit": true,
+        "eos": false,
+        "capped": true,
+        "vertices": 0,
+        "faces": 0,
+        "generated_joints": 96,
+        "surface_cells": 256,
+        "rig_cells": 256,
+        "input_scope": "one image DINO feature + noise; no target mesh, rig, skin, occupancy, count, prefix, or normalization at inference",
+        "mesh_chamfer": null,
+        "skeleton": {
+          "j2j": 0.13529208284315028,
+          "j2b": 0.12412122681067166,
+          "b2b": 0.10542497462266218,
+          "step": 0.005
+        },
+        "skin_rows_sum_max_error": null
+      },
+      "gt_latent_reconstruction": {
+        "input_scope": "GT sparse positions and GT rig/skin-derived encoded DINO latents; not generation",
+        "sdf_mae": 0.030672172084450722,
+        "mesh_chamfer": 0.08357209683893849,
+        "vertices": 595,
+        "faces": 1084
+      }
+    },
+    {
+      "filename": "test_803c47b10c699939.npz",
+      "generation": {
+        "failure": "empty_mesh",
+        "steps": 25,
+        "cfg": 1.0,
+        "max_cells": 256,
+        "surface_positive_cells_before_cap": 1341,
+        "surface_cell_cap_hit": true,
+        "rig_positive_cells_before_cap": 862,
+        "rig_cell_cap_hit": true,
+        "eos": true,
+        "capped": false,
+        "vertices": 0,
+        "faces": 0,
+        "generated_joints": 69,
+        "surface_cells": 256,
+        "rig_cells": 256,
+        "input_scope": "one image DINO feature + noise; no target mesh, rig, skin, occupancy, count, prefix, or normalization at inference",
+        "mesh_chamfer": null,
+        "skeleton": {
+          "j2j": 0.0994004629921306,
+          "j2b": 0.088703996178636,
+          "b2b": 0.08207078887210217,
+          "step": 0.005
+        },
+        "skin_rows_sum_max_error": null
+      },
+      "gt_latent_reconstruction": {
+        "input_scope": "GT sparse positions and GT rig/skin-derived encoded DINO latents; not generation",
+        "sdf_mae": 0.059722647070884705,
+        "mesh_chamfer": 0.1260565956373543,
+        "vertices": 665,
+        "faces": 1260
+      }
+    },
+    {
+      "filename": "test_4e5dc0c2216e3436.npz",
+      "generation": {
+        "failure": "empty_mesh",
+        "steps": 25,
+        "cfg": 1.0,
+        "max_cells": 256,
+        "surface_positive_cells_before_cap": 1147,
+        "surface_cell_cap_hit": true,
+        "rig_positive_cells_before_cap": 784,
+        "rig_cell_cap_hit": true,
+        "eos": false,
+        "capped": true,
+        "vertices": 0,
+        "faces": 0,
+        "generated_joints": 96,
+        "surface_cells": 256,
+        "rig_cells": 256,
+        "input_scope": "one image DINO feature + noise; no target mesh, rig, skin, occupancy, count, prefix, or normalization at inference",
+        "mesh_chamfer": null,
+        "skeleton": {
+          "j2j": 0.11627521720099535,
+          "j2b": 0.11153461244672885,
+          "b2b": 0.115566390372744,
+          "step": 0.005
+        },
+        "skin_rows_sum_max_error": null
+      },
+      "gt_latent_reconstruction": {
+        "input_scope": "GT sparse positions and GT rig/skin-derived encoded DINO latents; not generation",
+        "sdf_mae": 0.013368302024900913,
+        "mesh_chamfer": 0.07873063295847729,
+        "vertices": 131,
+        "faces": 236
+      }
+    },
+    {
+      "filename": "test_763a49596dc0edf7.npz",
+      "generation": {
+        "failure": "empty_mesh",
+        "steps": 25,
+        "cfg": 1.0,
+        "max_cells": 256,
+        "surface_positive_cells_before_cap": 1235,
+        "surface_cell_cap_hit": true,
+        "rig_positive_cells_before_cap": 863,
+        "rig_cell_cap_hit": true,
+        "eos": false,
+        "capped": true,
+        "vertices": 0,
+        "faces": 0,
+        "generated_joints": 96,
+        "surface_cells": 256,
+        "rig_cells": 256,
+        "input_scope": "one image DINO feature + noise; no target mesh, rig, skin, occupancy, count, prefix, or normalization at inference",
+        "mesh_chamfer": null,
+        "skeleton": {
+          "j2j": 0.17341329043594517,
+          "j2b": 0.16562813395769643,
+          "b2b": 0.1511351897119283,
+          "step": 0.005
+        },
+        "skin_rows_sum_max_error": null
+      },
+      "gt_latent_reconstruction": {
+        "input_scope": "GT sparse positions and GT rig/skin-derived encoded DINO latents; not generation",
+        "sdf_mae": 0.03554457798600197,
+        "mesh_chamfer": null,
+        "vertices": 0,
+        "faces": 0
+      }
+    }
+  ]
+}

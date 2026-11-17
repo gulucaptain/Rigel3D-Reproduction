@@ -1,0 +1,24 @@
+{
+  "scope": "GT occupied surface coordinates and encoded original multiview DINO-L features; official pretrained weights, native FP32 kernels, full256 mesh extraction. This is reconstruction, not image generation.",
+  "assets": [
+    {
+      "filename": "train_29825ccc5b5b180f.npz",
+      "split": "train",
+      "decoder_cubes": 326144,
+      "sdf_min": -0.1668235808610916,
+      "sdf_max": 0.2660525143146515,
+      "negative_corners": 823190,
+      "network_s": 9.018772082985379,
+      "vertices": 257795,
+      "faces": 509388,
+      "mesh_chamfer": 0.011408472132096378,
+      "elapsed_s": 14.311648166971281,
+      "extraction": {
+        "sparse_cubes": 326144,
+        "sdf_negative": 115633,
+        "res": 256,
+        "consistency": 0.0
+      }
+    }
+  ]
+}

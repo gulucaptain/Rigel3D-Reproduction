@@ -1,0 +1,244 @@
+{
+  "steps": 2000,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "mesh_every": 8,
+  "patch_cubes": 16,
+  "name": "joint_frozen_surface",
+  "train_surface": false,
+  "seed": 0,
+  "trainable_parameters": 1848562,
+  "frozen_mesh_parameters": 90926693,
+  "device": "mps",
+  "selection": "Minimum GT-conditioned validation joint loss; no test selection",
+  "scope": "Joint rig-posterior/rig-CA/AR/skin adaptation; surface head frozen unless --train-surface. Cosine LR with scaled200 warmup (paper5000). frozen original encoder trunk via cached768 features and frozen mesh base. Mesh loss16-cube patches every8 steps, nearest oriented point distance + consistency; KL1e-6 and posterior anchor. Not full-backbone original rendering-loss training.",
+  "best_step": 1600,
+  "best_validation": 9.509268601735434,
+  "trace": [
+    {
+      "step": 0,
+      "loss": 13.95479965209961,
+      "elapsed_s": 2.819690415984951,
+      "skin": 3.960519313812256,
+      "skeleton": 9.79018783569336,
+      "geometry": 0.2040777951478958,
+      "kl": 14.567323684692383,
+      "posterior_anchor": 1.0841011999218608e-07,
+      "validation": 12.963291009267172
+    },
+    {
+      "step": 100,
+      "loss": 9.336121559143066,
+      "elapsed_s": 16.63943704101257,
+      "skin": 2.0521678924560547,
+      "skeleton": 7.283797740936279,
+      "geometry": 0.0,
+      "kl": 13.881311416625977,
+      "posterior_anchor": 0.014093274250626564
+    },
+    {
+      "step": 200,
+      "loss": 11.516002655029297,
+      "elapsed_s": 27.298596833017655,
+      "skin": 2.8501369953155518,
+      "skeleton": 8.512314796447754,
+      "geometry": 0.15288470685482025,
+      "kl": 13.81712818145752,
+      "posterior_anchor": 0.06534316390752792,
+      "validation": 12.118467648824057
+    },
+    {
+      "step": 300,
+      "loss": 7.481080055236816,
+      "elapsed_s": 37.4556445410708,
+      "skin": 0.9138771295547485,
+      "skeleton": 6.566136360168457,
+      "geometry": 0.0,
+      "kl": 13.79439926147461,
+      "posterior_anchor": 0.10529430210590363
+    },
+    {
+      "step": 400,
+      "loss": 9.811410903930664,
+      "elapsed_s": 47.65878104104195,
+      "skin": 1.7977776527404785,
+      "skeleton": 7.844362258911133,
+      "geometry": 0.16756081581115723,
+      "kl": 14.541213035583496,
+      "posterior_anchor": 0.16965511441230774,
+      "validation": 10.643119176228842
+    },
+    {
+      "step": 500,
+      "loss": 11.03346061706543,
+      "elapsed_s": 60.385827749967575,
+      "skin": 2.6009418964385986,
+      "skeleton": 8.431299209594727,
+      "geometry": 0.0,
+      "kl": 15.322665214538574,
+      "posterior_anchor": 0.12047536671161652
+    },
+    {
+      "step": 600,
+      "loss": 8.905986785888672,
+      "elapsed_s": 70.29206604103092,
+      "skin": 1.021812081336975,
+      "skeleton": 7.783319473266602,
+      "geometry": 0.09908268600702286,
+      "kl": 14.750968933105469,
+      "posterior_anchor": 0.17572206258773804,
+      "validation": 10.266904513041178
+    },
+    {
+      "step": 700,
+      "loss": 8.53434944152832,
+      "elapsed_s": 80.57937912503257,
+      "skin": 1.0900866985321045,
+      "skeleton": 7.442424297332764,
+      "geometry": 0.0,
+      "kl": 14.344956398010254,
+      "posterior_anchor": 0.1824541836977005
+    },
+    {
+      "step": 800,
+      "loss": 1.926493763923645,
+      "elapsed_s": 91.10693079105113,
+      "skin": 1.8471421003341675,
+      "skeleton": 0.0,
+      "geometry": 0.07705529034137726,
+      "kl": 15.446087837219238,
+      "posterior_anchor": 0.22808775305747986,
+      "validation": 9.900802294413248
+    },
+    {
+      "step": 900,
+      "loss": 7.549273490905762,
+      "elapsed_s": 101.77665304101538,
+      "skin": 0.724861204624176,
+      "skeleton": 6.822234153747559,
+      "geometry": 0.0,
+      "kl": 14.190062522888184,
+      "posterior_anchor": 0.2164120376110077
+    },
+    {
+      "step": 1000,
+      "loss": 7.258174896240234,
+      "elapsed_s": 111.96765650005545,
+      "skin": 0.8448227047920227,
+      "skeleton": 6.29594612121582,
+      "geometry": 0.11442828923463821,
+      "kl": 15.694130897521973,
+      "posterior_anchor": 0.2961408793926239,
+      "validation": 9.755241711934408
+    },
+    {
+      "step": 1100,
+      "loss": 7.548181533813477,
+      "elapsed_s": 122.61864545801654,
+      "skin": 0.7875564098358154,
+      "skeleton": 6.757469177246094,
+      "geometry": 0.0,
+      "kl": 14.506967544555664,
+      "posterior_anchor": 0.31411978602409363
+    },
+    {
+      "step": 1200,
+      "loss": 7.987378120422363,
+      "elapsed_s": 132.90805212501436,
+      "skin": 1.1961560249328613,
+      "skeleton": 6.685076713562012,
+      "geometry": 0.10329616069793701,
+      "kl": 15.312867164611816,
+      "posterior_anchor": 0.2834060490131378,
+      "validation": 9.648992220560709
+    },
+    {
+      "step": 1300,
+      "loss": 5.03842830657959,
+      "elapsed_s": 143.1622897500638,
+      "skin": 0.1832076609134674,
+      "skeleton": 4.852639675140381,
+      "geometry": 0.0,
+      "kl": 15.15377426147461,
+      "posterior_anchor": 0.25656718015670776
+    },
+    {
+      "step": 1400,
+      "loss": 1.3281450271606445,
+      "elapsed_s": 153.3957503749989,
+      "skin": 1.254378318786621,
+      "skeleton": 0.0,
+      "geometry": 0.07196265459060669,
+      "kl": 15.402816772460938,
+      "posterior_anchor": 0.1788727045059204,
+      "validation": 9.588261604309082
+    },
+    {
+      "step": 1500,
+      "loss": 6.609190464019775,
+      "elapsed_s": 163.63687583303545,
+      "skin": 0.584796130657196,
+      "skeleton": 6.0215582847595215,
+      "geometry": 0.0,
+      "kl": 15.715703964233398,
+      "posterior_anchor": 0.2820283770561218
+    },
+    {
+      "step": 1600,
+      "loss": 6.7464118003845215,
+      "elapsed_s": 173.56658262503333,
+      "skin": 0.6796160340309143,
+      "skeleton": 5.986003875732422,
+      "geometry": 0.07794586569070816,
+      "kl": 15.71375846862793,
+      "posterior_anchor": 0.28306055068969727,
+      "validation": 9.509268601735434
+    },
+    {
+      "step": 1700,
+      "loss": 7.0321574211120605,
+      "elapsed_s": 184.31928837497253,
+      "skin": 0.6442362070083618,
+      "skeleton": 6.385802268981934,
+      "geometry": 0.0,
+      "kl": 14.178984642028809,
+      "posterior_anchor": 0.21047711372375488
+    },
+    {
+      "step": 1800,
+      "loss": 7.295729160308838,
+      "elapsed_s": 194.0270828329958,
+      "skin": 1.406071424484253,
+      "skeleton": 5.810800075531006,
+      "geometry": 0.07683330029249191,
+      "kl": 14.394735336303711,
+      "posterior_anchor": 0.20102481544017792,
+      "validation": 9.5170685450236
+    },
+    {
+      "step": 1900,
+      "loss": 4.796899318695068,
+      "elapsed_s": 203.76263875002041,
+      "skin": 0.23883670568466187,
+      "skeleton": 4.554737567901611,
+      "geometry": 0.0,
+      "kl": 13.745075225830078,
+      "posterior_anchor": 0.3311164975166321
+    },
+    {
+      "step": 1999,
+      "loss": 4.838022708892822,
+      "elapsed_s": 214.2977577500278,
+      "skin": 0.2807924449443817,
+      "skeleton": 4.5539069175720215,
+      "geometry": 0.0,
+      "kl": 13.745183944702148,
+      "posterior_anchor": 0.3309568166732788,
+      "validation": 9.5112886428833
+    }
+  ],
+  "source_manifest_sha256": "cc7a90d062f3f6db73193585b798af7b36f6a3734c303ff1d6dfa22c7794aaf4"
+}

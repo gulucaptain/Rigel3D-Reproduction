@@ -1,0 +1,10 @@
+"""Three-step actual rig-encoder+mesh full-weight Mac feasibility probe."""
+import json,time
+from pathlib import Path
+import numpy as np,torch
+from rigel3d.trellis_native import load_pretrained,Sparse
+from rigel3d.joint_trellis import RigAdapters
+root=Path(__file__).resolve().parents[1];torch.set_num_threads(4);r=next(r for r in json.load(open(root/'results/round3/pretrained_latents.json'))['assets'] if r['split']=='train');base=root/'data/external/dino_cohort'/Path(r['filename']).stem;d=np.load(base/'trellis_latents.npz');features=np.load(base/'trellis_features.npz');encoder=load_pretrained('encoder',root/'data/external/trellis/weights','mps').float();mesh=load_pretrained('mesh',root/'data/external/trellis/weights','mps').float();adapter=RigAdapters().to('mps');opt=torch.optim.AdamW(list(encoder.parameters())+list(mesh.parameters())+list(adapter.parameters()),lr=1e-4);rows=[];x=Sparse(torch.tensor(features['rig_features'].astype('float32'),device='mps'),d['rig_coords']);sz=torch.tensor(d['surface_mu'][:16],device='mps');rc=torch.tensor(((d['rig_coords']+.5)/64-.5).astype('float32'),device='mps')
+for step in range(3):
+    start=time.perf_counter();opt.zero_grad();rz,mu,lv=encoder(x,True);fields=mesh(Sparse(sz,d['surface_coords'][:16]),adapter,(rz.feats,rc));loss=fields.feats[:,:8].square().mean()+1e-6*.5*(mu.square()+lv.exp()-lv-1).mean();loss.backward();opt.step();torch.mps.synchronize();rows.append(dict(step=step,seconds=time.perf_counter()-start,loss=float(loss.detach().cpu()),allocated_gb=torch.mps.current_allocated_memory()/1e9,driver_gb=torch.mps.driver_allocated_memory()/1e9));print(json.dumps(rows[-1]),flush=True)
+(root/'results/round3/full_joint_feasibility.json').write_text(json.dumps(dict(scope='Actual335-voxel rig encoder +16 surface input cubes/1024 output cubes; full pretrained rig and mesh weights + rig CA updated for3 steps. SDF-square/KL timing probe, not accuracy training. Source does not include AR/skin or distance-target overhead.',checks=rows),indent=2)+'\n')

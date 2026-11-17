@@ -1,0 +1,6 @@
+# Preserve upstream reference snapshots and vendored files byte-for-byte.
+# Local implementation files retain normal whitespace checks.
+sources/*.txt -whitespace
+src/rigel3d/vendor/flexicubes/*.py -whitespace
+src/rigel3d/vendor/flexicubes/*.txt -whitespace
+src/rigel3d/vendor/trellis/*.py -whitespace

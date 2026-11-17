@@ -1,0 +1,329 @@
+{
+  "date": "2026-11-17",
+  "research_directory": "rigel3d",
+  "research_commit": "32d93a368828179eb75c87bec0dfcaee5ed09077",
+  "repository": "https://github.com/gulucaptain/Rigel3D-Reproduction",
+  "scope": "Reviewed code and recorded results; external raw data, pretrained weights and environments are not distributed.",
+  "omitted_tracked_files": [
+    {
+      "path": "results/round1/geometry/seed0/best.pt",
+      "sha256": "e7a0e9e4456e28f240b5cbd5718c95017a304a5ddc582a21d57aa14a1e14e967",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round1/geometry/seed1/best.pt",
+      "sha256": "efd4e6ed4dc3f4e0ddd2ccb96c755b2a4471064b6b13cee1a642119cbf8bf49e",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round1/geometry/seed2/best.pt",
+      "sha256": "d545ead978e2793f387c9a2a1ae01bff6541f896a16194ac7468333a5226bce7",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round1/rig/seed0/best.pt",
+      "sha256": "d764b1fd36e06da21f13aaa5b0f1e58a6b35357ca60adbfc8011977e92338c8d",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round1/rig/seed1/best.pt",
+      "sha256": "575be26e02ac25ff6ad40df25960deb939071e1e2c2f77173ace7c8b09285d20",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round1/rig/seed2/best.pt",
+      "sha256": "4609ddc0115b253c83fa57c072b40d8312f611fd98739a0d20e9911d04ab10a1",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round1_balanced/rig/seed0/best.pt",
+      "sha256": "4c1d055ccc66343aafd3b3cdef1674a5b90498eab7c82d028f88d81bed0d9870",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round1_balanced/rig/seed1/best.pt",
+      "sha256": "a4e5bde224f3ca0976ca94973ae3314e9bb836e42adb5e3c287d38ffcdeff8e1",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round1_balanced/rig/seed2/best.pt",
+      "sha256": "44c9e72c91b4a08d56057121ae39ee2ec1deefcd674ecf99cd2c09e88b5255dc",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round2/generation/seed0/field.pt",
+      "sha256": "6367f73eb33a2fbccfad6cdd6a1a8d55b50f3af59ea9de8990a935f8bb60c450",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round2/generation/seed0/flows.pt",
+      "sha256": "2ec5d78840f62f75badaccd8284971fa4f159e5889d06613ffe3e170accee2a2",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round2/generation/seed1/field.pt",
+      "sha256": "f389769dfe7bc8e4f5d7639d380587a5fa48429710628233bcb1b4546da13734",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round2/generation/seed1/flows.pt",
+      "sha256": "b87d398c933e632e5ff8498a8836614ecaf6214086db335407336df1cb1ce434",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round2/generation/seed2/field.pt",
+      "sha256": "0e4cfd63c15ac1347387d05cbe96e17f5531f051c9be81fc0703c2005c80ce5f",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round2/generation/seed2/flows.pt",
+      "sha256": "f62ffc48e387ae083be656e023b3eecacc61465b42c7ccb3aacda0b97f77b91e",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round2/vae/seed0/rig/best.pt",
+      "sha256": "493f33c5b6a62a22ce48ffb2791e75323e44d13e8b86382769787257743b544b",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round2/vae/seed0/surface/best.pt",
+      "sha256": "16b51ab83011824eecc84d072616f1e90215fc8be3acba93b8a5557ac94f5221",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round2/vae/seed1/rig/best.pt",
+      "sha256": "8be50b2f64ec49679a02e00a21fd839ac06ec269cf3be4b9a200183412fd788b",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round2/vae/seed1/surface/best.pt",
+      "sha256": "0810e3d78cb42221296af41fa8290b49b334a74cc264db03a4ff54f740c133c3",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round2/vae/seed2/rig/best.pt",
+      "sha256": "2ff44ff84208ce63d5324282acb0af1fa81b65b9d174affff58a01eb1ddc04d5",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round2/vae/seed2/surface/best.pt",
+      "sha256": "ef3f024f168312297acc2d93cf6e59996c4df56a2f3a2e419739d3b107b40afa",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round2/vae4000/seed0/rig/best.pt",
+      "sha256": "37a790ea58ae4cdd9cb5669df725474a9044e6f30cf416e8069a12f4c32d5965",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round2/vae4000/seed0/surface/best.pt",
+      "sha256": "cdf2254463083a80db9cca7c085cc362b0258e95ec9a7ac7e1fa44259b7b069e",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round2/vae4000/seed1/rig/best.pt",
+      "sha256": "99742d5c5bc30e606d3eb0f0ebcbbf8016daa94c9c8f5a3dbc3ff6e41bd9c0b2",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round2/vae4000/seed1/surface/best.pt",
+      "sha256": "a9d27e6830a3ea4527d5b8aa138a81f8f9cefaee0dbe8a688ef37ed7c58db96b",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round2/vae4000/seed2/rig/best.pt",
+      "sha256": "433a4ccd0d676727fda4a22865ceecf717c5677d7c37eaef43e057825a7b9570",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round2/vae4000/seed2/surface/best.pt",
+      "sha256": "6f23c74eef49aa7ede3b070ebc8099c0219a53874a184e2e1b86445505125303",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round2_dino/rig/seed0/best.pt",
+      "sha256": "11ff5976de0751b1903e28a65c3400a2ebcfd4c162aaefc2a3dc6d7c24a3a723",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round2_dino/rig/seed1/best.pt",
+      "sha256": "49f672c23b67c266d5a189cd2102d6e3316c9ec76bdb6cdc67f9281126dcc0a4",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round2_dino/rig/seed2/best.pt",
+      "sha256": "f33e7931f3c3923614293405edc192785717ebcf4657997312dcbaa57f521b98",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round2_geometry/rig/seed0/best.pt",
+      "sha256": "502c5c9245af7fb98b11e57d6bcbeaabd3cb1dc1bedd80a6d62108d12ea2a52d",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round2_geometry/rig/seed1/best.pt",
+      "sha256": "0b15202607b4f4290edf13a5a8cac686628aac575342bfa5e4705365e388f4dd",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round2_geometry/rig/seed2/best.pt",
+      "sha256": "e79754a5d40f9a9949bb2f77f45b645db39cbacac99da4f7b0c5a6b60b0ac601",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round2_geometry_mps_exploration/rig/seed0/best.pt",
+      "sha256": "af66a41a9bb127a041aa16a97cb7dc3bf02b5d3318f59c63bb7ab38623a516ad",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round2_geometry_pre_sync_optimization/rig/seed0/best.pt",
+      "sha256": "efc1262695f40c8e61d71eb304d6af15bb7f3e86a1b395961b2c3511d220a06c",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round2_geometry_pre_sync_optimization/rig/seed1/best.pt",
+      "sha256": "189c65587c872af832c853bfc10284af756933676e163e1c0018f546a0c16af0",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round2_vae/rig/seed0/best.pt",
+      "sha256": "ae75dba678b6b634e5962da0ca81b51d2c8b04f19b358e166fc64fcb46f7f113",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round2_vae/rig/seed1/best.pt",
+      "sha256": "5a827c9412e5c0390907362d74553a1cd48373ec4805fd5f8ac972d41d56e3ba",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round2_vae/rig/seed2/best.pt",
+      "sha256": "0fb794afcb0f38f379a8c1269f58d5a3e7cc07372814e1686d3c701c057d3ab6",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round3/flows/seed0/best.pt",
+      "sha256": "ece6fe2b005269c5051b7a2b042b6d5a8062bed74095c1eb290ee20050c86c5e",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round3/flows/seed1/best.pt",
+      "sha256": "6f7096f4e2633c87fbfcdcc0f5be1051c7a7e528dba221cc4b954d8af6d3c939",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round3/flows/seed2/best.pt",
+      "sha256": "2b103e2ef75b1f9c98cac6d8fad101ebf278953ddff185ba4c21087072f68fe2",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round3/flows_balanced_rig/seed0/best.pt",
+      "sha256": "6bbb23f38579ced89a8c96667172414cd47f98777fdb1fb0ff097f856fbe648f",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round3/flows_balanced_rig/seed1/best.pt",
+      "sha256": "f27dffbd70b79f1e4d92354ada0f75ebbcdfb7197ea8d4ad7d3e9c3aa2733047",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round3/flows_balanced_rig/seed2/best.pt",
+      "sha256": "6a1e706d51240cc2b58a8903441b92c040dc78bc8b3f0b8fd408f05b0e805a06",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round3/flows_frozen_surface/seed0/best.pt",
+      "sha256": "426824160153563ce66e44ddda0909027bb43acb4f4f619eb7a05b5a0eb088db",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round3/flows_frozen_surface/seed1/best.pt",
+      "sha256": "83f2fa7a46060cb30b17a3238ab152d64fb608d5f784c2fbbe89368c7413ba27",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round3/flows_frozen_surface/seed2/best.pt",
+      "sha256": "33265b2ba9bf700fb6df6483bea0d0a53f14559b3c1318e2e29ba8c859f8d530",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round3/flows_full_joint/seed0/best.pt",
+      "sha256": "024732be8194cd9cf35b69bacbf38400acbec09e8ea37f412886d20125d72df4",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round3/flows_full_joint/seed1/best.pt",
+      "sha256": "0c6f038f8b6be8433a9876b973a26c58a518ebe795b1ca19698e0ade38a16832",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round3/flows_full_joint/seed2/best.pt",
+      "sha256": "0f83051407de26cd5670997dc00a2dcee8b3afab19218668d363a46c87b8a086",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round3/flows_full_joint_balanced/seed0/best.pt",
+      "sha256": "5957facec85b84aeec082636339877ddbc65cfc7543da9c9733ae0c0c4fd1829",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round3/flows_full_joint_balanced/seed1/best.pt",
+      "sha256": "7b9f75c9283954a12c901031374f710d1fe28b542f7ad7befad1c039bd8dc14b",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round3/flows_full_joint_balanced/seed2/best.pt",
+      "sha256": "4858433b5a3ba46ec08677ef180517bfa0f09a02b4c31a8a8929b286b0a5558b",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round3/joint/seed0/best.pt",
+      "sha256": "ca4bbb055b1ecb9e1606e46da5b544cf4a27dae406c64d5dd59be141cec92a28",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round3/joint/seed1/best.pt",
+      "sha256": "9836f8a5660b7eefd31aa982a555ac023cd7803c012885886f787aa15fb17ab3",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round3/joint/seed2/best.pt",
+      "sha256": "df56e614a0c0baf4ab4365f7d5419629e6cfc67d4fa7a0cabe65f5c213db43d9",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round3/joint_frozen_surface/seed0/best.pt",
+      "sha256": "31359535fff1597b6b495cd2ad483819dc5d9b56eb07a066495ea8b51b4b06c3",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round3/joint_frozen_surface/seed1/best.pt",
+      "sha256": "4b2f7d04172862bfb774e07a4b35cab81c15600b414e6cd60279ef620b2bd0d7",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round3/joint_frozen_surface/seed2/best.pt",
+      "sha256": "eaa1d0de916f9000a44c13eb09f7f8eb4b3d90f7539b2dc38e98f65f6b3d7806",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round3_frozen/rig/seed0/best.pt",
+      "sha256": "a5361d88019461e893fadfad51883cca3c3932482e5982c8a0e3fe73293ff572",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round3_frozen/rig/seed1/best.pt",
+      "sha256": "1f17130c8d2c2b30956b637a038a8a960f235edec6ad304849bbc41c1cef43b9",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/round3_frozen/rig/seed2/best.pt",
+      "sha256": "99ca20d26c3b63f7b7f9fc665dcd194f75aceaf4fc286fe04ac03e4089af0c76",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    },
+    {
+      "path": "results/smoke/rig/seed0/best.pt",
+      "sha256": "1f9d327781a11068224e07b1f0e6735b939f6823cd81cd8775acf568bc95d1a1",
+      "reason": "Locally trained checkpoint; rebuild using documented training commands."
+    }
+  ]
+}
